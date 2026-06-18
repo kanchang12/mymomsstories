@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Create your account — My Mom's Stories{% endblock %}
+{% block content %}
+<div class="page" style="max-width:480px">
+  <h1 style="font-size:1.6rem;margin-bottom:6px">Create your account</h1>
+  <p style="color:var(--ink-soft);font-size:0.92rem;margin-bottom:20px">
+    Four quick fields. We'll generate your child's own login at the end — no real name needed.
+  </p>
+
+  {% if error %}
+  <div class="card" style="padding:14px;margin-bottom:16px;border-color:var(--red);color:var(--red)">
+    {{ error }}
+  </div>
+  {% endif %}
+
+  <form method="POST" class="card" style="padding:22px;display:flex;flex-direction:column;gap:16px">
+    <div>
+      <label style="font-size:0.84rem;font-weight:600">Your email</label>
+      <input name="email" type="email" required autocomplete="email"
+             style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
+    </div>
+    <div>
+      <label style="font-size:0.84rem;font-weight:600">Choose a password</label>
+      <input name="password" type="password" required minlength="8" autocomplete="new-password"
+             style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
+      <p style="font-size:0.78rem;color:var(--ink-soft);margin-top:4px">At least 8 characters — this is yours, not your child's.</p>
+    </div>
+    <div>
+      <label style="font-size:0.84rem;font-weight:600">Step 1 — Your country</label>
+      <select name="country" required
+              style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
+        <option value="" disabled selected>Choose a country</option>
+        {% for c in countries %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
+      </select>
+    </div>
+    <div>
+      <label style="font-size:0.84rem;font-weight:600">Step 2 — Language to start with</label>
+      <select name="language" required
+              style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
+        <option value="" disabled selected>Choose a language</option>
+        {% for code, name in languages %}<option value="{{ code }}">{{ name }}</option>{% endfor %}
+      </select>
+    </div>
+    <div>
+      <label style="font-size:0.84rem;font-weight:600">Step 3 — A nickname for your child</label>
+      <input name="child_nickname" type="text" required placeholder="e.g. Sunny, Tiger, Pickle — not their real name"
+             style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
+    </div>
+    <button class="btn btn-primary" type="submit" style="margin-top:6px">Step 4 — Create account &amp; get a login →</button>
+  </form>
+
+  <p style="margin-top:16px;font-size:0.88rem;color:var(--ink-soft)">
+    Already have an account? <a href="/auth/login" style="color:var(--red);font-weight:600">Log in</a>
+  </p>
+</div>
+{% endblock %}

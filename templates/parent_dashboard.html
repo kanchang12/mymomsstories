@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Parent dashboard — My Mom's Stories{% endblock %}
+{% block extra_styles %}
+.child-card{padding:20px;margin-bottom:14px}
+.usage-bar{height:8px;background:var(--rule);border-radius:4px;overflow:hidden;margin:10px 0}
+.usage-fill{height:100%;background:var(--green);border-radius:4px}
+.usage-fill.over{background:var(--red)}
+.score-pill{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.78rem;font-weight:600}
+{% endblock %}
+{% block content %}
+<div class="page">
+  <h1 style="font-size:1.5rem;margin-bottom:4px">Your family</h1>
+  <p style="color:var(--ink-soft);font-size:0.9rem;margin-bottom:20px">Every record, always yours — and a clear-data button if you ever want a clean slate.</p>
+
+  {% if not children %}
+  <div class="card" style="padding:20px;color:var(--ink-soft)">No child account yet.</div>
+  {% endif %}
+
+  {% for c in children %}
+  <div class="card child-card">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+      <h3 style="font-size:1.15rem">{{ c.display_name }} — {{ c.language_name }}</h3>
+      <span style="font-size:0.8rem;color:var(--ink-soft)">{{ c.country }}</span>
+    </div>
+
+    <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:8px">
+      {{ (c.minutes_used / 60)|round(1) }} of {{ (c.included_minutes / 60)|round(0)|int }} hours used this month
+      {% if c.overage_minutes > 0 %}— plus {{ (c.overage_minutes/60)|round(1) }}h extra (≈£{{ c.overage_cost_gbp }}){% endif %}
+    </p>
+    <div class="usage-bar">
+      <div class="usage-fill {% if c.overage_minutes > 0 %}over{% endif %}"
+           style="width:{{ [100, (c.minutes_used / c.included_minutes * 100)]|min }}%"></div>
+    </div>
+
+    <button class="btn btn-danger" style="margin-top:10px" onclick="clearData('{{ c.id }}', this)">Clear it, any time 🗑️</button>
+  </div>
+  {% endfor %}
+
+  <div class="sec">Full record</div>
+  <div class="card tbl-wrap">
+    <table>
+      <tr><th>When</th><th>Language</th><th>Stop</th><th>Shown</th><th>Heard</th><th>Score</th><th>Note</th></tr>
+      {% for r in records %}
+      <tr>
+        <td style="white-space:nowrap">{{ r.created_at.strftime('%d %b, %H:%M') }}</td>
+        <td>{{ r.language }}</td>
+        <td>{{ r.stop }}</td>
+        <td>{{ r.item_shown }}</td>
+        <td>{{ r.transcript or '—' }}</td>
+        <td>
+          {% if r.score is not none %}
+            <span class="score-pill {% if r.score >= 60 %}badge-green{% else %}badge-amber{% endif %}">{{ r.score }}</span>
+          {% else %}—{% endif %}
+        </td>
+        <td style="color:var(--ink-soft)">{{ r.feedback or '' }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="7" style="color:var(--ink-soft)">Nothing logged yet — once your child starts a stop, it shows up here.</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<script>
+async function clearData(childId, btn) {
+  if (!confirm("This permanently deletes every record for this child. Continue?")) return;
+  btn.disabled = true;
+  btn.textContent = "Clearing…";
+  const res = await fetch(`/parent/api/clear-data/${childId}`, {method: 'POST'});
+  if (res.ok) {
+    location.reload();
+  } else {
+    btn.disabled = false;
+    btn.textContent = "Clear it, any time 🗑️";
+    alert("Something went wrong — try again.");
+  }
+}
+</script>
+{% endblock %}

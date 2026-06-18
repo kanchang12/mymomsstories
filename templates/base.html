@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}My Mom's Stories{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Kalam:wght@700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#3B2A1D; --ink-soft:#8A7359; --paper:#F3E9DA; --paper-card:#FBF5E9;
+  --rule:#E3D2B5; --rule-strong:#D2B991; --red:#B8452E; --gold:#C98A3A; --green:#5C7A4E;
+  --green-light:#E7EFE3; --amber-light:#F7EBD8; --red-light:#F7E3DC;
+  --nav-h:56px; --card-r:14px; --shadow:0 2px 10px rgba(59,42,29,0.08);
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-display:'Fraunces',Georgia,serif;
+  --font-hand:'Kalam','Comic Sans MS',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);background:var(--paper);color:var(--ink);min-height:100vh}
+h1,h2,h3,.nav-logo{font-family:var(--font-display)}
+a{color:var(--ink);text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+
+nav{height:var(--nav-h);background:var(--paper-card);border-bottom:1px solid var(--rule-strong);
+    display:flex;align-items:center;padding:0 16px;gap:12px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+.nav-logo{font-size:1.05rem;font-weight:700;color:var(--ink)}
+.nav-logo::before{content:"✓ ";color:var(--red)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.nav-name{font-size:0.82rem;color:var(--ink-soft)}
+.nav-logout{font-size:0.8rem;background:transparent;border:1px solid var(--rule-strong);
+            border-radius:8px;padding:5px 10px;color:var(--ink-soft)}
+.nav-logout:hover{background:var(--paper)}
+
+.card{background:var(--paper-card);border:1px solid var(--rule-strong);border-radius:var(--card-r);box-shadow:var(--shadow)}
+.badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-size:0.75rem;font-weight:600}
+.badge-green{background:var(--green-light);color:var(--green)}
+.badge-amber{background:var(--amber-light);color:var(--gold)}
+.badge-red{background:var(--red-light);color:var(--red)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+     padding:10px 18px;border-radius:12px;border:none;font-size:0.9rem;font-weight:600;transition:all 0.15s}
+.btn-primary{background:var(--ink);color:var(--paper-card)}
+.btn-primary:hover{background:#2c2014;box-shadow:2px 2px 0 var(--red)}
+.btn-primary:disabled{background:#bba98e;cursor:not-allowed;box-shadow:none}
+.btn-outline{background:var(--paper-card);color:var(--ink);border:1.5px solid var(--ink)}
+.btn-outline:hover{background:var(--paper)}
+.btn-danger{background:var(--paper-card);color:var(--red);border:1.5px solid var(--red)}
+.btn-danger:hover{background:var(--red-light)}
+
+.page{max-width:900px;margin:0 auto;padding:20px 16px}
+@media(max-width:480px){.page{padding:14px 10px}}
+.sec{font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);
+     font-weight:700;margin:22px 0 10px}
+
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--card-r)}
+table{width:100%;border-collapse:collapse;font-size:0.84rem}
+th{text-align:left;padding:10px 12px;color:var(--ink-soft);font-weight:600;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:none}
+
+.usage-banner{background:var(--amber-light);border:1px solid var(--gold);border-radius:10px;
+  padding:10px 14px;font-size:0.85rem;color:var(--ink);margin-bottom:16px}
+
+{% block extra_styles %}{% endblock %}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-logo">My Mom's Stories</span>
+  {% if session.get('user_id') %}
+  <div class="nav-right">
+    <span class="nav-name">{{ session.display_name }}</span>
+    <a href="/auth/logout"><button class="nav-logout">Logout</button></a>
+  </div>
+  {% endif %}
+</nav>
+{% block content %}{% endblock %}
+{% if session.get('role') == 'child' %}
+<script>
+  // 15-hour/month included usage, tracked via a once-a-minute heartbeat
+  // while this tab is open and visible. £1.50/hr applies automatically
+  // past that — this just tracks the number, see routes/child.py.
+  setInterval(() => {
+    if (document.visibilityState !== 'visible') return;
+    fetch('/child/api/heartbeat', {method: 'POST'})
+      .then(r => r.json())
+      .then(d => document.dispatchEvent(new CustomEvent('mms-usage-update', {detail: d})))
+      .catch(() => {});
+  }, 60000);
+</script>
+{% endif %}
+</body>
+</html>
