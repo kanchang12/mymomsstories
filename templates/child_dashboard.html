@@ -9,7 +9,7 @@
 .stop-card .lbl{font-family:var(--font-display);font-weight:600;font-size:1.05rem}
 .panel{padding:24px;margin-top:16px;display:none}
 .panel.open{display:block}
-.item-script{font-size:2.2rem;font-weight:700;margin-bottom:6px}
+.item-script{font-size:2.4rem;font-weight:700;margin-bottom:6px;line-height:1.3}
 .item-translit{font-family:var(--font-hand);color:var(--red);font-size:1.05rem;margin-bottom:4px}
 .item-gloss{color:var(--ink-soft);font-size:0.92rem;margin-bottom:18px}
 .mic-btn{width:64px;height:64px;border-radius:50%;background:var(--red);color:#fff;border:none;font-size:1.6rem;
@@ -20,11 +20,22 @@
 .result-box.good{background:var(--green-light);color:var(--green)}
 .result-box.retry{background:var(--amber-light);color:var(--ink)}
 .transcript-line{font-size:0.85rem;color:var(--ink-soft);margin-top:8px}
+
+/* story pagination */
+.story-line-box{text-align:center;padding:10px 0 18px}
+.story-line-text{font-size:1.7rem;font-weight:700;line-height:1.4;margin-bottom:8px}
+.story-line-gloss{color:var(--ink-soft);font-size:0.9rem;margin-bottom:20px}
+.story-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:4px}
+.story-nav button{width:48px;height:48px;border-radius:50%;border:2px solid var(--ink);
+  background:var(--paper-card);font-size:1.4rem;cursor:pointer;transition:all .15s}
+.story-nav button:hover{background:var(--ink);color:var(--paper-card)}
+.story-nav button:disabled{opacity:0.25;cursor:not-allowed}
+.story-progress{font-size:0.8rem;color:var(--ink-soft);min-width:60px;text-align:center}
 {% endblock %}
 {% block content %}
 <div class="page">
   {% if not lang %}
-  <div class="card" style="padding:20px;color:var(--red)">No language set on this account yet — ask a parent to set one from the parent dashboard.</div>
+  <div class="card" style="padding:20px;color:var(--red)">No language set — ask a parent to set one from the parent dashboard.</div>
   {% else %}
   <h1 style="font-size:1.4rem;margin-bottom:4px">Hi {{ child_name }} 👋</h1>
   <p style="color:var(--ink-soft);font-size:0.9rem;margin-bottom:18px">Today's mix — {{ lang.name }}</p>
@@ -49,69 +60,114 @@
 <script>
 const LANG_CODE = {{ lang_code|tojson }};
 const SPEECH_LOCALE = {
-  bn: "bn-IN", hi: "hi-IN", mr: "mr-IN", ta: "ta-IN", te: "te-IN",
-  kn: "kn-IN", ml: "ml-IN", ar: "ar-SA", es: "es-ES", ja: "ja-JP",
-  ru: "ru-RU", uk: "uk-UA", ro: "ro-RO",
-}[LANG_CODE] || "en-US";
+  bn:'bn-IN', hi:'hi-IN', mr:'mr-IN', ta:'ta-IN', te:'te-IN',
+  kn:'kn-IN', ml:'ml-IN', ar:'ar-SA', es:'es-ES', ja:'ja-JP',
+  ru:'ru-RU', uk:'uk-UA', ro:'ro-RO',
+}[LANG_CODE] || 'en-US';
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let currentItem = null, currentStop = null;
+let storyLines = [], storyIdx = 0;
 
 async function openStop(stop) {
   currentStop = stop;
   const panel = document.getElementById('panel');
   const body  = document.getElementById('panel-body');
   panel.classList.add('open');
-  body.innerHTML = "Loading…";
+  body.innerHTML = 'Loading…';
   panel.scrollIntoView({behavior:'smooth', block:'nearest'});
 
   const res = await fetch(`/child/api/item?stop=${stop}`);
-  if (!res.ok) { body.innerHTML = "Nothing here yet — try another one."; return; }
+  if (!res.ok) { body.innerHTML = 'Nothing here yet — try another one.'; return; }
   const data = await res.json();
   currentItem = data.item;
 
-  // Each stop's content is shaped differently — alphabet uses char/hint,
-  // words/lines use text/gloss, customs uses title/text, story uses
-  // title/gloss/synopsis (synopsis is the actual script text to read).
-  let headline, translit, note, readBody, itemKeyForLog, itemShownForLog;
-  const spoken = (stop === 'alphabet' || stop === 'words' || stop === 'lines');
-
   if (stop === 'alphabet') {
-    headline = currentItem.char; translit = currentItem.translit; note = currentItem.hint;
-    itemKeyForLog = currentItem.char; itemShownForLog = currentItem.char;
-  } else if (stop === 'words' || stop === 'lines') {
-    headline = currentItem.text; translit = currentItem.translit; note = currentItem.gloss;
-    itemKeyForLog = currentItem.text; itemShownForLog = currentItem.text;
-  } else if (stop === 'customs') {
-    headline = currentItem.title; translit = ""; note = currentItem.text;
-    itemKeyForLog = currentItem.key; itemShownForLog = currentItem.title;
-  } else { // story
-    headline = currentItem.title; translit = currentItem.translit;
-    note = currentItem.gloss; readBody = currentItem.synopsis;
-    itemKeyForLog = currentItem.key; itemShownForLog = currentItem.title;
-  }
-  currentItem._logKey = itemKeyForLog; currentItem._logShown = itemShownForLog;
+    // show the character BIG — no English hint shown to the child
+    const char = currentItem.char;
+    const translit = currentItem.translit || '';
+    currentItem._logKey = char; currentItem._logShown = char;
+    body.innerHTML = `
+      <div class="item-script" style="font-size:3.5rem;text-align:center">${char}</div>
+      <div class="item-translit" style="text-align:center">${translit}</div>
+      <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
+      <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic — say the sound</p>
+      <div id="result"></div>`;
 
-  body.innerHTML = `
-    <div class="item-script">${headline || ""}</div>
-    ${translit ? `<div class="item-translit">${translit}</div>` : ""}
-    <div class="item-gloss">${note || ""}</div>
-    ${readBody ? `<div class="item-script" style="font-size:1.3rem;margin-top:6px">${readBody}</div>` : ""}
-    ${spoken ? `
+  } else if (stop === 'words' || stop === 'lines') {
+    const txt = currentItem.text;
+    const translit = currentItem.translit || '';
+    const gloss = currentItem.gloss || '';
+    currentItem._logKey = txt; currentItem._logShown = txt;
+    body.innerHTML = `
+      <div class="item-script">${txt}</div>
+      ${translit ? `<div class="item-translit">${translit}</div>` : ''}
+      <div class="item-gloss">${gloss}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic, then read it aloud</p>
-      <div id="result"></div>
-    ` : `
+      <div id="result"></div>`;
+
+  } else if (stop === 'customs') {
+    const title = currentItem.title || '';
+    const text  = currentItem.text  || '';
+    currentItem._logKey = currentItem.key || title; currentItem._logShown = title;
+    body.innerHTML = `
+      <div class="item-script" style="font-size:1.4rem">${title}</div>
+      <div style="font-size:0.95rem;line-height:1.7;margin:12px 0 20px;color:var(--ink)">${text}</div>
       <button class="btn btn-primary" onclick="markRead()">I read this →</button>
-      <div id="result"></div>
-    `}
-  `;
+      <div id="result"></div>`;
+
+  } else {
+    // story — line by line with arrows
+    storyLines = currentItem.lines || [];
+    storyIdx   = 0;
+    currentItem._logKey   = currentItem.key   || currentItem.title;
+    currentItem._logShown = currentItem.title || '';
+    renderStoryLine();
+  }
+}
+
+function renderStoryLine() {
+  if (!storyLines.length) {
+    document.getElementById('panel-body').innerHTML = '<p style="color:var(--ink-soft)">No story content yet.</p>';
+    return;
+  }
+  const line  = storyLines[storyIdx];
+  const total = storyLines.length;
+  const isLast = storyIdx === total - 1;
+
+  document.getElementById('panel-body').innerHTML = `
+    <div class="item-script" style="font-size:1.05rem;text-align:right;color:var(--ink-soft);margin-bottom:6px">
+      ${currentItem.title || ''} — <em>${currentItem.gloss || ''}</em>
+    </div>
+    <div class="story-line-box">
+      <div class="story-line-text">${line.text}</div>
+      <div class="story-line-gloss">${line.gloss || ''}</div>
+    </div>
+    <div class="story-nav">
+      <button onclick="storyPrev()" ${storyIdx === 0 ? 'disabled' : ''}>◀</button>
+      <span class="story-progress">${storyIdx + 1} / ${total}</span>
+      <button onclick="storyNext()" ${isLast ? 'disabled' : ''}>▶</button>
+    </div>
+    ${isLast ? `
+      <div style="text-align:center;margin-top:18px">
+        <button class="btn btn-primary" onclick="markRead()">Done ✓</button>
+      </div>` : ''}
+    <div id="result"></div>`;
+}
+
+function storyPrev() {
+  if (storyIdx > 0) { storyIdx--; renderStoryLine(); }
+}
+
+function storyNext() {
+  if (storyIdx < storyLines.length - 1) { storyIdx++; renderStoryLine(); }
 }
 
 function startListening() {
   if (!SpeechRecognition) {
     document.getElementById('result').innerHTML =
-      `<div class="result-box retry">This browser can't listen yet — try Chrome, or tap "I read this" once you're done.</div>`;
+      `<div class="result-box retry">This browser can't listen — try Chrome on Android or desktop.</div>`;
     return;
   }
   const btn = document.getElementById('mic-btn');
@@ -120,57 +176,52 @@ function startListening() {
   rec.lang = SPEECH_LOCALE;
   rec.interimResults = false;
   rec.maxAlternatives = 1;
-  rec.onresult = (e) => {
-    const transcript = e.results[0][0].transcript;
-    submitAttempt(transcript);
-  };
-  rec.onerror = () => { btn.classList.remove('listening'); };
-  rec.onend = () => { btn.classList.remove('listening'); };
+  rec.onresult = (e) => { submitAttempt(e.results[0][0].transcript); };
+  rec.onerror  = () => { btn.classList.remove('listening'); };
+  rec.onend    = () => { btn.classList.remove('listening'); };
   rec.start();
 }
 
 async function submitAttempt(transcript) {
   const res = await fetch('/child/api/attempt', {
-    method: 'POST', headers: {'Content-Type': 'application/json'},
+    method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
       stop: currentStop,
-      item_key: currentItem._logKey || "",
-      item_shown: currentItem._logShown || "",
+      item_key:   currentItem._logKey   || '',
+      item_shown: currentItem._logShown || '',
       transcript,
     }),
   });
-  const data = await res.json();
-  showResult(data, transcript);
+  showResult(await res.json(), transcript);
 }
 
 async function markRead() {
   const res = await fetch('/child/api/attempt', {
-    method: 'POST', headers: {'Content-Type': 'application/json'},
+    method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
       stop: currentStop,
-      item_key: currentItem._logKey || "",
-      item_shown: currentItem._logShown || "",
-      transcript: "",
+      item_key:   currentItem._logKey   || '',
+      item_shown: currentItem._logShown || '',
+      transcript: '',
     }),
   });
   const data = await res.json();
-  showResult(data, null);
+  const el = document.getElementById('result');
+  if (el) el.innerHTML = `<div class="result-box good">${data.feedback}</div>`;
 }
 
 function showResult(data, transcript) {
   const box = data.correct ? 'good' : 'retry';
   document.getElementById('result').innerHTML = `
     <div class="result-box ${box}">${data.feedback}</div>
-    ${transcript ? `<div class="transcript-line">Heard: "${transcript}"</div>` : ""}
-  `;
+    ${transcript ? `<div class="transcript-line">Heard: "${transcript}"</div>` : ''}`;
 }
 
-// Usage banner, updated by the heartbeat in base.html
 document.addEventListener('mms-usage-update', (e) => {
   const d = e.detail, banner = document.getElementById('usage-banner');
   if (d.overage_minutes > 0) {
     banner.style.display = 'block';
-    banner.textContent = `You're ${(d.overage_minutes/60).toFixed(1)} hours past this month's included 15 — about £${d.overage_cost_gbp} extra so far.`;
+    banner.textContent = `${(d.overage_minutes/60).toFixed(1)} hours past your included 15 this month — about £${d.overage_cost_gbp} extra.`;
   }
 });
 </script>
