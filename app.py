@@ -14,26 +14,33 @@ app.secret_key = os.environ.get("SECRET_KEY", "mymomsstories-dev-key-change-in-p
 app.permanent_session_lifetime = timedelta(days=30)
 CORS(app, supports_credentials=True)
 
-from routes.auth   import auth_bp
-from routes.child  import child_bp
-from routes.parent import parent_bp
-from routes.public import public_bp
-from models.db     import init_db
+from routes.auth     import auth_bp
+from routes.child    import child_bp
+from routes.parent   import parent_bp
+from routes.public   import public_bp
+from routes.webhooks import webhooks_bp
+from routes.admin    import admin_bp
+from models.db       import init_db
 
 init_db()
 
-app.register_blueprint(public_bp, url_prefix="")
-app.register_blueprint(auth_bp,   url_prefix="/auth")
-app.register_blueprint(child_bp,  url_prefix="/child")
-app.register_blueprint(parent_bp, url_prefix="/parent")
+app.register_blueprint(public_bp,   url_prefix="")
+app.register_blueprint(auth_bp,     url_prefix="/auth")
+app.register_blueprint(child_bp,    url_prefix="/child")
+app.register_blueprint(parent_bp,   url_prefix="/parent")
+app.register_blueprint(webhooks_bp, url_prefix="/webhooks")
+app.register_blueprint(admin_bp,    url_prefix="/admin")
 
 
 @app.route("/home")
 def home():
     if "user_id" not in session:
         return redirect(url_for("public.landing"))
-    if session.get("role") == "parent":
+    role = session.get("role")
+    if role == "parent":
         return redirect(url_for("parent.dashboard"))
+    if role == "admin":
+        return redirect(url_for("admin.dashboard"))
     return redirect(url_for("child.dashboard"))
 
 

@@ -1,15 +1,26 @@
 """
-routes/parent.py — the parent-facing side: every record, in full, plus
-the button to clear it all.
+routes/parent.py — parent dashboard, add/manage children, PayPal billing.
 """
+import secrets
+import bcrypt
 from datetime import datetime, timezone
-from flask import Blueprint, render_template, jsonify, session
+from flask import Blueprint, render_template, jsonify, session, request, redirect, url_for
 from models.db import get_cur
 from routes.auth import login_required
-from routes.child import INCLUDED_MINUTES_PER_MONTH, OVERAGE_RATE_PER_HOUR_GBP
-from services.content import get_language
+from services.content import get_language, list_languages
+from services.payments import (
+    INCLUDED_MINUTES_PER_MONTH, OVERAGE_RATE_PER_HOUR_GBP,
+    get_subscription, create_paypal_subscription, activate_paypal_subscription,
+)
 
 parent_bp = Blueprint("parent", __name__)
+
+_PW_WORDS = ["Mango","Tiger","Comet","Rocket","Panda","Falcon","Maple","Sunny",
+             "River","Echo","Cobra","Nimbus","Pixel","Robin","Atlas","Cloud"]
+
+
+def _gen_password():
+    return f"{secrets.choice(_PW_WORDS)}{secrets.randbelow(90) + 10}"
 
 
 @parent_bp.route("/dashboard")
@@ -17,7 +28,8 @@ parent_bp = Blueprint("parent", __name__)
 def dashboard():
     with get_cur() as cur:
         cur.execute("""
-            SELECT id, display_name, language, country, usage_minutes_this_month, usage_month
+            SELECT id, username, display_name, language, country,
+                   usage_minutes_this_month, usage_month
             FROM users WHERE parent_id = %s ORDER BY created_at
         """, (session["user_id"],))
         children = cur.fetchall()
@@ -27,12 +39,12 @@ def dashboard():
         minutes = c["usage_minutes_this_month"] or 0
         if c["usage_month"] != now_month:
             minutes = 0
-        c["minutes_used"] = minutes
+        c["minutes_used"]    = minutes
         c["included_minutes"] = INCLUDED_MINUTES_PER_MONTH
-        overage_minutes = max(0, minutes - INCLUDED_MINUTES_PER_MONTH)
-        c["overage_minutes"] = overage_minutes
+        overage_minutes      = max(0, minutes - INCLUDED_MINUTES_PER_MONTH)
+        c["overage_minutes"]  = overage_minutes
         c["overage_cost_gbp"] = round((overage_minutes / 60) * OVERAGE_RATE_PER_HOUR_GBP, 2)
-        c["language_name"] = (get_language(c["language"]) or {}).get("name", c["language"])
+        c["language_name"]    = (get_language(c["language"]) or {}).get("name", c["language"])
 
     records = []
     if children:
@@ -45,20 +57,108 @@ def dashboard():
             """, (child_ids,))
             records = cur.fetchall()
 
-    return render_template("parent_dashboard.html", children=children, records=records)
+    subscription = get_subscription(session["user_id"])
+    languages    = list_languages()
 
+    return render_template("parent_dashboard.html",
+                           children=children, records=records,
+                           subscription=subscription, languages=languages,
+                           suggested_password=_gen_password())
+
+
+# ── Add child ──────────────────────────────────────────────────────────────────
+
+@parent_bp.route("/add-child", methods=["POST"])
+@login_required(role="parent")
+def add_child():
+    parent_id    = session["user_id"]
+    nickname     = (request.form.get("nickname") or "").strip()
+    child_username = (request.form.get("child_username") or "").strip().lower()
+    password     = (request.form.get("password") or "").strip()
+    language     = (request.form.get("language") or session.get("language", "")).strip()
+
+    if not nickname:
+        return jsonify({"error": "Give your child a nickname"}), 400
+    if not child_username or len(child_username) < 3:
+        return jsonify({"error": "Username must be at least 3 characters"}), 400
+    if not child_username.replace("_","").replace("-","").isalnum():
+        return jsonify({"error": "Username can only contain letters, numbers, - and _"}), 400
+    if not password or len(password) < 4:
+        return jsonify({"error": "Password must be at least 4 characters"}), 400
+
+    pw_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt(12)).decode()
+
+    # Get parent's country
+    with get_cur() as cur:
+        cur.execute("SELECT country FROM users WHERE id=%s", (parent_id,))
+        row = cur.fetchone()
+    country = (row["country"] if row else "") or ""
+
+    try:
+        with get_cur() as cur:
+            cur.execute("""
+                INSERT INTO users
+                  (username, password_hash, role, display_name, country, language, parent_id)
+                VALUES (%s, %s, 'child', %s, %s, %s, %s)
+                RETURNING id
+            """, (child_username, pw_hash, nickname, country, language, parent_id))
+            child_id = str(cur.fetchone()["id"])
+    except Exception as e:
+        if "unique" in str(e).lower():
+            return jsonify({"error": "That username is already taken — try another"}), 400
+        return jsonify({"error": "Something went wrong"}), 500
+
+    return jsonify({
+        "ok": True,
+        "child_id":       child_id,
+        "child_username": child_username,
+        "child_password": password,
+        "nickname":       nickname,
+    })
+
+
+# ── Clear child data ───────────────────────────────────────────────────────────
 
 @parent_bp.route("/api/clear-data/<child_id>", methods=["POST"])
 @login_required(role="parent")
 def clear_data(child_id):
-    """Deletes every activity record for this child. The child's login
-    itself is untouched — only the history is wiped, completely."""
     with get_cur() as cur:
-        # Ownership check — only ever clear a child that belongs to this parent.
-        cur.execute("SELECT 1 FROM users WHERE id=%s AND parent_id=%s", (child_id, session["user_id"]))
+        cur.execute("SELECT 1 FROM users WHERE id=%s AND parent_id=%s",
+                    (child_id, session["user_id"]))
         if not cur.fetchone():
             return jsonify({"error": "not found"}), 404
         cur.execute("DELETE FROM activity_log WHERE child_id=%s", (child_id,))
         deleted = cur.rowcount
-
     return jsonify({"cleared": True, "rows_deleted": deleted})
+
+
+# ── PayPal subscription ────────────────────────────────────────────────────────
+
+@parent_bp.route("/paypal/subscribe", methods=["POST"])
+@login_required(role="parent")
+def paypal_subscribe():
+    parent_id = session["user_id"]
+    base_url  = request.host_url.rstrip("/")
+    result    = create_paypal_subscription(parent_id, base_url)
+    if result.get("approve_url"):
+        return jsonify({"ok": True, "approve_url": result["approve_url"]})
+    return jsonify({"error": result.get("error", "PayPal error")}), 500
+
+
+@parent_bp.route("/paypal/success")
+@login_required(role="parent")
+def paypal_success():
+    subscription_id = request.args.get("subscription_id")
+    parent_id       = session["user_id"]
+    if not subscription_id:
+        return redirect(url_for("parent.dashboard") + "?payment=failed")
+    result = activate_paypal_subscription(parent_id, subscription_id)
+    if result.get("ok"):
+        return redirect(url_for("parent.dashboard") + "?payment=success")
+    return redirect(url_for("parent.dashboard") + "?payment=failed")
+
+
+@parent_bp.route("/paypal/cancel")
+@login_required(role="parent")
+def paypal_cancel():
+    return redirect(url_for("parent.dashboard") + "?payment=cancelled")

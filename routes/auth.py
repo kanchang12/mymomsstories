@@ -1,6 +1,5 @@
 """
-routes/auth.py — login/logout. One users table, role decides where you land.
-Same pattern as aitutor/routes/auth.py.
+routes/auth.py — login/logout. role decides where you land.
 """
 import bcrypt
 from functools import wraps
@@ -44,17 +43,20 @@ def login():
     with get_cur() as cur:
         cur.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (str(row["id"]),))
 
-    session.permanent = True
-    session["user_id"]      = str(row["id"])
-    session["username"]     = username
-    session["role"]         = row["role"]
-    session["display_name"] = row["display_name"]
-    session["country"]      = row["country"]
-    session["language"]     = row["language"]
-    session["parent_id"]    = str(row["parent_id"]) if row.get("parent_id") else None
+    session.permanent        = True
+    session["user_id"]       = str(row["id"])
+    session["username"]      = username
+    session["role"]          = row["role"]
+    session["display_name"]  = row["display_name"]
+    session["country"]       = row["country"] or ""
+    session["language"]      = row["language"] or ""
+    session["parent_id"]     = str(row["parent_id"]) if row.get("parent_id") else None
 
-    if row["role"] == "parent":
+    role = row["role"]
+    if role == "parent":
         return redirect(url_for("parent.dashboard"))
+    if role == "admin":
+        return redirect(url_for("admin.dashboard"))
     return redirect(url_for("child.dashboard"))
 
 

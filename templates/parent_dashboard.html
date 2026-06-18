@@ -1,28 +1,66 @@
 {% extends "base.html" %}
-{% block title %}Parent dashboard — My Mom's Stories{% endblock %}
+{% block title %}Your dashboard — My Mom's Stories{% endblock %}
 {% block extra_styles %}
 .child-card{padding:20px;margin-bottom:14px}
 .usage-bar{height:8px;background:var(--rule);border-radius:4px;overflow:hidden;margin:10px 0}
 .usage-fill{height:100%;background:var(--green);border-radius:4px}
 .usage-fill.over{background:var(--red)}
 .score-pill{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.78rem;font-weight:600}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal{background:var(--paper-card);border-radius:16px;padding:26px;width:100%;max-width:420px;box-shadow:0 8px 40px rgba(0,0,0,.2)}
+input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);border-radius:8px;
+            background:var(--paper);font-family:inherit;font-size:0.95rem;margin-top:5px;box-sizing:border-box}
 {% endblock %}
 {% block content %}
 <div class="page">
   <h1 style="font-size:1.5rem;margin-bottom:4px">Your family</h1>
-  <p style="color:var(--ink-soft);font-size:0.9rem;margin-bottom:20px">Every record, always yours — and a clear-data button if you ever want a clean slate.</p>
+  <p style="color:var(--ink-soft);font-size:0.9rem;margin-bottom:20px">Manage your children's accounts and see every practice session.</p>
+
+  {# ── payment banners ── #}
+  {% if request.args.get('payment') == 'success' %}
+  <div class="card" style="padding:14px 18px;margin-bottom:18px;border-color:var(--green);color:var(--green)">✓ Subscription active — thanks!</div>
+  {% elif request.args.get('payment') == 'failed' %}
+  <div class="card" style="padding:14px 18px;margin-bottom:18px;border-color:var(--red)">Something went wrong activating the subscription. Please try again.</div>
+  {% elif request.args.get('payment') == 'cancelled' %}
+  <div class="card" style="padding:14px 18px;margin-bottom:18px">Checkout cancelled — no charge made.</div>
+  {% endif %}
+
+  {# ── billing card ── #}
+  <div class="card" style="padding:18px 20px;margin-bottom:20px">
+    {% if subscription.plan == 'trial' and not subscription.trial_exhausted %}
+      <p style="font-weight:600">Free trial — {{ subscription.trial_days_left }} day{% if subscription.trial_days_left != 1 %}s{% endif %} left</p>
+      <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:4px">After the trial, £{{ subscription.monthly_price }}/month keeps everything going. Subscribe any time.</p>
+      <button class="btn btn-outline" style="margin-top:12px" id="subscribeBtn" onclick="subscribe(this)">Subscribe with PayPal →</button>
+    {% elif subscription.is_active %}
+      <p style="font-weight:600">£{{ subscription.monthly_price }}/month — active ✓</p>
+      <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:4px">
+        {% if subscription.current_period_end %}Renews {{ subscription.current_period_end.strftime('%d %b %Y') }}.{% endif %}
+        15 hours included per child; £1.50/hr past that (shown below, not auto-charged yet).
+      </p>
+    {% else %}
+      <p style="font-weight:600;color:var(--red)">Trial ended — subscribe to keep going</p>
+      <p style="font-size:0.85rem;color:var(--ink-soft);margin:4px 0 12px">£{{ subscription.monthly_price }}/month, 15 hours per child included.</p>
+      <button class="btn btn-primary" id="subscribeBtn" onclick="subscribe(this)">Subscribe with PayPal →</button>
+    {% endif %}
+  </div>
+
+  {# ── children ── #}
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="sec" style="margin:0">Your children</div>
+    <button class="btn btn-primary" style="padding:8px 14px;font-size:0.85rem" onclick="openAddChild()">+ Add child</button>
+  </div>
 
   {% if not children %}
-  <div class="card" style="padding:20px;color:var(--ink-soft)">No child account yet.</div>
+  <div class="card" style="padding:20px;color:var(--ink-soft)">No child accounts yet — add one above.</div>
   {% endif %}
 
   {% for c in children %}
   <div class="card child-card">
     <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
       <h3 style="font-size:1.15rem">{{ c.display_name }} — {{ c.language_name }}</h3>
-      <span style="font-size:0.8rem;color:var(--ink-soft)">{{ c.country }}</span>
+      <span style="font-size:0.8rem;color:var(--ink-soft);font-family:var(--font-display)">{{ c.username }}</span>
     </div>
-
     <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:8px">
       {{ (c.minutes_used / 60)|round(1) }} of {{ (c.included_minutes / 60)|round(0)|int }} hours used this month
       {% if c.overage_minutes > 0 %}— plus {{ (c.overage_minutes/60)|round(1) }}h extra (≈£{{ c.overage_cost_gbp }}){% endif %}
@@ -31,12 +69,12 @@
       <div class="usage-fill {% if c.overage_minutes > 0 %}over{% endif %}"
            style="width:{{ [100, (c.minutes_used / c.included_minutes * 100)]|min }}%"></div>
     </div>
-
-    <button class="btn btn-danger" style="margin-top:10px" onclick="clearData('{{ c.id }}', this)">Clear it, any time 🗑️</button>
+    <button class="btn btn-danger" style="margin-top:10px" onclick="clearData('{{ c.id }}', this)">Clear data 🗑️</button>
   </div>
   {% endfor %}
 
-  <div class="sec">Full record</div>
+  {# ── activity log ── #}
+  <div class="sec">Full activity log</div>
   <div class="card tbl-wrap">
     <table>
       <tr><th>When</th><th>Language</th><th>Stop</th><th>Shown</th><th>Heard</th><th>Score</th><th>Note</th></tr>
@@ -55,24 +93,138 @@
         <td style="color:var(--ink-soft)">{{ r.feedback or '' }}</td>
       </tr>
       {% else %}
-      <tr><td colspan="7" style="color:var(--ink-soft)">Nothing logged yet — once your child starts a stop, it shows up here.</td></tr>
+      <tr><td colspan="7" style="color:var(--ink-soft)">Nothing logged yet.</td></tr>
       {% endfor %}
     </table>
   </div>
 </div>
 
+{# ── Add-child modal ── #}
+<div class="modal-bg" id="addChildModal">
+  <div class="modal">
+    <h2 style="font-size:1.2rem;margin-bottom:4px">Add a child</h2>
+    <p style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:18px">Choose their username and password — write these down, they'll need them to log in.</p>
+
+    <label style="font-size:0.84rem;font-weight:600">Nickname (not their real name)
+      <input class="field" id="ac_nick" type="text" placeholder="e.g. Sunny" maxlength="30">
+    </label>
+
+    <label style="font-size:0.84rem;font-weight:600;margin-top:14px;display:block">Username
+      <input class="field" id="ac_user" type="text" placeholder="e.g. sunny42" maxlength="30"
+             style="text-transform:lowercase">
+      <span style="font-size:0.75rem;color:var(--ink-soft)">Letters, numbers, - and _ only. Min 3 chars.</span>
+    </label>
+
+    <label style="font-size:0.84rem;font-weight:600;margin-top:14px;display:block">Password
+      <div style="display:flex;gap:8px;align-items:center;margin-top:5px">
+        <input class="field" id="ac_pw" type="text" value="{{ suggested_password }}" maxlength="30" style="margin-top:0;flex:1">
+        <button type="button" onclick="suggestPw()" style="border:1.5px solid var(--rule-strong);border-radius:8px;padding:8px 10px;background:var(--paper);cursor:pointer;font-size:0.82rem;white-space:nowrap">New one</button>
+      </div>
+      <span style="font-size:0.75rem;color:var(--ink-soft)">Min 4 chars. Easy-to-type word+number is fine.</span>
+    </label>
+
+    <label style="font-size:0.84rem;font-weight:600;margin-top:14px;display:block">Language
+      <select class="field" id="ac_lang" style="margin-top:5px">
+        {% for lang in languages %}
+        <option value="{{ lang.code }}" {% if lang.code == session.get('language') %}selected{% endif %}>{{ lang.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <div id="ac_err" style="color:var(--red);font-size:0.85rem;margin-top:10px;display:none"></div>
+
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="btn btn-primary" id="ac_submit" onclick="submitAddChild(this)">Add child</button>
+      <button class="btn btn-outline" onclick="closeAddChild()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+{# ── Credentials reveal modal ── #}
+<div class="modal-bg" id="credsModal">
+  <div class="modal" style="text-align:center">
+    <h2 style="font-size:1.2rem;margin-bottom:6px" id="creds_title">Child added!</h2>
+    <p style="font-size:0.85rem;color:var(--red);font-weight:600;margin-bottom:18px">Write these down now — this is the only time the password is shown.</p>
+    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Username</div>
+    <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin:4px 0 14px" id="creds_user"></div>
+    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Password</div>
+    <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin:4px 0 22px" id="creds_pw"></div>
+    <p style="font-size:0.82rem;color:var(--ink-soft);margin-bottom:18px">Log in at <strong>/auth/login</strong> with the username and password above.</p>
+    <button class="btn btn-primary" onclick="closeCreds()">Got it — I've written it down</button>
+  </div>
+</div>
+
 <script>
+const _passwords = {{ suggested_password|tojson }};
+
 async function clearData(childId, btn) {
-  if (!confirm("This permanently deletes every record for this child. Continue?")) return;
-  btn.disabled = true;
-  btn.textContent = "Clearing…";
-  const res = await fetch(`/parent/api/clear-data/${childId}`, {method: 'POST'});
-  if (res.ok) {
-    location.reload();
-  } else {
-    btn.disabled = false;
-    btn.textContent = "Clear it, any time 🗑️";
+  if (!confirm("Delete all activity for this child? This cannot be undone.")) return;
+  btn.disabled = true; btn.textContent = "Clearing…";
+  const r = await fetch(`/parent/api/clear-data/${childId}`, {method:'POST'});
+  if (r.ok) { location.reload(); } else {
+    btn.disabled = false; btn.textContent = "Clear data 🗑️";
     alert("Something went wrong — try again.");
+  }
+}
+
+async function subscribe(btn) {
+  btn.disabled = true; btn.textContent = "Redirecting to PayPal…";
+  try {
+    const r = await fetch('/parent/paypal/subscribe', {method:'POST'});
+    const d = await r.json();
+    if (d.approve_url) { window.location = d.approve_url; }
+    else { throw new Error(d.error || 'PayPal error'); }
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = btn.id === 'subscribeBtn' ? "Subscribe with PayPal →" : "Subscribe with PayPal →";
+    alert("Couldn't start checkout: " + e.message);
+  }
+}
+
+function openAddChild() { document.getElementById('addChildModal').classList.add('open'); }
+function closeAddChild() { document.getElementById('addChildModal').classList.remove('open'); }
+function closeCreds() { document.getElementById('credsModal').classList.remove('open'); location.reload(); }
+
+const _words = ["Mango","Tiger","Comet","Rocket","Panda","Falcon","Maple","Sunny","River","Echo","Cobra","Nimbus","Pixel","Robin","Atlas","Cloud"];
+function suggestPw() {
+  const w = _words[Math.floor(Math.random() * _words.length)];
+  const n = Math.floor(Math.random() * 90) + 10;
+  document.getElementById('ac_pw').value = w + n;
+}
+
+async function submitAddChild(btn) {
+  const nick = document.getElementById('ac_nick').value.trim();
+  const user = document.getElementById('ac_user').value.trim().toLowerCase();
+  const pw   = document.getElementById('ac_pw').value.trim();
+  const lang = document.getElementById('ac_lang').value;
+  const errEl = document.getElementById('ac_err');
+  errEl.style.display = 'none';
+
+  if (!nick || !user || !pw) { errEl.textContent = 'Fill in all fields.'; errEl.style.display='block'; return; }
+
+  btn.disabled = true; btn.textContent = 'Adding…';
+  const fd = new FormData();
+  fd.append('nickname', nick); fd.append('child_username', user);
+  fd.append('password', pw);  fd.append('language', lang);
+
+  try {
+    const r  = await fetch('/parent/add-child', {method:'POST', body:fd});
+    const d  = await r.json();
+    if (d.ok) {
+      closeAddChild();
+      document.getElementById('creds_title').textContent = d.nickname + " added!";
+      document.getElementById('creds_user').textContent  = d.child_username;
+      document.getElementById('creds_pw').textContent    = d.child_password;
+      document.getElementById('credsModal').classList.add('open');
+    } else {
+      errEl.textContent = d.error || 'Something went wrong.';
+      errEl.style.display = 'block';
+      btn.disabled = false; btn.textContent = 'Add child';
+    }
+  } catch(e) {
+    errEl.textContent = 'Network error — try again.';
+    errEl.style.display = 'block';
+    btn.disabled = false; btn.textContent = 'Add child';
   }
 }
 </script>

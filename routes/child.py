@@ -9,11 +9,9 @@ from models.db import get_cur
 from routes.auth import login_required
 from services.content import get_language, pick_item, STOPS
 from services.scoring import score_attempt
+from services.payments import INCLUDED_MINUTES_PER_MONTH, OVERAGE_RATE_PER_HOUR_GBP
 
 child_bp = Blueprint("child", __name__)
-
-INCLUDED_MINUTES_PER_MONTH = 15 * 60   # 15 hours
-OVERAGE_RATE_PER_HOUR_GBP  = 1.50
 
 STOP_LABELS = {
     "alphabet": "Alphabet & sounds",

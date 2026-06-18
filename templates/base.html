@@ -29,9 +29,9 @@ nav{height:var(--nav-h);background:var(--paper-card);border-bottom:1px solid var
 .nav-logo::before{content:"✓ ";color:var(--red)}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:10px}
 .nav-name{font-size:0.82rem;color:var(--ink-soft)}
-.nav-logout{font-size:0.8rem;background:transparent;border:1px solid var(--rule-strong);
-            border-radius:8px;padding:5px 10px;color:var(--ink-soft)}
-.nav-logout:hover{background:var(--paper)}
+.nav-btn{font-size:0.8rem;background:transparent;border:1px solid var(--rule-strong);
+         border-radius:8px;padding:5px 10px;color:var(--ink-soft)}
+.nav-btn:hover{background:var(--paper)}
 
 .card{background:var(--paper-card);border:1px solid var(--rule-strong);border-radius:var(--card-r);box-shadow:var(--shadow)}
 .badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-size:0.75rem;font-weight:600}
@@ -60,33 +60,41 @@ th{text-align:left;padding:10px 12px;color:var(--ink-soft);font-weight:600;borde
 td{padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
 tr:last-child td{border-bottom:none}
 
-.usage-banner{background:var(--amber-light);border:1px solid var(--gold);border-radius:10px;
-  padding:10px 14px;font-size:0.85rem;color:var(--ink);margin-bottom:16px}
-
 {% block extra_styles %}{% endblock %}
 </style>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "x93ji53zkj");
+</script>
 </head>
 <body>
 <nav>
-  <span class="nav-logo">My Mom's Stories</span>
-  {% if session.get('user_id') %}
+  <a href="/" class="nav-logo">My Mom's Stories</a>
   <div class="nav-right">
-    <span class="nav-name">{{ session.display_name }}</span>
-    <a href="/auth/logout"><button class="nav-logout">Logout</button></a>
+    {% if session.get('user_id') %}
+      <span class="nav-name">{{ session.display_name }}</span>
+      {% if session.get('role') == 'admin' %}
+        <a href="/admin"><button class="nav-btn">Admin</button></a>
+      {% endif %}
+      <a href="/auth/logout"><button class="nav-btn">Logout</button></a>
+    {% else %}
+      <a href="/auth/login"><button class="nav-btn">Log in</button></a>
+      <a href="/register"><button class="nav-btn" style="background:var(--ink);color:var(--paper-card);border-color:var(--ink)">Start free</button></a>
+    {% endif %}
   </div>
-  {% endif %}
 </nav>
 {% block content %}{% endblock %}
 {% if session.get('role') == 'child' %}
 <script>
-  // 15-hour/month included usage, tracked via a once-a-minute heartbeat
-  // while this tab is open and visible. £1.50/hr applies automatically
-  // past that — this just tracks the number, see routes/child.py.
   setInterval(() => {
     if (document.visibilityState !== 'visible') return;
-    fetch('/child/api/heartbeat', {method: 'POST'})
+    fetch('/child/api/heartbeat', {method:'POST'})
       .then(r => r.json())
-      .then(d => document.dispatchEvent(new CustomEvent('mms-usage-update', {detail: d})))
+      .then(d => document.dispatchEvent(new CustomEvent('mms-usage-update', {detail:d})))
       .catch(() => {});
   }, 60000);
 </script>
