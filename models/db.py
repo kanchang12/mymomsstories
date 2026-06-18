@@ -1,9 +1,8 @@
 """
-models/db.py — Per-request PostgreSQL connections (no pool)
-Same pattern as aitutor/models/db.py — avoids SSL stale-connection errors
-on Neon/Supabase with idle timeouts.
+models/db.py — Per-request PostgreSQL connections + migrations + admin auto-seed.
 """
 import os
+import bcrypt
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from contextlib import contextmanager
@@ -18,6 +17,7 @@ def init_db():
         print("[DB] WARNING: DATABASE_URL not set.")
         return
     _run_migrations()
+    _seed_admin()
     print("[DB] Ready.")
 
 
@@ -83,10 +83,33 @@ def _run_migrations():
             print(f"[DB] Applied: {fname}")
 
 
+def _seed_admin():
+    """Auto-create admin account from ADMIN_EMAIL + ADMIN_PASSWORD env vars.
+    Runs on every boot but only inserts if that email doesn't exist yet —
+    safe to leave permanently in place."""
+    email    = os.environ.get("ADMIN_EMAIL", "").strip().lower()
+    password = os.environ.get("ADMIN_PASSWORD", "").strip()
+    if not email or not password:
+        return
+    try:
+        with get_cur() as cur:
+            cur.execute("SELECT 1 FROM users WHERE username=%s", (email,))
+            if cur.fetchone():
+                return   # already exists — don't overwrite
+            pw_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt(12)).decode()
+            cur.execute("""
+                INSERT INTO users (username, password_hash, role, display_name)
+                VALUES (%s, %s, 'admin', %s)
+            """, (email, pw_hash, email.split("@")[0]))
+            print(f"[DB] Admin account created: {email}")
+    except Exception as e:
+        print(f"[DB] Admin seed skipped: {e}")
+
+
 def _ensure_migrations_table(cur):
     cur.execute("""
         CREATE TABLE IF NOT EXISTS _migrations (
-            filename TEXT PRIMARY KEY,
+            filename   TEXT PRIMARY KEY,
             applied_at TIMESTAMPTZ DEFAULT NOW()
         )
     """)
