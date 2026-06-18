@@ -1,0 +1,389 @@
+{
+  "name": "Marathi",
+  "alphabet": [
+    {
+      "char": "अ",
+      "translit": "a",
+      "hint": "as in 'about'"
+    },
+    {
+      "char": "आ",
+      "translit": "aa",
+      "hint": "as in 'father'"
+    },
+    {
+      "char": "इ",
+      "translit": "i",
+      "hint": "as in 'sit'"
+    },
+    {
+      "char": "क",
+      "translit": "ka",
+      "hint": ""
+    },
+    {
+      "char": "ख",
+      "translit": "kha",
+      "hint": ""
+    },
+    {
+      "char": "ग",
+      "translit": "ga",
+      "hint": ""
+    },
+    {
+      "char": "च",
+      "translit": "cha",
+      "hint": ""
+    },
+    {
+      "char": "त",
+      "translit": "ta",
+      "hint": ""
+    },
+    {
+      "char": "न",
+      "translit": "na",
+      "hint": ""
+    },
+    {
+      "char": "म",
+      "translit": "ma",
+      "hint": ""
+    }
+  ],
+  "words": [
+    {
+      "text": "आई",
+      "translit": "aai",
+      "gloss": "mother"
+    },
+    {
+      "text": "बाबा",
+      "translit": "baba",
+      "gloss": "father"
+    },
+    {
+      "text": "पाणी",
+      "translit": "paani",
+      "gloss": "water"
+    },
+    {
+      "text": "घर",
+      "translit": "ghar",
+      "gloss": "house"
+    },
+    {
+      "text": "सूर्य",
+      "translit": "surya",
+      "gloss": "sun"
+    },
+    {
+      "text": "पुस्तक",
+      "translit": "pustak",
+      "gloss": "book"
+    },
+    {
+      "text": "फूल",
+      "translit": "phool",
+      "gloss": "flower"
+    },
+    {
+      "text": "झाड",
+      "translit": "jhaad",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "माझे नाव साई आहे।",
+      "translit": "Maze naav Sai aahe.",
+      "gloss": "My name is Sai."
+    },
+    {
+      "text": "आई मला गोष्ट सांगते।",
+      "translit": "Aai mala gosht saangte.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "सूर्य पूर्वेला उगवतो।",
+      "translit": "Surya poorvela ugavto.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "मी मराठी शिकतो।",
+      "translit": "Mi Marathi shikto.",
+      "gloss": "I am learning Marathi."
+    },
+    {
+      "text": "पाणी जीवन आहे।",
+      "translit": "Paani jeevan aahe.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "gudi_padwa",
+      "title": "Gudi Padwa — Marathi New Year",
+      "text": "Gudi Padwa is the Marathi and Konkani new year, celebrated on the first day of the month of Chaitra, usually in March or April. The festival is named after the gudi — a decorated bamboo pole topped with a brass pot, neem leaves, mango leaves, marigold flowers, and a bright silk cloth. The gudi is raised outside the home at dawn as a symbol of victory, prosperity, and the removal of bad luck. According to tradition, Lord Brahma created the universe on this day, making it the very first day in the Hindu calendar. According to another legend, Chhatrapati Shivaji Maharaj used to raise victory flags called gudis after every battle he won, and people began raising gudis on New Year's Day to remember his courage and victories. Homes are decorated with fresh rangoli on the doorstep made from coloured powders or flowers. Special dishes are prepared — the most traditional is shrikhand with puri, a sweet saffron-flavoured yogurt dish eaten with fried bread. Families also eat bitter neem leaves mixed with jaggery, which symbolises that life has both bitter and sweet moments and we must accept both with courage. New clothes are worn and elders are visited and touched at the feet for blessings. Markets are full of people buying new household items, as it is considered auspicious to make purchases on this day. In Maharashtra's cities, large Gudi Padwa processions with horse riders, musicians, and decorated floats pass through the streets. The gudi remains raised outside the home for the whole day, catching the morning sunlight and representing the hope and energy of a fresh new year."
+    },
+    {
+      "key": "ganesh_chaturthi_maharashtra",
+      "title": "Ganesh Chaturthi in Maharashtra",
+      "text": "While Ganesh Chaturthi is celebrated across India, it has its grandest and most spectacular form in Maharashtra, where it lasts for ten full days and involves every neighbourhood, school, and family in a great community celebration. Lord Ganesha — the elephant-headed god, son of Shiva and Parvati — is the most beloved deity in Maharashtra, and his arrival at Chaturthi is treated like welcoming a beloved family member home. Weeks before the festival, artists create Ganesha statues in all sizes — from tiny ones for home shrines to enormous ones that tower over buildings for public pandals. The statues are beautifully painted in bright colours. On Chaturthi day, families bring their Ganesha statue home with great joy and ceremony, welcoming him with prayers, flowers, incense, and the sound of drum beats. For the next one and a half, three, five, seven, or ten days — depending on the family's tradition — daily prayers called aarti are performed morning and evening, with singing and sweets. Modak, a sweet rice dumpling filled with coconut and jaggery, is Ganesha's favourite food and is made in large quantities. On the last day, the whole neighbourhood walks together in a procession to the nearest body of water for the visarjan — the immersion of the statue. Everyone says 'Ganpati Bappa Morya, Pudhchya varshi lavkar ya!' — 'Lord Ganesha, come back again next year!' This is an emotional moment but also filled with joy and music."
+    },
+    {
+      "key": "diwali_faral",
+      "title": "Diwali Faral — Maharashtra's Diwali Feast",
+      "text": "Diwali in Maharashtra has a unique and delicious tradition called faral — a collection of special savoury and sweet snacks made at home in the weeks before Diwali and exchanged with neighbours, friends, and relatives. The word faral simply means snacks, but the practice of making and exchanging homemade Diwali faral is a deeply cherished tradition that brings families together in the kitchen for days of cooking, tasting, and wrapping. Traditional Diwali faral includes chakli — crispy spirals made from rice flour; chivda — spiced flattened rice mix; shankarpali — diamond-shaped sweet or savoury fried dough; karanji — deep-fried pastry filled with coconut and sugar; besan ladoo — gram flour sweets with cardamom; and chirote — thin layered fried sweets dusted with powdered sugar. Every family has its own secret recipe for at least one of these. In the weeks before Diwali, everyone's kitchen smells of hot oil, cardamom, and coconut. Children are put to work rolling, cutting, and filling the dough. Grandmothers teach their special techniques — exactly how thin to roll the chakli dough, exactly how much jaggery to add to the karanji filling. After making large batches, the faral is packed into boxes or tins and taken to neighbours, friends, office colleagues, and relatives. Receiving a box of homemade faral is one of the most touching gifts during Diwali — it means someone took time and care to make something for you with their own hands. This tradition shows that the best gifts in life are not bought but made with love."
+    },
+    {
+      "key": "haldi_kunku",
+      "title": "Haldi Kunku — Women Celebrating Together",
+      "text": "Haldi Kunku is a beautiful Maharashtrian tradition where married women invite other women to their homes for a gathering of celebration, prayer, and the exchange of gifts. The ceremony is held especially during festivals like Makar Sankranti and Navratri. The name comes from two essential items in every Indian woman's ritual life — haldi means turmeric and kunku means the red vermilion powder that married Hindu women wear on their foreheads. When a woman invites her female friends and relatives to a Haldi Kunku ceremony, she applies a yellow turmeric mark and a red kunku dot on each guest's forehead as a sign of welcome and auspiciousness. The host also gives each guest a small gift called vaan — traditionally this includes bangles, beads, a small household item, sometimes cosmetics, a small amount of jaggery or sesame sweets, and coconut. Women sit together, sing traditional songs called ovi — which are short Marathi folk songs that women have sung for centuries at grinding the grain, at weddings, and at festivals. Snacks and tea are served. The gathering is informal, warm, and full of laughter. Haldi Kunku is not just a religious ceremony — it is a social institution. In villages and cities alike, it gives women an occasion to leave their daily work, put on nice clothes, meet friends and neighbours, and enjoy each other's company. It celebrates the community of women and reminds everyone that friendship, hospitality, and the small traditions passed between women from generation to generation are precious parts of culture."
+    },
+    {
+      "key": "kirtan",
+      "title": "Kirtan — Musical Storytelling of Maharashtra",
+      "text": "Kirtan is a unique form of musical storytelling that has been a part of Maharashtrian spiritual and cultural life for centuries. A kirtankaar — the kirtan performer — stands before an audience and tells stories from Hindu mythology, the lives of saints, or important moral tales through a combination of singing, poetry, explanation, and acting. The word kirtan comes from the Sanskrit for praise or narration. Maharashtrian kirtan has its roots in the Bhakti movement of the thirteenth century, when great saint-poets like Sant Dnyaneshwar, Sant Namdev, Sant Eknath, and Sant Tukaram composed beautiful devotional poems called abhangas and sang them in praise of Lord Vitthal, the god of Pandharpur. The kirtankaar sings these abhangas, explains their meaning in everyday language, acts out the characters, and engages the audience in the story. A traditional kirtan audience sits on the floor, clapping along, responding, and sometimes joining in the singing of refrains. The performance can last for several hours, and a skilled kirtankaar can hold an audience's full attention throughout. Kirtan is still performed in temples, during festivals, and at community events in Maharashtra. The most important pilgrimage in Maharashtra is the Wari to Pandharpur — a walk of hundreds of kilometres by lakhs of devotees called vaarkaaris to the temple of Vitthal. During this walk, vaarkaaris sing abhangas continuously, creating a moving, singing river of devotion across the landscape. Kirtan taught ordinary people the stories of the gods and the wisdom of the saints at a time when books were rare — and it still connects people to their deepest cultural heritage."
+    },
+    {
+      "key": "vata_pournima",
+      "title": "Vat Pournima — Praying Under the Banyan Tree",
+      "text": "Vat Pournima is a festival observed by married women in Maharashtra, Karnataka, and Gujarat on the full moon day of the month of Jyeshtha, usually in June. The word Vat refers to the banyan tree — vat in Marathi and banyan in English — and pournima means full moon. The festival is connected to the ancient story of Savitri and Satyavan from the Mahabharata. Satyavan was destined to die young, but his devoted wife Savitri walked with the god of death Yamraj when he came for her husband, engaged him in deep philosophical discussion, and through her wisdom and devotion, won back her husband's life. Savitri is one of the most celebrated heroines in Indian tradition — her love, courage, and intelligence defeated death itself. On Vat Pournima, married women go to a banyan tree and tie red or yellow threads around its trunk, circling it multiple times while praying for the long life and health of their husbands. The banyan tree is used because it is considered immortal — its aerial roots reach down and create new trunks, allowing one tree to live for thousands of years. Women fast the entire day until they perform the puja. They dress in their finest sarees and jewelry. The ritual is beautiful to see — many women gathered around the enormous spreading banyan, circling it with golden threads, their saris bright against the green of the tree. After the puja, they eat the first food of the day together. Vat Pournima celebrates the values of devotion, courage, and the power of love to overcome even the greatest obstacles."
+    },
+    {
+      "key": "shivjayanti",
+      "title": "Shiv Jayanti — Birthday of Chhatrapati Shivaji Maharaj",
+      "text": "Shiv Jayanti celebrates the birthday of Chhatrapati Shivaji Maharaj, the founder of the Maratha Empire and one of the greatest warrior kings and administrators in Indian history. He was born on February 19th, 1630, at Shivneri Fort in Maharashtra. Shivaji Maharaj is the most revered figure in Maharashtrian culture — he is celebrated not only as a brave military leader but as a just and compassionate king who cared deeply for his people, regardless of their religion or background. He built a powerful navy, which made him one of India's first naval commanders. He fought against the mighty Mughal Empire with far smaller forces using the art of guerrilla warfare — fighting smart rather than fighting big. He built and strengthened dozens of forts across the Western Ghats mountains, many of which still stand today. His spy network, his economic policies, and his respect for all religions were ahead of their time. He promoted the use of Marathi language in administration at a time when Persian was the official language of power. On Shiv Jayanti, Maharashtra celebrates with processions, music, speeches, historical exhibitions, and performances of plays and dances depicting Shivaji's great battles and decisions. Schools hold programmes where children dress as warriors and learn about his life. The slogan 'Jai Bhavani, Jai Shivaji' — Hail the Goddess, Hail Shivaji — is heard everywhere. His life teaches that one person with courage, intelligence, and a strong sense of justice can change history."
+    },
+    {
+      "key": "nag_panchami",
+      "title": "Nag Panchami — Festival of the Snake",
+      "text": "Nag Panchami is a traditional Hindu festival celebrated in honour of snakes, especially the cobra, which holds great significance in Indian mythology and is associated with Lord Shiva, who wears a cobra around his neck. The festival falls on the fifth day of the bright half of the month of Shravan, usually in July or August. In Maharashtra and across India, snakes are respected as powerful symbols of fertility, protection, and the earth's energy. The cobra in particular is associated with transformation and wisdom. On Nag Panchami, snake charmers bring cobras to neighbourhoods where people can see them and make offerings of milk, flowers, and turmeric. Women draw pictures of snakes on the walls of their homes using clay or cow dung. Small stone or clay images of snakes are worshipped. Offerings of milk are placed near snake holes or ant hills, as these are believed to be the homes of snakes. People also visit temples dedicated to snake gods and make offerings. Farmers ask for protection for their crops — snakes eat the rats and pests that damage agricultural fields, so in rural communities, snakes have always been seen as useful and protective creatures. Women pray for the health and protection of their brothers and family members. In some regions, swings are set up and young girls and boys swing together, singing folk songs. The festival is a reminder that in Indian culture, all living things are considered sacred and that the creatures of the forest and field are to be respected rather than destroyed. It shows the ancient and deep relationship between Indian communities and the natural world."
+    },
+    {
+      "key": "gokul_ashtami",
+      "title": "Gokul Ashtami and Dahi Handi in Maharashtra",
+      "text": "Gokul Ashtami is the Maharashtrian name for Janmashtami, the celebration of Lord Krishna's birthday, but in Maharashtra it has a special and uniquely exciting twist — the tradition of Dahi Handi. Krishna as a child was famous for his love of butter and cream — he would sneak into neighbours' homes with his friends and steal the pots of butter and cream they hung from the ceiling. The Dahi Handi tradition re-enacts this playfully and dramatically. A large clay pot called the handi is filled with dahi, butter, milk, and honey and hung high up on a rope stretched across a street or open space, sometimes ten or fifteen meters off the ground. Teams of young men called Govindas form human pyramids — one tier standing on the shoulders of another, three, four, five, six, sometimes even nine layers high — trying to reach the pot and break it open. When they succeed, dahi and butter shower down on everyone below, and the streets erupt with cheering, music, and celebration. Govinda teams travel from handi to handi across the city, competing to see how many pots they can break in one day. The team that breaks the most and the most difficult handiis wins prizes. The crowd watches with growing excitement as the pyramid rises higher and higher, sometimes wobbling and falling before finally reaching the pot. Mothers watch nervously and cheer loudly. The whole neighbourhood comes out to watch and encourage. Dahi Handi captures all the fun, mischief, teamwork, and joy that Lord Krishna represents — the idea that in working together, we can reach things that seem impossibly high."
+    },
+    {
+      "key": "pandharpur_wari",
+      "title": "Pandharpur Wari — The Great Pilgrimage",
+      "text": "The Wari to Pandharpur is one of the most remarkable mass pilgrimages in the world — a deeply moving tradition where hundreds of thousands of devotees called vaarkaaris walk to the temple of Lord Vitthal in Pandharpur, Maharashtra, twice a year. The main Wari happens in June, timed to arrive at Pandharpur on the auspicious day of Ashadhi Ekadashi. Vaarkaaris come from all parts of Maharashtra and beyond — farmers, teachers, shopkeepers, young people, and elderly men and women — all walking together for days or weeks, singing abhangas, the devotional poems of saints like Tukaram and Dnyaneshwar. The processions called Dindis march in orderly rows, with a palanquin carrying the sandals of a saint at the front. The Wari is not an ordinary religious walk — it is a moving community that erases all differences of caste, wealth, and background. Everyone eats and sleeps together, walks together, and sings together. The singing of abhangas is continuous — walking, resting, eating — the music never stops. The most famous abhanga is Vitthal Vitthal, sung with deep feeling. When a vaarkaari finally reaches Pandharpur and stands before the temple of Lord Vitthal — who is shown standing with hands on his hips, waiting for his devotees — the emotion is overwhelming. Many people weep with joy. The town of Pandharpur becomes a sea of humanity during Wari. The tradition has been alive for seven hundred years, surviving famines, floods, wars, and epidemics. It shows the extraordinary spiritual dedication and the love of community that is at the heart of Maharashtrian culture."
+    },
+    {
+      "key": "makar_sankranti_maharashtra",
+      "title": "Makar Sankranti — Tilgul and New Beginnings",
+      "text": "Makar Sankranti in Maharashtra is a festival of warmth, sweetness, and new beginnings, celebrated on January 14th when the sun begins its northward journey and the days start getting longer. The most distinctive Maharashtrian tradition of Sankranti is the exchange of tilgul — small round sweets made from sesame seeds and jaggery, sometimes with groundnuts added. The sesame seeds provide warmth in the cold January air, and jaggery is considered a purifying and strengthening food in Ayurvedic tradition. When you give tilgul to someone on Sankranti, you say tilgul ghya ani god god bola — take tilgul and speak sweetly. This phrase captures the whole spirit of the festival — it is a day to resolve old quarrels, make peace with people you have been avoiding, and start the new month with sweetness in words and in heart. Women wear black clothes on Sankranti — black is associated with strength and warmth, and unlike other festivals, black is considered auspicious on this day. Women also exchange small household gifts like ladles, small containers, and colourful bangles. In the afternoon, kite flying is enjoyed by children and adults across the city. Markets are full of sesame laddoos, groundnut chikki, and til-papdi, all wrapped in colourful papers for gifting. In the village of Saundatti in Karnataka, and in many parts of Maharashtra, cattle are decorated with flowers and garlands and paraded through the village in thanks for their hard work on the farm all year. Sankranti is a celebration of the sun's returning power, the harvest's gifts, and the sweetness of human relationships."
+    },
+    {
+      "key": "lavani",
+      "title": "Lavani — Maharashtra's Dance of Energy",
+      "text": "Lavani is one of Maharashtra's most vibrant, energetic, and beloved folk art forms — a combination of powerful song and expressive dance that has been performed in Maharashtra for centuries. The word lavani comes from the Marathi word laavanya, which means beauty and grace. Lavani is traditionally performed by women dressed in a nine-yard nauvari saree, draped in a distinctive way that allows freedom of movement and gives the costume its characteristic look. The music that accompanies Lavani is driven by the dholki, a two-headed cylindrical drum, and the performance has an irresistible, driving rhythm that makes the audience want to move. Lavani songs traditionally dealt with themes of love, longing, nature, social commentary, and the lives of ordinary women — at a time when women had few public voices, Lavani performers used their art to speak about everyday joys, sorrows, and injustices with great wit and power. During the Maratha Empire period, Lavani was also used as a morale-boosting performance for soldiers. Famous Lavani songs have been absorbed into Marathi films and become popular classics. Today Lavani is performed on grand stages, in festivals, and has also entered the world of Bollywood cinema. Learning Lavani is considered an incredibly difficult skill because the footwork, facial expressions, hand gestures, and body movements all have to work together in perfect coordination. Lavani celebrates the strength, intelligence, and beauty of Maharashtrian women, and watching a skilled Lavani performance is a truly exciting and unforgettable experience."
+    },
+    {
+      "key": "lezim",
+      "title": "Lezim — Maharashtra's Martial Dance",
+      "text": "Lezim is a traditional Maharashtrian folk dance-exercise form that combines martial arts movements with music and group performance. The name comes from the lezim instrument — a small, noisy rattle made from a stick with small metal discs attached, which makes a jingling sound when shaken rhythmically. Lezim performances typically feature large groups of men and women in matching traditional costumes — men in dhutis and turbans, women in nauvari sarees — who move in synchronised formations while shaking their lezim instruments and performing athletic movements including squats, lunges, jumps, and spins. The movements are drawn from traditional physical training methods called Mardani Khel and dand-baithak. Lezim is often performed at the start of important festivals and processions to open the event with energy and enthusiasm. On days like Shiv Jayanti and Gudi Padwa, Lezim troupes march at the front of processions, their coordinated movements and the sound of hundreds of lezim instruments creating an electrifying atmosphere. School children across Maharashtra learn Lezim as part of physical education — it is a way of learning rhythm, coordination, discipline, and teamwork while also staying fit. The costumes are colourful and the performances are visually striking — seeing a large group of Lezim performers moving in perfect unison, the sound of hundreds of rattles blending into one powerful beat, is genuinely impressive and thrilling. Lezim represents the Maharashtrian values of physical strength, community spirit, and cultural pride."
+    },
+    {
+      "key": "paola",
+      "title": "Bail Pola — Festival of the Bullock",
+      "text": "Bail Pola, also called Pola, is a uniquely Maharashtrian festival that honours the bullock — the hardworking animal that has been central to farming in Maharashtra for thousands of years. It falls on the new moon day of the month of Shravan, usually in August. On this day, farmers express their deepest gratitude to their bullocks for the tireless labour they give throughout the year — ploughing fields, carrying heavy loads, and powering oil presses and water wells. On Pola day, the bullocks are given a holiday — they are not made to work at all. Instead, they are given a special bath, their horns are painted bright colours, they are decorated with garlands of flowers and marigolds, their foreheads are marked with kumkum, and they wear colourful coverings called jhool on their backs. Bells are tied around their necks so they make a pleasant jingling sound when they walk. Women prepare special foods and feed the decorated bullocks with their own hands as a mark of love and respect. In villages, the decorated bullocks are paraded through the streets with drums and music, and a competition is held to see which bullock is the most beautifully decorated. In towns and cities, children play with wooden toy bullocks decorated with bright paints and carry them in processions. Pola is a reminder that farming is the foundation of human life, that animals deserve respect and gratitude for their service, and that the relationship between farmers and their animals is one of the oldest and most important partnerships in human history. It shows a beautiful side of Maharashtrian culture — the ability to see the sacred in the everyday and to celebrate those who work the hardest."
+    },
+    {
+      "key": "konkan_fish",
+      "title": "Konkan Food Culture — Coastal Maharashtra",
+      "text": "The Konkan coast — the narrow strip of land between the Western Ghats mountains and the Arabian Sea — has one of the most distinctive and delicious food cultures in India, and for Konkani Maharashtrian families, food is deeply tied to festivals, family, identity, and the rhythms of the sea and the monsoon. Konkan cuisine is defined by fresh coconut, fish, rice, kokum (a sour fruit), and the ocean itself. The most beloved fish of the Konkan coast is the pomfret and the Bombay duck — not a duck at all but a small, delicate fish that is dried in the summer sun and then fried crispy. During Ganesh Chaturthi and other festivals, the Konkan kitchen comes alive with preparations of modak — steamed rice dumplings filled with jaggery and fresh coconut — along with ukdiche modak steamed in rice flour and fried modak with a crispy shell. Solkadi is a refreshing drink made from coconut milk and kokum that cools the body in the hot monsoon months. Fish curry with rice — aamti made with coconut and kokum — is the daily meal, eaten on a banana leaf on festive occasions. The Alphonso mango, which many consider the finest mango in the world, comes from the Ratnagiri and Devgad regions of the Konkan coast. Hapus mango season in April and May is itself a kind of festival in Konkan households. Mango pulp, mango pickles, dried mango powder, and aamras — fresh mango purée eaten with puri bread — are prepared and stored for the year. The Konkan coast is also known for its cashew nut harvest and for traditional clay-pot cooking that gives food a unique earthy flavour. Food in the Konkan is not just nourishment — it is memory, identity, and the taste of home."
+    },
+    {
+      "key": "ambabai",
+      "title": "Kolhapur and the Ambabai Temple",
+      "text": "Kolhapur, a city in southern Maharashtra, is famous across India for its magnificent Mahalakshmi temple, known as the Ambabai temple, which is one of the most important Shakti peethas — sacred sites of the goddess — in all of India. The temple is believed to be over thirteen hundred years old, built in the Hemadpanthi style of architecture with beautiful stone carvings. The goddess Mahalakshmi, also called Ambabai by local people, is the presiding deity of Kolhapur, and she is worshipped with deep devotion by millions of pilgrims who come from across the country. Kolhapur is also famous for its distinctive and bold cuisine — Kolhapuri food is known for being spicy, rich, and deeply flavourful. The most famous dish is misal pav — a spicy curry of sprouted moth beans, topped with farsan crunchy mixture, onion, tomato, and lemon, served with bread rolls. Kolhapuri mutton curry uses a special blend of spices that gives it an unmistakable flavour. Kolhapuri chappals — handmade leather sandals decorated with bright metalwork — are famous across India for their quality and distinctive design. The city also has a proud wrestling tradition — Kolhapuri pehlwans, or wrestlers, are celebrated across Maharashtra for their strength and skill. The famous Rankala Lake is surrounded by gardens and food stalls. Kolhapur's famous jaggery — kolhapuri gul — made from sugarcane is considered one of the finest in India. The city and its temple represent the powerful, vibrant, and independent spirit of southern Maharashtra."
+    },
+    {
+      "key": "shaarad_festival",
+      "title": "Shaarad — Marathi Literature Festival",
+      "text": "The Marathi literary tradition is one of the richest in India, stretching back over eight hundred years to the great saint-poets of the Varkari tradition. Marathi was one of the first regional languages in India to develop a major literary tradition, and today it has a proud and active community of writers, poets, and readers. The Akhil Bharatiya Marathi Sahitya Sammelan — the All India Marathi Literature Conference — is held every year in a different city and brings together thousands of literature lovers, writers, publishers, and students for days of discussions, readings, debates, and the celebration of Marathi writing. This is one of the largest literary gatherings in Asia. Famous Marathi writers include V.S. Khandekar, who won the Jnanpith Award for his novel Yayati; Vishram Bedekar; and the playwright Vijay Tendulkar, whose plays dealt with important social issues. In the modern era, writers like Bhalchandra Nemade and Namdeo Dhasal have brought new voices and perspectives to Marathi literature. For children, Marathi has a wonderful tradition of fairy tales, fables, and poems — many school children grow up reading classic stories of clever foxes, brave heroes, and wise grandmothers from Marathi story collections. The love of language — of Marathi's musical sounds, its rich vocabulary borrowed from Sanskrit, Prakrit, Persian, and Portuguese — is something Marathi families carry with them wherever they go in the world. Celebrating Marathi means celebrating the idea that language is the vessel that carries a people's deepest thoughts, dreams, jokes, prayers, and love across the generations."
+    }
+  ],
+  "stories": [
+    {
+      "key": "sasa_kasav",
+      "title": "ससा आणि कासव",
+      "translit": "Sasa aani Kasav",
+      "gloss": "The Hare and the Tortoise",
+      "lines": [
+        {
+          "text": "एका जंगलात एक ससा आणि एक कासव राहत होते।",
+          "gloss": "In a forest, a hare and a tortoise lived."
+        },
+        {
+          "text": "ससा खूप वेगाने धावत असे।",
+          "gloss": "The hare used to run very fast."
+        },
+        {
+          "text": "तो नेहमी कासवाला चिडवत असे।",
+          "gloss": "He always used to tease the tortoise."
+        },
+        {
+          "text": "'तू किती हळू चालतोस!' ससा म्हणाला।",
+          "gloss": "'How slowly you walk!' said the hare."
+        },
+        {
+          "text": "कासव शांतपणे म्हणाला, 'मला शर्यत कर।'",
+          "gloss": "The tortoise calmly said, 'Race with me.'"
+        },
+        {
+          "text": "ससा हसला पण तयार झाला।",
+          "gloss": "The hare laughed but agreed."
+        },
+        {
+          "text": "सकाळी शर्यत सुरू झाली।",
+          "gloss": "In the morning, the race began."
+        },
+        {
+          "text": "ससा खूप वेगाने पुढे निघाला।",
+          "gloss": "The hare ran far ahead very quickly."
+        },
+        {
+          "text": "त्याने मागे वळून पाहिलं — कासव दिसत नव्हता।",
+          "gloss": "He looked back — the tortoise was not visible."
+        },
+        {
+          "text": "'मला आराम करायला वेळ आहे,' ससा विचार केला।",
+          "gloss": "'I have time to rest,' the hare thought."
+        },
+        {
+          "text": "तो झाडाखाली झोपला।",
+          "gloss": "He lay down under a tree and slept."
+        },
+        {
+          "text": "कासव हळूहळू पण सतत चालत राहिला।",
+          "gloss": "The tortoise walked slowly but continuously."
+        },
+        {
+          "text": "तो सससाला झोपलेला सोडून पुढे गेला।",
+          "gloss": "He passed the sleeping hare and went ahead."
+        },
+        {
+          "text": "कासव शेवटच्या रेषेजवळ पोहोचला।",
+          "gloss": "The tortoise reached near the finish line."
+        },
+        {
+          "text": "ससा जागा झाला आणि वेगाने धावला।",
+          "gloss": "The hare woke up and ran fast."
+        },
+        {
+          "text": "पण खूप उशीर झाला होता।",
+          "gloss": "But it was too late."
+        },
+        {
+          "text": "कासव शर्यत जिंकला!",
+          "gloss": "The tortoise won the race!"
+        },
+        {
+          "text": "सगळ्यांनी कासवाचे कौतुक केले।",
+          "gloss": "Everyone praised the tortoise."
+        },
+        {
+          "text": "ससा खाली मान घालून उभा राहिला।",
+          "gloss": "The hare stood with his head down."
+        },
+        {
+          "text": "संथपणा पण सातत्य नेहमी यशस्वी होतो।",
+          "gloss": "Patience and consistency always succeed."
+        }
+      ]
+    },
+    {
+      "key": "chatrapati_bal",
+      "title": "बाल शिवाजी",
+      "translit": "Baal Shivaji",
+      "gloss": "Young Shivaji",
+      "lines": [
+        {
+          "text": "लहान शिवाजी डोंगरांवर खेळायला जात असे।",
+          "gloss": "Young Shivaji used to play on the hills."
+        },
+        {
+          "text": "त्याला किल्ले बांधायला खूप आवडत असे।",
+          "gloss": "He loved building forts."
+        },
+        {
+          "text": "त्याचे मित्र त्याच्याबरोबर खेळत असत।",
+          "gloss": "His friends used to play with him."
+        },
+        {
+          "text": "आई जिजाबाई त्याला रामायण-महाभारत सांगत असत।",
+          "gloss": "Mother Jijabai used to tell him stories of Ramayana and Mahabharata."
+        },
+        {
+          "text": "शिवाजी वीर योद्ध्यांच्या गोष्टी ऐकायला आवडत असे।",
+          "gloss": "Shivaji loved listening to stories of brave warriors."
+        },
+        {
+          "text": "एकदा त्याने एक मोठा किल्ला ताब्यात घेण्याचा निर्णय केला।",
+          "gloss": "Once he decided to capture a big fort."
+        },
+        {
+          "text": "त्याने आपल्या मित्रांना एकत्र केले।",
+          "gloss": "He gathered his friends together."
+        },
+        {
+          "text": "'आपण हा किल्ला जिंकू,' त्याने सांगितले।",
+          "gloss": "'We will win this fort,' he told them."
+        },
+        {
+          "text": "सगळ्यांनी मिळून योजना आखली।",
+          "gloss": "Everyone planned together."
+        },
+        {
+          "text": "ते रात्री किल्ल्यावर गेले।",
+          "gloss": "They went to the fort at night."
+        },
+        {
+          "text": "शिवाजी सगळ्यात पुढे होते।",
+          "gloss": "Shivaji was at the very front."
+        },
+        {
+          "text": "त्यांनी धाडसाने किल्ला ताब्यात घेतला।",
+          "gloss": "They bravely took control of the fort."
+        },
+        {
+          "text": "जिजाबाईंनी त्यांना जवळ घेतले।",
+          "gloss": "Jijabai embraced them."
+        },
+        {
+          "text": "'माझा शिवाजी खरा वीर आहे!' त्या म्हणाल्या।",
+          "gloss": "'My Shivaji is a true hero!' she said."
+        },
+        {
+          "text": "शिवाजी मोठे झाले आणि मराठा साम्राज्य स्थापन केले।",
+          "gloss": "Shivaji grew up and established the Maratha Empire."
+        },
+        {
+          "text": "त्यांनी गरिबांना न्याय दिला।",
+          "gloss": "He gave justice to the poor."
+        },
+        {
+          "text": "सर्व धर्मांचा आदर केला।",
+          "gloss": "He respected all religions."
+        },
+        {
+          "text": "त्यांच्या नौदलाने समुद्रावर वर्चस्व मिळवले।",
+          "gloss": "His navy dominated the seas."
+        },
+        {
+          "text": "महाराष्ट्राने एक महान राजाला जन्म दिला।",
+          "gloss": "Maharashtra gave birth to a great king."
+        },
+        {
+          "text": "जय भवानी! जय शिवाजी!",
+          "gloss": "Hail Bhavani! Hail Shivaji!"
+        }
+      ]
+    }
+  ]
+}

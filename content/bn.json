@@ -1,0 +1,404 @@
+{
+  "name": "Bengali",
+  "alphabet": [
+    {
+      "char": "অ",
+      "translit": "o",
+      "hint": "as in 'pot'"
+    },
+    {
+      "char": "আ",
+      "translit": "aa",
+      "hint": "as in 'father'"
+    },
+    {
+      "char": "ই",
+      "translit": "i",
+      "hint": "as in 'sit'"
+    },
+    {
+      "char": "ক",
+      "translit": "ka",
+      "hint": ""
+    },
+    {
+      "char": "খ",
+      "translit": "kha",
+      "hint": ""
+    },
+    {
+      "char": "গ",
+      "translit": "ga",
+      "hint": ""
+    },
+    {
+      "char": "ঘ",
+      "translit": "gha",
+      "hint": ""
+    },
+    {
+      "char": "চ",
+      "translit": "cha",
+      "hint": ""
+    },
+    {
+      "char": "ট",
+      "translit": "ta",
+      "hint": ""
+    },
+    {
+      "char": "দ",
+      "translit": "da",
+      "hint": ""
+    }
+  ],
+  "words": [
+    {
+      "text": "মা",
+      "translit": "maa",
+      "gloss": "mother"
+    },
+    {
+      "text": "বাবা",
+      "translit": "baba",
+      "gloss": "father"
+    },
+    {
+      "text": "জল",
+      "translit": "jol",
+      "gloss": "water"
+    },
+    {
+      "text": "ভাত",
+      "translit": "bhat",
+      "gloss": "rice"
+    },
+    {
+      "text": "আকাশ",
+      "translit": "akash",
+      "gloss": "sky"
+    },
+    {
+      "text": "বই",
+      "translit": "boi",
+      "gloss": "book"
+    },
+    {
+      "text": "ঘর",
+      "translit": "ghor",
+      "gloss": "house"
+    },
+    {
+      "text": "ফুল",
+      "translit": "phool",
+      "gloss": "flower"
+    }
+  ],
+  "lines": [
+    {
+      "text": "আমার নাম রিয়া।",
+      "translit": "Amar naam Riya.",
+      "gloss": "My name is Riya."
+    },
+    {
+      "text": "মা ভালোবাসেন।",
+      "translit": "Maa bhalobashen.",
+      "gloss": "Mother loves us."
+    },
+    {
+      "text": "আকাশ নীল।",
+      "translit": "Akash neel.",
+      "gloss": "The sky is blue."
+    },
+    {
+      "text": "আমি বাংলা শিখছি।",
+      "translit": "Ami Bangla shikhchi.",
+      "gloss": "I am learning Bengali."
+    },
+    {
+      "text": "বাবা গল্প বলেন।",
+      "translit": "Baba golpo bolen.",
+      "gloss": "Father tells stories."
+    }
+  ],
+  "customs": [
+    {
+      "key": "poila_boishakh",
+      "title": "Poila Boishakh — Bengali New Year",
+      "text": "Poila Boishakh is the first day of the Bengali calendar year, and it is one of the most joyful celebrations for Bengali people all over the world. It falls on April 14th or 15th every year. The word 'Poila' means 'first' and 'Boishakh' is the name of the first month in the Bengali year. On this day, everyone wakes up early, has a bath, and puts on brand new clothes. Children usually wear white clothes with red borders, and girls wear beautiful red and white saris or dresses. Boys wear white pyjamas called dhuti-panjabi. The streets fill with people singing and dancing to the sounds of traditional Bengali music called Baul. Artists draw huge and colourful pictures called alpona on the ground using rice paste. People visit temples and pray for a happy and peaceful new year. Shops and businesses open brand new account books, called halkhata, on this day — it is considered very lucky to start fresh financial records on Poila Boishakh. Families gather together and eat special foods like panta ilish — that is rice soaked in water overnight, eaten with fried hilsa fish, a very famous Bengali fish. Sweet shops make special sandesh, mishti doi, and rasgolla in extra quantities because everyone buys sweets on this day. Children get gifts of money from their elders. Grandparents tell stories about how they celebrated this festival when they were young. In Bangladesh, there is a huge procession called Mangal Shobhajatra where people carry colourful floats and masks shaped like animals to bring good luck. In Kolkata, the streets come alive with fairs, music concerts, and art exhibitions. Even Bengali families living far away in other countries celebrate this day by cooking special food, wearing traditional clothes, and meeting with other Bengali friends. The spirit of Poila Boishakh is about new beginnings, being grateful for the past year, and looking forward to good things ahead. When you say 'Shubho Noboborsho' to someone, you are wishing them a happy new year in Bengali."
+    },
+    {
+      "key": "durga_puja",
+      "title": "Durga Puja — The Biggest Bengali Festival",
+      "text": "Durga Puja is the most important and grandest festival for Bengali Hindus, and it fills the whole community with excitement for weeks before it begins. It celebrates the goddess Durga, who is believed to have defeated a terrible demon called Mahishasura after a great battle. The festival lasts for five days — Shashthi, Saptami, Ashtami, Navami, and Dashami. Giant and beautifully decorated temporary temples called pandals are built in every neighbourhood. Artists spend months creating enormous statues of the goddess Durga, shown with ten arms, riding a lion, surrounded by her four children — Lakshmi, Saraswati, Kartik, and Ganesh. The pandals are decorated with lights, flowers, cloth, and sometimes incredible artistic themes. People walk from pandal to pandal at night to see the different decorations — this is called pandal hopping. On Ashtami, the most sacred day, families dress in their finest new clothes and go to the pandal for special prayers called pushpanjali, where they offer flowers to the goddess. The air smells of dhuno, a special incense, and sandalwood. The sound of the dhak drum fills the streets — professional drummers called dhakis travel from village to village to play their large drums at every pandal. Young people perform traditional dances, and cultural programmes with drama, singing, and poetry happen every evening. Food stalls appear everywhere selling jhal muri, egg rolls, phuchka, and hot pakoras. On the last day called Dashami or Bijoya Dashami, the statues are taken in a grand procession to the nearest river or lake and immersed in the water, which means the goddess is returning to her home in the mountains. Women apply sindoor to the statue of Durga and also to each other's faces as a sign of blessings. Everyone hugs, exchanges sweets, and says 'Shubho Bijoya' — wishing each other a happy Dashami. Even after the goddess is immersed, the spirit of togetherness and love stays in the community for a long time."
+    },
+    {
+      "key": "kali_puja",
+      "title": "Kali Puja — Festival of the Dark Goddess",
+      "text": "Kali Puja is a very important festival celebrated by Bengalis on the night of the new moon in October or November, the same night as Diwali in other parts of India. Goddess Kali is the fierce and powerful form of the goddess Durga. She is usually shown with dark blue or black skin, four arms, wearing a garland of flowers, and standing powerfully — she is the destroyer of evil. Although she looks scary at first, Bengalis love Kali deeply and see her as a protective mother who keeps away all bad things. On Kali Puja night, families clean their homes and light oil lamps and candles everywhere. Firecrackers light up the sky after dark, and the whole neighbourhood becomes bright and loud. Many households keep a Kali statue at home and do special prayers called puja, offering flowers, sweets, and fruits. Priests chant ancient prayers called mantras through the night. Families stay up late together, eating special food and watching fireworks from rooftops. Children love this night because it feels magical and a little mysterious. In many neighbourhoods, large community Kali Puja celebrations are held in decorated pandals, similar to Durga Puja but smaller. The goddess is believed to be especially powerful on this night, and people ask for her protection and blessings. By morning, sweets are distributed to neighbours, and families visit each other to share the joy. Kali Puja reminds Bengalis that even scary things can be forms of love and protection — just like a mother who is stern but always watching over you."
+    },
+    {
+      "key": "saraswati_puja",
+      "title": "Saraswati Puja — Festival of Learning",
+      "text": "Saraswati Puja is one of the most beloved festivals for Bengali students because it is dedicated to Saraswati, the goddess of knowledge, learning, music, and arts. She is shown as a beautiful lady dressed in white, playing a musical instrument called the veena, and sitting on a white lotus flower or a white swan. The festival falls in late January or February, on the day called Basant Panchami. On this day, students do not study — instead, they place their books, pens, musical instruments, and even school bags in front of the goddess as an offering. The idea is that all their learning belongs to Saraswati, and they are offering it back to her with gratitude. Girls traditionally wear yellow clothes on this day because yellow is the colour of spring and mustard flowers. Boys also often wear yellow or light colours. Schools and colleges set up beautiful statues of Saraswati decorated with white and yellow flowers. Students offer anjali — this means they cup their hands together and drop flower petals three times while a priest chants prayers. After puja, everyone eats sweet khichuri — a dish made of rice and lentils — along with fried vegetables and special desserts like payesh. Children are not allowed to touch books or write anything on this day, which makes it a very exciting holiday. The next day, Seetala Shashthi, families eat only cold food left over from the day before. In many schools, students write their name on a banana leaf or slate for the first time — this ceremony is called 'hate khari' and is a child's first step into learning. Saraswati Puja teaches children to respect knowledge and to be grateful for the ability to learn."
+    },
+    {
+      "key": "nabanna",
+      "title": "Nabanna — The Harvest Festival",
+      "text": "Nabanna is one of the oldest Bengali traditions, celebrated when the new rice crop is harvested from the fields in late autumn, usually in November. The word 'Nabanna' literally means 'new food' or 'new rice'. For centuries, Bengal was one of the richest rice-growing regions in the world, and the new harvest was a reason for the whole community to celebrate together. Farmers who have worked hard all year finally see the fruits of their labour coming home. The first batch of freshly harvested rice is cooked with great care and offered to the gods and ancestors before anyone eats it. Families make special sweet dishes called nolen gur payesh — this is a warm, creamy rice pudding sweetened with date palm jaggery, which has a unique and delicious caramel-like flavour that is only available in winter. Other traditional foods include pitha — rice cakes stuffed with coconut and jaggery — and moa, which are balls of puffed rice mixed with jaggery. In villages, children run through the fields during harvest time and watch the farmers cut the golden rice stalks with sickles. The smell of fresh rice drying in the sun fills the air. Women decorate the floors of their homes with patterns made of rice paste. Community gatherings, folk songs, and local fairs are organised. The Nabanna Utsav is also celebrated in Kolkata as a cultural event, reminding city people of their village roots. Even Bengali families living abroad try to make payesh and pitha at this time of year to feel connected to home. Nabanna is a reminder that food is precious, farming is hard work, and sharing a meal together is one of the most beautiful things in life."
+    },
+    {
+      "key": "pohela_falgun",
+      "title": "Pohela Falgun — Welcome to Spring",
+      "text": "Pohela Falgun, which means 'the first day of Falgun', marks the arrival of spring in Bengal. It falls on the 13th or 14th of February each year, which also happens to be around Valentine's Day — so Bengalis celebrate both love and spring at the same time. The arrival of Falgun means that winter is over, the mustard flowers are blooming bright yellow in the fields, the palash trees are bursting with flame-orange flowers, and the koyal bird begins to sing its sweet song. On this day, women dress in yellow and orange clothes to match the colours of spring, and they put fresh flowers in their hair. Streets and parks fill with people singing Rabindranath Tagore's spring songs, which are called Basanta Geeti. Young people go out in groups to celebrate, wearing flower garlands and colourful bangles. Cultural programmes of dance, music, and poetry are held in parks and open spaces. Families visit gardens to see the spring flowers. In Bangladesh, Pohela Falgun is celebrated with great enthusiasm at Dhaka University, where thousands of people gather in traditional dress to sing and dance. Children learn spring poems by Tagore and recite them in school programmes. The festival is a reminder that nature has its own calendar, and every year, no matter what happens, spring always comes again. Just as the flowers bloom after winter, people are reminded to have hope and to find beauty in the world around them. Celebrating spring is one of the most poetic things Bengalis do — and it shows how deeply they love nature and music."
+    },
+    {
+      "key": "ratha_yatra",
+      "title": "Rath Yatra — The Chariot Festival",
+      "text": "Rath Yatra, or the Chariot Festival, is one of the most spectacular religious festivals in Bengal, celebrated in June or July. It is dedicated to Lord Jagannath, who is a form of the god Vishnu, and is celebrated most famously in Puri in the state of Odisha, but Bengalis all over the world celebrate it too. The most famous Rath Yatra in Bengal takes place in Mahesh, a town in West Bengal, which has been celebrating it for over six hundred years — making it one of the oldest in the world. On this day, enormous wooden chariots called raths are built — they look like giant decorated temples on wheels, sometimes four or five storeys high. Huge statues of Lord Jagannath, his brother Balabhadra, and his sister Subhadra are placed on the chariot. Thousands of devotees pull the chariot through the streets using thick ropes, singing religious songs and chanting. Even kings and queens used to pull the chariot as a sign of humility — showing that before God, everyone is equal. The streets are lined with people who come to watch, and the sound of drums, bells, and conch shells fills the air. Coconuts, flowers, and sweets are offered to the deity. In some places, small toy chariots are given to children, and they have their own mini processions. After nine days, the chariot returns to the temple, and this is called Ulto Rath or the return journey. Legend says that anyone who sees Lord Jagannath on his chariot will be blessed. The festival teaches values of equality, devotion, and community — because when thousands of people pull the rope together, it shows that united effort can move even the heaviest things."
+    },
+    {
+      "key": "bhai_phota",
+      "title": "Bhai Phota — Brothers and Sisters",
+      "text": "Bhai Phota is a very special Bengali festival that celebrates the beautiful bond between brothers and sisters. It takes place two days after Kali Puja, in October or November. The word 'Phota' means a dot or mark, and the ritual involves sisters putting a sandalwood paste dot on their brothers' foreheads as a symbol of love and protection. On this day, brothers fast until their sisters perform the ritual — they are not allowed to eat anything until their sister has given them the phota. The sister also draws a fish shape on the ground with rice paste, places her brother on a low wooden seat, and circles him with a lamp while singing a special blessing song. She prays that her brother will live long, be healthy, be brave like a lion, and be as wise as a sage. Then the sister gives her brother sweets, fruits, and gifts. In return, the brother promises to always protect and care for his sister, and he gives her gifts too. Traditional sweets made especially for this day include narkel sandesh — coconut sweets — and various chhena-based mithai. Even brothers and sisters who live in different cities or countries try to come home for Bhai Phota. If a brother cannot be there in person, some sisters perform the ritual with a photo or by video call. The festival also includes cousins and close family friends — it is not only for biological siblings. Bhai Phota is a day for families to come together, express their love openly, eat delicious food, and remember that family bonds are precious and worth celebrating. In a world where people get busy, this day is a reminder to say 'I love you, I'm here for you' to the people who matter most."
+    },
+    {
+      "key": "makar_sankranti",
+      "title": "Makar Sankranti — Kite Festival and Sweet Rice",
+      "text": "Makar Sankranti is celebrated on January 14th every year and marks the day when the sun begins to move northward — it is an astronomical event that farmers have tracked for thousands of years. In Bengal, this festival has its own special character and is celebrated differently from other parts of India. The most beloved tradition is making and eating special rice cakes called pitha. There are many different types of pitha — patishapta is a thin rice pancake rolled with coconut and jaggery filling; bhapa pitha is a steamed rice cake; dudh pitha is cooked in warm sweetened milk. Grandmothers in Bengali families are usually the experts at making pitha, and children gather in the kitchen to watch and help. The smell of freshly made pitha with date palm jaggery — a special winter sweetener — is one of the most comforting smells of a Bengali winter. In Kolkata, the Gangasagar Mela is a huge pilgrimage fair held on this day, where millions of people travel to the island of Sagar Dwip to take a holy dip at the point where the river Ganges meets the sea. In parts of Bengal, children fly kites on this day, and the sky fills with colourful paper kites. Children compete to see whose kite can fly highest or cut other kites' strings. In some regions, this is also called Pous Sankranti, marking the last day of the Bengali month of Poush. Sesame sweets called til ke ladoo are also made, as sesame is believed to bring warmth and health in winter. The day is a mix of spiritual meaning, seasonal celebration, and delicious food — everything that Bengalis love to bring together."
+    },
+    {
+      "key": "rabindra_jayanti",
+      "title": "Rabindra Jayanti — Birthday of Tagore",
+      "text": "Rabindra Jayanti celebrates the birthday of Rabindranath Tagore, one of the greatest poets, writers, musicians, and artists the world has ever known. He was born on the 25th of Boishakh in the Bengali calendar, which usually falls in May. Tagore was the first non-European person to win the Nobel Prize in Literature, in 1913, for his beautiful book of poems called Gitanjali. Bengalis all over the world feel enormous pride in Tagore, and his birthday is celebrated as a major cultural event. Schools, colleges, and cultural organisations hold programmes of singing, dancing, poetry recitation, and drama, all featuring Tagore's works. Tagore wrote over two thousand songs, which form a special category of Bengali music called Rabindra Sangeet. He also wrote novels, short stories, plays, essays, and painted thousands of beautiful pictures. He started a unique school called Visva-Bharati in Santiniketan, West Bengal, where children could learn outdoors under the trees — because he believed nature was the best teacher. Families gather on Rabindra Jayanti to watch performances and listen to his poetry. Children memorise his poems and recite them with great feeling. Some of his most famous songs include Amar Sonar Bangla, which is the national anthem of Bangladesh, and Jana Gana Mana, which is the national anthem of India — both were written by the same man. Tagore believed deeply in humanity, love, freedom, and the beauty of the world. He wrote poems about rain, rivers, birds, love, sorrow, and the longing for home — feelings that every Bengali recognises in their heart. Celebrating Rabindra Jayanti is Bengalis' way of honouring the man who gave them a language for their deepest emotions."
+    },
+    {
+      "key": "jamai_shoshti",
+      "title": "Jamai Shoshti — Celebrating Sons-in-Law",
+      "text": "Jamai Shoshti is a uniquely Bengali festival that takes place in the Bengali month of Jyeshtha, usually in May or June. The word 'Jamai' means son-in-law and 'Shoshti' refers to the sixth day of the lunar fortnight, which is sacred to the goddess Shoshti who protects children. On this day, mothers-in-law honour and pamper their daughters' husbands with great ceremony and delicious food. The mother-in-law puts a sandalwood dot on the jamai's forehead, fans him with a hand fan, feeds him sweets by hand, and prays for his long life and health. The meal prepared for the jamai is extraordinarily lavish — it usually includes rice, several fish dishes including the prized hilsa fish, at least five or six vegetable dishes, dal, chutney, and many desserts. In Bengali culture, a good meal is the highest form of love, and the Jamai Shoshti feast is legendary. The jamai arrives at his in-laws' home with gifts for everyone in the family. Traditionally, he brings a sari for his mother-in-law and sweets for the whole household. In return, he goes home with sweets, fruit, and often new clothes. Children love Jamai Shoshti because uncles and cousins come to visit, the house fills with laughter and chatter, and there is an abundance of delicious food. Even in modern times, when social customs have changed, Bengali families still observe Jamai Shoshti as a way of maintaining family bonds and showing that good relationships need to be nurtured and celebrated."
+    },
+    {
+      "key": "bengali_wedding",
+      "title": "Bengali Wedding — A Week of Rituals",
+      "text": "A traditional Bengali wedding is not just one event — it is a series of rituals and celebrations that can last for several days, each with its own meaning and beauty. The first ceremony is often Ashirbad, where elders bless the bride and groom separately by placing their hands on their heads. Then comes Aiburo Bhaat, the last meal the bride or groom has as an unmarried person, celebrated with family. The wedding day begins with Gaye Holud, where turmeric paste is applied to the bride and groom's skin to make it glow — this is done with singing, dancing, and great joy. Women sing special wedding songs called Vivah Geet. The bride wears a beautiful red and white cotton sari called shankha-pola and heavy gold jewellery. She is carried to the wedding ceremony on a wooden seat called a piri. The most sacred moment is Subho Drishti, when the bride and groom look at each other for the first time at the ceremony and hold betel leaves in front of their faces. They circle each other seven times, tied together with a garland of flowers. Then comes the Sampradaan, where the bride's father places her hand in the groom's hand — a deeply emotional moment. After the wedding, there are ceremonies called Bou Bhaat, where the new bride cooks rice at her new home for the first time, symbolising her welcome into the family. Bengali weddings are full of music, colour, delicious food, and the deep belief that two families joining together is one of life's most sacred events."
+    },
+    {
+      "key": "annaprashon",
+      "title": "Annaprashon — Baby's First Rice",
+      "text": "Annaprashon is one of the most joyful ceremonies in a Bengali family — it is the day a baby eats solid food for the very first time. The word means 'rice-feeding' and it usually happens when a baby is six months old, or sometimes five months for girls. Before Annaprashon, a baby drinks only milk, so this day marks a big milestone — the baby is growing up and joining the rest of the family at the table. The ceremony is traditionally held on an auspicious day chosen by a priest. The baby is dressed in beautiful traditional clothes — girls wear tiny saris and boys wear dhuti-panjabi. A priest performs prayers and blessings. Then comes the most fun part — a selection of things is placed in front of the baby: a book, a pen, some money, soil, and food. Whatever the baby picks up first is believed to give a clue about their future — if they pick the book, they will be a scholar; if they pick the money, they will be wealthy. Everyone laughs and watches to see what the baby does. Then the grandfather or a senior family member feeds the baby the first spoonful of sweet rice payesh — rice pudding — with a silver spoon. The payesh is soft, sweet, and gentle on the baby's new stomach. After this, a feast is held for all the family and neighbours who have come to witness the occasion. Gifts of gold jewellery and clothes are given to the baby. Annaprashon is a celebration of life, growth, and the joy of welcoming a new person fully into the family table."
+    },
+    {
+      "key": "mahalaya",
+      "title": "Mahalaya — Dawn Radio and the Coming of Durga",
+      "text": "Mahalaya is a very special morning for Bengalis — it falls exactly two weeks before Durga Puja and officially marks the beginning of the festival season. What makes Mahalaya truly unique is a radio tradition that has been happening since 1932. Every year, before the sun rises on Mahalaya morning, Bengali families wake up at four in the morning to listen to a programme called Mahishasur Mardini on All India Radio. This programme was originally created by Birendra Krishna Bhadra, whose deep and powerful voice chanting the praises of goddess Durga has become legendary. Generations of Bengali families have grown up waking in the dark and huddling together to listen to this programme on the radio. Even today, when everything is available on phones and the internet, millions of Bengalis still wake up before dawn on Mahalaya to listen to this sacred broadcast — it is a ritual of love and continuity. The programme tells the story of how the goddess Durga defeated the demon Mahishasura through music, poetry, and Sanskrit hymns. After listening, families go to the river banks for holy prayers. In Hindu tradition, Mahalaya is also a day to remember ancestors — people offer water and sesame seeds to the river in memory of those who have passed away. This ritual is called Tarpan. The atmosphere on Mahalaya morning is magical — the cool autumn air, the darkness before dawn, the sound of the conch shell and bells, and the knowledge that Durga Puja is just around the corner make it one of the most emotionally powerful mornings in the Bengali year."
+    },
+    {
+      "key": "eid_bengal",
+      "title": "Eid — Celebration in Bengal and Bangladesh",
+      "text": "Eid ul-Fitr and Eid ul-Adha are two of the most important festivals for Muslim Bengalis, and since Bangladesh is a predominantly Muslim country, Eid is the grandest celebration of the year for millions of Bengali families. Eid ul-Fitr comes at the end of Ramadan, the holy month of fasting — for a whole month, Muslims do not eat or drink from dawn to sunset, spending extra time in prayer, charity, and reflection. When Eid arrives, it is a day of enormous joy and relief and gratitude. Families wake up before sunrise, take a special bath, and put on their finest new clothes. Children especially love Eid because they receive gifts of money called Eidi from all their relatives. Everyone goes to the mosque together for special Eid prayers in the morning. After prayers, the whole neighbourhood becomes a place of celebration — people hug each other and say 'Eid Mubarak', which means blessed Eid. Special Eid foods in Bengal include shemai — a sweet vermicelli pudding cooked in milk and sugar with cardamom — firni, halwa, and all kinds of biryani and meat dishes. In Bangladesh, every home smells of cooking on Eid day. Families visit relatives and neighbours, exchange gifts, and share plates of food. New clothes are worn with pride, and children run around showing off their Eid outfits. Eid ul-Adha, which comes two months later, involves the sacrifice of an animal to remember the story of Prophet Ibrahim's devotion to God. The meat is divided into three parts — one for the family, one for relatives, and one for people who cannot afford meat. Eid in Bengali culture is a festival that beautifully combines deep faith with community, generosity, delicious food, and the joy of being together."
+    },
+    {
+      "key": "holi_dol_jatra",
+      "title": "Dol Jatra — Bengali Holi with Tagore",
+      "text": "Dol Jatra, which is the Bengali name for Holi, is a festival of colours celebrated in the month of Falgun, when spring is at its peak. While the festival is celebrated all over India, Bengalis have their own unique and beautiful way of celebrating it. In Bengal, the festival is associated with the love of Radha and Krishna — Lord Krishna is placed on a decorated swing called a dol and swung back and forth while devotees sing and celebrate. The most famous Dol Jatra celebration happens in Santiniketan, the school-town founded by Rabindranath Tagore. Here, the festival is called Basanta Utsav and is celebrated with Tagore's songs about spring, dance performances, and the playing of natural colours made from flowers like palash and other plants. Students and teachers come together in white and yellow clothes and smear each other with safe, flower-based colours. In homes, abir — a fine red or pink powder — is used to colour each other's faces. Friends and family members come to each other's homes, greet with 'Shubho Dol' or 'Shubho Holi', and put coloured powder on each other's cheeks. Children especially love running around throwing colour and getting colourful. Traditional sweets like thandai — a chilled milk drink with spices — and malpua pancakes are made. The whole idea of Dol Jatra is that the arrival of spring and the joy of colours washes away winter sadness and brings freshness, fun, and new energy to everyone."
+    },
+    {
+      "key": "charak_puja",
+      "title": "Charak Puja — Bengali New Year's Eve",
+      "text": "Charak Puja is one of the most dramatic and ancient festivals of rural Bengal, held on the last day of the Bengali year — the 30th of Chaitra, the night before Poila Boishakh. It is dedicated to Lord Shiva, the great god of destruction and transformation, and is believed to help wash away all the sins and sorrows of the past year before a fresh new year begins. The festival involves a large pole called the charak gachh set up in an open field. Devotees called bhaktas pierce their bodies with hooks and hooks as a demonstration of extreme devotion and faith — they believe that Shiva protects them from pain. In some traditions, performers hang from the pole by their backs and spin around while crowds watch in amazement. There are also performances of Gambhira dance, a traditional form where masked performers enact stories of Lord Shiva and Parvati. Folk music, drumming, and rituals continue through the night. Many people stay awake for the whole night, believing it is auspicious to welcome the new year without sleeping. Street fairs with food stalls, acrobats, and folk theatre pop up in villages. Children watch the fire performances with wide eyes. Although modern urban Bengalis do not always observe all the traditional rituals, Charak Puja remains an important part of rural Bengali identity — a reminder of ancient traditions, deep faith, and the continuous cycle of ending and beginning that marks every new year."
+    },
+    {
+      "key": "lakshmi_puja",
+      "title": "Lakshmi Puja — The Goddess of Prosperity",
+      "text": "Lakshmi Puja, also called Lokkhi Puja in Bengali, is held every Thursday evening in many Bengali Hindu homes throughout the year, but the grandest celebration happens on the full moon night after Durga Puja in October. Goddess Lakshmi is the goddess of wealth, prosperity, beauty, and good fortune. She is shown as a beautiful woman dressed in red and gold, sitting on a lotus flower, with gold coins flowing from her hands. Bengalis believe that Lakshmi visits clean, welcoming, and peaceful homes — so on the day of Lakshmi Puja, the whole house is cleaned thoroughly and decorated with flowers and alpona patterns. A special bowl of water with mango leaves and a coconut placed on top, called a kalash, is set up as a symbol of the goddess. Offerings of white sweets, rice, fruits, and lotus flowers are arranged. Women of the family draw the feet of the goddess entering the house using rice paste, from the door to the puja room — this is to welcome her in. A special oil lamp is lit and kept burning all night. Women sing songs of praise to the goddess. The most traditional sweet offered to Lakshmi is chaler payesh — rice pudding — made without salt. After the puja, the payesh is shared among all family members. Children love to receive prasad — blessed food — from the puja and eat it together. Lakshmi Puja teaches an important lesson: prosperity is not just about money. A home full of love, cleanliness, respect, and kindness is the true home of the goddess of wealth."
+    },
+    {
+      "key": "baul_tradition",
+      "title": "Baul Music — Songs from the Soul of Bengal",
+      "text": "The Baul tradition is one of Bengal's greatest gifts to the world — a unique musical and spiritual philosophy practised by wandering singer-mystics who have roamed the villages of Bengal for hundreds of years. Bauls are musicians and philosophers who carry their message of love, equality, and the search for God through their songs, sung while playing a one-stringed instrument called the ektara and a drum called the duggi. The word 'Baul' comes from the Sanskrit word for 'mad' — because these saints are madly in love with God and see the divine in everything. Baul songs speak about finding God not in temples and rituals, but within the human heart and in the beauty of nature. Famous Baul songs say things like 'the one you are searching for lives inside you' — a message that anyone can understand. Bauls often wear saffron or patched clothes, carry a begging bowl, and walk from village to village singing their philosophy. The most famous Baul was Lalon Shah, who lived in the nineteenth century and whose songs are still sung today. UNESCO has recognized the Baul tradition as an Intangible Cultural Heritage of Humanity. Baul music influenced Rabindranath Tagore deeply — he loved their freedom, simplicity, and depth. At Poila Boishakh and other Bengali festivals, Baul performers are invited to sing, and people crowd around them to listen. Baul music is not just entertainment — it is a way of thinking about life, love, God, and how to be a good human being. It shows that Bengal's spiritual life has always been creative, questioning, and full of music."
+    },
+    {
+      "key": "jamdani_weaving",
+      "title": "Jamdani — The Art of Weaving Stories into Cloth",
+      "text": "Jamdani is one of the most beautiful and ancient crafts of Bengal — a type of handwoven muslin fabric where intricate patterns are woven directly into the cloth by hand, without any machine. This tradition has existed in Bengal for over a thousand years, and the Dhaka muslin weavers were once famous all over the world for making fabric so fine that a whole sari could be pulled through a finger ring. Jamdani saris are made on hand looms by weavers who sit and work for days or even weeks to complete a single piece. The patterns are geometric or floral, and they appear to float on the fabric like a shadow or a dream — which is why Jamdani means 'flower vase' in Persian. Emperors and queens used to send merchants to Bengal specifically to buy this magical fabric. During British colonial rule, many weaving traditions were deliberately destroyed, but brave Bengali artisans kept Jamdani alive. Today, Jamdani from the Narayanganj area of Bangladesh is a UNESCO Intangible Cultural Heritage. Women wear Jamdani saris on the most important occasions — weddings, Poila Boishakh, Durga Puja. A Jamdani sari is often a family heirloom, passed down from mothers to daughters. The craft is also a livelihood for thousands of weaver families. Young people are now learning Jamdani weaving to keep the tradition alive. When you see someone wearing a Jamdani sari, you are seeing hundreds of years of art, patience, skill, and love woven into every thread. It is truly one of the world's great treasures."
+    }
+  ],
+  "stories": [
+    {
+      "key": "thakurmar_jhuli",
+      "title": "ঠাকুরমার ঝুলি",
+      "translit": "Thakurmar Jhuli",
+      "gloss": "Grandmother's Bag of Tales",
+      "lines": [
+        {
+          "text": "অনেক দিন আগের কথা।",
+          "gloss": "Long, long ago."
+        },
+        {
+          "text": "এক বনে একটি ছোট্ট পাখি বাস করত।",
+          "gloss": "In a forest, there lived a little bird."
+        },
+        {
+          "text": "পাখিটি খুব সুন্দর গান গাইত।",
+          "gloss": "The bird sang very beautiful songs."
+        },
+        {
+          "text": "সব জীবজন্তু তার গান শুনতে আসত।",
+          "gloss": "All the animals came to hear its song."
+        },
+        {
+          "text": "একদিন একটি শিয়াল এল।",
+          "gloss": "One day, a fox came."
+        },
+        {
+          "text": "শিয়ালটি বলল, 'তোমার গান অসাধারণ!'",
+          "gloss": "The fox said, 'Your song is wonderful!'"
+        },
+        {
+          "text": "পাখিটি খুব খুশি হল।",
+          "gloss": "The bird became very happy."
+        },
+        {
+          "text": "শিয়াল বলল, 'আরেকটু জোরে গাও!'",
+          "gloss": "The fox said, 'Sing a little louder!'"
+        },
+        {
+          "text": "পাখিটি মুখ খুলে জোরে গান ধরল।",
+          "gloss": "The bird opened its beak wide and sang loudly."
+        },
+        {
+          "text": "তার মুখ থেকে একটি ফল পড়ে গেল।",
+          "gloss": "A fruit fell from its beak."
+        },
+        {
+          "text": "শিয়াল ফলটি তুলে নিয়ে দৌড় দিল।",
+          "gloss": "The fox picked up the fruit and ran away."
+        },
+        {
+          "text": "পাখিটি দুঃখে মাথা নিচু করল।",
+          "gloss": "The bird hung its head sadly."
+        },
+        {
+          "text": "কিন্তু পাখিটি একটি বড় শিক্ষা পেল।",
+          "gloss": "But the bird had learned an important lesson."
+        },
+        {
+          "text": "চাটুকারী কথায় ভুললে বিপদ হয়।",
+          "gloss": "Falling for flattery brings trouble."
+        },
+        {
+          "text": "পরদিন থেকে পাখিটি আরও বুদ্ধিমান হল।",
+          "gloss": "From the next day, the bird became much wiser."
+        },
+        {
+          "text": "সে শুধু সত্যিকারের বন্ধুদের বিশ্বাস করত।",
+          "gloss": "It only trusted true friends."
+        },
+        {
+          "text": "তার গান আগের মতোই মিষ্টি ছিল।",
+          "gloss": "Its song was still as sweet as before."
+        },
+        {
+          "text": "কিন্তু এখন সে চোখ খোলা রেখে গাইত।",
+          "gloss": "But now it sang with its eyes open."
+        },
+        {
+          "text": "বনের সবাই তাকে ভালোবাসত।",
+          "gloss": "Everyone in the forest loved it."
+        },
+        {
+          "text": "এই হল গল্পের শেষ।",
+          "gloss": "And that is the end of the story."
+        }
+      ]
+    },
+    {
+      "key": "neel_kamal_lal_kamal",
+      "title": "নীল কমল লাল কমল",
+      "translit": "Neel Kamal Laal Kamal",
+      "gloss": "Blue Lotus Red Lotus",
+      "lines": [
+        {
+          "text": "এক রাজার দুই ছেলে ছিল।",
+          "gloss": "A king had two sons."
+        },
+        {
+          "text": "বড় ছেলের নাম নীল কমল।",
+          "gloss": "The elder son's name was Neel Kamal."
+        },
+        {
+          "text": "ছোট ছেলের নাম লাল কমল।",
+          "gloss": "The younger son's name was Laal Kamal."
+        },
+        {
+          "text": "দুজনেই খুব সাহসী ছিল।",
+          "gloss": "Both of them were very brave."
+        },
+        {
+          "text": "একদিন রাজ্যে একটি দানব এল।",
+          "gloss": "One day a monster came to the kingdom."
+        },
+        {
+          "text": "দানবটি ফুলের বাগান নষ্ট করছিল।",
+          "gloss": "The monster was destroying the flower garden."
+        },
+        {
+          "text": "রাজা বললেন, 'কে এই দানবকে হারাবে?'",
+          "gloss": "The king said, 'Who will defeat this monster?'"
+        },
+        {
+          "text": "নীল কমল বলল, 'আমি যাব।'",
+          "gloss": "Neel Kamal said, 'I will go.'"
+        },
+        {
+          "text": "সে তার তলোয়ার নিয়ে বনে গেল।",
+          "gloss": "He took his sword and went into the forest."
+        },
+        {
+          "text": "বনে একটি বৃদ্ধা তাকে থামাল।",
+          "gloss": "In the forest, an old woman stopped him."
+        },
+        {
+          "text": "বৃদ্ধা বলল, 'দানবের গোপন কথা শোনো।'",
+          "gloss": "The old woman said, 'Listen to the monster's secret.'"
+        },
+        {
+          "text": "'দানবের প্রাণ আছে একটি পাখিতে।'",
+          "gloss": "'The monster's life is inside a bird.'"
+        },
+        {
+          "text": "নীল কমল পাখিটি খুঁজে বের করল।",
+          "gloss": "Neel Kamal found the bird."
+        },
+        {
+          "text": "সে পাখিটিকে খাঁচায় বন্দি করল।",
+          "gloss": "He trapped the bird in a cage."
+        },
+        {
+          "text": "দানব তখনই দুর্বল হয়ে পড়ল।",
+          "gloss": "The monster immediately became weak."
+        },
+        {
+          "text": "নীল কমল দানবকে পরাজিত করল।",
+          "gloss": "Neel Kamal defeated the monster."
+        },
+        {
+          "text": "বাগানে আবার ফুল ফুটল।",
+          "gloss": "Flowers bloomed in the garden again."
+        },
+        {
+          "text": "রাজা তাকে আলিঙ্গন করলেন।",
+          "gloss": "The king embraced him."
+        },
+        {
+          "text": "রাজ্যে আনন্দ ফিরে এল।",
+          "gloss": "Joy returned to the kingdom."
+        },
+        {
+          "text": "সাহস আর বুদ্ধি দিয়ে সব জয় করা যায়।",
+          "gloss": "With courage and wisdom, anything can be won."
+        }
+      ]
+    }
+  ]
+}

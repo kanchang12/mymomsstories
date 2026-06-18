@@ -1,0 +1,389 @@
+{
+  "name": "Telugu",
+  "alphabet": [
+    {
+      "char": "అ",
+      "translit": "a",
+      "hint": "as in 'about'"
+    },
+    {
+      "char": "ఆ",
+      "translit": "aa",
+      "hint": "as in 'father'"
+    },
+    {
+      "char": "ఇ",
+      "translit": "i",
+      "hint": "as in 'sit'"
+    },
+    {
+      "char": "క",
+      "translit": "ka",
+      "hint": ""
+    },
+    {
+      "char": "ఖ",
+      "translit": "kha",
+      "hint": ""
+    },
+    {
+      "char": "గ",
+      "translit": "ga",
+      "hint": ""
+    },
+    {
+      "char": "చ",
+      "translit": "cha",
+      "hint": ""
+    },
+    {
+      "char": "త",
+      "translit": "ta",
+      "hint": ""
+    },
+    {
+      "char": "న",
+      "translit": "na",
+      "hint": ""
+    },
+    {
+      "char": "మ",
+      "translit": "ma",
+      "hint": ""
+    }
+  ],
+  "words": [
+    {
+      "text": "అమ్మ",
+      "translit": "amma",
+      "gloss": "mother"
+    },
+    {
+      "text": "నాన్న",
+      "translit": "naanna",
+      "gloss": "father"
+    },
+    {
+      "text": "నీరు",
+      "translit": "neeru",
+      "gloss": "water"
+    },
+    {
+      "text": "ఇల్లు",
+      "translit": "illu",
+      "gloss": "house"
+    },
+    {
+      "text": "సూర్యుడు",
+      "translit": "suryudu",
+      "gloss": "sun"
+    },
+    {
+      "text": "పుస్తకం",
+      "translit": "pustakam",
+      "gloss": "book"
+    },
+    {
+      "text": "పువ్వు",
+      "translit": "puvvu",
+      "gloss": "flower"
+    },
+    {
+      "text": "చెట్టు",
+      "translit": "chettu",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "నా పేరు అనిత.",
+      "translit": "Na peru Anita.",
+      "gloss": "My name is Anita."
+    },
+    {
+      "text": "అమ్మ నాకు కథ చెబుతుంది.",
+      "translit": "Amma naaku katha chebutundi.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "సూర్యుడు తూర్పున ఉదయిస్తాడు.",
+      "translit": "Suryudu thoorpuna udayistaadu.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "నేను తెలుగు నేర్చుకుంటున్నాను.",
+      "translit": "Nenu Telugu nerchukuntunnanu.",
+      "gloss": "I am learning Telugu."
+    },
+    {
+      "text": "నీరు జీవితం.",
+      "translit": "Neeru jeevitam.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "ugadi",
+      "title": "Ugadi — Telugu New Year",
+      "text": "Ugadi is the most important festival for Telugu-speaking people, marking the start of the new year in the Hindu lunar calendar in March or April. The name comes from Yuga meaning era and Adi meaning beginning — it is truly a day of beginnings. The defining feature of Ugadi is the Ugadi Pachadi, a chutney that mixes six contrasting tastes in one bowl: neem flowers for bitterness, raw mango for sourness, tamarind for tanginess, green chili for spice, jaggery for sweetness, and salt for its own flavour. Eating this pachadi reminds everyone that the coming year will bring all kinds of experiences — joy and sorrow, success and failure, laughter and tears — and we must accept all of them gracefully and with courage. On this morning, people wake before sunrise, have an oil bath, and wear new clothes. Mango leaf toranams — garlands of mango leaves — are hung at the entrance of every home, along with marigold flower strings. Homes are decorated with fresh rangoli. A priest or respected family elder reads the Panchangam — the new year almanac, a detailed prediction of what the coming year holds for each zodiac sign, for harvests, and for the nation. Families gather together and listen with interest and even some anxiety to these predictions. Special foods including Bobbatlu — sweet flatbread stuffed with chana dal and jaggery — are prepared. The streets fill with music, colour, and the smell of cooking. Ugadi is a reminder that time moves forward, that each new year is a gift, and that facing all of life's flavours — sweet and bitter alike — with equanimity is the mark of a wise person."
+    },
+    {
+      "key": "dasara_telugu",
+      "title": "Dasara in Andhra Pradesh and Telangana",
+      "text": "Dasara, also called Vijayadashami, is celebrated with great grandeur in Andhra Pradesh and Telangana, marking the tenth day of Navratri when Goddess Durga defeated the demon Mahishasura. The festival celebrates the victory of good over evil and knowledge over ignorance. In Telangana, Dasara is called Bathukamma — a uniquely beautiful festival where women create enormous flower stacks that look like multi-tiered, colourful towers, built by layering flowers of different colours and types in a conical shape. The most important flower is tangedi — a small orange-yellow flower that blooms in abundance during the monsoon. Women carry these Bathukamma flower towers on their heads and gather in open spaces, singing Bathukamma songs — traditional folk songs about nature, the goddess, and everyday life. They dance in circles around the Bathukamma tower, clapping and singing together. After the celebration, the flower towers are immersed in water. Bathukamma is a festival that belongs entirely to women, celebrating feminine energy, nature, and community. In Hyderabad, the Dasara procession includes beautifully decorated elephants, camels, horses, and tableaux. The burning of giant effigies of Ravana, Kumbhakarna, and Meghnad with fireworks is spectacular to watch. Schools and offices are closed, new clothes are worn, and families visit each other with sweets. In rural areas, farmers take their ploughs, seeds, and farming tools to the temple to be blessed before the sowing season begins."
+    },
+    {
+      "key": "sankranti_telugu",
+      "title": "Makar Sankranti — The Biggest Telugu Festival",
+      "text": "Makar Sankranti, celebrated on January 14th, is considered the most important festival in Andhra Pradesh and Telangana, a three-day celebration called Sankranti that combines harvest thanksgiving, community bonding, kite flying, and family reunions on a grand scale. The first day, Bhogi, involves lighting bonfires at dawn using old furniture, broken items, and dry leaves — clearing out the old to make way for the new. Children throw sesame seeds into the fire. On Bhogi morning, children are blessed with a special ritual where reetha berries, flowers, sugarcane pieces, jaggery, and coins are showered over their heads. The second day is the main Sankranti — the sky above every village and city fills with kites of every colour and size from before sunrise until after sunset. Kite fighting competitions happen all day, with the sound of kite strings cutting in the wind. Traditional foods include Pongali rice cooked in clay pots outdoors, Ariselu — fried sweet rice discs — and Chakkinalu — sweet crispy spirals. Sugarcane is distributed to all family members as it represents the sweetness and strength of the new season. On the third day, Kanuma, cattle are decorated and honoured — it is a day of gratitude to the animals that power agriculture. The fourth day, Mukkanuma, is a day of feasting. Extended families travel from distant cities to their hometowns for Sankranti — it is one of the few festivals that draws people home from all corners of the world."
+    },
+    {
+      "key": "kuchipudi",
+      "title": "Kuchipudi — Classical Dance of Andhra",
+      "text": "Kuchipudi is the classical dance form of Andhra Pradesh, named after the village of Kuchipudi near Vijayawada where the tradition originated. Like Bharatanatyam in Tamil Nadu, Kuchipudi tells stories from Hindu mythology through a combination of dance, music, and mime. What makes Kuchipudi unique is its theatrical element — it includes more dramatic dialogue and acting than purely instrumental dance, incorporating elements of the folk drama tradition of Andhra. Kuchipudi is famous for its distinctive movements — particularly the plate dance, called tarangam, in which the dancer stands on the rim of a brass plate and moves it across the stage without falling, all while maintaining beautiful, precise dance movements. This feat of balance and skill is one of the most impressive things to see in Indian classical dance. The jatiswaram and tillana are sections of Kuchipudi that showcase the dancer's mastery of footwork and rhythm. The costume is a silk sari in bright colours, with gold ornaments and flowers. The stories told include episodes from the Bhagavata Purana about Lord Krishna, scenes from the Mahabharata, and stories of the goddess. Traditional Kuchipudi was performed exclusively by men, including male performers playing female roles, but today women are the primary practitioners and the art has flourished enormously. Learning Kuchipudi requires years of dedicated training. The Kuchipudi Dance Academy and many institutions across Andhra, Telangana, and around the world teach this beautiful and distinctive art."
+    },
+    {
+      "key": "ramayan_telugu",
+      "title": "Rangi's Ramayana — Telugu Epic Storytelling",
+      "text": "The Ramayana is one of India's two great epics, and it has been told and retold in Telugu for over a thousand years in distinctly beautiful and locally rooted ways. The most celebrated Telugu version is the Ramayana by the great poet Valmiki Ramayana, but the outstanding Telugu retelling is Ranganatha Ramayanam, or Rangi Ramayana, by the poet Gona Budda Reddy in the thirteenth century. Telugu Ramayana traditions include Harikatha performances — a form of devotional musical storytelling where a single performer called a Harikatha artist narrates the entire Ramayana, or episodes from it, through a combination of singing, speaking, and movement, sometimes for hours or even days. Kalamkari is a traditional Andhra art form where artists paint scenes from the Ramayana on cloth using natural dyes — these paintings are among the most detailed and beautiful narrative artworks in India. During the month of Karthikam, many Telugu households read the Ramayana chapter by chapter every evening, gathering together to hear the story. The Ramayana teaches values that Telugu culture holds dear — the importance of keeping one's word, the love of a brother, the devotion of a wife, the courage of Hanuman, and the ultimate victory of dharma. Ram Navami, celebrating the birth of Lord Rama, is observed with temple visits and cultural programmes. The story of Rama is not just a religious narrative — it is a cultural foundation, a shared language of values and references that connects Telugu people across generations and geographies."
+    },
+    {
+      "key": "tirupati_balaji",
+      "title": "Tirupati Balaji — The Most Visited Temple on Earth",
+      "text": "The Tirumala Venkateswara Temple in Tirupati, Andhra Pradesh, is believed to be the most visited religious site in the entire world, receiving somewhere between fifty thousand and one hundred thousand pilgrims every single day. The temple is dedicated to Lord Venkateswara — also called Balaji or Srinivasa — a form of Lord Vishnu, and is situated on the seventh peak of the Tirumala hills at an altitude of about nine hundred meters. The climb to the temple can be made on foot along a path of about fourteen kilometres, which thousands of devoted pilgrims walk barefoot in an act of devotion, often taking many hours. Most visitors take a bus or car. The queue for the darshan — the sacred viewing of the deity — can last many hours. The Venkateswara deity is beautifully adorned with gold, diamonds, and silk, and the sight of the deity is considered enormously blessed. One of the most moving traditions at Tirupati is the tonsure — the offering of one's hair to the deity as a sacrifice. Thousands of pilgrims have their heads shaved at the temple every day as an act of gratitude or prayer, and the temple uses the collected hair to raise funds. The temple's treasury is one of the wealthiest in the world. Special Tirupati laddu prasad — large sweet laddoos made from chickpea flour, sugar, and cashews — are given to every pilgrim and are considered highly auspicious and delicious. Visiting Tirupati is a dream for millions of Telugu families, and for many it is the most spiritually significant journey of their lives."
+    },
+    {
+      "key": "kalamkari",
+      "title": "Kalamkari — Painting Stories on Cloth",
+      "text": "Kalamkari is a traditional art form of Andhra Pradesh where artisans hand-paint or block-print detailed scenes from mythology onto cotton cloth using natural plant-based dyes. The word Kalamkari comes from kalam meaning pen and kari meaning craft — it is literally the craft of the pen. There are two distinct styles — the Srikalahasti style, which is entirely hand-painted using a bamboo pen with natural dyes, and the Machilipatnam style, which uses carved wooden blocks. Both are UNESCO-recognised traditional crafts of Andhra Pradesh. Kalamkari paintings typically depict scenes from the Ramayana, Mahabharata, and Puranas — characters are shown with distinct styles, the gods recognisable by their specific attributes, animals and trees filling every available space with detailed patterns. The natural dyes used include indigo for blue, pomegranate rind for yellow, iron-soaked water for black, alum for fixing colours, and various plant-based pigments for other shades. The process of making a Kalamkari cloth involves many steps of washing, treating, drawing, painting, and fixing the colours, taking days or weeks to complete a single piece. A finished Kalamkari panel can be a beautiful wall hanging, a sari, or a decorative cloth. These artworks have been exported all over the world for centuries. Modern Kalamkari artists are finding new ways to express the tradition while keeping its essential character intact. Learning about Kalamkari connects Telugu diaspora children to an artistic heritage of great beauty and depth."
+    },
+    {
+      "key": "charminar",
+      "title": "Hyderabad — The City of Nizams and Biryani",
+      "text": "Hyderabad, the capital of Telangana and formerly of the undivided Andhra Pradesh, is one of India's most historically rich cities, home to the magnificent Charminar, the Golconda Fort, Hussain Sagar lake, and a unique culture that blends Telugu, Urdu, Persian, and Deccani Hindu traditions into something unlike any other city in India. The Charminar — meaning four towers — was built in 1591 by Mohammed Quli Qutb Shah, the founder of Hyderabad, and stands at the heart of the old city as its most iconic landmark. The Charminar is a grand archway with four towering minarets, each sixty metres tall, built to mark the end of a plague epidemic and to celebrate the founding of the new city. The area around the Charminar — Laad Bazaar and Mozamjahi Market — is famous for its bangles, pearls, and Hyderabadi perfumes. Hyderabad was once famous for the quality of its diamonds and pearls, and the city's association with the pearl trade continues today. The Golconda Fort, a massive medieval fortress built by the Qutb Shahi dynasty, is one of the finest examples of Deccani architecture. The most famous gift of Hyderabadi culture to the world is Hyderabadi Biryani — a long-grained rice dish cooked with meat, saffron, and spices in the dum method — sealed in a pot and slow-cooked for hours. Hyderabadi Biryani is considered by many to be the finest biryani in the world. The city's Irani chai — tea served in small glasses with Osmania biscuits — is another beloved tradition."
+    },
+    {
+      "key": "bonalu",
+      "title": "Bonalu — Telangana's Festival of the Goddess",
+      "text": "Bonalu is the most important festival of Telangana, celebrated in July and August in honour of Mahakali — a fierce and powerful form of the goddess Durga. The word Bonalu comes from bhojanalu meaning food, because the central offering of the festival is a special pot of cooked food — rice cooked with turmeric and jaggery — carried on the head to the temple by women. The festival begins at Golconda Fort in Hyderabad and then moves through different neighbourhoods and villages, each holding their own local Bonalu celebrations over several weeks. Women dress in their finest sarees — often red, which is the favourite colour of the goddess — and carry the Bonalu pot on their heads, sometimes with an oil lamp and neem branches on top of the pot. The procession to the temple is accompanied by the beat of drums and the sound of devotional songs. The energy of Bonalu celebrations is intense and joyful — enormous crowds, loud music, colourful processions, and the powerful presence of the goddess presiding over everything. On the last day of the festival, a dramatic ritual called Rangam takes place — a woman called the Potharaju's sister enters into a state of trance and delivers prophecies about the coming year. Everyone listens carefully to these predictions. After the main puja, the food offering is distributed as prasad to everyone present. Bonalu is deeply rooted in the history of Hyderabad — it began centuries ago as a prayer to the goddess during a time of epidemic, and the festival's spirit of gratitude, offering, and community protection has never been lost."
+    },
+    {
+      "key": "peerla_panduga",
+      "title": "Muharram and Peerla Panduga in Telangana",
+      "text": "Peerla Panduga, or the festival of Peers, is the Telugu name for the Muharram observances held in Telangana and Andhra Pradesh, and it is one of the most uniquely cross-community festivals in India. Muharram marks the martyrdom of Imam Husain, the grandson of Prophet Muhammad, at the Battle of Karbala in 680 CE. In Telangana, this religious observance has been transformed over centuries into a community festival that is participated in by Hindus and Muslims alike — a remarkable example of shared devotion. The most dramatic aspect of Peerla Panduga is the elaborate paper-and-bamboo structures called Peeris or Peer structures — magnificent decorated towers many storeys high, representing the tombs of Muslim saints called Peers. These structures are built by skilled artisans and are beautifully decorated with colourful paper and tinsel. Communities carry the Peeris through the streets in grand processions accompanied by music, and at the end of the festival, the structures are immersed in water or buried. In many Telangana villages, it is Hindu families who carry the Peeris, having been given the responsibility by tradition. The festival shows that in India, religious observances have always had the capacity to bring different communities together rather than divide them, and that shared rituals can create bonds that transcend religious difference."
+    },
+    {
+      "key": "deccan_art",
+      "title": "Deccani Miniature Paintings",
+      "text": "The Deccan plateau, which includes modern Andhra Pradesh and Telangana, was home to one of the great schools of Indian miniature painting, developed under the patronage of the Bahmani Sultanate and its successor states — the Bijapur, Golconda, Ahmadnagar, and Bidar kingdoms — in the sixteenth and seventeenth centuries. Deccani miniature paintings are some of the most beautiful and distinctive artworks in the history of Indian art. They are characterised by rich, saturated colours — deep blues, vibrant greens, warm purples — fine detail, and a dreamlike, poetic quality that is quite unlike the more formal Mughal court paintings of the north. Deccani paintings depicted courtly scenes, music and dance performances, garden parties, historical events, and illustrations of literary texts. They showed women in elaborate jewelry and textiles, men in court dress, animals in lush gardens, and mythological scenes. What makes them particularly special is the influence of Persian art — since the Deccan sultans had strong cultural connections with Persia and Central Asia — combined with local Indian imagery and colour sensibilities. The result is a hybrid visual language of extraordinary beauty. Golconda, in particular, was a great centre of Deccani painting, and many of the finest surviving examples come from here. Today these paintings are in museums around the world — the British Museum, the Victoria and Albert Museum, and museums across India. The Deccani miniature tradition shows that the region that is now Telangana and Andhra Pradesh was once a great centre of artistic creativity and cultural refinement."
+    },
+    {
+      "key": "telugu_cinema",
+      "title": "Telugu Cinema — Tollywood",
+      "text": "Telugu cinema, affectionately called Tollywood, is one of the world's most prolific film industries, producing more films per year than Hollywood and rivalling Bollywood in ambition, scale, and audience. Telugu films are made primarily in Hyderabad and have a global audience among the Telugu diaspora in the United States, United Kingdom, Australia, Gulf countries, and Southeast Asia. Telugu cinema has given India and the world some of its most spectacular films — known for their grand action sequences, emotional family dramas, elaborate song and dance sequences, and devotional films. The Telugu film industry has existed for over a century, beginning in the silent era. Legendary directors like K. Vishwanath created films of great artistic and musical beauty. In the modern era, S. S. Rajamouli's RRR and Baahubali became global blockbusters, introducing Telugu cinema to audiences who had never seen it before. Telugu films are known for their music — film songs by composers like M. S. Viswanathan, Ilaiyaraaja, A. R. Rahman, and M. M. Keeravani have become cultural classics. Songs from Telugu films are sung at weddings and festivals and in homes across the Telugu diaspora. Telugu films often deal with themes of family loyalty, social justice, love across barriers, and the triumph of the common person against powerful adversaries. For Telugu families abroad, these films are a powerful connection to language, culture, and home — a way of keeping children connected to their heritage through stories, music, and the sound of the language they are trying to learn."
+    },
+    {
+      "key": "gobbillu",
+      "title": "Gobbillu — The Cow Dung Art of Andhra",
+      "text": "Gobbillu is a uniquely Andhra tradition practised during festivals and auspicious occasions where women make artistic cow dung formations at the entrance of their homes and decorate them with flowers, seeds, and small clay figures. The word Gobbillu comes from the Telugu word for cow dung, which is considered purifying and sacred in Hindu tradition. In rural Andhra, the floor and entrance steps of homes are regularly coated with a thin layer of cow dung mixed with water — this is called gomay or gomai, and it is used as a natural antibacterial treatment and floor polish before synthetic floor cleaners existed. On festival occasions, particularly Karthikam and Navratri, women create elaborate Gobbillu figures — small round shapes representing the Sun god, moon, stars, various deities, and household objects — and decorate them with seasonal flowers and seeds. Children participate enthusiastically in this art, helping to form the small figures and choosing the flowers for decoration. The tradition connects Andhra communities to their agricultural roots — the cow, in Indian rural culture, is considered the most valuable and sacred domestic animal, providing milk, butter, ploughing power, and even fertiliser for the fields. Gobbillu is a reminder that in Indian culture, the sacred and the everyday are deeply intertwined — that cooking fuel, floor covering, and ceremonial art can all come from the same source, and that there is beauty and meaning to be found in the most ordinary things of daily life."
+    },
+    {
+      "key": "vizag_city",
+      "title": "Visakhapatnam — The City of Destiny",
+      "text": "Visakhapatnam, affectionately called Vizag, is the largest city in Andhra Pradesh and one of India's most beautiful coastal cities, nestled between the Eastern Ghats hills and the Bay of Bengal. Its natural harbour — the only one in the country on the east coast — has made it an important port and naval base for centuries. Vizag's beaches — Ramakrishna Beach, Rishikonda, and Bheemunipatnam — are among the most beautiful in India, and the hills surrounding the city offer spectacular views of the sea. Vizag has an ancient history — it is mentioned in chronicles that date back two thousand years, when it was known as Vishakha, named after the god of war Vishakha, a form of Murugan. The Simhachalam Temple on a hill above the city, dedicated to Varaha Narasimha, has been a sacred pilgrimage site for over a thousand years. The city is also home to the INS Kursura, a decommissioned submarine that has been converted into a museum — the only one of its kind in India. The local cuisine includes special Vizag-style biryani, fresh seafood preparations, and the unique Gongura plant — a sour leafy green used in pickles and chutneys that is central to Vizag's food identity. Vizag has grown rapidly in recent decades and is now a major centre for industry, technology, and medicine. For Telugu families who trace their roots to the north Andhra coastal region, Vizag represents a particular identity — coastal, seafaring, connected to the hills, warm and direct in the way of people who have always faced both the sea and the mountains."
+    },
+    {
+      "key": "telugu_language",
+      "title": "Telugu — The Italian of the East",
+      "text": "Telugu is one of the world's great classical languages, with a literary tradition stretching back over a thousand years, and it is spoken by approximately ninety million people, making it one of the most widely spoken languages in India. Telugu was called the Italian of the East by the Italian explorer Niccolò de' Conti who visited the Vijayanagara Empire in the fifteenth century — he was struck by the musical quality of the language and its similarity to Italian in the way every word ends in a vowel sound, giving the language a melodious, flowing character. Telugu was given the status of Classical Language by the Government of India in 2008, recognising its ancient and independent literary tradition. The earliest known Telugu literature dates from the tenth century CE, but the language is certainly much older. The golden age of Telugu literature was the Vijayanagara Empire period in the fourteenth to sixteenth centuries, when the great king Krishnadevaraya, himself a brilliant poet, patronised literature and the arts generously. His collection of works Amuktamalyada is considered a masterpiece. The Telugu script is one of the most beautiful in India — rounded, flowing, with a distinctive appearance. Telugu literature includes poetry, philosophy, devotional writing, and in the modern period novels, short stories, plays, and journalism of great quality. For Telugu families living outside India, maintaining the Telugu language — reading it, writing it, speaking it at home — is considered one of the most important responsibilities of diaspora life, because language is the primary vessel of cultural identity and heritage."
+    },
+    {
+      "key": "kondapalli_toys",
+      "title": "Kondapalli Toys — Wooden Art of Andhra",
+      "text": "Kondapalli is a small village near Vijayawada in Andhra Pradesh that has been famous for over four hundred years for its beautifully crafted and painted wooden toys and figurines. These toys are made from a light, soft wood called ponniki or white satin wood, which grows in the Eastern Ghats forests and is easy to carve into intricate shapes. The Kondapalli toy-making tradition is practised by a community of artisans called Aryakshatriya Kamsala, who have passed the craft from generation to generation. The toys depict a wide range of subjects — village scenes with farmers, bullock carts, women carrying water pots, and market vendors; mythological figures including the gods, characters from the Ramayana and Mahabharata; animals of the forest and farm; and traditional occupations like weaving and fishing. The figures are first carved by men and then painted by women using bright, natural mineral-based colours. The Dashavataram set — showing the ten avatars of Lord Vishnu — is one of the most popular collections. Kondapalli nativity sets and Navratri Golu dolls are particularly famous and sought after. The toys have a charming, vivid quality — the colours are bright and the expressions of the figures are warm and expressive. Kondapalli toys have received the Geographical Indication tag, protecting them as a product of that specific village. They are sold at craft exhibitions across India and exported to collectors worldwide. For Telugu families, a set of Kondapalli figures on the Navratri Golu shelf is a connection to the artisanal heritage of Andhra — beautiful objects that carry the skill and love of generations of craftspeople."
+    },
+    {
+      "key": "godavari_pushkaram",
+      "title": "Godavari Pushkaram — Festival of the Sacred River",
+      "text": "The Godavari Pushkaram is one of the most important religious and cultural events in Andhra Pradesh and Telangana, held once every twelve years at the river Godavari — the Ganga of the south, as it is called. The Pushkaram festival coincides with the year when Jupiter enters the zodiac sign of Leo, and during the twelve days of the festival, millions of pilgrims travel to the banks of the Godavari to take a sacred dip in its waters. The Godavari is the second longest river in India, flowing from the Western Ghats in Maharashtra eastward across the Deccan plateau and into the Bay of Bengal, passing through Nashik, Nanded, and the sacred cities of Bhadrachalam and Rajahmundry in Andhra Pradesh. The river delta at Rajamahendravaram — Rajahmundry — is one of the most fertile regions in India and the heart of Telugu agricultural civilisation. The Godavari is considered sacred because the sage Gautama is believed to have brought the river down from the heavens. Taking a dip in the Godavari during Pushkaram is believed to wash away one's sins and bring great spiritual merit. The last Godavari Pushkaram, held in 2015, saw an estimated one hundred million pilgrims visit the river over twelve days — making it one of the largest human gatherings in history. The river bank is transformed into a city of tents, food stalls, cultural programmes, and prayer activities. For Telugu people, the Godavari is not just a river — it is a mother, a life-giver, a sacred presence that has nourished Telugu civilisation for thousands of years."
+    }
+  ],
+  "stories": [
+    {
+      "key": "tenali_rama_cat",
+      "title": "తెనాలి రామకృష్ణుడు: పిల్లి మజ్జిగ",
+      "translit": "Tenali Ramakrishnudu: Pilli Majjiga",
+      "gloss": "Tenali Raman: The Cat and Buttermilk",
+      "lines": [
+        {
+          "text": "తెనాలి రామకృష్ణుడు రాజు కృష్ణదేవరాయల దర్బారులో ఉండేవాడు.",
+          "gloss": "Tenali Ramakrishna served in the court of King Krishnadevaraya."
+        },
+        {
+          "text": "అతను మిక్కిలి తెలివైన వాడు.",
+          "gloss": "He was an extremely clever man."
+        },
+        {
+          "text": "ఒకసారి రాజు తన పిల్లికి పాలు ఇవ్వమని అడిగాడు.",
+          "gloss": "Once the king asked him to give milk to his cat."
+        },
+        {
+          "text": "రాజు వెళ్ళిపోయాడు.",
+          "gloss": "The king went away."
+        },
+        {
+          "text": "తెనాలి వేడి వేడి పాలు తెచ్చాడు.",
+          "gloss": "Tenali brought very hot milk."
+        },
+        {
+          "text": "పిల్లి వేడి పాలు తాగలేకపోయింది.",
+          "gloss": "The cat could not drink the hot milk."
+        },
+        {
+          "text": "రాజు వచ్చి అడిగాడు, 'పిల్లికి పాలు ఇచ్చావా?'",
+          "gloss": "The king came and asked, 'Did you give milk to the cat?'"
+        },
+        {
+          "text": "'ఇచ్చాను,' అని తెనాలి చెప్పాడు.",
+          "gloss": "'I did,' said Tenali."
+        },
+        {
+          "text": "'ఐతే పిల్లి ఎందుకు తాగలేదు?'",
+          "gloss": "'Then why didn't the cat drink?'"
+        },
+        {
+          "text": "'వేడి పాలు ఎవరైనా తాగగలరా?'",
+          "gloss": "'Can anyone drink hot milk?'"
+        },
+        {
+          "text": "రాజుకు అర్థమైంది — ఆజ్ఞలో స్పష్టత లేదు.",
+          "gloss": "The king understood — the order lacked clarity."
+        },
+        {
+          "text": "'పిల్లి తాగగలిగే పాలు ఇవ్వమని చెప్పాల్సింది!'",
+          "gloss": "'I should have said give milk the cat can drink!'"
+        },
+        {
+          "text": "తెనాలి వినయంగా నవ్వాడు.",
+          "gloss": "Tenali smiled humbly."
+        },
+        {
+          "text": "'మహారాజా, స్పష్టమైన ఆజ్ఞ చేస్తే స్పష్టమైన పని జరుగుతుంది.'",
+          "gloss": "'Your Majesty, a clear command leads to clear action.'"
+        },
+        {
+          "text": "రాజు నవ్వాడు — అతనికి తెనాలి నిజాయితీ నచ్చింది.",
+          "gloss": "The king laughed — he liked Tenali's honesty."
+        },
+        {
+          "text": "అతను తెనాలికి బహుమతి ఇచ్చాడు.",
+          "gloss": "He gave Tenali a reward."
+        },
+        {
+          "text": "తెనాలి రాముడు ఒక గొప్ప పాఠం నేర్పాడు.",
+          "gloss": "Tenali Raman taught a great lesson."
+        },
+        {
+          "text": "స్పష్టంగా మాట్లాడటం చాలా ముఖ్యం.",
+          "gloss": "Speaking clearly is very important."
+        },
+        {
+          "text": "తెలివి నిజాయితీతో కలిసినప్పుడు నిజమైన విజయం.",
+          "gloss": "True success comes when cleverness is combined with honesty."
+        },
+        {
+          "text": "ఇది తెనాలి రాముని అనేక కథలలో ఒకటి.",
+          "gloss": "This is one of many stories about Tenali Raman."
+        }
+      ]
+    },
+    {
+      "key": "pralhada_bhakti",
+      "title": "ప్రహ్లాద భక్తి",
+      "translit": "Prahlaada Bhakti",
+      "gloss": "The Devotion of Prahlada",
+      "lines": [
+        {
+          "text": "చాలా కాలం క్రితం, హిరణ్యకశిపుడు అనే రాక్షసుడు ఉండేవాడు.",
+          "gloss": "Long ago, there lived a demon named Hiranyakashipu."
+        },
+        {
+          "text": "అతను తనను దేవుడు అని పూజించమని అందరిని బలవంతపెట్టాడు.",
+          "gloss": "He forced everyone to worship him as God."
+        },
+        {
+          "text": "అతనికి ప్రహ్లాదుడు అనే కొడుకు ఉండేవాడు.",
+          "gloss": "He had a son named Prahlada."
+        },
+        {
+          "text": "ప్రహ్లాదుడు విష్ణుభక్తుడు.",
+          "gloss": "Prahlada was a devotee of Lord Vishnu."
+        },
+        {
+          "text": "'నా పక్కన ఉన్న నీ దేవుడు ఎక్కడ ఉన్నాడు?' అని తండ్రి అడిగాడు.",
+          "gloss": "'Where is your God? Is he beside me?' asked the father."
+        },
+        {
+          "text": "'దేవుడు ప్రతిచోటా ఉంటాడు,' ప్రహ్లాదుడు చెప్పాడు.",
+          "gloss": "'God is everywhere,' said Prahlada."
+        },
+        {
+          "text": "'ఈ స్తంభంలో కూడా ఉన్నాడా?'",
+          "gloss": "'Is he even in this pillar?'"
+        },
+        {
+          "text": "'అవును, ప్రతి చోట!'",
+          "gloss": "'Yes, everywhere!'"
+        },
+        {
+          "text": "హిరణ్యకశిపుడు స్తంభాన్ని పగులగొట్టాడు.",
+          "gloss": "Hiranyakashipu struck the pillar."
+        },
+        {
+          "text": "పెద్ద శబ్దంతో స్తంభం పగిలింది.",
+          "gloss": "The pillar cracked with a great sound."
+        },
+        {
+          "text": "నరసింహస్వామి వెలువడ్డాడు!",
+          "gloss": "Lord Narasimha appeared!"
+        },
+        {
+          "text": "అతను సింహం తల, మానవుని శరీరం కలిగిన భగవంతుడు.",
+          "gloss": "He was a god with a lion's head and a human body."
+        },
+        {
+          "text": "నరసింహుడు హిరణ్యకశిపుణ్ణి సంహరించాడు.",
+          "gloss": "Narasimha defeated Hiranyakashipu."
+        },
+        {
+          "text": "ప్రహ్లాదుడు నమస్కరించాడు.",
+          "gloss": "Prahlada bowed in reverence."
+        },
+        {
+          "text": "'నీ భక్తికి ప్రతిఫలం ఇచ్చాను,' భగవంతుడు చెప్పాడు.",
+          "gloss": "'I have rewarded your devotion,' said the Lord."
+        },
+        {
+          "text": "ప్రహ్లాదుడు రాజ్యం పాలించాడు.",
+          "gloss": "Prahlada ruled the kingdom."
+        },
+        {
+          "text": "అతను న్యాయంగా పరిపాలించాడు.",
+          "gloss": "He ruled with justice."
+        },
+        {
+          "text": "అతని తండ్రి చేసిన దుష్టత్వం అతనిలో లేదు.",
+          "gloss": "He did not have his father's wickedness."
+        },
+        {
+          "text": "నిజమైన భక్తిని ఎవరూ ఆపలేరు.",
+          "gloss": "No one can stop true devotion."
+        },
+        {
+          "text": "ఈ కథ హోలీ పండగ నాడు చెప్పబడుతుంది.",
+          "gloss": "This story is told on the festival of Holi."
+        }
+      ]
+    }
+  ]
+}

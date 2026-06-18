@@ -1,0 +1,384 @@
+{
+  "name": "Tamil",
+  "alphabet": [
+    {
+      "char": "அ",
+      "translit": "a",
+      "hint": "as in 'about'"
+    },
+    {
+      "char": "ஆ",
+      "translit": "aa",
+      "hint": "as in 'father'"
+    },
+    {
+      "char": "இ",
+      "translit": "i",
+      "hint": "as in 'sit'"
+    },
+    {
+      "char": "க",
+      "translit": "ka",
+      "hint": ""
+    },
+    {
+      "char": "ங",
+      "translit": "nga",
+      "hint": ""
+    },
+    {
+      "char": "ச",
+      "translit": "cha",
+      "hint": ""
+    },
+    {
+      "char": "ட",
+      "translit": "ta",
+      "hint": ""
+    },
+    {
+      "char": "ந",
+      "translit": "na",
+      "hint": ""
+    },
+    {
+      "char": "ப",
+      "translit": "pa",
+      "hint": ""
+    },
+    {
+      "char": "ம",
+      "translit": "ma",
+      "hint": ""
+    }
+  ],
+  "words": [
+    {
+      "text": "அம்மா",
+      "translit": "amma",
+      "gloss": "mother"
+    },
+    {
+      "text": "அப்பா",
+      "translit": "appa",
+      "gloss": "father"
+    },
+    {
+      "text": "தண்ணீர்",
+      "translit": "thanneer",
+      "gloss": "water"
+    },
+    {
+      "text": "வீடு",
+      "translit": "veedu",
+      "gloss": "house"
+    },
+    {
+      "text": "சூரியன்",
+      "translit": "sooriyan",
+      "gloss": "sun"
+    },
+    {
+      "text": "புத்தகம்",
+      "translit": "puthagam",
+      "gloss": "book"
+    },
+    {
+      "text": "பூ",
+      "translit": "poo",
+      "gloss": "flower"
+    },
+    {
+      "text": "மரம்",
+      "translit": "maram",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "என் பெயர் மீரா.",
+      "translit": "En peyar Meera.",
+      "gloss": "My name is Meera."
+    },
+    {
+      "text": "அம்மா எனக்கு கதை சொல்வாள்.",
+      "translit": "Amma enakku kathai solvaal.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "சூரியன் கிழக்கில் உதிக்கும்.",
+      "translit": "Sooriyan kizhakkil udhikkum.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "நான் தமிழ் கற்கிறேன்.",
+      "translit": "Naan Tamil katkiren.",
+      "gloss": "I am learning Tamil."
+    },
+    {
+      "text": "தண்ணீர் உயிர்.",
+      "translit": "Thanneer uyir.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "pongal",
+      "title": "Pongal — The Grand Harvest Festival",
+      "text": "Pongal is the most important festival for Tamil people all over the world, celebrated in January when the harvest is ready and the sun begins its northward journey. The name Pongal comes from the Tamil word for boiling over — because the central ritual of the festival is cooking a special sweet rice dish called pongal in a clay pot outdoors until it boils over the top. When the milk and rice boil over, everyone shouts 'Pongalo Pongal!' with great joy, because it is a sign of abundance and prosperity in the year ahead. The festival lasts for four days — the first day is Bhogi, when old and unwanted things are burned in a bonfire to make way for the new; the second day is Thai Pongal, the main day of the harvest festival; the third day is Mattu Pongal, when cows and bulls are honoured and decorated; and the fourth day is Kaanum Pongal, when families visit each other and go on outings. On Thai Pongal, women draw intricate kolam designs — geometric patterns made from rice flour — on the ground in front of the house. The kolam is made fresh every morning and is considered a welcoming sign to guests and to prosperity. The pongal rice dish is cooked with newly harvested rice, jaggery, coconut, cardamom, and cashews, and the delicious aroma fills the whole neighbourhood. Sugarcane stalks are tied to the pongal pot as an offering to the sun. Turmeric plants with their bright yellow roots are also part of the offering. On Mattu Pongal, cattle are bathed, their horns are painted, flowers and garlands are draped around their necks, and they are taken through the village in a procession. Pongal is a festival of deep gratitude — to the sun for its warmth, to the rain for its water, to the farmers for their hard work, and to the earth for its generosity."
+    },
+    {
+      "key": "tamil_new_year",
+      "title": "Tamil New Year — Puthandu",
+      "text": "Puthandu, or Tamil New Year, is celebrated on April 14th each year, the first day of the Tamil month of Chittirai. This is a day of joy, new beginnings, and beautiful traditions. The most special tradition of Puthandu morning is called Kanni — which means the first sight of the new year. On the night before Puthandu, the family prepares a special tray called the Kanni tray and places it in a central spot in the house. The tray is filled with auspicious items — a mirror, fresh flowers, fruits, vegetables, gold jewelry, money, betel leaves, and sometimes the family's account books. In the morning, children are told to close their eyes and are led to the Kanni tray by their parents. When they open their eyes, the first things they see are all these beautiful and auspicious things, and it is believed that this first sight of the new year will bring good luck and prosperity for the months ahead. After Kanni, the family gets together to eat the special Puthandu meal, which includes the Mango Pachadi — a dish that mixes six tastes: sweet from jaggery, sour from mango, bitter from neem flowers, salty, spicy, and astringent — all in one dish. This reminds everyone that life brings all kinds of experiences and we must accept them all with grace. New clothes are worn, temples are visited, and elders are touched at the feet for blessings. In Tamil households abroad, the Puthandu celebration keeps the community connected to its roots."
+    },
+    {
+      "key": "karthigai_deepam",
+      "title": "Karthigai Deepam — Festival of Lamps",
+      "text": "Karthigai Deepam is a festival of lights celebrated by Tamil Hindus in November or December, on the full moon of the month of Karthigai. While Diwali is the lamp festival for much of India, Karthigai Deepam holds that place for Tamils, and it has an ancient, poetic quality all its own. The whole festival is about lighting — every home glows with hundreds of small clay lamps filled with oil and lit at dusk, creating a magical, warm light that can be seen from far away. The most dramatic moment of Karthigai Deepam is when a giant beacon is lit at the top of the Annamalai hill in Thiruvannamalai, Tamil Nadu — this is the Mahadeepam, a huge lamp that burns so brightly it can be seen from many kilometres away and represents Lord Shiva as a column of infinite light. People travel from all over Tamil Nadu and beyond to see this beacon. In homes, women make special wick lamps and line them along the edges of every room, every step, and every surface. The house glows like a thousand fireflies. Special foods for Karthigai include appam — sweet deep-fried rice flour rounds — and pori — puffed rice mixed with jaggery. Children love to help dip the lamp wicks in oil and place the lamps around the house. The Karthigai deepam festival celebrates the victory of light over darkness, knowledge over ignorance, and hope over despair — values that are at the heart of Tamil culture."
+    },
+    {
+      "key": "aadi_perukku",
+      "title": "Aadi Perukku — Honouring the River",
+      "text": "Aadi Perukku is a Tamil festival celebrated on the 18th day of the Tamil month of Aadi, which falls in July or August, at the peak of the monsoon season when rivers are full and flowing powerfully. The festival celebrates water — rivers, rain, and the life-giving power of water — and is especially associated with the Kaveri river, one of Tamil Nadu's most sacred rivers. The word Perukku means rising or overflowing, describing how rivers swell during the monsoon. On Aadi Perukku, women and families go to the banks of rivers, lakes, or any water body and perform special rituals. They offer rice cooked in the open air, along with fruits, flowers, and coconut, to the river. Women dress in traditional clothes and apply jasmine flowers to their hair. Banana leaves are spread by the water and families share a communal meal together by the riverside. This is a joyful picnic-like celebration as well as a religious one — people laugh, share food, watch the river flow, and feel a deep sense of peace and gratitude. The festival is a reminder of how central water is to Tamil civilisation — Tamil Nadu's great ancient cities grew on river banks, and the Kaveri in particular has nourished generations of farmers, villages, and towns. The Kaveri is considered a goddess and is worshipped with great devotion. Aadi Perukku teaches children to feel grateful for water, to respect rivers and not pollute them, and to understand that nature is not a resource to be used but a living presence to be honoured."
+    },
+    {
+      "key": "kolam_art",
+      "title": "Kolam — The Sacred Art at the Door",
+      "text": "Kolam is one of the most beautiful and distinctive art forms of Tamil culture — a pattern drawn on the ground at the entrance of homes every morning using freshly ground rice flour. It is made by letting rice flour flow from the fingers in precise geometric patterns — dots are placed first and then lines are drawn connecting them in flowing loops and curves. The patterns are called pulli kolam when they use dots and neli kolam when the lines are drawn freely. On festival days and auspicious occasions, the kolam is made larger and more intricate. Coloured powders are added to make it bright and decorative. The kolam is not permanent — it fades during the day as people walk over it and the rice flour is eaten by ants and birds — this impermanence is deliberate. It teaches that beauty is fleeting and we should create it fresh every day. Tamil women have drawn kolam for thousands of years — it is a morning practice that is both spiritual and artistic, a form of meditation and expression. The act of drawing a fresh kolam each morning is seen as welcoming Goddess Lakshmi into the home. Complex kolam patterns can take years to learn and masters of kolam design are deeply respected in Tamil communities. During Thai Pongal, women compete to create the most beautiful and elaborate kolam patterns. Modern kolam artists have taken this ancient tradition and expanded it into large-scale art installations and competitions. The kolam is one of Tamil culture's most distinctive gifts — wherever you see a Tamil home, you will often see a kolam at the threshold, a small daily act of beauty and devotion."
+    },
+    {
+      "key": "thiruvizha",
+      "title": "Temple Festivals of Tamil Nadu",
+      "text": "Temple festivals, called Thiruvizhas, are at the heart of Tamil religious and community life, and the temple towns of Tamil Nadu are world-famous for their magnificent ancient temples, their architectural grandeur, and their elaborate festival traditions. Tamil temples are built in the Dravidian architectural style, with enormous gateway towers called gopurams covered in thousands of brightly painted stone figures of gods, goddesses, animals, and mythological scenes. The tallest gopurams in Tamil Nadu can be seen from many kilometres away and are among the most impressive structures in the world. Major temple festivals last for ten days or even a month, during which the deity is taken out in a grand procession on different vahanas — vehicles — each a beautifully crafted and decorated structure. The largest vahana is the temple chariot — a massive wooden structure, sometimes ten storeys tall, decorated with silk, gold, and carvings, pulled by thousands of devotees through the temple streets. The most famous chariot festival is the Brahmotsavam at Tirupati and the Chariot Festival at various Siva temples. During festivals, musicians, dancers performing Bharatanatyam, drama groups, and thousands of devotees fill the temple streets. The air is full of devotional music, the sound of drums and nadaswaram trumpets, the scent of jasmine and camphor. Temple prasad — sweet Pongal, coconut rice, lemon rice — is distributed free to all devotees. These festivals are not just religious events — they are the cultural, social, and artistic celebrations of the whole community, where people from all walks of life come together to celebrate their shared heritage."
+    },
+    {
+      "key": "bharatanatyam",
+      "title": "Bharatanatyam — The Classical Dance of Tamil Nadu",
+      "text": "Bharatanatyam is one of India's oldest and most beautiful classical dance forms, originating in the temples of Tamil Nadu, where devadasis — temple dancers — performed it as an offering to the gods for thousands of years. The dance combines precise footwork, expressive hand gestures called mudras, facial expressions called abhinaya, and powerful body postures to tell stories from mythology and to express devotion to the divine. The name Bharatanatyam comes from Bhava, Raga, Tala, and Natyam — which mean expression, music, rhythm, and dance — and these four elements are perfectly combined in a true Bharatanatyam performance. The dancer wears a beautiful silk costume in bright colours — usually orange, red, or green — with heavy gold-coloured jewelry on the ears, nose, hair, neck, and wrists. The feet are decorated with ghungroo bells. Flowers are pinned elaborately in the hair. The dancer's eyes are made up with thick kohl and the gestures of the hands and eyes are trained to communicate entire stories without words. Learning Bharatanatyam takes many years of dedicated training under a guru. The arangetram is the student's first major public performance — a grand event where family and friends gather to watch and the dancer is presented formally as a trained artist. Bharatanatyam is not just entertainment — it is considered a form of yoga, a way of expressing the highest emotions, and a living connection to thousands of years of Tamil artistic tradition. Seeing a Bharatanatyam performance is one of the most beautiful and moving experiences Tamil culture offers."
+    },
+    {
+      "key": "thai_poosam",
+      "title": "Thaipusam — The Festival of Lord Murugan",
+      "text": "Thaipusam is one of the most intense and visually dramatic festivals of Tamil Hinduism, celebrated in honour of Lord Murugan — the son of Shiva and Parvati and a major deity in Tamil culture — on the full moon of the month of Thai, usually in January or February. The festival celebrates the day when Goddess Parvati gave Murugan a vel — a divine spear — with which he defeated the demon Soorapadman. The most distinctive feature of Thaipusam is the carrying of kavadi — elaborate penance structures worn or carried by devotees as acts of devotion and thanksgiving. Some kavadi are simple — a wooden frame with pots of milk — while others are enormously elaborate structures decorated with peacock feathers, flowers, and figurines, worn on the shoulders and attached to the body. The most dramatic form involves kavadi pierced through the skin of the devotee's cheeks and body — a practice that appears extreme but is performed in a state of deep religious trance, and devotees report feeling no pain. Thousands of devotees, their faces marked with sacred ash, their mouths clamped with skewers, walk in procession to the temple, their devotion palpable and powerful. The festival is most grandly celebrated at Batu Caves in Malaysia, where a massive golden statue of Lord Murugan stands at the entrance to a limestone cave temple, and a million devotees climb 272 rainbow-coloured steps to reach the shrine inside. The spirit of Thaipusam is one of total surrender to the divine — of giving everything, even your pain, as an offering of love."
+    },
+    {
+      "key": "navaratri_golu",
+      "title": "Navaratri Golu — The Festival of Dolls",
+      "text": "Navaratri in Tamil Nadu has a uniquely beautiful tradition called Golu or Kolu — the display of dolls and figurines on stepped platforms inside the home during the nine nights of the festival. The word golu means display or arrangement, and creating a Golu is an art form in itself. The stepped display, called the Golu padi, consists of an odd number of steps — usually seven, nine, or eleven. On these steps, families arrange collections of clay dolls, figurines, and miniature sets depicting scenes from mythology, everyday life, and nature. The collection is built up over years, even decades — some families have Golu dolls that have been passed down for generations, each doll carrying memories and stories. The arrangement always includes a set called Marapachi bommai — two wooden dolls representing a man and a woman, traditionally given at weddings. Other figurines show scenes from the Ramayana and Mahabharata, scenes of village life, miniature wedding scenes, depictions of the nine planets, and sometimes elaborate mechanical dolls that move. Every year new dolls are added to the collection. On each evening of Navaratri, neighbours and friends are invited to see the Golu and are offered prasad of sundal — spiced legumes — a different type each day. Women and girls dress in their finest clothes and come to see each other's Golu displays, exchange sundal, and sing devotional songs called Golu pattu. Children take great pride in helping to arrange and display the dolls. Golu is a tradition that combines artistry, storytelling, family memory, community bonding, and devotion in one beautiful home installation."
+    },
+    {
+      "key": "carnatic_music",
+      "title": "Carnatic Music — The Classical Music of South India",
+      "text": "Carnatic music is the classical music of South India and is one of the world's great musical traditions, developed and refined over centuries in Tamil Nadu, Karnataka, Andhra Pradesh, and Kerala. It is a complete musical system based on ragas — melodic frameworks — and talas — rhythmic cycles — combined in elaborate compositions and improvisation. The most important Carnatic festival is the Margazhi music season in Chennai, which runs from December 15th to January 15th — the sacred Tamil month of Margazhi — when concerts called sabhas are held every morning, afternoon, and evening across the city, featuring both legendary established artists and young rising performers. This month-long celebration of music is unlike anything else in the world — the whole city of Chennai becomes a concert hall, with thousands of performances happening simultaneously for music-loving audiences. The greatest composers in the Carnatic tradition are the Trinity — Tyagaraja, Muthuswami Dikshitar, and Syama Sastri — all of whom lived in the late 18th and early 19th centuries and whose compositions are still the foundation of the repertoire. Tyagaraja in particular composed thousands of devotional songs called kritis, mostly in praise of Lord Rama, and his compositions are sung in homes and concerts daily. Learning Carnatic music is considered a highly respected pursuit in Tamil families — a child who learns to sing well or play the violin, veena, mridangam drum, or flute is admired by the whole community. Carnatic music teaches that the highest form of beauty is sound, that discipline and devotion together create transcendence, and that the music of thousands of years of civilization can be passed intact from one generation to the next through patient teaching and loving practice."
+    },
+    {
+      "key": "thirukural",
+      "title": "Thirukkural — The Ancient Tamil Book of Wisdom",
+      "text": "The Thirukkural is perhaps the greatest treasure of Tamil civilisation — a book of one thousand three hundred and thirty couplets, two lines each, covering all aspects of human life with extraordinary wisdom, depth, and precision. It was written by the great Tamil poet and philosopher Thiruvalluvar, who is believed to have lived around two thousand years ago. The Kural, as it is also called, is divided into three books — Aram (virtue), Porul (wealth and governance), and Inbam (love) — covering ethics, civic life, politics, economics, family, friendship, love, and every dimension of human experience. What is remarkable about the Thirukkural is that it speaks to everyone, regardless of religion, caste, or background — Thiruvalluvar himself is believed to have been from a weaver community, and his text treats all people as equal. The Kural has been translated into over forty languages. Some of its most famous couplets include thoughts like: 'Whatever you do, think of the outcome before you act'; 'The best medicine is to be moderate in eating'; 'The strength of a family is the mother's virtue'. Tamil schools require children to memorise sections of the Kural, and competitions are held across Tamil Nadu for reciting it from memory. The statue of Thiruvalluvar stands 133 feet tall — one foot for each chapter — at the southern tip of India at Kanyakumari, where three seas meet. The Thirukkural is not just a book — it is a way of life, a guide to being a good person and a good citizen that has guided Tamil civilisation for two thousand years."
+    },
+    {
+      "key": "jallikattu",
+      "title": "Jallikattu — The Ancient Bull-Taming Sport",
+      "text": "Jallikattu is an ancient and distinctively Tamil sport practised during Pongal season, particularly in the Madurai, Pudukkottai, and Tiruchirappalli districts of Tamil Nadu. It is a traditional bull-taming event that has been practised for at least two thousand years — depicted even on ancient Tamil artifacts. In Jallikattu, a specially bred bull is released into a crowd of participants who attempt to hold onto the bull's hump as it runs and bucks, trying to tame it. The bulls used in Jallikattu are not ordinary animals — they are specially bred and trained Pulikulam or Kangayam breed bulls, raised with great care and fed nutritious food. They are considered a symbol of courage and virility. The men who participate are called erutu pitikkarar, and the sport requires both physical strength and skill — the goal is to hold onto the hump for a prescribed distance or for a certain number of steps, not to harm the bull. Jallikattu is deeply connected to Tamil cultural identity and agricultural heritage — it is tied to the tradition of selecting the strongest bulls for breeding, which helped maintain the genetic health of working cattle. The bulls that cannot be tamed become symbols of pride for their owners. When a legal controversy arose that threatened to ban Jallikattu, Tamil people across the world protested passionately, seeing the potential ban as an attack on Tamil culture and identity. The festival was ultimately protected and is now held annually with great enthusiasm. Jallikattu represents the ancient Tamil values of courage, connection with animals, and pride in indigenous tradition."
+    },
+    {
+      "key": "silambam",
+      "title": "Silambam — The Ancient Tamil Martial Art",
+      "text": "Silambam is one of the world's oldest martial arts, originating in ancient Tamil Nadu and dating back at least three thousand years, mentioned in Sangam literature — the classical Tamil poetry of the ancient period. It is a form of stick fighting using a bamboo staff called the silambam, and it has been practised through Tamil history as both a combat art and a performance tradition. The word silambam itself comes from the word for bamboo, and the training involves using a staff the same height as the practitioner. Silambam teaches the practitioner to use speed, agility, footwork, and leverage rather than brute strength — it is a highly technical art that takes years of dedicated practice to master. Silambam was traditionally taught in gurukuls — residential schools where students lived with their master — and the relationship between the guru and student was considered sacred. In battle, Silambam warriors were known for their ability to defend themselves against multiple attackers. Beyond fighting, Silambam is also a form of physical conditioning that develops balance, coordination, reflexes, and mental focus. Today, Silambam is practised as a sport and as a performance art, with annual tournaments held across Tamil Nadu and among Tamil diaspora communities worldwide. Students wear traditional clothing for performance. A Silambam demonstration at a festival or cultural event is exciting to watch — the speed at which the bamboo staff is whirled, the footwork, and the grace of the movements are genuinely impressive. Silambam represents the ancient Tamil understanding that physical skill, mental discipline, and artistic expression are all part of the same practice."
+    },
+    {
+      "key": "sangam_literature",
+      "title": "Sangam Literature — The World's Oldest Classical Poetry",
+      "text": "Sangam literature is one of the oldest bodies of secular poetry in the world, written in classical Tamil approximately two thousand years ago during the period when ancient Tamil kingdoms flourished in what is now Tamil Nadu. The name Sangam refers to literary academies — gatherings of scholars and poets — that are believed to have existed in ancient times. The Sangam poems are remarkable for their modernity — they speak about nature, love, war, friendship, the sea, mountains, and the joys and sorrows of daily life in language that feels alive and fresh even today. The poems are divided into Akam — inner poems, which are about love and relationships — and Puram — outer poems, which are about war, heroism, and the duties of kings. The love poems use a sophisticated system called tinai, where different landscapes — the mountains, the forest, the seashore, the fields, and the scrubland — each represent a different stage of love. For example, mountain landscapes represent union and longing; seashore landscapes represent the patience of a waiting lover. The Five Great Epics of Tamil literature include Silappatikaram — the story of Kannagi, a woman who brings down a city with the power of her righteous anger — and Manimekalai, Cilappatikaram's sequel. The Tirukkural by Thiruvalluvar is part of this tradition. Tamil is one of the few languages in the world with living speakers that has maintained an unbroken literary tradition for over two thousand years. This heritage is a source of enormous and well-founded pride for Tamil people everywhere, and the preservation of Tamil language and literature is seen as one of the most important responsibilities of the Tamil diaspora."
+    },
+    {
+      "key": "meenakshi_temple",
+      "title": "Madurai Meenakshi — The Temple City",
+      "text": "Madurai is one of the oldest continuously inhabited cities in the world and one of India's greatest temple cities, home to the magnificent Meenakshi Amman Temple — a complex of fourteen towering gopurams covered in thousands of brilliantly painted statues, surrounded by a series of sacred halls, tanks, and shrines. The temple is dedicated to Goddess Meenakshi — an incarnation of Parvati — and her consort Lord Sundareswarar, a form of Shiva. The temple complex covers fourteen acres in the heart of the city. The main gopurams are encrusted with approximately thirty-three thousand colorfully painted sculptures of gods, demons, animals, and mythological scenes, making them extraordinary works of art visible from far across the city. The Meenakshi Amman Temple has been a center of Tamil culture, scholarship, and devotion for over two thousand years. The annual Chittirai festival in April and May — celebrating the divine wedding of Meenakshi and Sundareswarar — is the biggest festival in Madurai and one of the largest in South India, drawing hundreds of thousands of pilgrims. The temple has a Thousand-Pillar Hall, each pillar carved with intricate figures. A sacred tank called the Porthamarai Kulam, or the Golden Lotus Pool, reflects the temple towers in its still water. The city of Madurai itself is laid out concentrically around the temple like a lotus flower, built according to ancient temple city planning principles. Tamil Nadu has hundreds of ancient temples of great magnificence, but Madurai's Meenakshi temple — the Fish-Eyed Goddess — is among the greatest wonders of the world."
+    },
+    {
+      "key": "paavam_adimai",
+      "title": "Tamil Harvest and Farmers",
+      "text": "Agriculture has been the foundation of Tamil civilisation for thousands of years, and the relationship between the Tamil people and the land they farm is celebrated, mourned, and revered throughout Tamil literature, music, and festivals. The great Kaveri delta — the rich agricultural plain of the Kaveri river — has been one of India's most fertile regions since ancient times, producing rice that fed kingdoms and empires. Tamil farmers developed sophisticated irrigation systems — the Grand Anicut built by King Karikala Chola over two thousand years ago is one of the world's oldest working dams, still in use today. Farming knowledge in Tamil communities is passed down through generations in the form of sayings, songs, and rituals. The agricultural calendar determines the timing of every major festival — Pongal marks the harvest, Aadi Perukku marks the monsoon rains, and countless local temple festivals coincide with the sowing, growing, and harvesting seasons. Traditional Tamil farming practices include organic fertilisation, crop rotation, and the cultivation of heritage rice varieties with unusual names and properties. The red rice of Tirunelveli and the Kavuni rice are ancient varieties that are now being preserved and celebrated as part of Tamil cultural heritage. Tamil Sangam poetry is full of descriptions of farming life — the sound of ploughing, the smell of earth after rain, the sight of golden paddy fields at harvest time. The farmer in Tamil culture is not just a worker but a hero — someone who transforms the gifts of sun, water, and earth into food that sustains all of humanity. This respect for farmers and for the land is one of Tamil civilisation's most enduring and important values."
+    }
+  ],
+  "stories": [
+    {
+      "key": "kannagiyin_kathai",
+      "title": "கண்ணகியின் கதை",
+      "translit": "Kannagiyin Kathai",
+      "gloss": "The Story of Kannagi",
+      "lines": [
+        {
+          "text": "மிகவும் நீண்ட காலத்திற்கு முன்பு, கண்ணகி என்ற அழகிய பெண் இருந்தாள்.",
+          "gloss": "Long, long ago, there lived a beautiful woman named Kannagi."
+        },
+        {
+          "text": "அவளுக்கு கோவலன் என்ற அன்பான கணவன் இருந்தான்.",
+          "gloss": "She had a loving husband named Kovalan."
+        },
+        {
+          "text": "அவர்கள் மதுரை நகரத்திற்கு வந்தார்கள்.",
+          "gloss": "They came to the city of Madurai."
+        },
+        {
+          "text": "கோவலன் ஒரு தங்க சிலம்பை விற்க சந்தைக்கு சென்றான்.",
+          "gloss": "Kovalan went to the market to sell a golden anklet."
+        },
+        {
+          "text": "ஆனால் துஷ்ட மாணிக்கன் என்பவன் கோவலனை திருடன் என்று குற்றம் சாட்டினான்.",
+          "gloss": "But a wicked man named Manikkam accused Kovalan of being a thief."
+        },
+        {
+          "text": "அரசன் நீதியை சரிவர ஆராயாமல் தீர்ப்பு கூறினான்.",
+          "gloss": "The king gave his verdict without properly examining the truth."
+        },
+        {
+          "text": "கோவலன் தண்டிக்கப்பட்டான்.",
+          "gloss": "Kovalan was punished."
+        },
+        {
+          "text": "கண்ணகியின் இதயம் தேம்பி அழுதது.",
+          "gloss": "Kannagi's heart wept with grief."
+        },
+        {
+          "text": "ஆனால் அவள் அழவில்லை — கோபமடைந்தாள்.",
+          "gloss": "But she did not weep — she became angry."
+        },
+        {
+          "text": "அவள் அரண்மனைக்கு சென்று அரசன் முன் நின்றாள்.",
+          "gloss": "She went to the palace and stood before the king."
+        },
+        {
+          "text": "'என் கணவன் குற்றமற்றவன்!' என்று உரத்த குரலில் சொன்னாள்.",
+          "gloss": "'My husband is innocent!' she said in a loud voice."
+        },
+        {
+          "text": "அவள் தன் சிலம்பை உடைத்தாள் — அதில் மாணிக்கங்கள் இருந்தன.",
+          "gloss": "She broke her own anklet — it contained rubies."
+        },
+        {
+          "text": "இரத்தினக் கற்கள் அல்ல — மலர்கள் விழுந்தன.",
+          "gloss": "Not precious stones — flowers fell out."
+        },
+        {
+          "text": "திருடப்பட்ட சிலம்பில் மாணிக்கங்கள் இல்லை — அது அரசிக்கு சொந்தமானது!",
+          "gloss": "The stolen anklet had no rubies — it belonged to the queen!"
+        },
+        {
+          "text": "அரசன் தன் தவறை உணர்ந்தான் — அவனது மனம் ஒடிந்தது.",
+          "gloss": "The king realized his mistake — his heart broke."
+        },
+        {
+          "text": "கண்ணகியின் நியாயம் உறுதிப்பட்டது.",
+          "gloss": "Kannagi's justice was confirmed."
+        },
+        {
+          "text": "அவள் தன் கணவனுக்கு நீதி கிடைப்பதை கண்டாள்.",
+          "gloss": "She saw justice delivered to her husband."
+        },
+        {
+          "text": "கண்ணகி வேறு யாரையும் போன்றில்லை — அவள் உண்மையின் சக்தி.",
+          "gloss": "Kannagi was unlike any other — she was the power of truth."
+        },
+        {
+          "text": "அவளுடைய கதை இரண்டாயிரம் ஆண்டுகளாக தமிழர்களால் சொல்லப்படுகிறது.",
+          "gloss": "Her story has been told by Tamil people for two thousand years."
+        },
+        {
+          "text": "உண்மையும் தைரியமும் எந்த அரசனையும் விட வலிமையானவை.",
+          "gloss": "Truth and courage are more powerful than any king."
+        }
+      ]
+    },
+    {
+      "key": "aesop_crow_fox",
+      "title": "காகமும் நரியும்",
+      "translit": "Kaagamum Nariyum",
+      "gloss": "The Crow and the Fox",
+      "lines": [
+        {
+          "text": "ஒரு காகம் ஒரு மரத்தில் உட்கார்ந்திருந்தது.",
+          "gloss": "A crow was sitting on a tree."
+        },
+        {
+          "text": "அதன் வாயில் ஒரு பெரிய ரொட்டி துண்டு இருந்தது.",
+          "gloss": "In its beak was a big piece of bread."
+        },
+        {
+          "text": "ஒரு நரி கீழே நடந்து வந்தது.",
+          "gloss": "A fox came walking below."
+        },
+        {
+          "text": "நரிக்கு அந்த ரொட்டி வேண்டும் என்று ஆசை வந்தது.",
+          "gloss": "The fox desired that bread."
+        },
+        {
+          "text": "'வணக்கம் அழகான காகமே!' என்று நரி கூறியது.",
+          "gloss": "'Greetings, beautiful crow!' said the fox."
+        },
+        {
+          "text": "'உன் இறகுகள் எவ்வளவு பளபளக்கின்றன!'",
+          "gloss": "'How shiny your feathers are!'"
+        },
+        {
+          "text": "காகம் மகிழ்ந்தது — இது கேட்கவே இனிமையாக இருந்தது.",
+          "gloss": "The crow was pleased — this was pleasant to hear."
+        },
+        {
+          "text": "'நீ நிச்சயமாக அழகான குரலில் பாடுவாய்!' நரி சொன்னது.",
+          "gloss": "'You surely sing with a beautiful voice!' said the fox."
+        },
+        {
+          "text": "காகம் தன் அழகான குரலை காட்டணும் என்று நினைத்தது.",
+          "gloss": "The crow wanted to show off its beautiful voice."
+        },
+        {
+          "text": "அது வாயை திறந்து பாட முயன்றது.",
+          "gloss": "It opened its beak wide and tried to sing."
+        },
+        {
+          "text": "ரொட்டி கீழே விழுந்தது!",
+          "gloss": "The bread fell down!"
+        },
+        {
+          "text": "நரி உடனே ரொட்டியை கவ்விக்கொண்டது.",
+          "gloss": "The fox immediately grabbed the bread."
+        },
+        {
+          "text": "'நன்றி!' என்று நரி சொன்னது, சிரிக்கும் குரலில்.",
+          "gloss": "'Thank you!' said the fox, in a laughing voice."
+        },
+        {
+          "text": "'உன் குரல் அழகானது, ஆனால் உன் புத்தி இல்லை!'",
+          "gloss": "'Your voice is beautiful, but you have no wisdom!'"
+        },
+        {
+          "text": "காகம் வெட்கப்பட்டு மரத்தில் அமர்ந்தது.",
+          "gloss": "The crow sat ashamed on the tree."
+        },
+        {
+          "text": "புகழுரைக்காரர்கள் எப்போதும் ஏதோ ஒரு நோக்கத்தோடு வருவார்கள்.",
+          "gloss": "Flatterers always come with some selfish purpose."
+        },
+        {
+          "text": "அடுத்த தடவை காகம் மிகவும் கவனமாக இருந்தது.",
+          "gloss": "The next time the crow was very careful."
+        },
+        {
+          "text": "ரொட்டியை இறுக்கமாக கவ்விக்கொண்டது.",
+          "gloss": "It held the bread tightly in its beak."
+        },
+        {
+          "text": "நரி எவ்வளவு பாராட்டினாலும் காகம் வாயை திறக்கவில்லை.",
+          "gloss": "No matter how much the fox praised, the crow did not open its beak."
+        },
+        {
+          "text": "அறிவு நமக்கு தினமும் ஒரு புதிய பாடம் கற்பிக்கும்.",
+          "gloss": "Wisdom teaches us a new lesson every day."
+        }
+      ]
+    }
+  ]
+}

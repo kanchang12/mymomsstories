@@ -1,0 +1,394 @@
+{
+  "name": "Hindi",
+  "alphabet": [
+    {
+      "char": "अ",
+      "translit": "a",
+      "hint": "as in 'about'"
+    },
+    {
+      "char": "आ",
+      "translit": "aa",
+      "hint": "as in 'father'"
+    },
+    {
+      "char": "इ",
+      "translit": "i",
+      "hint": "as in 'sit'"
+    },
+    {
+      "char": "क",
+      "translit": "ka",
+      "hint": ""
+    },
+    {
+      "char": "ख",
+      "translit": "kha",
+      "hint": ""
+    },
+    {
+      "char": "ग",
+      "translit": "ga",
+      "hint": ""
+    },
+    {
+      "char": "च",
+      "translit": "cha",
+      "hint": ""
+    },
+    {
+      "char": "त",
+      "translit": "ta",
+      "hint": ""
+    },
+    {
+      "char": "द",
+      "translit": "da",
+      "hint": ""
+    },
+    {
+      "char": "न",
+      "translit": "na",
+      "hint": ""
+    }
+  ],
+  "words": [
+    {
+      "text": "माँ",
+      "translit": "maa",
+      "gloss": "mother"
+    },
+    {
+      "text": "पानी",
+      "translit": "paani",
+      "gloss": "water"
+    },
+    {
+      "text": "घर",
+      "translit": "ghar",
+      "gloss": "house"
+    },
+    {
+      "text": "सूरज",
+      "translit": "sooraj",
+      "gloss": "sun"
+    },
+    {
+      "text": "किताब",
+      "translit": "kitaab",
+      "gloss": "book"
+    },
+    {
+      "text": "फूल",
+      "translit": "phool",
+      "gloss": "flower"
+    },
+    {
+      "text": "दूध",
+      "translit": "doodh",
+      "gloss": "milk"
+    },
+    {
+      "text": "पेड़",
+      "translit": "ped",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "मेरा नाम आर्या है।",
+      "translit": "Mera naam Aarya hai.",
+      "gloss": "My name is Aarya."
+    },
+    {
+      "text": "सूरज पूर्व से उगता है।",
+      "translit": "Sooraj poorv se ugta hai.",
+      "gloss": "The sun rises from the east."
+    },
+    {
+      "text": "माँ मुझे कहानी सुनाती है।",
+      "translit": "Maa mujhe kahaani sunaati hai.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "मैं हिंदी सीख रहा हूँ।",
+      "translit": "Main Hindi seekh raha hoon.",
+      "gloss": "I am learning Hindi."
+    },
+    {
+      "text": "पानी जीवन है।",
+      "translit": "Paani jeevan hai.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "diwali",
+      "title": "Diwali — The Festival of Lights",
+      "text": "Diwali is one of the most celebrated festivals in India and among Indian communities all over the world. It is called the festival of lights because on this night, millions of tiny oil lamps called diyas are lit in every home, on every windowsill, rooftop, and doorstep. The word Diwali comes from the Sanskrit word Deepavali, which means row of lights. Diwali falls on the night of the new moon in October or November, so the sky is pitch dark and the glow of the lamps is all the more beautiful and magical. The festival celebrates the return of Lord Rama to his kingdom of Ayodhya after fourteen years of exile — the people of Ayodhya lit lamps to welcome him home, and that tradition has been celebrated ever since. For Hindus, it is also the day when Goddess Lakshmi visits clean and beautifully lit homes to bless them with prosperity. The night before Diwali, children help their parents clean the house from top to bottom and decorate the entrance with colourful rangoli patterns made from coloured powder, flowers, or rice. New clothes are worn on Diwali day. Families visit sweet shops and buy boxes of mithai — barfi, ladoo, kaju katli, and gulab jamun — to give to neighbours and relatives. In the evening, fireworks light up the sky with colour and noise. Children love sparklers and fuljhadi, which shower golden sparks. Traditional games like cards are played late into the night, since Lakshmi is said to visit during this time. Diyas made of clay are decorated and filled with mustard oil or ghee, and their gentle glow creates a warm and peaceful feeling. The spirit of Diwali is that light always wins over darkness, and goodness always wins over evil."
+    },
+    {
+      "key": "holi",
+      "title": "Holi — The Festival of Colours",
+      "text": "Holi is perhaps the most joyful and colourful festival in India — a day when everyone, regardless of age, goes outside and throws coloured powder and water at each other in a celebration of spring, love, and happiness. It falls on the full moon day of the month of Phalguna, usually in March, and marks the arrival of spring. The story behind Holi involves the devotee Prahlada, whose evil father Hiranyakashipu wanted everyone to worship him instead of God. Hiranyakashipu's sister Holika had a magic shawl that could protect her from fire, and she tried to burn young Prahlada alive. But God protected Prahlada — the fire burned Holika instead, and Prahlada walked out safely. The night before Holi, people light bonfires called Holika Dahan to remember this story of good winning over evil. The next morning is Dhulandi — the day of colours. Streets erupt in a rainbow of red, yellow, green, blue, and pink powder. Water guns and water balloons fly in every direction. People smear colour on each other's faces and hair, and everyone ends up looking completely unrecognisable. Strangers become friends on Holi — the colours erase differences between rich and poor, young and old, and bring everyone together in laughter. Traditional Holi foods include thandai, a milk drink flavoured with almonds, saffron, and spices; gujiya, fried pastry filled with sweet coconut and dried fruit; and puran poli, a sweet flatbread. The spirit of Holi is that life is full of colour, and every now and then it is important to throw away worries, get a little messy, and celebrate just being alive."
+    },
+    {
+      "key": "navratri",
+      "title": "Navratri — Nine Nights of the Goddess",
+      "text": "Navratri means nine nights — nava means nine and ratri means night — and during this festival, the goddess Durga is worshipped in her nine different forms for nine consecutive nights and days. Navratri happens four times a year, but the most famous one is Sharad Navratri, which falls in September or October. Each of the nine days is dedicated to a different form of the goddess — Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri, and Siddhidatri — each representing a different power and quality like strength, wisdom, courage, and compassion. During Navratri, many people fast — eating only fruits, nuts, and certain foods — as a way of showing devotion and purifying the mind and body. Special prayers are held in temples every morning and evening. The most spectacular part of Navratri is the Garba dance, performed in Gujarat and across India, where hundreds of people gather in colourful traditional clothes and dance in huge circles around a lamp or an image of the goddess, clapping and spinning for hours. Women wear beautiful chaniya cholis — skirts and blouses embroidered with mirrors and colourful thread. Men wear traditional kedia tops and dance with sticks in a dance called Dandiya Raas, tapping sticks with partners in a fast, joyful rhythm. Children love learning these dances and wearing the sparkly traditional clothes. On the tenth day, Vijayadashami or Dussehra, giant effigies of the demon Ravana are burned with fireworks to celebrate the victory of good over evil. Navratri teaches that the feminine energy of the universe is incredibly powerful, and that through devotion, fasting, music, and dance, people can connect with that power."
+    },
+    {
+      "key": "raksha_bandhan",
+      "title": "Raksha Bandhan — The Thread of Protection",
+      "text": "Raksha Bandhan is a deeply loving festival that celebrates the relationship between brothers and sisters. The name means protection bond — raksha means protection and bandhan means bond or tie. On this day, sisters tie a decorative thread called a rakhi around their brother's wrist. The rakhi is more than just a thread — it is a symbol of the sister's love and her wish for her brother's long life, good health, and success. In return, the brother promises to always protect his sister, care for her, and be there for her whenever she needs him. He also gives her a gift and often money as a token of affection. The ceremony is simple but beautiful — the sister prepares a tray with the rakhi, some rice grains, a small lamp, sweets, and a red tilak. She puts the tilak on her brother's forehead, lights the lamp and circles it in front of him, then ties the rakhi around his right wrist while saying a blessing. Then she feeds him a piece of sweet mithai. Brothers who live far away make special efforts to come home for Raksha Bandhan, and those who cannot come home send gifts to their sisters. Sisters also buy rakhis weeks in advance and look for ones with beautiful designs — some have tiny beads, mirrors, flowers, or cartoon characters. Raksha Bandhan falls on the full moon of the month of Shravan, usually in August. Over time, the festival has expanded — people also tie rakhis to cousins, friends, and even to trees as a symbol of love for nature. It is a day that reminds everyone that some bonds in life are made not by blood but by love and commitment."
+    },
+    {
+      "key": "janmashtami",
+      "title": "Janmashtami — Birth of Lord Krishna",
+      "text": "Janmashtami celebrates the birthday of Lord Krishna, one of the most beloved figures in Hindu tradition — a god who was also a mischievous child, a wise friend, a brave hero, and a great teacher. He was born at midnight, so Janmashtami celebrations go deep into the night. The story of Krishna's birth is thrilling — he was born in a prison cell, where his parents Devaki and Vasudeva were imprisoned by the evil king Kansa, who feared that their eighth child would defeat him. As soon as Krishna was born, a miracle happened — all the prison guards fell asleep, the chains fell off, the prison doors opened, and his father carried the baby across a flooded river in a basket to safety. Families decorate a small cradle and place a statue or picture of baby Krishna in it, singing lullabies and devotional songs through the night. At midnight — the exact moment of Krishna's birth — the cradle is rocked and everyone celebrates with great joy. Sweets made especially for Janmashtami include gopalkala — a dish of flattened rice, yogurt, butter, and honey — because Krishna loved dairy products. He was famous for stealing butter and cream from his neighbours' homes as a child. One beloved Janmashtami tradition is Dahi Handi — a pot of yogurt and butter is hung high up on a rope, and teams of young men form human pyramids trying to reach it and break it open, just as Krishna and his friends used to do. Children dress as baby Krishna in yellow clothes, peacock feather crown, and carry a small flute. The lessons of Krishna's life — of loving all equally, of standing up for truth, of living joyfully — are celebrated on this night."
+    },
+    {
+      "key": "pongal_sankranti",
+      "title": "Makar Sankranti — Harvest and Kites",
+      "text": "Makar Sankranti is one of the few Hindu festivals with a fixed date in the solar calendar — it always falls on January 14th. On this day, the sun enters the sign of Makara (Capricorn) and begins its northward journey, bringing longer days and the hope of spring. It is one of the most widely celebrated harvest festivals in India, known by different names in different states — Makar Sankranti in Maharashtra and North India, Pongal in Tamil Nadu, Lohri in Punjab, Bihu in Assam, and Uttarayan in Gujarat. It is fundamentally a celebration of the new harvest — of farmers thanking the sun for giving warmth and light that makes their crops grow. The most famous tradition is kite flying — especially in Gujarat, where the sky is completely filled with kites of every colour and size from morning until night. People fly kites from rooftops and shout Kai Po Che when they cut another kite's string. Children stay up all night on the eve of Sankranti to make sure their kite strings are coated and ready for battle the next day. Traditional foods vary by region but all share the theme of sweetness and warmth: tilgul in Maharashtra — sesame and jaggery sweets; khichdi in Uttar Pradesh; pongal rice in the south; til ke ladoo everywhere. The sharing of tilgul sweets in Maharashtra comes with the saying tilgul ghya ani god god bola — take sesame sweets and speak sweetly. It is a reminder that kindness and sweet words are as important as sweet food."
+    },
+    {
+      "key": "ganesh_chaturthi",
+      "title": "Ganesh Chaturthi — Elephant God Comes Home",
+      "text": "Ganesh Chaturthi celebrates the birth of Lord Ganesha, the beloved elephant-headed god who is the remover of obstacles, the god of beginnings, and the patron of arts and sciences. He is the son of Lord Shiva and Goddess Parvati, and he is always worshipped first before any important event or festival begins. The celebration is especially grand in Maharashtra, where it is called Ganeshotsav and lasts for ten days. Large and beautifully crafted statues of Ganesh — some as tall as buildings — are installed in neighbourhoods and homes. The statues are decorated with flowers, lights, and garlands, and daily prayers, singing, and cultural performances take place around them. On the last day, called Anant Chaturdashi, the statue is carried in a huge procession through the streets with drums, dancing, and singing before being immersed in a river, lake, or the sea — it is an emotional moment because the god is being sent back home. Everyone shouts Ganpati Bappa Morya — which means 'Lord Ganesh, come back next year!' Modak — a sweet stuffed rice dumpling — is Ganesha's favourite food, and enormous quantities are made and distributed as prasad. Children love Ganesha because he is depicted as a chubby, happy, child-like god who loves sweets and rides a tiny mouse. The ten days of Ganesh Chaturthi in Mumbai are incredibly festive — streets are decorated, shops are closed, people visit each other, and the whole city becomes one big celebration. The spirit of the festival is that before any journey in life, it is good to remember Ganesha and ask for his blessings to remove obstacles and bring wisdom."
+    },
+    {
+      "key": "chhath_puja",
+      "title": "Chhath Puja — Worship of the Sun",
+      "text": "Chhath Puja is one of the most ancient and demanding Hindu festivals, dedicated to Surya, the Sun God, and his sister Chhathi Maiya. It is primarily celebrated in Bihar, Jharkhand, and Uttar Pradesh, and by those communities wherever they have settled in the world. The festival spans four days and involves very strict fasting — the main devotee, usually a woman called the vrati, does not eat or drink anything for 36 hours straight, which is considered an incredibly difficult spiritual practice. Despite the hardship, millions of women observe this fast every year as an act of love and devotion for the wellbeing of their families. The most spectacular rituals happen at the river bank at dawn and dusk. Entire families go to the river — the women stand in the water, sometimes up to their waists, and offer argh — which means offerings of water, fruit, sugarcane, and flowers — to the setting sun in the evening and the rising sun in the morning. The sight of thousands of people standing in the river, holding up fruit baskets as the sun rises over the water, is one of the most breathtaking sights in all of Indian culture. Special foods called thekua — fried wheat biscuits — are made for Chhath. The banks of rivers are cleaned for weeks before the festival. Bamboo baskets called supi are filled with fruits, sugarcane, coconut, and flowers for the offering. Chhath songs sung by women are hauntingly beautiful and emotionally powerful. The festival teaches gratitude — for the sun that gives life, warmth, food, and energy to everyone on earth without asking for anything in return."
+    },
+    {
+      "key": "teej",
+      "title": "Teej — Women's Festival of Monsoon",
+      "text": "Teej is a joyous festival celebrated primarily by women in North India, especially in Rajasthan, Haryana, Punjab, and Uttar Pradesh, during the monsoon season in July or August. There are three main Teej festivals — Hariyali Teej, Kajari Teej, and Hartalika Teej — but all are connected by the themes of the monsoon, women's celebrations, and devotion to Lord Shiva and Goddess Parvati. The festival celebrates the reunion of Parvati with Lord Shiva after years of prayer and devotion — it is also a festival about love, marriage, and the bonds between families. On Teej, women dress in green clothes — green is the colour of the monsoon and new growth — and wear beautiful jewelry. They apply fresh mehndi henna patterns on their hands and feet the night before, and the designs are said to be a sign of good luck and love. Women swing on decorated swings hung from trees, singing Teej songs about the rain, the peacocks dancing in the fields, and the beauty of the monsoon. Special sweets like ghevar — a large, round, crispy sweet soaked in sugar syrup and cream — are made specifically for Teej. Mothers send these sweets and gifts to their married daughters' homes as a sign of love. Women also fast on Teej for the long life and health of their husbands. Processions carrying a golden statue of Goddess Parvati go through the streets, accompanied by music and dancing. The festival captures all the beauty and joy of the monsoon — the smell of wet earth, the sound of rain, the sight of peacocks dancing, and the happiness of women celebrating together."
+    },
+    {
+      "key": "lohri",
+      "title": "Lohri — Bonfire Night of the Punjab",
+      "text": "Lohri is the beloved midwinter festival of the Punjab region, celebrated on January 13th every year, the night before Makar Sankranti. It is a festival of fire, warmth, food, and community — a way of bidding farewell to the cold, dark days of winter and celebrating the approaching warmth. Huge bonfires are lit in open spaces, and families and neighbours gather around the fire, singing and dancing the vigorous Bhangra and Gidda dances. People toss offerings of rewari — sesame candy — popcorn, puffed rice, and gajak into the fire while saying 'Aadar aye dilather jaye' — which means 'may honour come and poverty go'. The fire represents the sun's growing strength, and these offerings are a way of thanking the sun and welcoming back warmth and light. Children go from house to house singing Lohri songs in the days before the festival, collecting rewari, gajak, and money as a reward. Lohri is especially joyful in families where a baby was born that year, or where a wedding has recently taken place — the new member of the family is celebrated at Lohri. Special foods include sarson da saag with makki di roti — mustard greens with corn flatbread — as well as gajak, rewari, popcorn, and peanuts. The smell of the bonfire, the sound of the dhol drum, and the energy of Bhangra dancing make Lohri one of the most exciting nights of the year. Even families far from Punjab recreate this warmth by gathering together, lighting a symbolic fire or candles, eating traditional foods, and dancing. It is a celebration that says: winter is almost over, and life and warmth are coming back."
+    },
+    {
+      "key": "puja_preparation",
+      "title": "Preparing for Puja — Sacred Rituals at Home",
+      "text": "In Hindu homes across India, puja — which means prayer and worship — is not just a special occasion but a daily practice for many families. The small prayer corner or prayer room in a Hindu home is called a mandir or pooja ghar, and it is considered the most sacred space in the house. Every morning, many family members wake up, bathe, and go to the mandir to light incense, offer flowers, ring a small bell, and say prayers. The bell is rung to signal the start of worship and to invite good energy into the space. Incense called agarbatti fills the room with a fragrant smoke that is used to purify the air. Fresh flowers — especially marigold, hibiscus, and rose — are offered to the statues or pictures of the gods. A small lamp called a diya is lit with oil or ghee. Some families light a lamp that burns continuously through the day. Fruits and sweets are offered to the gods and then eaten as prasad — blessed food — after the prayer. The sound of bells, the smell of flowers and incense, and the soft chanting of mantras are the textures of a Hindu home's spiritual life. Special prayers are performed on specific days of the week — Monday is dedicated to Lord Shiva, Tuesday to Lord Hanuman, Thursday to Vishnu and Lakshmi, and Friday to Goddess Durga. On these days, a special sweet or food is prepared as an offering. Children are taught prayers and the names of the gods from a very young age. Even families who cannot perform elaborate rituals every day try to light a diya in the evening — the tiny flame is a symbol of hope, light, and the divine presence in everyday life."
+    },
+    {
+      "key": "gita_jayanti",
+      "title": "Gita Jayanti — The Birthday of the Bhagavad Gita",
+      "text": "Gita Jayanti celebrates the day when Lord Krishna spoke the Bhagavad Gita to the warrior Arjuna on the battlefield of Kurukshetra — one of the most important texts in all of Hindu philosophy. It falls on the eleventh day of the bright fortnight of the month of Margashirsha, usually in November or December. The Bhagavad Gita is a conversation between Krishna and Arjuna that happened at the start of a great war. Arjuna was overcome with sadness and confusion about whether he should fight, because the enemy included his own relatives and teachers. Krishna's answers to Arjuna's questions form the eighteen chapters of the Gita. What Krishna says covers some of the deepest questions of life: What is the right thing to do? What happens after death? How should we deal with fear? What does it mean to be truly free? How do we find peace? The Gita says that we should do our duty without worrying about the results — we should work hard, be honest, and do what is right, without being attached to success or failure. This teaching is called nishkama karma. Millions of Hindus read the Gita as a guide for how to live well. On Gita Jayanti, temples hold readings and discussions of the Gita, and communities gather to reflect on its teachings. Schools in India often have competitions where children recite passages from memory. The Gita is not just a religious text — its wisdom about action, purpose, courage, and inner peace speaks to people of all backgrounds."
+    },
+    {
+      "key": "guru_purnima",
+      "title": "Guru Purnima — Honouring Teachers",
+      "text": "Guru Purnima is a festival dedicated to the guru — the teacher, the guide, and the one who takes you from darkness to light. The word guru itself means this: gu means darkness and ru means remover — the guru is the one who removes the darkness of ignorance. This festival falls on the full moon day of the month of Ashadha, usually in July. It is celebrated by Hindus, Buddhists, and Jains alike, as the idea of honouring one's teacher is central to all these traditions. The story behind Guru Purnima goes back thousands of years to the great sage Vyasa, who is believed to have been born on this day. Vyasa is considered the guru of gurus — he compiled the four Vedas, wrote the Mahabharata and the Bhagavad Gita, and the Puranas. On Guru Purnima, students visit their teachers and offer flowers, fruit, and sweets as a mark of gratitude and respect. In schools and music academies, students perform for their teachers and touch their feet as a sign of deep respect. Spiritual seekers honour their gurus through meditation, prayer, and reflection. The festival reminds everyone that learning is a sacred act and that a good teacher gives one of the most priceless gifts in life — knowledge. In a wider sense, everyone who has ever guided you — your parents, elders, coaches, friends who showed you something important — can be seen as a guru. Guru Purnima is a day to pause and think about all the people who have helped you grow, and to express gratitude for their presence in your life."
+    },
+    {
+      "key": "vaishakhi",
+      "title": "Baisakhi — New Year of the Punjab",
+      "text": "Baisakhi, also spelled Vaisakhi, is the harvest festival and new year celebration of the Punjab region, celebrated on April 13th or 14th every year. It is one of the most important days in the Sikh calendar as well as a major Hindu agricultural festival. For Sikh families worldwide, Baisakhi has enormous historical significance — it was on Baisakhi in 1699 that Guru Gobind Singh Ji established the Khalsa Panth, the community of initiated Sikhs who would follow a code of courage, equality, and service. At a gathering of thousands, Guru Gobind Singh asked for volunteers willing to sacrifice themselves — five brave men, from five different regions and backgrounds, came forward. These five, called the Panj Pyare or Five Beloveds, became the first members of the Khalsa. Guru Gobind Singh gave them Amrit — sweetened holy water — to drink, and established the five symbols of the Khalsa, known as the Five Ks. Today, Baisakhi is celebrated with Nagar Kirtan — a procession through the streets with singing, prayers, and performances of Gatka, the Sikh martial art. Gurdwaras (Sikh temples) are beautifully decorated and serve langar — free food for everyone, regardless of religion or background. Bhangra and Gidda dances express the joy of the harvest. Special sweets like kada prasad — wheat pudding — are distributed. For farmers, Baisakhi marks the end of the rabi wheat harvest, and the fields glow golden before the cutting begins. The spirit of Baisakhi is unity, service, equality, and joy — values that make it beloved by everyone."
+    },
+    {
+      "key": "christmas_india",
+      "title": "Christmas in India — Lights in December",
+      "text": "Christmas in India is a vibrant and joyful celebration, marked with a unique Indian flavour that blends Christian faith with the warmth and colour of Indian culture. India has a significant Christian population, especially in Goa, Kerala, Tamil Nadu, Nagaland, Meghalaya, and in cities like Mumbai, Kolkata, and Delhi. On December 25th, churches across India are packed for midnight mass and morning services, decorated with stars, candles, and lights. In Goa, which was a Portuguese colony, Christmas is celebrated with particular grandeur — houses are decorated with star lanterns called star of Bethlehem, nativity scenes called cribs are set up in homes and churches, and the streets of Old Goa glow with lights and decorations for weeks. In Kerala, churches are lit with thousands of candles. In tribal states of northeast India like Nagaland, Christmas is the biggest celebration of the year, with choirs singing in multiple languages and the whole community gathering in church. Street vendors sell plum cakes, coconut cookies, and rose cookies. Special Christmas bread is baked in Christian homes. Children dress as angels, shepherds, and wise men for school plays. Santa Claus visits neighbourhood to neighbourhood giving sweets and gifts. Christmas trees are decorated with handmade paper stars and tinsel. In many Indian cities, Christmas is celebrated by people of all religions — because the spirit of sharing gifts, gathering with family, singing, and spreading joy belongs to everyone. The deep warmth and generosity at the heart of Christmas — giving to others, especially those who have less — resonates across all of India's many traditions."
+    },
+    {
+      "key": "bihu",
+      "title": "Bihu — The Three Festivals of Assam",
+      "text": "Bihu is the most important festival of Assam, a beautiful state in northeastern India known for its tea gardens, the mighty Brahmaputra river, one-horned rhinos, and rich silk traditions. What makes Bihu unique is that it happens three times a year — each marking a different season in the farmer's calendar. Rongali Bihu, in April, is the most joyful — it marks the Assamese new year and the beginning of the sowing season. Kongali Bihu, in October, is quieter and more reflective — it is a time when the granaries are empty and farmers wait for the harvest. Bhogali Bihu, in January, is the harvest festival — the granaries are full and there is great feasting and celebration. The most exciting traditions are associated with Rongali Bihu. Young men and women in colourful traditional clothes — women wear the mekhela chador, a beautiful two-piece silk dress — perform the Bihu dance in open fields. The Bihu dance is energetic and full of movement, with rhythmic foot-stamping, fluid arm movements, and quick spins, accompanied by the dhol drum, pepa flute made from buffalo horn, and gogona jaw harp. The music of Bihu is intoxicating — once you hear it, you want to dance. Traditional Bihu foods include pitha rice cakes, larus coconut sweets, and jolpan — a breakfast of flattened rice, yogurt, coconut, and jaggery. Bihu songs are love songs about nature, the river, and the joy of spring. The spirit of Bihu is deeply tied to the land — to the cycles of sowing and harvesting, to the Brahmaputra's floods and gifts, and to the natural abundance of Assam."
+    },
+    {
+      "key": "kite_festival",
+      "title": "Uttarayan — International Kite Festival of Gujarat",
+      "text": "Uttarayan, celebrated on January 14th in Gujarat, is one of the most spectacular kite festivals in the world, and the sky over Ahmedabad becomes a canvas of colour and movement as literally millions of kites take to the air from dawn to dusk. The day marks Makar Sankranti — the sun's northward journey — but in Gujarat it has become synonymous with kite flying to such a degree that it is also called the Kite Festival. Families spend weeks before the festival preparing — buying or making kites of all shapes and sizes, coating the kite strings with a sharp abrasive mixture called manja to cut opponents' strings, and planning the best spots on rooftops and open fields. On the morning of Uttarayan, the whole city is on the rooftops. The sky fills with diamonds, rectangles, and animal-shaped kites in every colour imaginable. Children and adults shout Kai Po Che — meaning I've cut it! — whenever they succeed in cutting another kite's string. Kite battles are fierce, fun, and full of skill. Boys and girls chase the falling kites through the streets below in a game called patang loot. The night before Uttarayan is called Uttarayan Eve, and many people fly kites into the evening too, with illuminated kites called tukkal rising against the dark sky. Traditional Uttarayan foods include undhiyu — a rich vegetable dish — jalebi, fafda, and chikki. Families eat on their rooftops, sharing food with neighbours across the gap between buildings. The International Kite Festival draws participants from dozens of countries to Ahmedabad, making this ancient local tradition a global celebration."
+    },
+    {
+      "key": "onam",
+      "title": "Onam — The Festival of Kerala",
+      "text": "Onam is the most important festival of Kerala, the beautiful southern state known as God's Own Country, celebrated for ten days in August or September during the harvest season. It celebrates the mythical return of King Mahabali, a beloved and just king who is said to have ruled Kerala in a golden age — a time when everyone was equal, happy, and prosperous. According to legend, Mahabali was so beloved by his people that the gods became worried and sent the dwarf god Vamana to trick him. Vamana asked for three steps of land, and Mahabali generously agreed. Vamana then grew enormous and covered the whole earth with two steps, leaving Mahabali to offer his own head for the third. God blessed Mahabali and allowed him to return to visit his people once a year — that visit is what Onam celebrates. The most breathtaking Onam tradition is Pookalam — elaborate floral rangoli patterns made on the ground at the entrance of homes using fresh flowers of different colours. Every day of the ten-day festival, the pookalam is extended and made more complex. The feast called Onam Sadhya is legendary — it is a meal of twenty-six or more vegetarian dishes served on a banana leaf, including rice, sambar, avial, olan, erissery, papadum, pickles, and three kinds of payasam dessert. The meal is eaten sitting cross-legged on the floor, without cutlery, using your fingers. Snake boat races called Vallam Kali are held on the rivers — long, narrow boats with over a hundred rowers race in perfect synchrony to the beat of drums and singing. Traditional dances like Thiruvathirakali and the martial art Kalaripayattu are performed. Onam teaches that good governance, generosity, and equality are the foundations of a happy society."
+    }
+  ],
+  "stories": [
+    {
+      "key": "panchatantra_monkey",
+      "title": "पंचतंत्र: बंदर और मगरमच्छ",
+      "translit": "Panchatantra: Bandar aur Magarmach",
+      "gloss": "The Monkey and the Crocodile",
+      "lines": [
+        {
+          "text": "एक बड़े पेड़ पर एक बंदर रहता था।",
+          "gloss": "A monkey lived on a big tree."
+        },
+        {
+          "text": "वह पेड़ नदी के किनारे था।",
+          "gloss": "That tree was on the bank of a river."
+        },
+        {
+          "text": "नदी में एक मगरमच्छ रहता था।",
+          "gloss": "A crocodile lived in the river."
+        },
+        {
+          "text": "बंदर और मगरमच्छ अच्छे दोस्त बन गए।",
+          "gloss": "The monkey and crocodile became good friends."
+        },
+        {
+          "text": "बंदर रोज़ मगरमच्छ को मीठे फल देता था।",
+          "gloss": "Every day the monkey gave the crocodile sweet fruits."
+        },
+        {
+          "text": "एक दिन मगरमच्छ कुछ फल घर ले गया।",
+          "gloss": "One day the crocodile took some fruit home."
+        },
+        {
+          "text": "उसकी पत्नी ने फल खाए और बोली, 'बहुत मीठे हैं!'",
+          "gloss": "His wife ate the fruits and said, 'They are very sweet!'"
+        },
+        {
+          "text": "'जो बंदर रोज़ ऐसे फल खाता है, उसका दिल कितना मीठा होगा!'",
+          "gloss": "'The heart of the monkey who eats such fruits every day must be so sweet!'"
+        },
+        {
+          "text": "पत्नी ने कहा, 'मुझे उस बंदर का दिल चाहिए।'",
+          "gloss": "The wife said, 'I want that monkey's heart.'"
+        },
+        {
+          "text": "मगरमच्छ को बड़ा दुख हुआ पर पत्नी की बात माननी पड़ी।",
+          "gloss": "The crocodile was very sad but had to obey his wife."
+        },
+        {
+          "text": "अगले दिन उसने बंदर को नदी पार आने का न्योता दिया।",
+          "gloss": "The next day he invited the monkey to cross the river."
+        },
+        {
+          "text": "बंदर मगरमच्छ की पीठ पर बैठ गया।",
+          "gloss": "The monkey sat on the crocodile's back."
+        },
+        {
+          "text": "नदी के बीच में मगरमच्छ ने सच बता दिया।",
+          "gloss": "In the middle of the river, the crocodile told the truth."
+        },
+        {
+          "text": "बंदर डर गया, पर चालाकी से सोचने लगा।",
+          "gloss": "The monkey was scared, but started thinking cleverly."
+        },
+        {
+          "text": "बंदर ने कहा, 'अरे! मेरा दिल तो पेड़ पर है!'",
+          "gloss": "The monkey said, 'Oh! My heart is back on the tree!'"
+        },
+        {
+          "text": "'हम बंदर अपना दिल पेड़ पर छोड़ देते हैं जब नाचते हैं!'",
+          "gloss": "'We monkeys leave our hearts on the tree when we dance!'"
+        },
+        {
+          "text": "मगरमच्छ वापस किनारे पर आ गया।",
+          "gloss": "The crocodile came back to the shore."
+        },
+        {
+          "text": "बंदर छलांग लगाकर पेड़ पर चढ़ गया।",
+          "gloss": "The monkey leaped up and climbed the tree."
+        },
+        {
+          "text": "बंदर ने कहा, 'मूर्ख! मेरा दिल मेरे पास ही है!'",
+          "gloss": "The monkey said, 'Fool! My heart is with me!'"
+        },
+        {
+          "text": "बुद्धि से बड़े से बड़े खतरे को भी टाला जा सकता है।",
+          "gloss": "With wisdom, even the greatest danger can be avoided."
+        }
+      ]
+    },
+    {
+      "key": "akbar_birbal_foolish",
+      "title": "अकबर-बीरबल: सबसे बड़ा मूर्ख",
+      "translit": "Akbar-Birbal: Sabse Bada Murkh",
+      "gloss": "Akbar and Birbal: The Biggest Fool",
+      "lines": [
+        {
+          "text": "एक दिन राजा अकबर ने बीरबल को बुलाया।",
+          "gloss": "One day Emperor Akbar called Birbal."
+        },
+        {
+          "text": "अकबर ने कहा, 'बीरबल, दरबार में सबसे बड़ा मूर्ख कौन है?'",
+          "gloss": "Akbar said, 'Birbal, who is the biggest fool in the court?'"
+        },
+        {
+          "text": "बीरबल ने सोचा और बोला, 'मैं कल जवाब दूँगा।'",
+          "gloss": "Birbal thought and said, 'I will answer tomorrow.'"
+        },
+        {
+          "text": "अगले दिन बीरबल दरबार में आया।",
+          "gloss": "The next day Birbal came to court."
+        },
+        {
+          "text": "उसने कहा, 'हुज़ूर, मुझे दो काम करने हैं।'",
+          "gloss": "He said, 'Your Majesty, I need to do two things.'"
+        },
+        {
+          "text": "पहले उसने एक बूढ़े आदमी को बुलाया।",
+          "gloss": "First he called an old man."
+        },
+        {
+          "text": "वह आदमी दूर देश से घोड़ा खरीदने गया था।",
+          "gloss": "That man had gone to a distant land to buy a horse."
+        },
+        {
+          "text": "उसने पहले पैसे दे दिए, फिर घोड़ा लेने गया।",
+          "gloss": "He gave the money first, then went to get the horse."
+        },
+        {
+          "text": "बेशक, विक्रेता ने पैसे लेकर घोड़ा नहीं दिया।",
+          "gloss": "Of course, the seller took the money and gave no horse."
+        },
+        {
+          "text": "बीरबल ने कहा, 'यह पहला मूर्ख है।'",
+          "gloss": "Birbal said, 'This is the first fool.'"
+        },
+        {
+          "text": "सब हँसने लगे।",
+          "gloss": "Everyone laughed."
+        },
+        {
+          "text": "फिर बीरबल ने अकबर की ओर देखा।",
+          "gloss": "Then Birbal looked towards Akbar."
+        },
+        {
+          "text": "'हुज़ूर, आप खुद जा सकते थे इस काम को देखने।'",
+          "gloss": "'Your Majesty, you yourself could have gone to check on this matter.'"
+        },
+        {
+          "text": "'पर आपने एक मंत्री भेजा जो घोड़े की जगह तीतर लाया।'",
+          "gloss": "'But you sent a minister who brought a partridge instead of a horse.'"
+        },
+        {
+          "text": "अकबर हँस पड़े।",
+          "gloss": "Akbar burst out laughing."
+        },
+        {
+          "text": "'ठीक कहा बीरबल। वह मंत्री दूसरा मूर्ख है।'",
+          "gloss": "'Well said Birbal. That minister is the second fool.'"
+        },
+        {
+          "text": "'और तीसरा मूर्ख कौन है?' अकबर ने पूछा।",
+          "gloss": "'And who is the third fool?' Akbar asked."
+        },
+        {
+          "text": "बीरबल ने धीरे से कहा, 'हुज़ूर, वह आप हैं।'",
+          "gloss": "Birbal said softly, 'Your Majesty, it is you.'"
+        },
+        {
+          "text": "'आप जानते हुए भी मूर्खों के काम देखते रहे।'",
+          "gloss": "'You watched fools at work even though you knew better.'"
+        },
+        {
+          "text": "अकबर ने हँसते हुए बीरबल को इनाम दिया।",
+          "gloss": "Akbar laughed and rewarded Birbal."
+        }
+      ]
+    }
+  ]
+}
