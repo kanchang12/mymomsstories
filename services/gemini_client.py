@@ -11,7 +11,7 @@ checking there too).
 import os
 from google import genai
 
-MODEL = "gemini-2.5-flash"   # cheap + fast; this is short text-in/text-out scoring, not audio
+MODEL = "gemini-3.5-flash"   # cheap + fast; this is short text-in/text-out scoring, not audio
 
 _client = None
 
