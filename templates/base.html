@@ -75,6 +75,7 @@ tr:last-child td{border-bottom:none}
 <nav>
   <a href="/" class="nav-logo">My Mom's Stories</a>
   <div class="nav-right">
+    <a href="/videos"><button class="nav-btn">Free videos</button></a>
     {% if session.get('user_id') %}
       <span class="nav-name">{{ session.display_name }}</span>
       {% if session.get('role') == 'admin' %}

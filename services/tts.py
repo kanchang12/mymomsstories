@@ -17,7 +17,7 @@ import hashlib
 from google import genai
 from google.genai import types
 
-TTS_MODEL = "gemini-2.5-flash-preview-tts"
+TTS_MODEL = "gemini-3.1-flash-tts-preview"
 
 # language_code -> (BCP-47 locale for correct accent/pronunciation, prebuilt voice name)
 # Voices are chosen for variety and a warm, natural narrator tone — not the

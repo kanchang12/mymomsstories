@@ -7,6 +7,7 @@ from flask import Blueprint, render_template, request, redirect, url_for
 from models.db import get_cur
 from services.content import list_languages
 from services.credentials import generate_child_credentials
+from services.videos import get_videos
 
 public_bp = Blueprint("public", __name__)
 
@@ -31,6 +32,17 @@ def landing():
 @public_bp.route("/privacy")
 def privacy():
     return render_template("privacy.html")
+
+
+@public_bp.route("/videos")
+def videos():
+    """Free public video library — no login required. Each video can carry
+    multiple language audio tracks (set up per-video in YouTube Studio) —
+    the viewer picks their language from the player's own settings gear
+    (⚙ → Audio), so there's no language sorting needed on our side.
+    See services/videos.py for setup."""
+    video_list = get_videos()
+    return render_template("videos.html", videos=video_list)
 
 
 @public_bp.route("/register", methods=["GET", "POST"])

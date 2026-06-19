@@ -38,7 +38,7 @@
       <select name="language" required
               style="width:100%;margin-top:6px;padding:11px 13px;border:1.5px solid var(--rule-strong);border-radius:8px;background:var(--paper);font-family:inherit;font-size:0.95rem">
         <option value="" disabled selected>Choose a language</option>
-        {% for code, name in languages %}<option value="{{ code }}">{{ name }}</option>{% endfor %}
+        {% for lang in languages %}<option value="{{ lang.code }}">{{ lang.name }}</option>{% endfor %}
       </select>
     </div>
     <div>

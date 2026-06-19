@@ -92,29 +92,26 @@ async function openStop(stop) {
   currentItem = data.item;
 
   if (stop === 'alphabet') {
-    // show the character BIG — no English hint shown to the child
+    // Native script only — no transliteration, no English hint. A kid who
+    // can read the Latin letters will just read those instead of the script.
     const char = currentItem.char;
-    const translit = currentItem.translit || '';
     currentItem._logKey = char; currentItem._logShown = char;
     body.innerHTML = `
       <div class="item-script" style="font-size:3.5rem;text-align:center">${char}
         <button class="speak-btn" onclick="playAudio(${JSON.stringify(char)}, this)">🔊</button>
       </div>
-      <div class="item-translit" style="text-align:center">${translit}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic — say the sound</p>
       <div id="result"></div>`;
 
   } else if (stop === 'words' || stop === 'lines') {
     const txt = currentItem.text;
-    const translit = currentItem.translit || '';
     const gloss = currentItem.gloss || '';
     currentItem._logKey = txt; currentItem._logShown = txt;
     body.innerHTML = `
       <div class="item-script">${txt}
         <button class="speak-btn" onclick="playAudio(${JSON.stringify(txt)}, this)">🔊</button>
       </div>
-      ${translit ? `<div class="item-translit">${translit}</div>` : ''}
       <div class="item-gloss">${gloss}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic, then read it aloud</p>
