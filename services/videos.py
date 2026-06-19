@@ -1,22 +1,22 @@
 """
-services/videos.py — free public video section.
+services/videos.py — free public video section, one YouTube playlist.
 
 YouTube supports multiple audio tracks per video (Studio > Subtitles >
-Add language, or the Audio Tracks feature) — one video carries all 14
-language dubs, and the viewer switches language from the player's own
-settings gear (⚙ → Audio). So this service does NOT sort videos by
-language at all — that's handled entirely inside the YouTube player.
+Add language, or Audio Tracks) — one video carries all 14 language dubs,
+and the viewer switches language from the player's own settings gear
+(⚙ → Audio). So this service does NOT sort videos by language — that's
+handled entirely inside the YouTube player.
 
 Auto-populate setup:
-  1. Set YOUTUBE_CHANNEL_ID in .env to your channel's ID (Studio > Settings
-     > Channel > Advanced, or from your channel URL if it's a /channel/UC...
-     style URL).
-  2. Push a video to your channel, with extra audio tracks added for each
-     language if you want — it appears on /videos automatically.
+  1. Create one playlist on YouTube and add your story videos to it.
+  2. Get its ID — the part after "list=" in the playlist URL, e.g.
+       youtube.com/playlist?list=PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+     → PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  3. Set YOUTUBE_PLAYLIST_ID to that value in .env.
 
-We read the channel's public "uploads" RSS feed — free, no API key, no
-quota — cached for 15 minutes so the site isn't hitting YouTube on every
-visit.
+From then on, just add new videos to that playlist — they show up on
+/videos automatically (cached ~15 min, no redeploy). We read the
+playlist's public RSS feed — free, no API key, no quota.
 """
 import os
 import time
@@ -33,12 +33,12 @@ CACHE_TTL = 900  # 15 minutes
 _cache = {"videos": [], "fetched_at": 0}
 
 
-def _channel_id() -> str:
-    return os.environ.get("YOUTUBE_CHANNEL_ID", "").strip()
+def _playlist_id() -> str:
+    return os.environ.get("YOUTUBE_PLAYLIST_ID", "").strip()
 
 
-def _fetch_channel_feed(channel_id: str) -> list:
-    url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+def _fetch_playlist_feed(playlist_id: str) -> list:
+    url = f"https://www.youtube.com/feeds/videos.xml?playlist_id={playlist_id}"
     r = requests.get(url, timeout=10)
     r.raise_for_status()
     root = ET.fromstring(r.text)
@@ -75,14 +75,14 @@ def get_videos(force: bool = False) -> list:
     if not force and (now - _cache["fetched_at"] < CACHE_TTL) and _cache["videos"]:
         return _cache["videos"]
 
-    channel_id = _channel_id()
-    if not channel_id:
+    playlist_id = _playlist_id()
+    if not playlist_id:
         return []
 
     try:
-        videos = _fetch_channel_feed(channel_id)
+        videos = _fetch_playlist_feed(playlist_id)
     except Exception as e:
-        print(f"[videos] Failed to fetch channel feed: {e}")
+        print(f"[videos] Failed to fetch playlist feed: {e}")
         videos = _cache["videos"]
 
     _cache["videos"] = videos
