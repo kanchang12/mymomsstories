@@ -44,3 +44,19 @@ def pick_item(language_code, stop):
     if not pool:
         return None
     return random.choice(pool)
+
+
+# ── story cycling ─────────────────────────────────────────────────────────────
+_story_idx = {}   # {language_code: int}
+
+def next_story(language_code):
+    """Returns stories in order, cycling — so the child sees all of them."""
+    lang = LANGUAGES.get(language_code)
+    if not lang:
+        return None
+    pool = lang.get('stories', [])
+    if not pool:
+        return None
+    idx = _story_idx.get(language_code, 0) % len(pool)
+    _story_idx[language_code] = idx + 1
+    return pool[idx]

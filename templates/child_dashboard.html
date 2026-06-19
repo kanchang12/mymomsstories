@@ -15,6 +15,15 @@
 .mic-btn{width:64px;height:64px;border-radius:50%;background:var(--red);color:#fff;border:none;font-size:1.6rem;
   display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
 .mic-btn.listening{background:var(--gold);animation:pulse 1s infinite}
+.speak-btn{background:none;border:none;font-size:1.3rem;cursor:pointer;padding:4px 8px;
+  vertical-align:middle;opacity:0.75;transition:opacity .15s}
+.speak-btn:hover{opacity:1}
+.speak-btn:disabled{opacity:0.35;cursor:wait}
+.checking-box{display:flex;align-items:center;gap:10px;padding:12px 14px;margin-top:14px;
+  background:var(--paper);border-radius:10px;font-size:0.9rem;color:var(--ink-soft)}
+.spinner{width:16px;height:16px;border:2.5px solid var(--rule-strong);border-top-color:var(--gold);
+  border-radius:50%;animation:spin 0.7s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 .result-box{margin-top:14px;padding:12px 14px;border-radius:10px;font-size:0.92rem}
 .result-box.good{background:var(--green-light);color:var(--green)}
@@ -88,7 +97,9 @@ async function openStop(stop) {
     const translit = currentItem.translit || '';
     currentItem._logKey = char; currentItem._logShown = char;
     body.innerHTML = `
-      <div class="item-script" style="font-size:3.5rem;text-align:center">${char}</div>
+      <div class="item-script" style="font-size:3.5rem;text-align:center">${char}
+        <button class="speak-btn" onclick="playAudio(${JSON.stringify(char)}, this)">🔊</button>
+      </div>
       <div class="item-translit" style="text-align:center">${translit}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic — say the sound</p>
@@ -100,7 +111,9 @@ async function openStop(stop) {
     const gloss = currentItem.gloss || '';
     currentItem._logKey = txt; currentItem._logShown = txt;
     body.innerHTML = `
-      <div class="item-script">${txt}</div>
+      <div class="item-script">${txt}
+        <button class="speak-btn" onclick="playAudio(${JSON.stringify(txt)}, this)">🔊</button>
+      </div>
       ${translit ? `<div class="item-translit">${translit}</div>` : ''}
       <div class="item-gloss">${gloss}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
@@ -112,7 +125,9 @@ async function openStop(stop) {
     const text  = currentItem.text  || '';
     currentItem._logKey = currentItem.key || title; currentItem._logShown = title;
     body.innerHTML = `
-      <div class="item-script" style="font-size:1.4rem">${title}</div>
+      <div class="item-script" style="font-size:1.4rem">${title}
+        <button class="speak-btn" onclick="playAudio(${JSON.stringify(title)}, this)">🔊</button>
+      </div>
       <div style="font-size:0.95rem;line-height:1.7;margin:12px 0 20px;color:var(--ink)">${text}</div>
       <button class="btn btn-primary" onclick="markRead()">I read this →</button>
       <div id="result"></div>`;
@@ -141,7 +156,9 @@ function renderStoryLine() {
       ${currentItem.title || ''} — <em>${currentItem.gloss || ''}</em>
     </div>
     <div class="story-line-box">
-      <div class="story-line-text">${line.text}</div>
+      <div class="story-line-text">${line.text}
+        <button class="speak-btn" onclick="playAudio(${JSON.stringify(line.text)}, this)">🔊</button>
+      </div>
       <div class="story-line-gloss">${line.gloss || ''}</div>
     </div>
     <div class="story-nav">
@@ -164,6 +181,30 @@ function storyNext() {
   if (storyIdx < storyLines.length - 1) { storyIdx++; renderStoryLine(); }
 }
 
+let _audioPlayer = null;
+
+async function playAudio(text, btn) {
+  if (!text) return;
+  const original = btn ? btn.textContent : null;
+  if (btn) { btn.disabled = true; btn.textContent = '⏳'; }
+  try {
+    const res = await fetch('/child/api/tts', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ text }),
+    });
+    if (!res.ok) throw new Error('tts failed');
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    if (_audioPlayer) { _audioPlayer.pause(); }
+    _audioPlayer = new Audio(url);
+    await _audioPlayer.play();
+  } catch (e) {
+    // Quiet failure — the mic/read flow still works without audio.
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = original; }
+  }
+}
+
 function startListening() {
   if (!SpeechRecognition) {
     document.getElementById('result').innerHTML =
@@ -172,42 +213,80 @@ function startListening() {
   }
   const btn = document.getElementById('mic-btn');
   btn.classList.add('listening');
+  document.getElementById('result').innerHTML =
+    `<div class="checking-box"><div class="spinner"></div>Listening…</div>`;
+
   const rec = new SpeechRecognition();
   rec.lang = SPEECH_LOCALE;
   rec.interimResults = false;
   rec.maxAlternatives = 1;
-  rec.onresult = (e) => { submitAttempt(e.results[0][0].transcript); };
-  rec.onerror  = () => { btn.classList.remove('listening'); };
-  rec.onend    = () => { btn.classList.remove('listening'); };
+
+  let gotResult = false;
+
+  rec.onresult = (e) => {
+    gotResult = true;
+    submitAttempt(e.results[0][0].transcript);
+  };
+  rec.onerror = (e) => {
+    btn.classList.remove('listening');
+    if (!gotResult) {
+      document.getElementById('result').innerHTML =
+        `<div class="result-box retry">Didn't catch that — tap the mic and try again, a little louder.</div>`;
+    }
+  };
+  rec.onend = () => {
+    btn.classList.remove('listening');
+    // If recognition ended with no result and no error already shown, the
+    // browser silently heard nothing (common for very short sounds like
+    // single letters) — always show something rather than leaving it blank.
+    if (!gotResult) {
+      document.getElementById('result').innerHTML =
+        `<div class="result-box retry">Didn't catch that — tap the mic and try again, a little louder.</div>`;
+    }
+  };
   rec.start();
 }
 
 async function submitAttempt(transcript) {
-  const res = await fetch('/child/api/attempt', {
-    method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      stop: currentStop,
-      item_key:   currentItem._logKey   || '',
-      item_shown: currentItem._logShown || '',
-      transcript,
-    }),
-  });
-  showResult(await res.json(), transcript);
+  document.getElementById('result').innerHTML =
+    `<div class="checking-box"><div class="spinner"></div>Checking…</div>`;
+  try {
+    const res = await fetch('/child/api/attempt', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        stop: currentStop,
+        item_key:   currentItem._logKey   || '',
+        item_shown: currentItem._logShown || '',
+        transcript,
+      }),
+    });
+    showResult(await res.json(), transcript);
+  } catch (e) {
+    document.getElementById('result').innerHTML =
+      `<div class="result-box retry">Couldn't check that — check your connection and try again.</div>`;
+  }
 }
 
 async function markRead() {
-  const res = await fetch('/child/api/attempt', {
-    method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      stop: currentStop,
-      item_key:   currentItem._logKey   || '',
-      item_shown: currentItem._logShown || '',
-      transcript: '',
-    }),
-  });
-  const data = await res.json();
-  const el = document.getElementById('result');
-  if (el) el.innerHTML = `<div class="result-box good">${data.feedback}</div>`;
+  document.getElementById('result').innerHTML =
+    `<div class="checking-box"><div class="spinner"></div>Just a sec…</div>`;
+  try {
+    const res = await fetch('/child/api/attempt', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        stop: currentStop,
+        item_key:   currentItem._logKey   || '',
+        item_shown: currentItem._logShown || '',
+        transcript: '',
+      }),
+    });
+    const data = await res.json();
+    const el = document.getElementById('result');
+    if (el) el.innerHTML = `<div class="result-box good">${data.feedback}</div>`;
+  } catch (e) {
+    document.getElementById('result').innerHTML =
+      `<div class="result-box retry">Couldn't save that — check your connection and try again.</div>`;
+  }
 }
 
 function showResult(data, transcript) {

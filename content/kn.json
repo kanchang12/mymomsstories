@@ -1,8 +1,394 @@
 {
   "name": "Kannada",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "ಅ",
+      "translit": "a"
+    },
+    {
+      "char": "ಆ",
+      "translit": "aa"
+    },
+    {
+      "char": "ಇ",
+      "translit": "i"
+    },
+    {
+      "char": "ಕ",
+      "translit": "ka"
+    },
+    {
+      "char": "ಖ",
+      "translit": "kha"
+    },
+    {
+      "char": "ಗ",
+      "translit": "ga"
+    },
+    {
+      "char": "ಚ",
+      "translit": "cha"
+    },
+    {
+      "char": "ತ",
+      "translit": "ta"
+    },
+    {
+      "char": "ನ",
+      "translit": "na"
+    },
+    {
+      "char": "ಮ",
+      "translit": "ma"
+    }
+  ],
+  "words": [
+    {
+      "text": "ಅಮ್ಮ",
+      "translit": "amma",
+      "gloss": "mother"
+    },
+    {
+      "text": "ಅಪ್ಪ",
+      "translit": "appa",
+      "gloss": "father"
+    },
+    {
+      "text": "ನೀರು",
+      "translit": "neeru",
+      "gloss": "water"
+    },
+    {
+      "text": "ಮನೆ",
+      "translit": "mane",
+      "gloss": "house"
+    },
+    {
+      "text": "ಸೂರ್ಯ",
+      "translit": "surya",
+      "gloss": "sun"
+    },
+    {
+      "text": "ಪುಸ್ತಕ",
+      "translit": "pustaka",
+      "gloss": "book"
+    },
+    {
+      "text": "ಹೂವು",
+      "translit": "hoovu",
+      "gloss": "flower"
+    },
+    {
+      "text": "ಮರ",
+      "translit": "mara",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "ನನ್ನ ಹೆಸರು ಮೀರಾ.",
+      "translit": "Nanna hesaru Meera.",
+      "gloss": "My name is Meera."
+    },
+    {
+      "text": "ಅಮ್ಮ ನನಗೆ ಕಥೆ ಹೇಳುತ್ತಾರೆ.",
+      "translit": "Amma nanage kathe heluttare.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "ಸೂರ್ಯ ಪೂರ್ವದಲ್ಲಿ ಉದಯಿಸುತ್ತಾನೆ.",
+      "translit": "Surya poorvadalli udayisuttane.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ.",
+      "translit": "Naanu Kannada kaliyuttiddene.",
+      "gloss": "I am learning Kannada."
+    },
+    {
+      "text": "ನೀರು ಜೀವನ.",
+      "translit": "Neeru jeevana.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "ugadi_kannada",
+      "title": "Ugadi — Kannada New Year",
+      "text": "Ugadi marks the Kannada new year, celebrated in March or April with great joy across Karnataka. Families wake early, take an oil bath, and wear new clothes. The most important tradition is Bevu Bella — a mixture of neem flowers and jaggery eaten first thing in the morning. The bitter neem and sweet jaggery together remind everyone that life brings both happiness and difficulty, and both must be accepted with grace. Homes are decorated with mango leaf torans at the doorway, believed to bring prosperity. Rangoli patterns are drawn at the entrance using rice flour. A special dish called Obbattu, a sweet flatbread stuffed with jaggery and lentils, is prepared in most homes. Families gather to listen to the Panchanga Shravana, the reading of the new year almanac, which predicts what the coming months hold. Elders are visited and blessed by younger family members touching their feet. Markets are lively with people buying new utensils, clothes, and gold, as these purchases are considered especially auspicious on Ugadi. Children look forward to receiving small gifts of money. The festival captures the Kannada spirit of welcoming change with courage, gratitude, and sweetness, no matter what each new year may bring."
+    },
+    {
+      "key": "mysore_dasara",
+      "title": "Mysore Dasara — The Royal Festival",
+      "text": "Mysore Dasara is one of the grandest festivals in all of India, celebrated for ten days in the city of Mysuru in Karnataka, with roots going back over four hundred years to the Vijayanagara Empire and continued by the Wodeyar royal family. The festival celebrates the victory of Goddess Chamundeshwari over the demon Mahishasura, after whom the city of Mysuru is named. Throughout the ten days, the magnificent Mysore Palace is illuminated every evening with nearly one hundred thousand lights, creating a breathtaking golden glow that can be seen from far across the city. The festival reaches its peak on Vijayadashami, the final day, with the Jumboo Savari — a grand procession where a beautifully decorated elephant carries a golden howdah bearing the idol of the goddess through the streets of Mysuru, accompanied by dancers, musicians, decorated horses, and tableaux depicting Karnataka's culture. Thousands of spectators line the streets to watch. In the evening, the Panjina Kavayatthu, a torch-lit parade, brings the festival to a spectacular close. Schools and colleges across Karnataka hold cultural programs, classical dance and music performances are held throughout the city, and the famous Mysore Dasara exhibition opens with rides, stalls, and entertainment for families. The festival reflects Karnataka's deep pride in its royal heritage and its devotion to the goddess who protects the land."
+    },
+    {
+      "key": "karaga_festival",
+      "title": "Bengaluru Karaga — Ancient City Festival",
+      "text": "The Bengaluru Karaga is one of the oldest and most distinctive festivals of Karnataka, celebrated for nine days during the full moon of the Chaitra month, with traditions believed to be over a thousand years old. It honours Draupadi from the Mahabharata, worshipped here as a form of Shakti, the divine feminine power. The most striking moment of the festival is when the Karaga priest, dressed as a woman in a saree, balances an elaborately decorated pyramid-shaped pot of flowers on his head and dances through the streets of the old city in the middle of the night, without using his hands to steady it. Thousands of devotees, including sword-wielding Veerakumaras who march alongside as protectors, follow the procession through narrow lanes that wind through some of Bengaluru's oldest neighbourhoods. The atmosphere is electric, with drumming, chanting, and the scent of jasmine flowers filling the night air. The festival is deeply connected to the Thigala community, who have preserved this tradition for centuries as gardeners and flower growers of the old city. Watching the Karaga procession move silently and gracefully through the dark streets, lit only by torches and lamps, is considered one of the most mystical and moving experiences in Karnataka's cultural calendar."
+    },
+    {
+      "key": "yakshagana",
+      "title": "Yakshagana — Theatre of Coastal Karnataka",
+      "text": "Yakshagana is a spectacular traditional theatre form from the coastal districts of Karnataka, combining dance, music, dialogue, costume, and elaborate makeup to tell stories from the Ramayana, Mahabharata, and Puranas through all-night performances. Performers wear towering, intricately decorated headdresses and brightly colored costumes with exaggerated makeup that transforms ordinary actors into larger-than-life gods, demons, and heroes. A Yakshagana performance, called an Aata, typically begins at night and continues until dawn, held in village squares, temple courtyards, or open fields, with the audience sitting on the ground for hours, completely absorbed in the unfolding drama. The performance is led by a Bhagavata, a vocalist who sings the narrative verses while playing cymbals, accompanied by a chande drum and maddale percussion that drive the rhythm of the dance. Actors do not memorize fixed scripts; instead, they improvise dialogue within the structure of the story, making every performance unique. The energy of Yakshagana is intense — performers leap, spin, and stamp with tremendous physical power, especially during battle scenes between heroes and demons. Children growing up in coastal Karnataka often see their first Yakshagana performance as toddlers, falling asleep in their parents' laps to the sound of the drums, and gradually growing to understand and love the elaborate stories told through this extraordinary art form."
+    },
+    {
+      "key": "naga_panchami_kn",
+      "title": "Nagara Panchami in Karnataka",
+      "text": "Nagara Panchami is celebrated with great devotion across Karnataka in July or August, honouring the snake deities who are considered protectors of the earth and bringers of fertility and rain. In rural Karnataka, women rise before dawn, decorate the entrances of their homes with rangoli, and visit anthills believed to be the homes of snakes, offering milk, turmeric, and flowers. A special dish called Uppittu and sweet payasam are prepared for the occasion. Sisters pray for the wellbeing and protection of their brothers on this day, tying decorative threads similarly to Raksha Bandhan in other parts of India. Swings are set up in courtyards and under trees, where young girls swing together singing folk songs welcoming the monsoon season, since Nagara Panchami falls during the peak of the rains, when fields are green and rivers are full. In some villages, men carry decorated clay or stone images of cobras in procession through the streets. The snake is never harmed on this day; in fact, killing a snake is considered a serious sin during the festival period. Nagara Panchami reflects Karnataka's deep agricultural relationship with the land, where snakes are respected as guardians of grain stores and protectors against pests that could destroy a farmer's harvest."
+    },
+    {
+      "key": "kambala",
+      "title": "Kambala — Buffalo Race of Coastal Karnataka",
+      "text": "Kambala is a traditional buffalo race held in the coastal districts of Dakshina Kannada and Udupi in Karnataka, usually during the winter months after the rice harvest, and it is one of the most thrilling and unusual sporting traditions in India. The race takes place in specially prepared muddy paddy fields flooded with water, where pairs of buffaloes, decorated and groomed for weeks beforehand, are driven at full speed by a runner who holds onto a rope attached to the animals while standing on a wooden plank or running alongside them through the mud and water. The crowds that gather to watch Kambala are enormous and passionate, cheering loudly as the buffaloes thunder down the track, sending up huge sprays of muddy water that can rise several meters into the air. Owning a champion pair of Kambala buffaloes is a matter of great pride for farming families, who invest significant care into their training, diet, and grooming throughout the year. The tradition dates back many centuries and was originally connected to thanking the buffaloes for their hard work ploughing the rice fields. Modern Kambala events now include timing systems and prizes, but the festival spirit, the deep connection between farmers and their animals, and the sheer excitement of the race remain unchanged."
+    },
+    {
+      "key": "udupi_temple",
+      "title": "Udupi Krishna Temple and the Paryaya",
+      "text": "The Sri Krishna Matha in Udupi is one of the most revered temples in Karnataka, founded over seven hundred years ago by the philosopher-saint Madhvacharya, who established the Dvaita school of Vedanta philosophy. The temple is famous for its idol of Lord Krishna, which devotees view through a unique nine-holed silver window called the Kanakana Kindi, named after the poet-saint Kanakadasa, who according to legend was denied entry to the temple but whose devotion was so powerful that the temple wall is said to have turned so he could see the deity from outside. Every two years, a remarkable ceremony called Paryaya takes place, in which the responsibility of worship is passed between the eight Krishna Mathas, or monasteries, founded by Madhvacharya's disciples. The handover ceremony is celebrated with grand processions, music, and feasting that draws pilgrims from across South India. The temple is also the birthplace of Udupi cuisine, the simple, vegetarian, and deeply flavourful style of cooking that has spread across India and the world through Udupi restaurants. Daily, the temple kitchen prepares enormous quantities of food that is offered to the deity and then distributed freely to thousands of visitors, embodying the philosophy that devotion and hospitality go hand in hand."
+    },
+    {
+      "key": "mysore_silk",
+      "title": "Mysore Silk — The Royal Fabric",
+      "text": "Mysore silk sarees are among the most prized textiles in India, woven from pure mulberry silk and traditionally adorned with real gold zari thread, a craft that flourished under the patronage of the Mysore royal family starting in the early twentieth century. The Karnataka government established the Karnataka Silk Industries Corporation to protect and promote this heritage, and Mysore silk now carries a Geographical Indication tag, meaning only silk produced in this specific tradition can carry the Mysore silk name. The weaving process is highly skilled, requiring weavers to work meticulously to create the saree's characteristic broad, rich border, often woven with elaborate temple, paisley, or floral motifs in gold zari against deep, jewel-toned silk in colours like maroon, purple, peacock green, and royal blue. A genuine Mysore silk saree can take days to weave and is treasured as a prized possession, often gifted at weddings and worn at the most important family occasions. Karnataka has been a centre of sericulture, the cultivation of silkworms, for centuries, and the state remains one of India's largest silk producers. For Kannadiga families, owning and wearing a Mysore silk saree connects them to a heritage of craftsmanship, royal history, and the agricultural tradition of silk farming that has shaped the economy and culture of southern Karnataka for generations."
+    },
+    {
+      "key": "hampi_history",
+      "title": "Hampi — Ruins of a Golden Empire",
+      "text": "Hampi, a UNESCO World Heritage Site in Karnataka, was once the capital of the magnificent Vijayanagara Empire, one of the largest and wealthiest empires in Indian history, flourishing from the fourteenth to the sixteenth centuries. At its height, Hampi was said to be one of the largest and richest cities in the world, with European travellers describing markets overflowing with diamonds, pearls, and gold, and a population larger than that of Rome at the time. Today, Hampi's landscape is scattered with the remarkable ruins of temples, palaces, market streets, and royal enclosures, set among extraordinary boulder-strewn hills and the Tungabhadra River. The Virupaksha Temple, still an active place of worship, has stood for over a thousand years, while the iconic stone chariot at the Vittala Temple, carved so precisely it appears almost lifelike, has become a symbol of Karnataka itself, even appearing on the Indian fifty rupee note. Hampi's musical pillars, when tapped, are said to produce different musical notes, showcasing the extraordinary skill of medieval Indian architects and craftsmen. Families visiting Hampi today walk among these ancient ruins, imagining the grandeur of elephant processions, royal courts, and bustling bazaars that once filled this now quiet, golden landscape, a powerful reminder of Karnataka's rich and glorious past."
+    },
+    {
+      "key": "tulu_culture",
+      "title": "Tulu Culture — Bhuta Kola Spirit Worship",
+      "text": "In the coastal Tulu Nadu region of Karnataka, a unique and ancient tradition called Bhuta Kola, or spirit worship, has been practised for centuries, reflecting a deep belief that local deities and ancestral spirits actively protect and guide village communities. During a Bhuta Kola ceremony, performers from specific hereditary families undergo an elaborate transformation, wearing massive, intricately designed costumes with towering headdresses, painted faces, and ornaments made of coconut fronds, flowers, and metal, to embody specific deities known as Bhutas. The ritual takes place at night, illuminated by torches and oil lamps, with drumming and chanting building an intense, almost trance-like atmosphere as the performer, now believed to be possessed by the spirit, dances vigorously and delivers messages, blessings, and sometimes warnings to the assembled villagers. Families bring their problems and questions to be answered by the Bhuta during the ceremony, and the spirit's pronouncements are taken with great seriousness and respect. Bhuta Kola is deeply tied to Tulu identity and the agricultural calendar of coastal Karnataka, performed especially after the harvest season. The tradition reflects an entire cosmology in which the natural world, ancestors, and living communities are bound together, and where village harmony is maintained through regular communication with the spirits who are believed to watch over the land and its people."
+    },
+    {
+      "key": "coorg_culture",
+      "title": "Kodava Culture of Coorg",
+      "text": "The Kodava community of Coorg, known locally as Kodagu, in the misty hills of southern Karnataka, has one of the most distinctive cultures in India, with traditions, dress, and customs found nowhere else. Kodava men traditionally wear a black and gold robe called the Kupya Chele, with a striking red and gold sash and an ornate silver-handled knife called the Peechekathi tucked into the waist. Kodava weddings are elaborate, multi-day affairs involving distinctive rituals such as the Muhurtha Naer ceremony and traditional Kodava dances performed by women in colourful sarees draped in a unique style with the pleats at the back rather than the front. The Kodavas have a strong martial tradition, and Coorg has produced a disproportionately high number of officers in the Indian armed forces relative to its small population, a source of immense local pride. The region is also famous for its coffee plantations, established during British colonial rule, and today Coorg produces some of India's finest coffee, grown in the shade of dense forest canopy alongside cardamom and pepper. Kodava cuisine features distinctive dishes like Pandi Curry, a rich pork preparation, and Kadambuttu, steamed rice dumplings. The annual Kaveri Sankramana festival celebrates the river Kaveri, believed to originate in Coorg, with the Kodava community gathering at Talakaveri to honour the river that sustains the entire Tamil and Karnataka region downstream."
+    },
+    {
+      "key": "dollu_kunitha",
+      "title": "Dollu Kunitha — The Drum Dance of Karnataka",
+      "text": "Dollu Kunitha is a vigorous and visually stunning folk dance from northern Karnataka, performed by groups of men who dance while playing large drums called dollu, slung around their necks and beaten with sticks in complex, synchronized rhythms. Traditionally associated with devotion to the goddess Renuka Yellamma, Dollu Kunitha was historically performed by farming and shepherd communities during temple festivals and harvest celebrations. The performers, dressed in colourful turbans and dhotis with ankle bells, move in dynamic formations, leaping, spinning, and crouching while maintaining the powerful rhythm of their drums, creating both a musical and visual spectacle that can captivate audiences for hours. The dance requires tremendous physical stamina and years of practice to master the intricate drumming patterns while simultaneously performing acrobatic dance movements. Dollu Kunitha troupes from different villages traditionally competed with each other during festivals, each trying to outdo the other in skill, energy, and creativity. Today, Dollu Kunitha is performed at state functions, cultural festivals, and has become one of the signature folk art forms representing Karnataka on national and international stages. Children in rural Karnataka grow up watching and often learning Dollu Kunitha as part of their connection to village festivals, and the powerful, thundering sound of dozens of dollu drums playing together remains one of the most exciting and memorable sounds of Karnataka's rural cultural life."
+    },
+    {
+      "key": "basava_lingayat",
+      "title": "Basava and the Lingayat Tradition",
+      "text": "Basavanna, also known as Basava, was a twelfth-century philosopher, poet, and social reformer from Karnataka whose teachings continue to deeply influence Kannada culture and society today. Basava founded the Lingayat tradition, a significant religious movement that rejected the caste system, idol worship in elaborate temples, and many of the rigid social hierarchies of his time, instead emphasizing direct personal devotion to Lord Shiva through the wearing of a small Ishtalinga, a personal symbol of the divine worn around the neck. Basava composed hundreds of Vachanas, short devotional poems written in simple, direct Kannada rather than formal Sanskrit, making spiritual wisdom accessible to ordinary people regardless of their education or social status. His Vachanas addressed themes of equality, honest labour, compassion, and the idea that work itself, when done with sincerity, is a form of worship — his famous teaching, Kayakave Kailasa, means that work is heaven. Basava established the Anubhava Mantapa, a remarkable gathering hall where men and women from all castes and backgrounds, including those traditionally considered low caste, came together as equals to discuss philosophy and spirituality, an extraordinarily progressive institution for its time. Today, Basava's statue and teachings are celebrated across Karnataka, his Vachanas are taught in schools, and his vision of social equality and ethical living remains a foundational influence on Kannada cultural and political thought."
+    },
+    {
+      "key": "rajyotsava",
+      "title": "Karnataka Rajyotsava — Formation Day",
+      "text": "Karnataka Rajyotsava, celebrated on November 1st every year, marks the day in 1956 when various Kannada-speaking regions, previously scattered across different princely states and provinces, were unified into a single state called Mysore, later renamed Karnataka in 1973. The day is celebrated with immense pride across the state, as Rajyotsava represents the long struggle and aspiration of Kannada-speaking people to be united under one administrative and cultural identity. Government buildings, schools, and homes are decorated with the red and yellow Kannada flag, and the day begins with flag hoisting ceremonies attended by officials and citizens alike. Cultural programs throughout the state feature classical and folk music, dance performances, and recitations of Kannada poetry and literature, celebrating the richness of Kannada language and heritage. The Karnataka government confers the prestigious Rajyotsava Award on individuals who have made outstanding contributions to arts, science, sports, literature, and public service. Schools hold special assemblies where children learn about the history of Karnataka's formation and the contributions of key figures who fought for the unification movement. Many Kannadiga families, especially those living outside Karnataka or abroad, use Rajyotsava as an occasion to reconnect with their roots, cooking traditional Kannada dishes, wearing traditional attire, and teaching children about the pride and identity that comes with being Kannadiga."
+    },
+    {
+      "key": "vara_mahalakshmi",
+      "title": "Varamahalakshmi Vrata",
+      "text": "Varamahalakshmi Vrata is a significant festival observed by married women across Karnataka and other parts of South India, dedicated to Goddess Mahalakshmi, the deity of wealth, prosperity, and well-being, celebrated on the Friday before the full moon in the month of Shravana, usually in August. Women rise early, take a ritual bath, and prepare an elaborate puja setup at home, typically using a kalasha, a brass or silver pot filled with rice and water, topped with mango leaves and a coconut, which is decorated to represent the goddess herself, often dressed in a saree with jewellery and a face drawn or attached to represent her divine presence. The puja involves chanting prayers, tying a sacred yellow thread called the Vara Dara around the wrist, and offering fruits, flowers, and sweets. Women pray for the health, prosperity, and happiness of their families, particularly their husbands and children. After the puja, women often visit each other's homes, exchanging blessings, sweets, and small gifts in a tradition similar to Haldi Kunku, strengthening bonds of friendship and community among women. Traditional dishes including Kosambari, a fresh salad of lentils and vegetables, and various sweets are prepared and shared. The festival, observed with great devotion in households across Karnataka, reflects the importance placed on family welfare, feminine spiritual practice, and the strong social bonds maintained between women through shared rituals and celebrations."
+    },
+    {
+      "key": "channapatna_toys",
+      "title": "Channapatna Toys — Wooden Wonders",
+      "text": "Channapatna, a small town near Bengaluru, has been famous for nearly two hundred years for its colourful, lacquered wooden toys, a craft tradition so significant to the town's identity that Channapatna is often called the Toy Town of Karnataka. The craft was introduced during the reign of Tipu Sultan, who invited Persian craftsmen to train local artisans in turning wood on a lathe and applying natural vegetable dye lacquer to create vividly coloured, smooth, rounded toys and figurines. Traditional Channapatna toys are made from ivory wood, a soft, light timber that is easy to carve and shape, and artisans use a hand or foot-powered lathe to turn the wood into spinning tops, rattles, dolls, animal figures, and educational toys, finishing each piece with bright, food-safe lacquer colours applied while the wood is still spinning on the lathe, creating smooth bands of vivid red, green, yellow, and blue. The toys carry a Geographical Indication tag protecting the authenticity of the Channapatna name. Generations of artisan families have passed down this skill, working from small home workshops throughout the town. Despite competition from plastic toys, Channapatna craftsmen have adapted, creating modern designs, jewellery, and home decor items using the same traditional lacquering technique, ensuring this colourful, child-friendly craft tradition continues to thrive and bring joy to children across Karnataka and beyond."
+    },
+    {
+      "key": "kannada_literature",
+      "title": "Kannada Literature — An Ancient Tradition",
+      "text": "Kannada is one of India's classical languages, with a continuous literary tradition stretching back over fifteen hundred years, recognized by the Government of India for its ancient and rich heritage. The earliest known Kannada literary work, the Kavirajamarga, dates to the ninth century and already speaks of Kannada having a flourishing poetic tradition even before that time. The medieval period produced extraordinary poets such as Pampa, often called the father of Kannada poetry, who composed the great epic Vikramarjuna Vijaya, retelling the Mahabharata with remarkable skill, and the Vachana poets of the Lingayat movement, including Basavanna and the woman saint-poet Akka Mahadevi, whose direct, passionate verses about devotion and social equality remain deeply moving today. In the modern era, Kannada literature has produced eight Jnanpith Award winners, more than any other Indian language, including the celebrated novelist Kuvempu, whose work explored themes of nature, humanity, and social justice, and U.R. Ananthamurthy, whose novel Samskara challenged conventional thinking about caste and orthodoxy. Kannada cinema and theatre have also drawn deeply from this literary tradition. Schools throughout Karnataka place strong emphasis on Kannada language education, and Kannada Rajyotsava celebrations always include recitations and discussions of great Kannada literary works. For Kannadiga families living far from Karnataka, maintaining fluency in Kannada and introducing children to its extraordinary poetic and literary heritage is considered essential to preserving identity across generations."
+    },
+    {
+      "key": "mysuru_pak",
+      "title": "Mysore Pak and Karnataka's Sweet Traditions",
+      "text": "Mysore Pak is one of Karnataka's most beloved sweets, a rich, melt-in-the-mouth confection made from gram flour, generous amounts of ghee, and sugar, originally created in the kitchens of the Mysore Palace by the royal chef Kakasura Madappa during the reign of the Wodeyar dynasty in the early twentieth century. According to popular legend, the sweet was created spontaneously when the chef combined gram flour, ghee, and sugar syrup in an improvised dish for the Maharaja, who loved it so much that he asked for it to be named after the city, giving us Mysore Pak. The sweet has a distinctive texture, somewhere between a fudge and a light, porous, melt-in-the-mouth confection, achieved through the careful art of pouring hot ghee into the gram flour and sugar mixture at exactly the right speed and temperature, a technique still closely guarded by the most famous traditional sweet shops in Mysuru. Beyond Mysore Pak, Karnataka has a rich tradition of sweets prepared for festivals and celebrations, including Holige, a sweet flatbread filled with jaggery and lentils, similar to Obbattu, prepared especially during Ugadi and other festive occasions, and Chiroti, a flaky, layered pastry dusted with sugar. These sweets are central to Karnataka hospitality, offered to guests, exchanged during festivals, and prepared with great care for weddings and family celebrations, representing the warmth and generosity that defines Kannadiga culture."
+    },
+    {
+      "key": "kannada_pride",
+      "title": "Kannada Language — Identity and Pride",
+      "text": "The Kannada language, spoken by over forty million people primarily in Karnataka, carries an extraordinary sense of cultural identity and pride for Kannadigas, both within India and across the global diaspora. Kannada is written in its own beautiful, rounded script, evolved over centuries from ancient Brahmi script, and it has the distinction of being one of India's six classical languages, alongside Tamil, Telugu, Sanskrit, Malayalam, and Odia. The Kannada flag, in red and yellow, is flown proudly during Rajyotsava and other cultural celebrations as a symbol of linguistic and regional identity. Karnataka has been home to extraordinary contributions in science, with figures like Sir M. Visvesvaraya, the celebrated engineer whose birthday is celebrated as Engineer's Day across India, and C.V. Raman, the Nobel Prize winning physicist, both deeply connected to Karnataka's intellectual tradition. Bengaluru, the state capital, has become globally known as India's Silicon Valley, a centre of technology and innovation, yet the city and state remain deeply rooted in their Kannada cultural heritage, with strong traditions in classical Carnatic music, dance forms like Bharatanatyam, and a thriving film industry known as Sandalwood. For Kannadiga families raising children outside Karnataka, teaching the Kannada language, its songs, stories, and customs represents a vital link to a heritage that combines ancient philosophical wisdom, extraordinary literary achievement, and a forward-looking spirit of innovation and pride."
+    },
+    {
+      "key": "kannada_dollu_kunitha_temple",
+      "title": "Karnataka Temple Festival Processions",
+      "text": "Temple festival processions across Karnataka represent grand community celebrations where local deities are taken out from their sanctuaries and paraded through village and town streets, accompanied by elaborate music, dance, and ritual that bring entire communities together in shared devotion and celebration. These processions typically feature beautifully decorated temple chariots called rathas, often massive wooden structures intricately carved and decorated with flowers, cloth, and sometimes precious metals, pulled through the streets by hundreds of devotees using thick ropes, with the act of pulling the chariot itself considered a meritorious act of devotion. Musicians playing traditional instruments including the nadaswaram, a long wind instrument with a powerful, distinctive sound, and various percussion instruments accompany the procession, creating an atmosphere of sustained festive energy as the procession moves slowly through decorated streets lined with oil lamps and floral arrangements. Folk performers, including Dollu Kunitha drummers and other traditional dance troupes, often join these processions, adding visual spectacle and rhythmic energy that builds excitement among the gathered crowds. Communities prepare for these festivals weeks in advance, cleaning and decorating streets, preparing special foods for distribution as prasad, and rehearsing performances that will be part of the celebration. Temple festivals serve important social functions beyond religious observance, bringing together people across different backgrounds within a community, strengthening social bonds, and providing opportunities for displaying and preserving traditional arts and skills that might otherwise be lost. These grand celebrations represent Karnataka's vibrant temple culture, demonstrating how religious devotion, artistic tradition, and community bonding combine in spectacular, sensory-rich public celebration."
+    }
+  ],
+  "stories": [
+    {
+      "key": "krishna_sasi",
+      "title": "ಕೃಷ್ಣ ಮತ್ತು ಬೆಣ್ಣೆ ಕಳ್ಳತನ",
+      "translit": "Krishna mattu Benne Kallatana",
+      "gloss": "Krishna and the Stolen Butter",
+      "lines": [
+        {
+          "text": "ಚಿಕ್ಕ ಕೃಷ್ಣ ಗೋಕುಲದಲ್ಲಿ ವಾಸಿಸುತ್ತಿದ್ದನು.",
+          "gloss": "Little Krishna lived in Gokul."
+        },
+        {
+          "text": "ಅವನಿಗೆ ಬೆಣ್ಣೆ ಎಂದರೆ ತುಂಬಾ ಇಷ್ಟ.",
+          "gloss": "He loved butter very much."
+        },
+        {
+          "text": "ಅಮ್ಮ ಯಶೋದೆ ಬೆಣ್ಣೆಯನ್ನು ಎತ್ತರದ ಮಡಕೆಯಲ್ಲಿ ಇಟ್ಟಿದ್ದರು.",
+          "gloss": "Mother Yashoda kept butter in a high pot."
+        },
+        {
+          "text": "ಕೃಷ್ಣ ಅದನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+          "gloss": "Krishna could not reach it."
+        },
+        {
+          "text": "ಅವನು ಸ್ನೇಹಿತರನ್ನು ಕರೆದನು.",
+          "gloss": "He called his friends."
+        },
+        {
+          "text": "ಎಲ್ಲರೂ ಸೇರಿ ಒಂದು ಗೋಪುರ ಮಾಡಿದರು.",
+          "gloss": "Everyone together made a tower."
+        },
+        {
+          "text": "ಕೃಷ್ಣ ಮೇಲಕ್ಕೆ ಹತ್ತಿ ಮಡಕೆ ಮುಟ್ಟಿದನು.",
+          "gloss": "Krishna climbed up and touched the pot."
+        },
+        {
+          "text": "ಮಡಕೆ ಒಡೆದು ಬೆಣ್ಣೆ ಚೆಲ್ಲಿತು!",
+          "gloss": "The pot broke and the butter spilled!"
+        },
+        {
+          "text": "ಎಲ್ಲರೂ ನಗುತ್ತಾ ಬೆಣ್ಣೆ ತಿಂದರು.",
+          "gloss": "Everyone laughed and ate the butter."
+        },
+        {
+          "text": "ಯಶೋದೆ ಸದ್ದು ಕೇಳಿ ಓಡಿ ಬಂದರು.",
+          "gloss": "Yashoda heard the noise and ran in."
+        },
+        {
+          "text": "'ಕೃಷ್ಣ! ಮತ್ತೆ ನೀನೇ!'",
+          "gloss": "'Krishna! You again!'"
+        },
+        {
+          "text": "ಕೃಷ್ಣ ಮುಗ್ಧವಾಗಿ ನಕ್ಕನು.",
+          "gloss": "Krishna smiled innocently."
+        },
+        {
+          "text": "'ಅಮ್ಮ, ನಾನು ಮಾಡಲಿಲ್ಲ!'",
+          "gloss": "'Mother, I didn't do it!'"
+        },
+        {
+          "text": "ಅವನ ಮುಖದ ಮೇಲೆ ಬೆಣ್ಣೆ ಇತ್ತು.",
+          "gloss": "There was butter on his face."
+        },
+        {
+          "text": "ಯಶೋದೆಗೆ ನಗು ಬಂತು.",
+          "gloss": "Yashoda started laughing."
+        },
+        {
+          "text": "ಅವರು ಕೃಷ್ಣನನ್ನು ಬಿಗಿಯಾಗಿ ತಬ್ಬಿಕೊಂಡರು.",
+          "gloss": "She hugged Krishna tightly."
+        },
+        {
+          "text": "'ನೀನು ನನ್ನ ತುಂಟ ಮಗು.'",
+          "gloss": "'You are my mischievous child.'"
+        },
+        {
+          "text": "ಇಡೀ ಗ್ರಾಮ ಕೃಷ್ಣನ ತುಂಟಾಟಗಳನ್ನು ಪ್ರೀತಿಸುತ್ತಿತ್ತು.",
+          "gloss": "The whole village loved Krishna's mischief."
+        },
+        {
+          "text": "ಪ್ರೀತಿಯಿಂದ ಮಾಡಿದ ತಪ್ಪು ಯಾವಾಗಲೂ ಕ್ಷಮಿಸಲ್ಪಡುತ್ತದೆ.",
+          "gloss": "A mistake made with love is always forgiven."
+        },
+        {
+          "text": "ಈ ಕಥೆ ಎಲ್ಲಾ ಮಕ್ಕಳಿಗೆ ಪ್ರಿಯವಾದದ್ದು.",
+          "gloss": "This story is beloved by all children."
+        }
+      ]
+    },
+    {
+      "key": "sose_buddhi",
+      "title": "ಬುದ್ಧಿವಂತ ಮೊಲ",
+      "translit": "Buddhivanta Mola",
+      "gloss": "The Clever Rabbit",
+      "lines": [
+        {
+          "text": "ಒಂದು ಕಾಡಿನಲ್ಲಿ ಒಂದು ಸಿಂಹ ವಾಸಿಸುತ್ತಿತ್ತು.",
+          "gloss": "In a forest, there lived a lion."
+        },
+        {
+          "text": "ಅದು ಪ್ರತಿದಿನ ಒಂದು ಪ್ರಾಣಿಯನ್ನು ತಿನ್ನುತ್ತಿತ್ತು.",
+          "gloss": "It used to eat one animal every day."
+        },
+        {
+          "text": "ಎಲ್ಲಾ ಪ್ರಾಣಿಗಳು ಹೆದರಿದ್ದವು.",
+          "gloss": "All the animals were scared."
+        },
+        {
+          "text": "ಒಂದು ದಿನ ಮೊಲದ ಸರದಿ ಬಂತು.",
+          "gloss": "One day it was the rabbit's turn."
+        },
+        {
+          "text": "ಮೊಲ ನಿಧಾನವಾಗಿ ಸಿಂಹದ ಬಳಿ ಹೋಯಿತು.",
+          "gloss": "The rabbit went slowly to the lion."
+        },
+        {
+          "text": "ಸಿಂಹ ಕೋಪದಿಂದ ಕೇಳಿತು, 'ಯಾಕೆ ತಡ?'",
+          "gloss": "The lion angrily asked, 'Why the delay?'"
+        },
+        {
+          "text": "ಮೊಲ ಹೇಳಿತು, 'ದಾರಿಯಲ್ಲಿ ಇನ್ನೊಂದು ಸಿಂಹ ಸಿಕ್ಕಿತು.'",
+          "gloss": "The rabbit said, 'I met another lion on the way.'"
+        },
+        {
+          "text": "'ಅವನು ನನ್ನನ್ನು ತಡೆದನು!'",
+          "gloss": "'He stopped me!'"
+        },
+        {
+          "text": "ಸಿಂಹ ಕೆರಳಿತು, 'ಎಲ್ಲಿದ್ದಾನೆ ಅವನು?'",
+          "gloss": "The lion roared, 'Where is he?'"
+        },
+        {
+          "text": "ಮೊಲ ಸಿಂಹವನ್ನು ಒಂದು ಬಾವಿಯ ಬಳಿ ಕರೆದೊಯ್ಯಿತು.",
+          "gloss": "The rabbit led the lion to a well."
+        },
+        {
+          "text": "'ಅವನು ಇಲ್ಲೇ ಇದ್ದಾನೆ,' ಮೊಲ ಹೇಳಿತು.",
+          "gloss": "'He is right here,' said the rabbit."
+        },
+        {
+          "text": "ಸಿಂಹ ಬಾವಿಯೊಳಗೆ ಇಣುಕಿತು.",
+          "gloss": "The lion peered into the well."
+        },
+        {
+          "text": "ನೀರಿನಲ್ಲಿ ತನ್ನದೇ ಪ್ರತಿಬಿಂಬ ಕಂಡಿತು.",
+          "gloss": "It saw its own reflection in the water."
+        },
+        {
+          "text": "'ನಾನು ಗೆಲ್ಲುತ್ತೇನೆ!' ಎಂದು ಜಿಗಿಯಿತು.",
+          "gloss": "'I will win!' it shouted and jumped."
+        },
+        {
+          "text": "ಸಿಂಹ ಬಾವಿಯೊಳಗೆ ಬಿದ್ದಿತು.",
+          "gloss": "The lion fell into the well."
+        },
+        {
+          "text": "ಎಲ್ಲಾ ಪ್ರಾಣಿಗಳು ಸಂತೋಷಪಟ್ಟವು.",
+          "gloss": "All the animals were happy."
+        },
+        {
+          "text": "ಮೊಲ ಬುದ್ಧಿಯಿಂದ ಎಲ್ಲರನ್ನು ರಕ್ಷಿಸಿತು.",
+          "gloss": "The rabbit saved everyone with its wisdom."
+        },
+        {
+          "text": "ಶಕ್ತಿಗಿಂತ ಬುದ್ಧಿ ದೊಡ್ಡದು.",
+          "gloss": "Wisdom is greater than strength."
+        },
+        {
+          "text": "ಎಲ್ಲಾ ಪ್ರಾಣಿಗಳು ಮೊಲನನ್ನು ಗೌರವಿಸಿದವು.",
+          "gloss": "All the animals respected the rabbit."
+        },
+        {
+          "text": "ಈ ಕಥೆ ಪಂಚತಂತ್ರದಿಂದ ಬಂದಿದೆ.",
+          "gloss": "This story comes from the Panchatantra."
+        }
+      ]
+    }
+  ]
 }

@@ -1,8 +1,394 @@
 {
   "name": "Romanian",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "A",
+      "translit": "a"
+    },
+    {
+      "char": "Ă",
+      "translit": "ă"
+    },
+    {
+      "char": "B",
+      "translit": "be"
+    },
+    {
+      "char": "C",
+      "translit": "ce"
+    },
+    {
+      "char": "D",
+      "translit": "de"
+    },
+    {
+      "char": "E",
+      "translit": "e"
+    },
+    {
+      "char": "F",
+      "translit": "fe"
+    },
+    {
+      "char": "Î",
+      "translit": "î"
+    },
+    {
+      "char": "M",
+      "translit": "me"
+    },
+    {
+      "char": "Ș",
+      "translit": "șe"
+    }
+  ],
+  "words": [
+    {
+      "text": "mama",
+      "translit": "mama",
+      "gloss": "mother"
+    },
+    {
+      "text": "tata",
+      "translit": "tata",
+      "gloss": "father"
+    },
+    {
+      "text": "apă",
+      "translit": "apă",
+      "gloss": "water"
+    },
+    {
+      "text": "casă",
+      "translit": "casă",
+      "gloss": "house"
+    },
+    {
+      "text": "soare",
+      "translit": "soare",
+      "gloss": "sun"
+    },
+    {
+      "text": "carte",
+      "translit": "carte",
+      "gloss": "book"
+    },
+    {
+      "text": "floare",
+      "translit": "floare",
+      "gloss": "flower"
+    },
+    {
+      "text": "copac",
+      "translit": "copac",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "Mă numesc Maria.",
+      "translit": "Mă numesc Maria.",
+      "gloss": "My name is Maria."
+    },
+    {
+      "text": "Mama îmi spune o poveste.",
+      "translit": "Mama îmi spune o poveste.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "Soarele răsare la est.",
+      "translit": "Soarele răsare la est.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "Învăț limba română.",
+      "translit": "Învăț limba română.",
+      "gloss": "I am learning Romanian."
+    },
+    {
+      "text": "Apa este viață.",
+      "translit": "Apa este viață.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "martisor",
+      "title": "Mărțișor — Welcoming Spring",
+      "text": "Mărțișor, celebrated on March first, represents one of Romania's most beloved and distinctive traditional celebrations, marking the beginning of spring through the charming custom of giving small decorative ornaments called mărțișoare, traditionally consisting of a small token attached to twisted red and white string, exchanged among friends and family members as symbols of good fortune, health, and the joyful arrival of spring after winter's cold months. The tradition's origins trace back many centuries, with the distinctive red and white string colours carrying important symbolic meaning, with red traditionally representing vitality, passion, and the changing seasons, while white symbolizes purity, peace, and the lingering snow gradually giving way to spring's arrival, with the combination believed to bring good luck and protection throughout the coming year. Traditional mărțișor ornaments historically featured simple, handcrafted designs, though contemporary versions often incorporate small decorative items including tiny flowers, four-leaf clovers, ladybugs, or other symbols of good fortune, with skilled crafters and small businesses creating increasingly elaborate and creative mărțișor designs each year leading up to the celebration. The custom traditionally involves men giving mărțișoare to women, including mothers, sisters, friends, colleagues, and romantic partners, though the tradition has evolved to include broader exchange among friends and family regardless of gender, with recipients traditionally wearing their mărțișor pinned to their clothing throughout the month of March, sometimes tying the ornament to a blooming tree branch at month's end as a final symbolic gesture welcoming spring's full arrival. Markets and street vendors throughout Romania become particularly festive in the days leading up to March first, with elaborate displays of mărțișoare available for purchase, creating a beautiful, anticipatory atmosphere celebrating the joyful transition from winter into spring throughout Romanian communities."
+    },
+    {
+      "key": "romanian_christmas_colinde",
+      "title": "Colinde — Romanian Christmas Carols",
+      "text": "Colinde, traditional Romanian Christmas carols, represent a deeply cherished and culturally significant musical tradition observed throughout the Christmas season, with groups of carolers, traditionally including children and young people, visiting homes throughout their communities singing traditional songs celebrating Christ's birth while offering blessings and good wishes for the coming year to each household they visit. Traditional Romanian caroling customs often begin in the days before Christmas, with children particularly excited to participate in this beloved tradition, sometimes travelling in small groups from house to house throughout their neighbourhood or village, performing traditional colinde in exchange for small treats, fruits, or money traditionally offered by appreciative hosts who welcome the blessing and good fortune believed to accompany properly performed Christmas caroling. Many traditional colinde feature distinctive musical and lyrical characteristics specific to different Romanian regions, with various historical regions developing somewhat distinctive caroling traditions, melodic styles, and lyrical content, though all generally celebrating the joyful Christmas message while often incorporating traditional wishes for prosperity, good harvest, and family wellbeing reflecting Romania's historically agricultural society. The tradition of Steaua, meaning the Star, represents a particularly significant caroling custom in many Romanian regions, with performers carrying an elaborately decorated star symbol while performing songs specifically narrating the biblical story of the wise men following the Star of Bethlehem to find the newborn Jesus. Plugușorul, another traditional New Year's caroling custom, involves performers acting out a traditional ritual plowing ceremony while reciting traditional verses wishing for agricultural prosperity and good fortune in the coming year, demonstrating the continued connection between Romanian Christmas season traditions and historical agricultural concerns. These beloved caroling traditions continue being practised throughout contemporary Romania, with many families treasuring the experience of receiving carolers or participating in caroling groups as an essential, joyful element of Romanian Christmas celebration."
+    },
+    {
+      "key": "romanian_easter_traditions",
+      "title": "Paștele — Romanian Easter Celebrations",
+      "text": "Paștele, Easter, represents the most important religious celebration throughout Romania's predominantly Orthodox Christian population, observed through meaningful religious traditions, distinctive culinary customs, and important family gatherings that have been practised for many centuries, marking the joyful conclusion of Lenten fasting and celebrating Christ's resurrection central to Orthodox Christian faith. The celebration traditionally begins with attendance at the beautiful midnight Easter church service called Înviere, meaning Resurrection, with congregants traditionally carrying lit candles throughout the meaningful, lengthy service, with the joyful proclamation Hristos a înviat, meaning Christ has risen, traditionally answered with Adevărat a înviat, meaning truly he has risen, exchanged enthusiastically among congregants throughout the Easter season. Romanian families traditionally prepare distinctive Easter foods, with cozonac, a rich, sweet braided bread often filled with walnuts, poppy seeds, or Turkish delight, holding particular importance as a beloved Easter treat, alongside drob, a traditional dish made from lamb organs and herbs, reflecting Romania's traditional culinary heritage and the significance of lamb within Easter celebration symbolism. The tradition of decorating eggs, called ouă încondeiate, holds particular cultural and artistic significance throughout Romania, with various regions, particularly in northern Romania including Bucovina, developing distinctive and elaborate egg decoration techniques using wax-resist methods similar to related traditions found throughout Eastern Europe, creating beautifully intricate, symbolically meaningful decorated eggs. The traditional practice of egg tapping, where family members gently tap their decorated eggs together while saying Hristos a înviat, with the person whose egg remains uncracked considered to have particularly good fortune, represents a beloved, playful Easter custom enjoyed by Romanian families of all ages. These rich, meaningful Easter traditions reflect deeply held Romanian Orthodox Christian values combined with distinctive cultural and culinary heritage celebrated throughout this important spring holiday."
+    },
+    {
+      "key": "romanian_dracula_folklore",
+      "title": "Romanian Folklore and Vampire Legends",
+      "text": "Romanian folklore maintains a rich and fascinating tradition of supernatural beliefs and legendary creatures, with vampire mythology, called strigoi in traditional Romanian folklore, representing perhaps the most internationally recognized element of Romanian supernatural tradition, though the actual traditional Romanian folkloric understanding differs considerably from the popular international vampire mythology largely inspired by Bram Stoker's famous novel Dracula. Traditional Romanian strigoi folklore describes various types of supernatural beings believed to trouble the living, including strigoi vii, living people believed to possess supernatural powers including the ability to leave their bodies during sleep, and strigoi morți, restless spirits of the deceased believed to rise from graves under certain circumstances, with traditional rural communities historically maintaining various protective customs and rituals believed to prevent or address strigoi-related troubles. The historical figure Vlad III, commonly known as Vlad the Impaler, who ruled Wallachia during the fifteenth century, became internationally associated with vampire mythology partly through his historical reputation for using impalement as a method of punishment and partly through later literary connection to Bram Stoker's fictional Count Dracula character, though the historical Vlad himself had no direct connection to traditional vampire folklore beyond providing partial historical inspiration for later fictional literary creation. Beyond vampire-related folklore, Romanian traditional supernatural beliefs include various other legendary figures, including iele, mysterious fairy-like spirits associated with forest and meadow locations, and various traditional beliefs regarding protective customs, particularly surrounding important life transitions including birth, marriage, and death, reflecting broader traditional Romanian folk beliefs about the supernatural world existing alongside everyday human experience. Contemporary Romania maintains complex, sometimes humorous relationship with international Dracula tourism and popular vampire mythology, with various historical sites associated with Vlad the Impaler attracting significant tourist interest, while many Romanians themselves maintain greater interest in their authentic, rich traditional folklore extending well beyond internationally popularized vampire mythology."
+    },
+    {
+      "key": "romanian_traditional_costume_ia",
+      "title": "Ia — The Traditional Romanian Blouse",
+      "text": "The ia, Romania's traditional embroidered blouse, represents one of Romania's most cherished and internationally recognized cultural symbols, with this beautiful traditional garment featuring intricate hand embroidery that historically carried significant regional and symbolic meaning, with specific patterns, colours, and techniques traditionally associated with different Romanian regions and historically reflecting important information about the wearer's social status, marital status, and regional identity. Traditional ia embroidery employs various sophisticated techniques developed and refined across many generations of skilled Romanian needleworkers, typically created using natural materials including linen, cotton, or silk fabric, decorated with intricate geometric patterns, stylized floral motifs, and sometimes symbolic representations connected to traditional Romanian folk beliefs and agricultural calendar significance. Different Romanian regions historically developed distinctive ia styles and decorative techniques, with experienced practitioners able to identify likely regional origin based on specific embroidery patterns, colour combinations, and construction techniques, reflecting Romania's rich diversity of regional folk artistic traditions developed across the country's varied historical regions. The ia gained particular international recognition and renewed cultural significance following French fashion designer Yves Saint Laurent's celebrated 1981 collection inspired by traditional Romanian blouse design, sparking broader international interest and appreciation for this beautiful traditional garment, while Romania subsequently established June twenty-fourth as Universal Ia Day, celebrating this important cultural symbol and encouraging wider appreciation for traditional Romanian folk costume and craftsmanship. Many contemporary Romanian families treasure ia garments passed down through generations, sometimes worn for significant cultural celebrations, traditional festivals, and important national holidays, with younger generations of Romanian designers and craftspeople increasingly working to preserve traditional embroidery techniques while creating contemporary interpretations that maintain meaningful connection to this important cultural heritage and beautiful traditional artistic legacy."
+    },
+    {
+      "key": "romanian_baba_dochia",
+      "title": "Baba Dochia — The Legend of Nine Days",
+      "text": "Baba Dochia, an important traditional Romanian folk legend, represents a beloved seasonal tradition connected to the early days of March, with the legend telling the story of an elderly woman named Dochia who, despite warnings about unpredictable early spring weather, stubbornly decided to take her sheep up into the mountains too early, removing her warm winter coats one by one as the weather initially seemed to be warming, only to be caught by a sudden, harsh return of winter weather, ultimately freezing into a stone statue along with her flock as punishment for her stubbornness and impatience. This charming folk legend has given rise to an important traditional Romanian custom called Zilele Babei, the Days of the Old Woman, observed during the first nine days of March, with traditional folk wisdom suggesting that the specific weather conditions experienced during these nine days provide insight into the wearer's fortune for the coming year, with each day traditionally associated with selecting one of nine decorative martisor or specific symbolic items, with the weather on a person's chosen day believed to predict whether they will experience good or difficult fortune throughout the year ahead. Traditional Romanian folk wisdom holds that this period often brings particularly unpredictable, changeable weather, alternating between warm, spring-like days and sudden returns to harsh, wintery conditions, with this meteorological pattern itself sometimes referenced as evidence supporting the traditional Baba Dochia legend explaining this seasonal weather unpredictability. The legend and associated traditions remain particularly significant during the broader Mărțișor spring celebration period, with Baba Dochia folklore representing an important traditional explanation connecting seasonal weather patterns to meaningful cultural narrative and folk wisdom passed down through many generations of Romanian storytelling tradition. This beloved folk legend continues being shared with Romanian children as both an entertaining traditional story and meaningful cultural connection to traditional folk wisdom regarding seasonal transition and weather patterns specific to early spring throughout Romania."
+    },
+    {
+      "key": "romanian_sarmale",
+      "title": "Sarmale — Romania's Beloved National Dish",
+      "text": "Sarmale, cabbage rolls filled with seasoned meat and rice, represents one of Romania's most beloved and culturally significant traditional dishes, considered by many Romanians as their country's quintessential national dish, traditionally prepared for important celebrations, holidays, and family gatherings throughout the year, with this labour-intensive, deeply satisfying dish representing important cultural heritage and treasured family culinary tradition. Traditional sarmale preparation involves considerable time and skill, with cooks carefully wrapping seasoned filling, typically combining ground meat, rice, onions, and various herbs and spices, into individual cabbage or grape leaves, with the specific seasoning blend and preparation technique often representing closely guarded family recipes passed down through multiple generations, with grandmother's particular sarmale recipe frequently held in special esteem within Romanian families. The dish holds particular significance during Romanian Christmas celebrations, with many families considering proper holiday celebration incomplete without abundant sarmale, traditionally slow-cooked for many hours to achieve the rich, deeply flavoured result that has made this dish such an enduringly beloved element of Romanian culinary tradition and family celebration. Sarmale preparation traditionally represents an important communal family activity, with multiple family members, particularly women across different generations, often working together for hours preparing large quantities of cabbage rolls in anticipation of holiday celebrations or other significant family gatherings, with this shared preparation time itself representing meaningful family bonding alongside the practical culinary preparation. The dish is traditionally served with mămăligă, a traditional Romanian polenta made from cornmeal, alongside sour cream, creating a hearty, satisfying meal that has remained centrally important throughout Romanian culinary tradition across many generations. For Romanian families throughout the world, preparing and sharing sarmale together represents an important way of maintaining meaningful connection to Romanian culinary heritage, family tradition, and cultural identity, with this beloved dish carrying significant emotional and cultural meaning beyond its delicious, satisfying qualities."
+    },
+    {
+      "key": "romanian_traditional_dance_hora",
+      "title": "Hora — Romania's Traditional Circle Dance",
+      "text": "Hora, Romania's traditional circle dance, represents one of the country's most significant and widely practised folk dance traditions, performed throughout Romania at celebrations, festivals, and important community gatherings, with participants joining hands in a large circle, moving together with synchronized steps to traditional folk music, creating a powerful symbol of community unity and shared cultural celebration. The hora tradition holds particularly important significance during Romanian weddings, with this traditional circle dance typically performed at some point during wedding celebrations, symbolically representing community unity and the joining together of two families and their broader social networks through marriage, with guests traditionally joining the dancing circle regardless of their individual dancing skill or experience, emphasizing the dance's fundamentally inclusive, community-oriented nature. Traditional hora music typically features distinctive folk instruments, including the traditional Romanian pan flute called nai, accordion, violin, and various traditional percussion instruments, creating energetic, rhythmic music that drives the dance's steady, communal movement, with different regional variations sometimes featuring distinctive musical and choreographic characteristics specific to particular areas throughout Romania. The basic hora dance pattern typically involves participants holding hands while performing relatively simple, repetitive step patterns moving the entire circle gradually around in coordinated movement, with the dance's accessibility allowing people of all ages and dancing experience levels to meaningfully participate together in shared celebration. Beyond weddings, hora dancing traditionally features prominently at various other significant community celebrations throughout Romania, including traditional folk festivals, national holiday celebrations, and other important communal gatherings where this dance serves as an important symbol of Romanian cultural identity and community togetherness. The hora tradition continues being taught to younger generations throughout Romania and within Romanian diaspora communities worldwide, ensuring this meaningful traditional dance continues connecting contemporary Romanians to important cultural heritage emphasizing community unity and shared celebration."
+    },
+    {
+      "key": "romanian_transylvania_castles",
+      "title": "Transylvania's Castles and Fortified Churches",
+      "text": "Transylvania, the historically significant region of central Romania, contains an extraordinary concentration of magnificent medieval castles and remarkably well-preserved fortified churches that represent important historical and architectural heritage, reflecting the region's complex history involving various ruling powers and the practical necessity of fortification during historically unstable periods marked by various invasions and conflicts throughout medieval and early modern history. Bran Castle, perhaps Transylvania's most internationally famous fortress, draws considerable tourist attention partly due to its popular though historically inaccurate association with Bram Stoker's fictional Dracula novel, though the castle's authentic historical significance extends well beyond this popular fictional connection, representing important medieval architecture and historical Transylvanian royal and aristocratic history extending back many centuries. The Saxon fortified churches scattered throughout Transylvania represent particularly remarkable architectural and historical heritage, with German-speaking Saxon communities who settled in the region many centuries ago constructing distinctive fortified church complexes combining religious worship spaces with significant defensive fortification, designed to provide community protection during periods of historical instability and invasion threat, with several of these remarkable structures recognized as UNESCO World Heritage sites celebrating their exceptional historical and architectural significance. Peleș Castle, an exceptionally beautiful nineteenth-century royal residence built for Romania's King Carol I, represents a different but equally significant architectural treasure, showcasing remarkable Neo-Renaissance architectural style and extraordinarily elaborate interior decoration that reflects Romania's more recent royal historical heritage. The historical Transylvanian Saxon and broader regional architectural heritage reflects Romania's complex multicultural historical development, with various ethnic communities, including Romanian, Hungarian, German, and other populations, historically contributing to the region's rich, architecturally significant cultural landscape. Contemporary Romania continues working to preserve and celebrate this remarkable architectural heritage, with Transylvania's castles and fortified churches representing important tourist attractions while also serving as meaningful connections to Romania's complex, historically significant regional and national heritage."
+    },
+    {
+      "key": "romanian_winter_traditions_ursul",
+      "title": "Ursul — The Bear Dance Tradition",
+      "text": "Ursul, the traditional Romanian bear dance, represents a distinctive and visually striking winter folk tradition, particularly associated with the Moldavia region of Romania, performed during the Christmas and New Year holiday season, with participants wearing elaborate costumes covered in real bear fur or increasingly synthetic alternatives, performing energetic traditional dance movements believed to bring protection and good fortune while warding off evil spirits for the coming year. The tradition's origins connect to ancient pre-Christian beliefs regarding the bear's significant symbolic power throughout traditional Romanian and broader Eastern European folk belief systems, with bears historically considered powerful, almost magical creatures whose symbolic representation through traditional costume and dance was believed to channel protective power for participating communities. Traditional ursul performances typically involve groups of dancers, historically exclusively young men though contemporary performances increasingly include broader participation, wearing the elaborate bear costumes while performing energetic, sometimes acrobatic dance movements accompanied by traditional drumming and other percussion instruments, creating a visually dramatic, energetic performance that traditionally moves through village streets and visits individual homes throughout the holiday season. The dance traditionally incorporates symbolic elements representing the bear's eventual 'death' and 'rebirth' during the performance, believed to symbolically represent the death of the old year and rebirth of the new year, connecting this dramatic folk performance to broader themes of seasonal transition and renewal central to many traditional winter solstice and New Year celebrations found throughout various cultures. Communities throughout Moldavia and other regions maintaining this tradition often organize elaborate group performances and sometimes competitive festivals showcasing different community groups' bear dance traditions, with significant pride and cultural identity invested in maintaining authentic traditional costume construction and performance techniques. The ursul tradition represents an important and visually distinctive element of Romanian folk culture, connecting contemporary communities to ancient symbolic traditions regarding seasonal transition, protection, and the meaningful welcoming of the new year through this dramatic, energetic traditional performance practice."
+    },
+    {
+      "key": "romanian_new_year_pig",
+      "title": "Tăiatul Porcului — The Pig Slaughter Tradition",
+      "text": "Tăiatul porcului, the traditional pig slaughter, represents an important rural Romanian winter custom historically practised around Christmas time, typically on or near Ignat day, December twentieth, with families traditionally raising a pig throughout the year specifically for this important winter tradition that provided essential meat supplies for the household throughout the cold winter months ahead. The tradition historically represented an important community and family gathering, with extended family members and sometimes neighbours coming together to assist with the labour-intensive process, including preparing various traditional pork products including sausages called cârnați, various preserved meats, and the traditional dish toba, made from various pork parts seasoned and prepared in natural casings. This important tradition historically held significant practical economic importance for rural Romanian families, ensuring adequate meat supplies throughout winter when fresh food production became more limited, while also representing an important opportunity for extended family gathering, shared labour, and the preparation of special foods that would feature prominently in upcoming Christmas celebrations. Various traditional customs and superstitions historically surrounded this practice, with specific timing and procedures believed to influence the quality of resulting meat products and overall household fortune for the coming year. While contemporary urbanized Romanian society has seen this tradition become less universally practised, particularly among urban families who now typically purchase rather than personally prepare pork products, the tradition remains meaningfully observed throughout many rural Romanian communities, with the resulting traditional foods, particularly sausages and special pork preparations, continuing to feature importantly within Romanian Christmas culinary tradition even among families who no longer personally participate in the traditional slaughter process itself."
+    },
+    {
+      "key": "romanian_traditional_pottery_horezu",
+      "title": "Horezu Ceramics — Romania's Painted Pottery",
+      "text": "Horezu ceramics, originating from the town of Horezu in the Vâlcea region of Romania, represent one of the country's most renowned and artistically significant traditional pottery traditions, recognized by UNESCO as an Intangible Cultural Heritage, with skilled local artisans creating distinctive, beautifully decorated ceramic pieces using techniques passed down through many generations of dedicated craftspeople. Horezu pottery features distinctive decorative techniques, particularly the renowned cocoș de Horezu, the Horezu rooster motif, considered the region's signature decorative design, alongside various other traditional patterns including spirals, geometric designs, and stylized plant and animal motifs applied using a specialized technique involving carefully controlled application of coloured slip, a liquid clay mixture, creating distinctive raised decorative patterns on the ceramic surface. The traditional pottery-making process requires considerable skill across multiple stages, beginning with careful preparation of local clay, traditional hand-throwing techniques using a foot-powered potter's wheel, followed by the distinctive decorative slip application process, and finally careful firing in traditional kilns, with skilled Horezu potters often learning this complex craft through years of apprenticeship within established family pottery workshops. Horezu has maintained continuous pottery production for many generations, with several families in the region operating workshops that have been passed down through multiple generations, preserving traditional techniques while individual artisans often develop personally distinctive decorative variations within the broader traditional Horezu style framework. The annual Cocoșul de Horezu festival celebrates this important traditional craft, drawing visitors interested in traditional Romanian folk art and providing important economic and cultural support for continuing artisan communities. Horezu ceramics represent an important symbol of Romanian traditional craftsmanship and folk artistic achievement, with these beautiful decorated pieces treasured both as functional household items and significant artistic and cultural achievements representing important traditional Romanian heritage."
+    },
+    {
+      "key": "romanian_maramures_wooden_churches",
+      "title": "Maramureș Wooden Churches",
+      "text": "Maramureș, a historically distinctive region in northern Romania, maintains an extraordinary architectural heritage of remarkable traditional wooden churches, with several outstanding examples recognized as UNESCO World Heritage sites celebrating their exceptional traditional construction techniques, distinctive architectural style, and significant historical and cultural importance within Romanian religious and architectural heritage. These remarkable wooden churches, traditionally constructed using sophisticated joinery techniques without metal nails, feature distinctive tall, narrow steeples that create a strikingly elegant silhouette, with skilled traditional craftspeople developing specialized construction methods allowing these wooden structures to achieve impressive height and structural stability while using relatively simple traditional tools and techniques passed down through many generations of local builders. The interior decoration of these churches often features remarkable traditional religious paintings, with skilled folk artists creating elaborate biblical scenes and religious imagery using techniques and artistic styles distinctive to the region, representing important traditional Romanian folk religious artistic achievement alongside the buildings' significant architectural accomplishment. Maramureș has historically maintained particularly strong continuity of traditional rural culture, with the region's relative geographic isolation helping preserve traditional customs, architectural styles, and craft traditions that have evolved or disappeared in more accessible Romanian regions, making Maramureș an important living connection to historical Romanian rural cultural heritage. Beyond the renowned wooden churches, Maramureș maintains other significant traditional architectural and cultural elements, including distinctive traditional wooden gates featuring elaborate carved decoration that traditionally marked the entrance to family properties, with these beautiful carved gates representing another important element of the region's rich traditional craftsmanship heritage. Contemporary Maramureș continues working to preserve and celebrate this remarkable architectural and cultural heritage, with the region's wooden churches and broader traditional culture representing significant sources of Romanian cultural pride and important connections to historical traditional rural life and craftsmanship."
+    },
+    {
+      "key": "romanian_palm_sunday_florii",
+      "title": "Florii — Palm Sunday Traditions",
+      "text": "Florii, the Romanian Orthodox celebration of Palm Sunday, observed the Sunday before Easter, commemorates Jesus Christ's triumphant entry into Jerusalem, with Romanian Orthodox tradition incorporating distinctive customs that combine important religious observance with meaningful seasonal celebration marking the approach of spring and Easter's joyful conclusion of the Lenten fasting period. The celebration's name, meaning flowers in Romanian, reflects the tradition's particular association with blessed willow branches, called salcie, traditionally distributed and blessed during church services, with Romanian Orthodox tradition substituting native willow branches for the palm branches more commonly associated with this celebration in regions where actual palm trees grow naturally. Families traditionally bring willow branches to church for blessing during the Florii service, with these blessed branches subsequently kept in homes throughout the following year, often displayed near religious icons, believed to provide spiritual protection and blessing for the household until the following year's celebration when they are traditionally replaced with newly blessed branches. The celebration traditionally features many people named after flowers or with names connected to the celebration's themes celebrating their name day, called onomastică, on this particular Sunday, with friends and family offering congratulations and good wishes to those celebrating their name day connected to this important religious observance. Florii traditionally marks the beginning of Holy Week, the most spiritually significant week within Orthodox Christian religious calendar, with the celebration's joyful, hopeful character providing meaningful transition between the solemn reflection of Lenten fasting and the approaching, even more significant spiritual intensity of Holy Week observances leading toward Easter's ultimate celebration. This meaningful celebration beautifully combines important religious observance, distinctive regional traditional customs, and meaningful seasonal celebration central to Romanian Orthodox Christian religious and cultural tradition."
+    },
+    {
+      "key": "romanian_traditional_weaving",
+      "title": "Traditional Romanian Textile Weaving",
+      "text": "Traditional Romanian textile weaving represents a rich and historically significant craft tradition, with skilled artisans throughout various Romanian regions historically creating beautiful, intricately patterned textiles using traditional hand-loom weaving techniques passed down through many generations, producing items including traditional carpets, decorative textiles, and elements of traditional folk costume that represent important Romanian cultural and artistic heritage. Traditional Romanian carpets, called scoarțe in certain regions, particularly Oltenia, feature distinctive geometric and sometimes floral patterns created through sophisticated traditional weaving techniques, with specific colour combinations and decorative motifs often carrying regional significance, reflecting the particular artistic traditions and available natural dyeing materials specific to different areas throughout Romania. The traditional weaving process historically required considerable skill and patience, with skilled weavers, predominantly women who learned this craft from mothers and grandmothers, spending considerable time creating even modestly sized traditional textiles, with more elaborate, larger traditional carpets sometimes requiring many months of dedicated work to complete using traditional hand-loom techniques. Traditional Romanian textile decoration often incorporated meaningful symbolic patterns, with specific geometric designs, sometimes incorporating stylized representations of trees, flowers, or other natural elements, traditionally believed to carry protective or symbolic significance for the household where these textiles would be displayed or used. Many Romanian families historically maintained important traditional textiles as treasured household items, with elaborately woven carpets and decorative textiles often representing significant family investments and important elements of traditional home decoration, sometimes specifically created as part of a young woman's dowry preparation reflecting important traditional marriage customs. Contemporary efforts throughout Romania continue working to preserve traditional weaving techniques and patterns, with various cultural institutions, craft schools, and individual artisans dedicated to maintaining this important traditional textile heritage, ensuring continued knowledge and appreciation of Romania's rich traditional weaving artistic accomplishment for future generations."
+    },
+    {
+      "key": "romanian_summer_solstice_sanziene",
+      "title": "Sânzienele — Midsummer Fairy Festival",
+      "text": "Sânzienele, celebrated on June twenty-fourth, represents an important traditional Romanian midsummer celebration combining ancient pre-Christian folk beliefs with later Christian observance honouring the Nativity of St. John the Baptist, creating a beautiful, mystical celebration connected to the summer solstice that holds particular significance within traditional Romanian folk culture and belief systems. The celebration takes its name from sânziene, both referring to a particular yellow wildflower that traditionally blooms around this time and to mystical fairy-like spirits believed in traditional Romanian folklore to particularly manifest and hold special power during this magical midsummer period, with these ethereal beings traditionally associated with fertility, natural beauty, and various forms of magical protection or fortune-telling power. Traditional Sânzienele customs include young women gathering the sânziene flowers to create decorative wreaths, sometimes worn during celebrations or placed on house gates and animal enclosures, believed to provide protection and blessing for the household and livestock throughout the coming year. Various traditional folk beliefs and fortune-telling customs historically connected to this celebration include practices where young unmarried women might place flower wreaths beneath their pillows, believing this might reveal information about future romantic prospects through resulting dreams, reflecting the celebration's traditional association with fertility, love, and important life transitions. Traditional folk belief held that supernatural beings, including various fairy-like spirits, held particular power and visibility during this magical midsummer period, with various traditional customs and protective practices observed to maintain positive relationship with these believed supernatural forces during this spiritually significant time. Many rural Romanian communities continue observing various traditional Sânzienele customs, connecting contemporary celebration to ancient folk beliefs regarding the mystical significance of the summer solstice period within traditional Romanian agricultural and spiritual calendar understanding."
+    },
+    {
+      "key": "romanian_traditional_music_doina",
+      "title": "Doina — Romania's Soulful Folk Song Tradition",
+      "text": "Doina represents one of Romania's most distinctive and emotionally significant traditional musical forms, a deeply expressive, typically melancholic folk song tradition characterized by free, improvised melodic structure and profound emotional expression addressing universal human themes including love, longing, loss, and connection to homeland and natural surroundings. Unlike more rhythmically structured traditional dance music, doina performances traditionally feature free, unmetered melodic improvisation, allowing skilled performers considerable artistic freedom to express deep emotional content through extended, soulful vocal or instrumental melodic lines that can vary significantly between different performances even of traditionally similar thematic content. Traditional doina performance often features solo vocal performance, sometimes accompanied by traditional instruments including violin, traditional Romanian pan flute called nai, or other folk instruments, with skilled performers traditionally developing distinctive personal interpretive styles within the broader traditional doina musical framework, reflecting both individual artistic expression and connection to broader traditional musical heritage. The emotional themes explored within traditional doina lyrics often address universal human experiences including romantic love and longing, separation from loved ones or homeland, the beauty and significance of natural landscape, and broader philosophical reflection on life's meaning and challenges, with this profound emotional depth representing an important characteristic distinguishing doina from more straightforwardly celebratory traditional dance music. Romanian composer George Enescu, among Romania's most internationally renowned classical composers, significantly drew upon traditional doina musical characteristics within his celebrated classical compositions, helping introduce broader international audiences to this distinctive traditional Romanian musical form's emotional depth and artistic sophistication. Contemporary Romanian folk musicians continue performing and developing traditional doina musical heritage, with this deeply expressive musical tradition remaining significant within broader Romanian folk musical culture, representing an important artistic vehicle for exploring profound emotional and philosophical themes central to Romanian cultural and artistic identity."
+    },
+    {
+      "key": "romanian_unification_day",
+      "title": "Ziua Unirii — Romanian Unification Day",
+      "text": "Ziua Unirii, Romanian Unification Day, celebrated on January twenty-fourth, commemorates the historic 1859 union of the Romanian principalities of Wallachia and Moldavia under Prince Alexandru Ioan Cuza, representing a foundational moment in modern Romanian national history that established the political foundation for the eventual creation of the unified Romanian nation that exists today. This important historical union represented a significant achievement following many years of political effort by Romanian nationalist movements seeking to unite historically separate but culturally and linguistically connected Romanian territories into a single political entity, with Cuza's election as ruler of both previously separate principalities representing the crucial political mechanism achieving this important unification. The holiday holds particular significance within Romanian national historical consciousness, representing an important early step in the longer historical process of Romanian national unification that would eventually, following subsequent historical developments including the addition of Transylvania after World War One, create the modern Romanian state's current territorial configuration. Contemporary celebrations throughout Romania typically include official government ceremonies, educational programming helping younger generations understand this important historical achievement, and various cultural events celebrating Romanian national unity and historical achievement, with the holiday providing important opportunity for reflecting on Romania's complex historical journey toward national unification and independence. Schools throughout Romania traditionally incorporate special educational programming around this important historical holiday, helping students understand the significant historical context, key historical figures, and lasting national significance of this foundational unification achievement that established crucial political groundwork for subsequent Romanian national development. For Romanian families, Ziua Unirii represents an important opportunity for celebrating national identity and historical achievement, connecting contemporary Romanian citizens to important historical foundations underlying their nation's development and continued political and cultural unity."
+    },
+    {
+      "key": "romanian_name_day_onomastica",
+      "title": "Onomastică — Romanian Name Day Celebrations",
+      "text": "Onomastică, the celebration of one's name day, represents an important and widely observed Romanian tradition connected to the Orthodox Church calendar's designation of specific feast days honouring particular saints, with Romanians traditionally celebrating their name day on the feast day of the saint after whom they were named, often considering this celebration as significant as, or sometimes even more significant than, celebrating one's actual birthday within Romanian cultural tradition. This meaningful tradition reflects Romania's strong Orthodox Christian cultural heritage, with the practice connecting individuals to their namesake saint throughout their entire life, while also providing an important, predictable annual occasion for celebration and connection with friends and family, since unlike birthdays which might not be precisely known or remembered by all acquaintances, name days connected to common saint names are widely known throughout Romanian calendar tradition. Certain particularly common Romanian names connect to widely celebrated name days that become significant cultural occasions throughout the country, with names like Ion, Maria, and various other saints' names representing celebrations observed by enormous numbers of Romanians simultaneously, sometimes creating particularly festive, widely recognized celebratory occasions throughout Romanian communities. Traditional name day celebrations typically involve friends and family offering congratulations, small gifts, and good wishes to the person celebrating, with hosts sometimes preparing special meals or treats to mark the occasion, similar to birthday celebration customs found in many cultures, though with the specific religious and calendar-based significance distinctive to this particular Romanian Orthodox cultural tradition. Many contemporary Romanian families continue actively observing both secular birthday celebrations and traditional name day customs, with name day celebrations often providing meaningful additional opportunity throughout the year for family connection, celebration, and continued connection to important religious and cultural tradition central to Romanian Orthodox Christian heritage and broader national cultural identity."
+    },
+    {
+      "key": "romanian_traditional_brad_christmas_tree",
+      "title": "Bradul de Crăciun — The Romanian Christmas Tree",
+      "text": "Bradul de Crăciun, the Christmas tree, holds important cultural and family significance throughout Romanian Christmas celebrations, with families traditionally decorating fir trees, typically locally sourced from Romania's significant forested regions, as a central element of household Christmas preparation and celebration, combining this now widely international tradition with distinctively Romanian decorative customs and family traditions. Traditional Romanian Christmas tree decoration historically incorporated various natural and handmade decorative elements, including dried fruit, particularly apples and walnuts which carried symbolic significance representing prosperity and good harvest, alongside simple handmade ornaments often created by children, reflecting both practical resourcefulness and meaningful family creative participation in holiday preparation. Many Romanian families maintain treasured traditional ornaments passed down through multiple generations, with these meaningful decorative items often holding significant emotional and family historical importance beyond their simple decorative function, representing important connections to family Christmas traditions extending back through multiple generations of celebration. The tradition of decorating the Christmas tree together as a family activity holds particular importance throughout Romanian Christmas customs, with this shared activity often representing an important opportunity for family bonding and the creation of meaningful holiday memories, particularly significant for children who often eagerly anticipate participating in this beloved annual family tradition. Romanian Christmas tree traditions historically connected meaningfully to broader Romanian Christmas folklore and customs, including beliefs connecting evergreen trees to themes of continued life and hope during winter's darkest period, reflecting broader symbolic themes found throughout various Christmas traditions celebrating light, hope, and continued life during the year's darkest, coldest season. Contemporary Romanian families continue treasuring this important Christmas tradition, with the beautifully decorated Christmas tree representing a central, meaningful symbol of family togetherness, holiday celebration, and continued connection to treasured Romanian Christmas customs and family traditions passed down through generations."
+    }
+  ],
+  "stories": [
+    {
+      "key": "fata_babei",
+      "title": "Fata Babei și Fata Moșneagului",
+      "translit": "Fata Babei și Fata Moșneagului",
+      "gloss": "The Old Woman's Daughter and the Old Man's Daughter",
+      "lines": [
+        {
+          "text": "Demult trăiau un moș și o babă.",
+          "gloss": "Long ago there lived an old man and an old woman."
+        },
+        {
+          "text": "Moșul avea o fată bună și harnică.",
+          "gloss": "The old man had a good and hardworking daughter."
+        },
+        {
+          "text": "Baba avea propria ei fată, leneșă și rea.",
+          "gloss": "The old woman had her own daughter, lazy and unkind."
+        },
+        {
+          "text": "Baba nu o plăcea pe fata moșului.",
+          "gloss": "The old woman did not like the old man's daughter."
+        },
+        {
+          "text": "Ea o trimise să pască vacile departe.",
+          "gloss": "She sent her to pasture the cows far away."
+        },
+        {
+          "text": "Vaca o duse pe fată într-o fântână.",
+          "gloss": "The cow led the girl to a well."
+        },
+        {
+          "text": "Fata căzu și ajunse într-o lume magică.",
+          "gloss": "The girl fell and arrived in a magical world."
+        },
+        {
+          "text": "Acolo întâlni un cuptor plin de pâine.",
+          "gloss": "There she met an oven full of bread."
+        },
+        {
+          "text": "Cuptorul îi ceru să-l golească cu grijă.",
+          "gloss": "The oven asked her to empty it carefully."
+        },
+        {
+          "text": "Fata făcu asta cu blândețe și răbdare.",
+          "gloss": "The girl did this with gentleness and patience."
+        },
+        {
+          "text": "Apoi întâlni un măr plin de fructe coapte.",
+          "gloss": "Then she met an apple tree full of ripe fruit."
+        },
+        {
+          "text": "Mărul îi ceru să-i culeagă fructele.",
+          "gloss": "The apple tree asked her to pick its fruits."
+        },
+        {
+          "text": "Fata îl ajută cu drag și blândețe.",
+          "gloss": "The girl helped it with love and kindness."
+        },
+        {
+          "text": "Ajunse apoi la casa Sfintei Duminici.",
+          "gloss": "She then arrived at the house of Saint Sunday."
+        },
+        {
+          "text": "Lucră acolo cu sârguință multă vreme.",
+          "gloss": "She worked there diligently for a long time."
+        },
+        {
+          "text": "Sfânta o răsplăti cu o ladă plină de aur.",
+          "gloss": "The Saint rewarded her with a chest full of gold."
+        },
+        {
+          "text": "Fata se întoarse acasă bogată și fericită.",
+          "gloss": "The girl returned home rich and happy."
+        },
+        {
+          "text": "Baba își trimise și ea fata, lacomă de avere.",
+          "gloss": "The old woman also sent her own daughter, greedy for wealth."
+        },
+        {
+          "text": "Dar fata leneșă fu nepoliticoasă și obraznică.",
+          "gloss": "But the lazy daughter was rude and disrespectful."
+        },
+        {
+          "text": "Bunătatea aduce întotdeauna o răsplată adevărată.",
+          "gloss": "Kindness always brings a true reward."
+        }
+      ]
+    },
+    {
+      "key": "ursul_pacalit",
+      "title": "Ursul Păcălit de Vulpe",
+      "translit": "Ursul Păcălit de Vulpe",
+      "gloss": "The Bear Tricked by the Fox",
+      "lines": [
+        {
+          "text": "Într-o pădure trăia un urs mare și puternic.",
+          "gloss": "In a forest lived a big and strong bear."
+        },
+        {
+          "text": "Lângă el trăia o vulpe foarte vicleană.",
+          "gloss": "Near him lived a very cunning fox."
+        },
+        {
+          "text": "Iarna era grea și mâncarea era puțină.",
+          "gloss": "Winter was hard and food was scarce."
+        },
+        {
+          "text": "Vulpea găsi un sat cu pește proaspăt.",
+          "gloss": "The fox found a village with fresh fish."
+        },
+        {
+          "text": "Ea fură pește și se întoarse veselă.",
+          "gloss": "She stole fish and returned happily."
+        },
+        {
+          "text": "Ursul o întrebă de unde a luat peștele.",
+          "gloss": "The bear asked her where she got the fish."
+        },
+        {
+          "text": "'Am prins peștele cu coada în lac!' minți vulpea.",
+          "gloss": "'I caught the fish with my tail in the lake!' lied the fox."
+        },
+        {
+          "text": "Ursul, naiv, crezu povestea ei.",
+          "gloss": "The bear, naively, believed her story."
+        },
+        {
+          "text": "Mergse la lac și își băgă coada în apa rece.",
+          "gloss": "He went to the lake and put his tail in the cold water."
+        },
+        {
+          "text": "Așteptă mult timp, sperând să prindă pești.",
+          "gloss": "He waited a long time, hoping to catch fish."
+        },
+        {
+          "text": "Apa începu să înghețe în jurul cozii sale.",
+          "gloss": "The water began to freeze around his tail."
+        },
+        {
+          "text": "Ursul nu simțea nimic și continuă să aștepte.",
+          "gloss": "The bear felt nothing and continued to wait."
+        },
+        {
+          "text": "Veniră sătenii și îl văzură pe urs acolo.",
+          "gloss": "The villagers came and saw the bear there."
+        },
+        {
+          "text": "Ei începură să strige și să fugă spre el.",
+          "gloss": "They began shouting and running toward him."
+        },
+        {
+          "text": "Ursul încercă să fugă, dar coada îi era prinsă.",
+          "gloss": "The bear tried to run, but his tail was stuck."
+        },
+        {
+          "text": "Coada se rupse și ursul rămase fără ea!",
+          "gloss": "His tail broke off and the bear was left without it!"
+        },
+        {
+          "text": "De atunci, ursul are coada foarte scurtă.",
+          "gloss": "Since then, the bear has had a very short tail."
+        },
+        {
+          "text": "El fu foarte supărat pe vulpea vicleană.",
+          "gloss": "He was very angry at the cunning fox."
+        },
+        {
+          "text": "Dar vulpea fugise deja departe, râzând.",
+          "gloss": "But the fox had already run far away, laughing."
+        },
+        {
+          "text": "Trebuie să fim atenți la cine ne dă sfaturi.",
+          "gloss": "We must be careful about whose advice we follow."
+        }
+      ]
+    }
+  ]
 }

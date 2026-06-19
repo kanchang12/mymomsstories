@@ -1,8 +1,394 @@
 {
   "name": "Russian",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "А",
+      "translit": "a"
+    },
+    {
+      "char": "Б",
+      "translit": "be"
+    },
+    {
+      "char": "В",
+      "translit": "ve"
+    },
+    {
+      "char": "Г",
+      "translit": "ge"
+    },
+    {
+      "char": "Д",
+      "translit": "de"
+    },
+    {
+      "char": "Е",
+      "translit": "ye"
+    },
+    {
+      "char": "Ж",
+      "translit": "zhe"
+    },
+    {
+      "char": "М",
+      "translit": "em"
+    },
+    {
+      "char": "О",
+      "translit": "o"
+    },
+    {
+      "char": "Р",
+      "translit": "er"
+    }
+  ],
+  "words": [
+    {
+      "text": "мама",
+      "translit": "mama",
+      "gloss": "mother"
+    },
+    {
+      "text": "папа",
+      "translit": "papa",
+      "gloss": "father"
+    },
+    {
+      "text": "вода",
+      "translit": "voda",
+      "gloss": "water"
+    },
+    {
+      "text": "дом",
+      "translit": "dom",
+      "gloss": "house"
+    },
+    {
+      "text": "солнце",
+      "translit": "solntse",
+      "gloss": "sun"
+    },
+    {
+      "text": "книга",
+      "translit": "kniga",
+      "gloss": "book"
+    },
+    {
+      "text": "цветок",
+      "translit": "tsvetok",
+      "gloss": "flower"
+    },
+    {
+      "text": "дерево",
+      "translit": "derevo",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "Меня зовут Аня.",
+      "translit": "Menya zovut Anya.",
+      "gloss": "My name is Anya."
+    },
+    {
+      "text": "Мама рассказывает мне сказку.",
+      "translit": "Mama rasskazyvayet mne skazku.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "Солнце встаёт на востоке.",
+      "translit": "Solntse vstayot na vostoke.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "Я учу русский язык.",
+      "translit": "Ya uchu russkiy yazyk.",
+      "gloss": "I am learning Russian."
+    },
+    {
+      "text": "Вода — это жизнь.",
+      "translit": "Voda — eto zhizn'.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "novy_god",
+      "title": "Novy God — Russian New Year",
+      "text": "Novy God, New Year, stands as the most beloved and important holiday throughout Russia, traditionally celebrated with greater enthusiasm and significance than Christmas itself, a legacy of the Soviet era when religious Christmas celebrations were discouraged and New Year celebrations absorbed many traditionally Christmas-associated customs, creating Russia's distinctive holiday traditions that continue today. Families decorate elaborate New Year trees called yolka, very similar to Christmas trees, decorated with ornaments, lights, and tinsel, with the tradition of decorating these trees dating back many generations and remaining central to Russian holiday celebrations. The New Year holiday features its own beloved gift-giving figure, Ded Moroz, meaning Grandfather Frost, who traditionally delivers presents to children, accompanied by his granddaughter Snegurochka, the Snow Maiden, with this distinctly Russian pair differing from Western Santa Claus traditions in both appearance and accompanying mythology. Families traditionally gather for an elaborate New Year's Eve feast, watching the President's annual New Year address on television before the clock strikes midnight, followed by enthusiastic toasts, often with Soviet champagne, and the singing of traditional songs as the new year officially begins. Many Russian families also celebrate Old New Year on January fourteenth, reflecting the historical transition from the Julian to Gregorian calendar, with this secondary celebration providing an opportunity for additional festive gathering. The extended New Year holiday period, often lasting through the first week of January, represents an important time for family gathering, gift exchange, and festive celebration deeply woven into Russian cultural identity."
+    },
+    {
+      "key": "maslenitsa",
+      "title": "Maslenitsa — Pancake Week",
+      "text": "Maslenitsa, often called Pancake Week, represents one of Russia's most joyful and ancient traditional celebrations, occurring during the week before Orthodox Lent begins, combining pre-Christian Slavic traditions celebrating the end of winter with later Christian religious observance, creating a uniquely festive celebration marking the transition from winter into spring. The central culinary tradition involves preparing and enjoying blini, thin, round pancakes whose golden, circular shape symbolically represents the sun, believed to help encourage the return of warmth and light following Russia's long, dark winter months. Throughout the week-long celebration, families and communities gather to enjoy blini served with various traditional accompaniments, including sour cream, caviar, honey, jam, and melted butter, with each day of Maslenitsa traditionally associated with specific customs and activities, building toward the festival's joyful conclusion. Communities throughout Russia host outdoor festivities featuring traditional games, sleigh rides, and energetic activities including fistfights and tug-of-war competitions that historically helped warm participants during the cold late-winter celebrations. The festival traditionally concludes with the symbolic burning of a large straw effigy representing Lady Maslenitsa, with this dramatic bonfire ceremony symbolizing the final farewell to winter and the joyful welcoming of spring's eventual arrival. Forgiveness Sunday, marking the conclusion of Maslenitsa, traditionally involves family members and friends asking each other for forgiveness for any wrongs committed throughout the previous year, spiritually preparing participants for the upcoming period of Lenten reflection. Maslenitsa beautifully combines joyful pre-spring celebration, meaningful culinary tradition, and important spiritual preparation into one of Russia's most cherished annual festivals."
+    },
+    {
+      "key": "russian_orthodox_christmas",
+      "title": "Russian Orthodox Christmas",
+      "text": "Russian Orthodox Christmas, celebrated on January seventh according to the older Julian calendar still followed by the Russian Orthodox Church, represents an important religious celebration observed with particular spiritual significance throughout Russia, occurring nearly two weeks after the secular New Year celebrations that typically receive greater public attention and festivity in contemporary Russian culture. The Orthodox Christmas observance traditionally begins with a forty-day fasting period called Advent fast, during which observant families abstain from meat, dairy, and other rich foods, concluding with an elaborate Christmas Eve feast called Sochelnik, traditionally beginning only after the first star appears in the evening sky, symbolically representing the Star of Bethlehem that guided the wise men to the newborn Jesus. This special Christmas Eve meal traditionally features twelve distinct dishes, representing the twelve apostles, with kutia, a sweet dish made from wheat berries, honey, and poppy seeds, holding particular symbolic and ceremonial importance as the meal's centrepiece. Families traditionally attend lengthy, beautiful Orthodox Christmas church services, often extending late into the night or beginning very early in the morning, featuring elaborate religious ceremony, traditional Orthodox liturgical music, and the meaningful religious observance central to this important spiritual celebration. While Soviet-era religious suppression significantly impacted public Christmas observance for many decades, the post-Soviet period has seen meaningful revival of Orthodox Christmas traditions throughout Russia, with growing numbers of families reconnecting with these important religious and cultural practices, attending church services, and observing traditional fasting and feast customs that connect contemporary Russian Orthodox believers to many centuries of continuous religious tradition."
+    },
+    {
+      "key": "russian_banya",
+      "title": "Banya — The Russian Bathhouse Tradition",
+      "text": "The Russian banya, traditional bathhouse, represents a deeply important cultural institution combining physical health practices, social bonding, and meaningful relaxation that has been central to Russian life for many centuries, with the practice extending well beyond simple bathing to encompass important social, therapeutic, and even spiritual dimensions deeply woven into Russian cultural identity. Traditional banya experience involves alternating between intensely hot steam rooms, heated by pouring water over heated stones to create thick, enveloping steam, and sudden exposure to cold water or, particularly in winter, even rolling in snow, with this dramatic temperature contrast believed to provide significant health benefits, improving circulation, strengthening the immune system, and providing deep relaxation and stress relief. A particularly distinctive banya tradition involves using venik, bundles of birch or oak branches with leaves still attached, to gently but firmly beat or massage the body while in the steam room, believed to improve circulation, release toxins, and provide therapeutic massage benefits, with this practice requiring skill to perform properly and often done by experienced banya attendants or knowledgeable family members. Banya visits traditionally represent important social occasions, with friends or family members often visiting together, sharing conversation, tea, and sometimes traditional snacks between rounds of steam and cooling, creating meaningful bonding time quite distinct from the purely practical aspects of bathing. Many Russian families maintain their own private banya structures, particularly those with country dacha properties, while public banya facilities remain popular throughout Russian cities, continuing this cherished tradition that combines important health practices with valued social connection across generations of Russian families."
+    },
+    {
+      "key": "russian_matryoshka",
+      "title": "Matryoshka — Nesting Dolls",
+      "text": "Matryoshka dolls, the iconic Russian nesting dolls, represent one of Russia's most internationally recognized and beloved cultural symbols, featuring a series of wooden dolls of decreasing size nested within one another, traditionally hand-painted with vibrant folk-inspired designs, with the largest outer doll opening to reveal a smaller doll inside, continuing through multiple progressively smaller figures. Though the tradition might seem ancient, matryoshka dolls actually originated relatively recently, in the late nineteenth century, created by Russian craftsman Vasily Zvyozdochkin based on designs by artist Sergei Malyutin, with the concept reportedly influenced partly by traditional Japanese nesting figures, demonstrating interesting cross-cultural artistic influence in this now distinctly Russian tradition. Traditional matryoshka designs typically depict peasant women wearing colourful traditional Russian clothing and headscarves, though contemporary craftspeople create matryoshka featuring an enormous variety of designs, including historical figures, fairy tale characters, animals, and even modern pop culture references, demonstrating the format's remarkable artistic versatility. Creating authentic matryoshka dolls requires considerable woodworking and artistic skill, with skilled craftspeople carefully turning each nested doll on a lathe to achieve precise proportions allowing each piece to fit properly within the next larger doll, before talented painters apply intricate, often quite beautiful decorative designs by hand. Matryoshka dolls have become deeply symbolic within Russian culture, sometimes used metaphorically to represent concepts of motherhood, family generations nested within each other, or layers of complexity within seemingly simple things. These charming nesting dolls remain popular both as cherished children's toys, encouraging fine motor skill development and imaginative play, and as significant cultural souvenirs and artistic collectibles treasured by people throughout Russia and around the world."
+    },
+    {
+      "key": "russian_ballet",
+      "title": "Russian Ballet Tradition",
+      "text": "Russian ballet represents one of the world's most prestigious and influential classical dance traditions, with Russia having developed an extraordinarily sophisticated and internationally renowned ballet culture since the art form was introduced from France and Italy in the eighteenth century, eventually producing distinctively Russian artistic innovations that have profoundly influenced classical ballet worldwide. The legendary Bolshoi Theatre in Moscow and Mariinsky Theatre in Saint Petersburg, both with histories extending back over two centuries, represent two of the world's most celebrated ballet institutions, training generations of extraordinarily skilled dancers and premiering numerous classical ballets that remain central to the international ballet repertoire today. Russian composer Pyotr Ilyich Tchaikovsky created several of the most beloved and frequently performed ballets in the entire classical repertoire, including Swan Lake, The Nutcracker, and Sleeping Beauty, with these magnificent works combining sophisticated musical composition with elaborate, technically demanding choreography that continues captivating audiences worldwide more than a century after their creation. Russian ballet training traditionally follows an extremely rigorous, demanding methodology, with young dancers, often beginning training as young children, undergoing years of intensive physical and artistic instruction at prestigious ballet academies, developing the extraordinary technical precision, strength, and artistic expression that has become internationally recognized as a hallmark of Russian ballet excellence. The Nutcracker ballet, in particular, has become deeply associated with Russian and broader international Christmas and winter holiday celebrations, with countless performances staged annually throughout Russia and around the world, introducing generations of children to classical ballet through this beloved, magical holiday tradition. Russian ballet's profound artistic achievements and rigorous training traditions continue significantly influencing classical dance education and performance throughout the world."
+    },
+    {
+      "key": "russian_fairy_tales",
+      "title": "Russian Fairy Tales — Skazki",
+      "text": "Russian fairy tales, called skazki, represent a rich and culturally significant storytelling tradition passed down through many generations, originally transmitted through oral folklore before being carefully collected and preserved by scholars in the nineteenth century, creating an enduring literary heritage that continues shaping Russian children's cultural education and imagination today. These traditional tales feature distinctive recurring characters and themes deeply embedded within Russian cultural consciousness, including Baba Yaga, a complex, sometimes frightening witch figure who lives in a hut standing on chicken legs and travels in a giant mortar and pestle, representing a uniquely Russian folkloric figure who embodies both danger and unexpected wisdom or help for those clever or brave enough to properly approach her. Other beloved recurring elements include Koschei the Deathless, a villain whose soul is hidden separately from his body making him nearly impossible to defeat through conventional means, the magical Firebird, a glowing, beautiful bird often central to quest narratives, and Ivan Tsarevich, a common heroic protagonist figure appearing across numerous tales, typically a younger son who through cleverness, kindness, and courage overcomes seemingly impossible challenges. Russian fairy tales often emphasize themes including the rewards of kindness and humility, particularly for younger siblings or seemingly disadvantaged protagonists, the importance of cleverness over brute strength in overcoming obstacles, and complex moral lessons that don't always present simple, clear-cut distinctions between good and evil. These tales traditionally feature distinctive narrative patterns, including the magical number three appearing repeatedly throughout many stories, and specific traditional opening and closing phrases that Russian children instantly recognize as signalling the beginning or conclusion of a traditional fairy tale. Russian skazki continue being shared with children throughout Russia and the broader Russian diaspora, maintaining important cultural and linguistic connection across generations."
+    },
+    {
+      "key": "russian_samovar",
+      "title": "Samovar — The Heart of Russian Tea Culture",
+      "text": "The samovar, a traditional metal urn used for heating and serving tea, represents far more than simple kitchen equipment, embodying important Russian cultural values around hospitality, family gathering, and the cherished social ritual of sharing tea together that has been central to Russian domestic life for several centuries. Traditional samovars feature an ingenious design with a central heating element, historically using charcoal though modern versions typically use electricity, surrounded by a larger water reservoir, with a small spigot allowing hot water to be dispensed for preparing tea throughout extended social gatherings without requiring repeated trips to reheat water separately. The traditional Russian method of tea preparation using a samovar involves brewing an extremely strong, concentrated tea essence called zavarka in a small teapot placed atop the samovar, with individuals then diluting this strong concentrate with hot water from the samovar according to personal taste preference, allowing flexibility for different family members' preferences within a single shared brewing process. Sharing tea from the samovar traditionally represents an important social occasion throughout Russian culture, with extended family gatherings, visits from friends, and important conversations often centred around the leisurely, unhurried experience of sharing multiple cups of tea together, frequently accompanied by traditional accompaniments including jam, honey, and various baked goods. While elaborate traditional samovars have become less common in contemporary daily Russian life, often replaced by simpler electric kettles for everyday use, beautifully crafted decorative samovars remain treasured family heirlooms in many Russian households, sometimes displayed prominently as meaningful connections to family heritage and traditional Russian hospitality customs, occasionally still used for special gatherings and celebrations that honour this cherished cultural tradition."
+    },
+    {
+      "key": "russian_victory_day",
+      "title": "Den Pobedy — Victory Day",
+      "text": "Den Pobedy, Victory Day, celebrated annually on May ninth, commemorates the Soviet Union's victory over Nazi Germany in what Russians call the Great Patriotic War, representing one of the most significant and emotionally important national holidays throughout Russia, honouring the tremendous sacrifice and ultimate victory achieved during World War Two at extraordinary human cost. The holiday features elaborate military parades, most prominently the massive parade held annually in Moscow's Red Square, featuring impressive displays of military equipment and personnel, alongside numerous similar though smaller parades held throughout cities across Russia, demonstrating continued national pride and remembrance of this pivotal historical victory. A particularly moving and meaningful tradition involves the Immortal Regiment march, in which ordinary citizens throughout Russia carry photographs of family members who served or perished during the war, walking together in massive, deeply emotional processions that have grown to include millions of participants nationwide, creating a powerful, personal connection between contemporary Russian families and the historical sacrifices of previous generations. Families traditionally gather to honour surviving veterans, who receive special recognition and respect throughout the holiday, with many families sharing stories about relatives who served during the war, helping pass down important historical memory and family history to younger generations. The orange and black St. George ribbon has become a widely recognized symbol of Victory Day commemoration, worn by many Russians during the holiday period as a visible expression of remembrance and respect for wartime sacrifice. Victory Day represents far more than simple historical commemoration, embodying deeply held Russian cultural values around national resilience, family sacrifice, and the importance of remembering and honouring previous generations' tremendous wartime contributions and losses."
+    },
+    {
+      "key": "russian_easter",
+      "title": "Pascha — Russian Orthodox Easter",
+      "text": "Pascha, Russian Orthodox Easter, represents the most important religious celebration throughout the Orthodox Christian calendar, considered even more significant than Christmas within Orthodox tradition, commemorating Christ's resurrection through elaborate religious services, distinctive culinary traditions, and meaningful family customs that have been observed throughout Russia for many centuries. The celebration traditionally begins with an extended Lenten fasting period, followed by attendance at lengthy, beautiful midnight church services beginning Saturday evening and extending into early Easter morning, featuring elaborate Orthodox liturgical traditions, including the joyful proclamation Christ is risen, traditionally answered by congregants responding Indeed he is risen, repeated throughout the celebratory service. Families traditionally prepare distinctive Easter foods, including kulich, a tall, cylindrical sweet bread similar to panettone, decorated with white icing and traditionally topped with the letters X and B, representing the Russian phrase for Christ is risen, alongside paskha, a rich, sweet dessert made from farmer's cheese, butter, and dried fruits, traditionally shaped using a special wooden mould often decorated with religious symbols. The tradition of decorating eggs, called pisanki, holds particular significance, with families creating beautifully decorated eggs using various traditional techniques, including wax-resist dyeing methods producing intricate, colourful patterns, with these decorated eggs traditionally blessed by priests before being shared and enjoyed during family Easter celebrations. Families traditionally bring baskets containing kulich, paskha, decorated eggs, and other special foods to church for blessing on Easter Saturday, before gathering for joyful family feasts celebrating both the conclusion of Lenten fasting and the profound religious significance of Christ's resurrection central to Orthodox Christian faith."
+    },
+    {
+      "key": "russian_dacha",
+      "title": "Dacha — The Russian Country House",
+      "text": "The dacha, traditional Russian country house, represents a deeply important cultural institution throughout Russian society, with countless families maintaining modest country properties, typically located outside major cities, used for weekend retreats, summer vacations, and crucially, growing vegetables and fruits, reflecting both important cultural values around connection with nature and practical historical necessity developed through periods of economic uncertainty. Dacha properties vary enormously in size and sophistication, ranging from simple, modest wooden cottages without indoor plumbing to more elaborate modern country homes, though regardless of specific accommodation level, the dacha tradition consistently emphasizes important values around family time, physical labour connected to gardening, and meaningful escape from urban daily life pressures. Many Russian families dedicate considerable time and effort to dacha gardens, growing vegetables, fruits, and flowers, with this gardening tradition holding both practical significance, historically providing important supplemental food production during periods of economic difficulty, and meaningful cultural and recreational value, with many Russians genuinely enjoying the physical and psychological benefits of working with soil and plants. The dacha tradition gained particular importance during the Soviet era, when many urban families received small garden plots as part of broader social policy, with these modest properties becoming treasured family retreats passed down through generations, often containing simple structures built and improved upon by multiple generations of family members. Summer months traditionally see Russian cities partially empty as families relocate to their dachas for extended periods, enjoying outdoor activities, gardening, gathering mushrooms and berries from surrounding forests, and generally embracing simpler, nature-connected lifestyle quite different from urban daily routines. The dacha tradition beautifully reflects deeply held Russian cultural values prioritizing family connection, practical self-sufficiency, and meaningful relationship with natural surroundings."
+    },
+    {
+      "key": "russian_chess",
+      "title": "Chess — Russia's National Intellectual Tradition",
+      "text": "Chess holds an extraordinarily significant cultural position throughout Russia, considered far more than simply a recreational game, instead representing a deeply respected intellectual tradition closely connected to broader Russian cultural values around education, strategic thinking, and intellectual achievement that has produced numerous legendary world champions and shaped chess as a serious cultural pursuit throughout Russian society. The Soviet Union, and subsequently Russia, dominated international chess competition for many decades, with Soviet and Russian players claiming the World Chess Championship title continuously for extended periods, producing legendary champions including Mikhail Botvinnik, Garry Kasparov, and many others whose strategic brilliance brought tremendous national pride and international recognition. Chess education traditionally begins early throughout Russia, with many schools incorporating chess instruction into regular curriculum, and numerous specialized chess clubs and academies providing intensive training for talented young players, reflecting broader Russian educational values that view chess mastery as developing valuable cognitive skills including strategic planning, pattern recognition, and disciplined analytical thinking applicable well beyond the game itself. Public chess playing remains a common, cherished sight throughout Russian cities, with parks and public squares often featuring dedicated chess tables where players, sometimes spanning multiple generations, gather for casual games, while serious chess clubs and tournaments provide more structured competitive opportunities for dedicated players seeking to develop and demonstrate their strategic skills. Russian chess culture often emphasizes not merely competitive achievement but appreciation for the game's intellectual beauty and complexity, with classic games studied and analyzed almost as artistic works demonstrating elegant strategic solutions to complex positional challenges. For many Russian families, teaching children chess represents an important way of developing valuable cognitive skills while connecting to this cherished national intellectual tradition that has brought significant cultural pride throughout Russian history."
+    },
+    {
+      "key": "russian_literature_pride",
+      "title": "Russian Literary Heritage",
+      "text": "Russian literature represents one of the world's most celebrated and influential literary traditions, with Russia having produced numerous authors whose profound works have significantly shaped global literary culture, creating a literary heritage that remains a tremendous source of national pride and cultural identity throughout Russia. The nineteenth century, often called Russian literature's golden age, produced extraordinary authors including Alexander Pushkin, frequently considered the founder of modern Russian literature, whose poetry and prose works remain deeply beloved and extensively studied throughout Russian schools, alongside Leo Tolstoy and Fyodor Dostoevsky, whose epic novels exploring profound philosophical, moral, and psychological themes continue being read and studied by readers worldwide more than a century after their creation. Russian literary tradition particularly distinguishes itself through deep psychological complexity and philosophical depth, with major Russian authors typically exploring profound questions about human nature, moral responsibility, faith, and the meaning of existence through complex, richly developed characters and intricate narrative structures that continue rewarding careful reading and analysis. Russian schoolchildren traditionally receive extensive literary education, with significant curriculum time dedicated to studying major classical works, memorizing important poetry, and developing deep familiarity with the philosophical and artistic achievements of Russia's greatest literary figures, reflecting broader cultural values that place enormous importance on literary and intellectual achievement. Beyond these towering nineteenth-century figures, Russian literature continued producing significant authors throughout the twentieth century, including poets and novelists who navigated the complex challenges of writing during Soviet-era political constraints, sometimes producing important works that circulated unofficially before eventually receiving wider publication and recognition. For Russian families maintaining cultural connection abroad, sharing classic Russian literature, whether through reading age-appropriate adaptations or eventually full classic texts, represents an important way of connecting children to this profound literary heritage central to Russian cultural identity and intellectual tradition."
+    },
+    {
+      "key": "russian_winter_traditions",
+      "title": "Embracing the Russian Winter",
+      "text": "Russia's notoriously long, cold winters have profoundly shaped numerous distinctive cultural traditions and attitudes, with Russian culture historically developing practical wisdom and even genuine appreciation for embracing rather than simply enduring winter's challenges, reflected in numerous traditional practices, recreational activities, and cultural attitudes that view winter as an opportunity for particular activities and celebrations rather than merely a difficult season to survive. Traditional Russian winter clothing reflects generations of practical adaptation, with the ushanka, a distinctive fur hat featuring ear flaps that can be tied up or down depending on temperature, representing perhaps the most internationally recognized symbol of Russian winter practicality, alongside valenki, traditional felt boots providing exceptional warmth in extremely cold conditions. Winter recreational activities hold significant cultural importance throughout Russia, with ice skating, particularly on outdoor rinks created in parks and public squares during winter months, representing a beloved family activity enjoyed by Russians of all ages, while cross-country skiing remains both a popular recreational activity and historically significant practical winter transportation method in many regions. The tradition of swimming in icy water, sometimes through specially cut holes in frozen rivers or lakes called proruby, represents a particularly distinctive Russian winter practice, with dedicated winter swimmers, sometimes called walruses, believing the practice provides significant health benefits, with this tradition holding particular significance during Orthodox Epiphany celebrations when many Russians traditionally take ritual icy dips. Russian winter cuisine traditionally features hearty, warming dishes designed to provide sustained energy and warmth throughout cold months, including rich soups, preserved vegetables, and warming beverages. This deeply ingrained cultural relationship with winter, balancing practical adaptation with genuine appreciation for the season's unique beauty and recreational opportunities, reflects important Russian cultural resilience and resourcefulness developed through many generations of experience with the country's challenging northern climate."
+    },
+    {
+      "key": "russian_name_days",
+      "title": "Imeniny — Russian Name Days",
+      "text": "Imeniny, the tradition of celebrating name days, represents an important customary celebration throughout Russian Orthodox culture, connected to the Orthodox Church calendar's tradition of designating specific days throughout the year to honour particular saints, with individuals traditionally celebrating their imeniny on the feast day of the saint after whom they were named, sometimes considered as significant or even more significant than celebrating one's actual birthday in traditional Russian Orthodox culture. This meaningful tradition connects individuals to their namesake saint throughout their entire life, with many Russian Orthodox families carefully considering this religious significance when selecting children's names, often choosing names specifically connected to saints whose feast days fall near a child's actual birth date, creating meaningful connection between secular birth celebration and religious naming tradition. Traditional imeniny celebrations historically involved attending church services honouring the relevant saint, followed by family gatherings featuring special meals and well-wishes from friends and relatives, with the celebration traditionally including prayers asking for the namesake saint's continued spiritual protection and guidance throughout the coming year. While the Soviet era's official atheism significantly diminished widespread observance of this religious tradition, with birthday celebrations becoming more standard secular celebration throughout much of the twentieth century, the post-Soviet period has seen meaningful revival of interest in imeniny traditions among Russian Orthodox believers seeking to reconnect with important religious and cultural practices. Many contemporary Russian Orthodox families now celebrate both secular birthdays and traditional imeniny, viewing the latter as providing meaningful spiritual dimension connecting individuals to their namesake saints and broader religious tradition, while birthday celebrations maintain more standard secular significance focused on marking another year of life and gathering with friends and family for celebration."
+    },
+    {
+      "key": "russian_hospitality",
+      "title": "Russian Hospitality Traditions",
+      "text": "Hospitality holds extraordinary cultural significance throughout Russia, with deeply ingrained traditions emphasizing generous, abundant welcome for guests that reflect important historical and cultural values around community, generosity, and the meaningful sharing of resources with visitors, regardless of how modest a host family's own circumstances might be. Traditional Russian hospitality customs include the well-known practice of offering guests bread and salt upon arrival, a ceremonial welcome called khleb-sol, with this symbolic gesture, often performed for particularly honoured guests or important occasions, representing the host's sincere wish to share their most basic, essential sustenance generously with visitors. Russian hosts traditionally insist on providing abundant food and drink for guests, often preparing far more food than could realistically be consumed, with the cultural expectation that a proper host should never allow guests to leave feeling that their needs were inadequately addressed, sometimes leading to elaborate, multi-course meals even for relatively casual visits. The custom of removing shoes immediately upon entering a Russian home represents another important hospitality-related tradition, with hosts often providing comfortable slippers called tapochki for guests, reflecting both practical considerations around maintaining clean homes during Russia's often muddy or snowy weather and broader cultural values treating the home as a particularly important, carefully maintained private space. Extended visiting, with guests often staying for many hours engaged in unhurried conversation over tea or meals, represents another important aspect of Russian hospitality culture, with rushed, brief visits sometimes considered less meaningful than the more leisurely, deeply social visiting traditions still valued throughout much of Russian society. These hospitality traditions reflect deeply held Russian cultural values prioritizing generous welcome, meaningful social connection, and genuine care for the comfort and wellbeing of guests within the home."
+    },
+    {
+      "key": "russian_mushroom_picking",
+      "title": "Mushroom and Berry Picking",
+      "text": "Mushroom picking, called tikhaya okhota or quiet hunting, represents a beloved traditional Russian autumn activity, with families throughout Russia traditionally venturing into forests to gather wild mushrooms and berries, an activity combining practical food gathering with meaningful recreational time spent connecting with nature and extended family members. This tradition holds deep historical roots, with Russian forests providing abundant wild mushroom varieties that have historically supplemented household food supplies, with specific knowledge about safely identifying edible versus poisonous mushroom varieties traditionally passed down carefully through generations, with experienced family members teaching children important identification skills from a young age. Families often develop favourite mushroom-picking locations, sometimes closely guarded secrets shared only among trusted family members, with successful mushroom-gathering expeditions traditionally celebrated and the gathered harvest carefully prepared through various preservation methods, including drying, pickling, and salting, allowing families to enjoy these forest treasures throughout the winter months when fresh mushrooms become unavailable. Wild berry picking follows similar traditional patterns, with families gathering blueberries, raspberries, and other wild berries during summer months, often combining the practical harvest with enjoyable family outings spent together in beautiful natural surroundings. These foraging traditions reflect important Russian cultural values around practical self-sufficiency, meaningful connection with natural surroundings, and valuable knowledge transmission between generations, with many contemporary Russian families continuing to treasure these seasonal traditions even as urbanization has changed many other aspects of daily life, maintaining important connection to countryside traditions and natural rhythms that have shaped Russian culture for many centuries."
+    },
+    {
+      "key": "russian_grandmother_babushka",
+      "title": "Babushka — The Beloved Grandmother",
+      "text": "The babushka, grandmother, holds an exceptionally important and beloved position within traditional Russian family structure, with grandmothers throughout Russian culture typically playing an enormously significant role in childcare, family wisdom transmission, and maintaining important cultural and culinary traditions across generations. Russian babushkas traditionally take on substantial childcare responsibilities, often caring for grandchildren while parents work, with this arrangement reflecting both practical necessity, particularly during the Soviet era when most mothers worked outside the home, and meaningful cultural values placing tremendous trust and respect in grandmothers' wisdom and capability in raising children properly. Babushkas traditionally serve as important keepers of family recipes, traditional remedies, and practical household wisdom, with grandmother's specific recipes for traditional dishes, preserves, and remedies often considered irreplaceable family treasures passed down carefully through careful teaching and shared kitchen time with grandchildren. The relationship between Russian children and their babushkas often involves deeply meaningful storytelling traditions, with grandmothers traditionally sharing traditional fairy tales, family history, and important life lessons through patient, loving conversation and shared activities. Russian culture maintains particular respect and even gentle humour around babushka culture, with grandmothers sometimes affectionately portrayed as having strong, sometimes humorously stubborn opinions about proper childrearing, appropriate clothing for weather conditions, and correct preparation of traditional foods, reflecting both genuine respect for grandmother wisdom and warm, loving family dynamics. This deeply cherished cultural role reflects broader Russian values placing tremendous importance on extended family connection, intergenerational wisdom transmission, and the vital role grandmothers traditionally play in maintaining important family and cultural continuity across generations."
+    },
+    {
+      "key": "russian_birch_tree",
+      "title": "The Birch Tree — Russia's Beloved Symbol",
+      "text": "The birch tree holds extraordinarily significant symbolic and cultural importance throughout Russia, considered by many Russians as their country's unofficial national tree, with the distinctive white-barked birch appearing throughout Russian art, literature, folk songs, and cultural celebration, representing deep symbolic connection to Russian landscape, national identity, and emotional connection to homeland. Russian poetry and folk songs frequently celebrate the birch tree's particular beauty, with its distinctive white bark and delicate leaves that turn brilliant gold during autumn considered emblematic of Russia's natural beauty and the changing seasons that define much of Russian cultural and emotional experience throughout the year. The birch tree holds particular significance during Trinity Sunday celebrations, an important Orthodox Christian holiday, with traditional customs including decorating homes and churches with birch branches, and in some regions, young women traditionally weaving birch branches into circular wreaths used in various folk divination customs and celebratory rituals connected to this important religious and seasonal celebration. Birch trees also hold important practical significance throughout Russian culture, with birch wood traditionally used for crafting various household items, while birch bark has historically served numerous practical purposes, including traditional birch bark baskets and even ancient birch bark manuscripts that have provided historians valuable insights into medieval Russian daily life and language. The traditional banya bathing ritual incorporates birch branches, called venik, used for the traditional gentle beating massage practice believed to provide significant health benefits. For many Russians, particularly those living abroad, the birch tree evokes powerful emotional connection to homeland and childhood memories, with this beloved tree's image frequently appearing in nostalgic literature, music, and art expressing deep emotional connection to Russian landscape and cultural identity."
+    },
+    {
+      "key": "russian_folk_costume",
+      "title": "Traditional Russian Folk Costume",
+      "text": "Traditional Russian folk costume represents a rich and regionally diverse artistic tradition, with distinctive clothing styles, colours, and decorative patterns historically varying significantly across Russia's vast territory, reflecting different regional identities, available materials, and cultural influences while sharing certain common elements that have become broadly recognized as characteristically Russian. The sarafan, a traditional sleeveless dress typically worn over a blouse, represents one of the most iconic elements of traditional Russian women's folk costume, with these garments often featuring beautiful embroidered decoration, with specific embroidery patterns and colour combinations historically carrying regional significance and sometimes indicating the wearer's marital status or social position within traditional rural communities. The kokoshnik, an elaborate traditional headdress, particularly associated with married women in many regions, represents another iconic element of traditional Russian costume, with these beautiful headpieces varying significantly in style across different regions, ranging from simple decorated bands to elaborate, tall crown-like structures decorated with pearls, beads, and intricate embroidery. Traditional Russian men's folk costume typically included the kosovorotka, a distinctive shirt with an off-centre button closure, often decorated with embroidered trim along the collar and cuffs, paired with simple trousers and traditionally woven or leather belts. While everyday traditional folk costume largely disappeared from common daily wear many generations ago, replaced by Western-style clothing throughout most of Russia, these beautiful traditional garments remain important for folk dance performances, cultural festivals, and special celebratory occasions, with many regional folk ensembles carefully preserving traditional costume-making techniques and historical patterns specific to their particular cultural heritage. Russian folk costume continues representing an important visual symbol of cultural identity and regional heritage celebrated through traditional performance and cultural preservation efforts throughout contemporary Russia."
+    }
+  ],
+  "stories": [
+    {
+      "key": "repka",
+      "title": "Репка",
+      "translit": "Repka",
+      "gloss": "The Turnip",
+      "lines": [
+        {
+          "text": "Дед посадил репку в саду.",
+          "gloss": "Grandfather planted a turnip in the garden."
+        },
+        {
+          "text": "Репка выросла большая-пребольшая.",
+          "gloss": "The turnip grew very, very big."
+        },
+        {
+          "text": "Дед пошёл тянуть репку из земли.",
+          "gloss": "Grandfather went to pull the turnip from the ground."
+        },
+        {
+          "text": "Тянет-потянет, вытянуть не может!",
+          "gloss": "He pulls and pulls, but cannot pull it out!"
+        },
+        {
+          "text": "Дед позвал бабку на помощь.",
+          "gloss": "Grandfather called grandmother to help."
+        },
+        {
+          "text": "Бабка за дедку, дедка за репку.",
+          "gloss": "Grandmother holds grandfather, grandfather holds the turnip."
+        },
+        {
+          "text": "Тянут-потянут, вытянуть не могут!",
+          "gloss": "They pull and pull, but still cannot pull it out!"
+        },
+        {
+          "text": "Бабка позвала внучку.",
+          "gloss": "Grandmother called the granddaughter."
+        },
+        {
+          "text": "Внучка за бабку, бабка за дедку, дедка за репку.",
+          "gloss": "Granddaughter holds grandmother, grandmother holds grandfather, grandfather holds the turnip."
+        },
+        {
+          "text": "Тянут-потянут, вытянуть не могут!",
+          "gloss": "They pull and pull, but still cannot pull it out!"
+        },
+        {
+          "text": "Внучка позвала собаку Жучку.",
+          "gloss": "The granddaughter called the dog Zhuchka."
+        },
+        {
+          "text": "Жучка за внучку, и все тянут вместе.",
+          "gloss": "Zhuchka holds the granddaughter, and everyone pulls together."
+        },
+        {
+          "text": "Тянут-потянут, вытянуть не могут!",
+          "gloss": "They pull and pull, but still cannot pull it out!"
+        },
+        {
+          "text": "Собака позвала кошку.",
+          "gloss": "The dog called the cat."
+        },
+        {
+          "text": "Кошка за собаку, и все тянут снова.",
+          "gloss": "The cat holds the dog, and everyone pulls again."
+        },
+        {
+          "text": "Тянут-потянут, вытянуть не могут!",
+          "gloss": "They pull and pull, but still cannot pull it out!"
+        },
+        {
+          "text": "Кошка позвала маленькую мышку.",
+          "gloss": "The cat called a tiny mouse."
+        },
+        {
+          "text": "Мышка за кошку, и все тянут изо всех сил.",
+          "gloss": "The mouse holds the cat, and everyone pulls with all their strength."
+        },
+        {
+          "text": "Тянут-потянут — и вытянули репку!",
+          "gloss": "They pull and pull — and pulled out the turnip!"
+        },
+        {
+          "text": "Вместе любую работу легче сделать.",
+          "gloss": "Together, any work is easier to do."
+        }
+      ]
+    },
+    {
+      "key": "kolobok",
+      "title": "Колобок",
+      "translit": "Kolobok",
+      "gloss": "The Round Bread Roll",
+      "lines": [
+        {
+          "text": "Жили-были дед да баба.",
+          "gloss": "There once lived an old man and an old woman."
+        },
+        {
+          "text": "Баба испекла румяный колобок.",
+          "gloss": "The old woman baked a golden round bread roll."
+        },
+        {
+          "text": "Колобок остыл на окошке.",
+          "gloss": "The Kolobok cooled on the windowsill."
+        },
+        {
+          "text": "Вдруг колобок спрыгнул и покатился!",
+          "gloss": "Suddenly the Kolobok jumped down and rolled away!"
+        },
+        {
+          "text": "Он катился по дорожке через лес.",
+          "gloss": "He rolled along the path through the forest."
+        },
+        {
+          "text": "Навстречу ему вышел заяц.",
+          "gloss": "A hare came out to meet him."
+        },
+        {
+          "text": "'Колобок, колобок, я тебя съем!' сказал заяц.",
+          "gloss": "'Kolobok, Kolobok, I will eat you!' said the hare."
+        },
+        {
+          "text": "Колобок спел весёлую песенку и укатился.",
+          "gloss": "The Kolobok sang a cheerful song and rolled away."
+        },
+        {
+          "text": "Потом он встретил серого волка.",
+          "gloss": "Then he met a grey wolf."
+        },
+        {
+          "text": "Волк тоже хотел его съесть.",
+          "gloss": "The wolf also wanted to eat him."
+        },
+        {
+          "text": "Но колобок снова спел свою песенку.",
+          "gloss": "But the Kolobok sang his song again."
+        },
+        {
+          "text": "И покатился дальше по лесу.",
+          "gloss": "And rolled further through the forest."
+        },
+        {
+          "text": "Затем он встретил большого медведя.",
+          "gloss": "Then he met a big bear."
+        },
+        {
+          "text": "Медведь тоже хотел съесть колобка.",
+          "gloss": "The bear also wanted to eat the Kolobok."
+        },
+        {
+          "text": "Колобок снова спел и убежал от него.",
+          "gloss": "The Kolobok sang again and ran away from him."
+        },
+        {
+          "text": "Наконец он встретил хитрую лису.",
+          "gloss": "Finally he met a cunning fox."
+        },
+        {
+          "text": "Лиса похвалила его прекрасную песню.",
+          "gloss": "The fox praised his wonderful song."
+        },
+        {
+          "text": "'Спой ещё раз, но поближе ко мне!'",
+          "gloss": "'Sing once more, but closer to me!'"
+        },
+        {
+          "text": "Колобок подошёл ближе — и лиса его съела!",
+          "gloss": "The Kolobok came closer — and the fox ate him!"
+        },
+        {
+          "text": "Будь осторожен с лестью незнакомцев.",
+          "gloss": "Be careful of flattery from strangers."
+        }
+      ]
+    }
+  ]
 }

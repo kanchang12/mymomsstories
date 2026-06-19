@@ -4,12 +4,13 @@ the reading/scoring endpoint, and the usage heartbeat.
 """
 import random
 from datetime import datetime, timezone
-from flask import Blueprint, render_template, request, jsonify, session
+from flask import Blueprint, render_template, request, jsonify, session, Response
 from models.db import get_cur
 from routes.auth import login_required
 from services.content import get_language, pick_item, STOPS
 from services.scoring import score_attempt
 from services.payments import INCLUDED_MINUTES_PER_MONTH, OVERAGE_RATE_PER_HOUR_GBP
+from services.tts import synthesize as tts_synthesize
 
 child_bp = Blueprint("child", __name__)
 
@@ -81,6 +82,23 @@ def api_attempt():
               transcript or None, result.get("score"), result.get("feedback")))
 
     return jsonify(result)
+
+
+@child_bp.route("/api/tts", methods=["POST"])
+@login_required(role="child")
+def api_tts():
+    """Read a piece of text aloud in the child's language, using that
+    language's own regional voice — not one generic voice for everyone."""
+    body = request.get_json() or {}
+    text = (body.get("text") or "").strip()
+    if not text:
+        return jsonify({"error": "no text"}), 400
+    lang_code = session.get("language")
+    try:
+        wav_bytes = tts_synthesize(text, lang_code)
+    except Exception as e:
+        return jsonify({"error": f"Could not generate audio: {e}"}), 500
+    return Response(wav_bytes, mimetype="audio/wav")
 
 
 @child_bp.route("/api/heartbeat", methods=["POST"])

@@ -1,8 +1,394 @@
 {
   "name": "Spanish",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "A",
+      "translit": "a"
+    },
+    {
+      "char": "B",
+      "translit": "be"
+    },
+    {
+      "char": "C",
+      "translit": "ce"
+    },
+    {
+      "char": "Ch",
+      "translit": "che"
+    },
+    {
+      "char": "D",
+      "translit": "de"
+    },
+    {
+      "char": "E",
+      "translit": "e"
+    },
+    {
+      "char": "F",
+      "translit": "efe"
+    },
+    {
+      "char": "Ñ",
+      "translit": "eñe"
+    },
+    {
+      "char": "O",
+      "translit": "o"
+    },
+    {
+      "char": "R",
+      "translit": "ere"
+    }
+  ],
+  "words": [
+    {
+      "text": "mamá",
+      "translit": "mamá",
+      "gloss": "mother"
+    },
+    {
+      "text": "papá",
+      "translit": "papá",
+      "gloss": "father"
+    },
+    {
+      "text": "agua",
+      "translit": "agua",
+      "gloss": "water"
+    },
+    {
+      "text": "casa",
+      "translit": "casa",
+      "gloss": "house"
+    },
+    {
+      "text": "sol",
+      "translit": "sol",
+      "gloss": "sun"
+    },
+    {
+      "text": "libro",
+      "translit": "libro",
+      "gloss": "book"
+    },
+    {
+      "text": "flor",
+      "translit": "flor",
+      "gloss": "flower"
+    },
+    {
+      "text": "árbol",
+      "translit": "árbol",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "Me llamo Sofía.",
+      "translit": "Me llamo Sofía.",
+      "gloss": "My name is Sofía."
+    },
+    {
+      "text": "Mamá me cuenta un cuento.",
+      "translit": "Mamá me cuenta un cuento.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "El sol sale por el este.",
+      "translit": "El sol sale por el este.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "Estoy aprendiendo español.",
+      "translit": "Estoy aprendiendo español.",
+      "gloss": "I am learning Spanish."
+    },
+    {
+      "text": "El agua es vida.",
+      "translit": "El agua es vida.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "dia_de_muertos",
+      "title": "Día de los Muertos — Day of the Dead",
+      "text": "Día de los Muertos, the Day of the Dead, is one of Mexico's most beautiful and meaningful traditions, celebrated on the first and second of November, when families joyfully welcome back the souls of their deceased loved ones for a brief, cherished reunion, transforming what might seem like a sombre occasion into a vibrant, colourful celebration of life, memory, and family connection. Far from being a sad or fearful occasion, the holiday is rooted in the belief that death is simply another stage of existence, and that maintaining a relationship with those who have passed away keeps their memory alive and honours their continued presence in the family's life. Families create elaborate ofrendas, beautifully decorated altars in their homes, filled with marigold flowers called cempasúchil, whose vivid orange colour and strong scent are believed to guide spirits back home, alongside photographs of deceased relatives, their favourite foods, candles, and personal items they loved during their lifetime. Pan de muerto, a sweet, lightly orange-scented bread decorated with bone-shaped pieces of dough, is baked specially for the occasion, while sugar skulls, beautifully decorated with colourful icing, represent the holiday's distinctive blend of mortality and celebration. Families often visit cemeteries, cleaning and decorating gravesites with flowers and candles, sometimes spending the entire night there, sharing stories, food, and music in the company of their departed relatives. Children participate fully in these celebrations, learning about deceased family members through stories shared during the preparation of the ofrenda, ensuring that family history and memory are lovingly passed down through generations in this uniquely Mexican expression of love that transcends death itself."
+    },
+    {
+      "key": "las_posadas",
+      "title": "Las Posadas — The Christmas Journey",
+      "text": "Las Posadas is a cherished nine-day celebration held throughout Mexico and other Latin American countries from December sixteenth through Christmas Eve, reenacting the journey of Mary and Joseph as they searched for shelter in Bethlehem before the birth of Jesus, bringing communities together each evening in a beautiful tradition of hospitality, music, and shared celebration. Each night, a procession of family members and neighbours, often with children dressed as Mary and Joseph or carrying small statues representing them, walks through the streets carrying lit candles, stopping at different houses to request posada, or shelter, singing a traditional call-and-response song asking to be let in, with householders inside initially refusing in song before finally opening their doors to warmly welcome the procession inside. Once inside, the celebration transforms into a joyful gathering featuring traditional foods, hot ponche, a warm fruit punch, and the breaking of a piñata, traditionally shaped with seven points representing the seven deadly sins, with children taking turns blindfolded, attempting to break it open with a stick while singing traditional piñata songs, and the candy and small treats that spill out symbolizing the rewards of overcoming temptation and difficulty. Each of the nine nights traditionally represents one month of Mary's pregnancy, with a different family or neighbourhood hosting the celebration each evening, creating a wonderful sense of rotating community hospitality and connection throughout the holiday season. Las Posadas beautifully combines religious meaning with joyful community celebration, and the tradition remains a deeply cherished part of the Christmas season for Spanish-speaking families both throughout Latin America and within diaspora communities worldwide."
+    },
+    {
+      "key": "tres_reyes",
+      "title": "Día de los Reyes — Three Kings Day",
+      "text": "Día de los Reyes, or Three Kings Day, celebrated on January sixth, holds particular significance throughout the Spanish-speaking world, commemorating the visit of the three wise men, or Reyes Magos, who brought gifts to the baby Jesus, and for many children across Spain and Latin America, this day, rather than Christmas itself, is when the most exciting gift-giving traditionally occurs. In the days leading up to the celebration, children write letters to the Reyes Magos, expressing their wishes much as children elsewhere might write to Santa Claus, and on the night before January sixth, families leave out shoes, often filled with hay or grass for the kings' camels, along with treats for the visiting royalty, before going to bed in excited anticipation. The following morning, children wake to find gifts left by the three kings, traditionally Melchior, Caspar, and Balthazar, who according to tradition travelled from afar on camels bearing gifts, mirroring the biblical story of the wise men's journey to honour the newborn Jesus. A central culinary tradition of the celebration is the Rosca de Reyes, a sweet, ring-shaped bread decorated with candied fruit, traditionally containing a small hidden figurine representing the baby Jesus, with the person who finds the figurine in their slice traditionally responsible for hosting a celebration on February second, Día de la Candelaria. Many cities throughout Spain and Latin America host elaborate parades featuring the three kings riding through the streets distributing candy to delighted children, creating a magical, festive atmosphere that brings the Christmas season to a joyous and meaningful close."
+    },
+    {
+      "key": "quinceanera",
+      "title": "Quinceañera — The Celebration of Fifteen",
+      "text": "The Quinceañera is one of the most significant and elaborate celebrations in Latin American culture, marking a young woman's fifteenth birthday and symbolically representing her transition from childhood into young womanhood, traditionally celebrated with great family involvement, religious significance, and joyful festivity that often rivals the scale of a wedding celebration. The celebration traditionally begins with a religious mass, where the Quinceañera, dressed in an elaborate formal gown often in shades of pink, white, or other carefully chosen colours, gives thanks and receives blessings, sometimes renewing her baptismal promises and dedicating herself to her faith and family as she enters this new stage of life. Following the religious ceremony, families typically host an elaborate reception featuring numerous meaningful traditions, including the symbolic changing of shoes, where the young woman's father replaces her flat shoes with high heels, representing her transition into womanhood, followed by a formal father-daughter dance that holds deep emotional significance for many families. The Quinceañera traditionally has a court of honour called chambelanes and damas, close friends and family members who serve as her escorts throughout the celebration, often performing a choreographed waltz together as one of the evening's central highlights. The celebration typically includes an elaborate feast, abundant dancing, and often a large decorated cake, with families sometimes saving for months or years to create a truly memorable celebration befitting this important cultural milestone. Beyond its festive elements, the Quinceañera represents a meaningful rite of passage, surrounding the young woman with the love, blessing, and support of her entire extended family and community as she begins this important new chapter of her life."
+    },
+    {
+      "key": "flamenco_dance",
+      "title": "Flamenco — Spain's Passionate Art Form",
+      "text": "Flamenco is one of Spain's most distinctive and emotionally powerful artistic traditions, originating in the Andalusia region of southern Spain, combining intense, expressive dance, soulful singing called cante, and skilled guitar playing called toque into a uniquely passionate art form that has captivated audiences around the world for centuries. Flamenco's origins trace back to the rich cultural blending of Andalusia, drawing influences from the Romani people, Moorish, Jewish, and Christian traditions that historically coexisted in this region of Spain, creating a uniquely complex and emotionally raw artistic expression unlike any other dance tradition in the world. Flamenco dance, called baile, is characterized by powerful, percussive footwork called zapateado, dramatic arm movements, and intense facial expressions that convey deep emotion, with skilled dancers training for years to master the precise rhythmic complexity and emotional intensity that defines authentic flamenco performance. The singing component of flamenco, often considered its emotional heart, expresses profound themes of love, loss, struggle, and longing through a distinctive vocal style featuring melismatic ornamentation and raw, powerful emotional delivery that can move audiences to tears even without understanding the Spanish lyrics. Flamenco guitar playing requires extraordinary technical skill, with guitarists developing specialized techniques including rapid strumming patterns called rasgueado and precise fingerpicking that provides the rhythmic and harmonic foundation supporting both the dancers and singers. Today, flamenco remains a vibrant living tradition throughout Spain, performed in intimate tablao venues, grand theatres, and traditional family gatherings, with the art form recognized by UNESCO as an Intangible Cultural Heritage, reflecting its profound importance to Spanish cultural identity and its continuing evolution as living, breathing artistic expression."
+    },
+    {
+      "key": "siesta_tradition",
+      "title": "La Siesta — The Spanish Afternoon Rest",
+      "text": "La Siesta, the traditional midday rest practised throughout Spain and many Latin American countries, represents far more than simply an afternoon nap, reflecting a deeply rooted cultural approach to balancing work, family life, and rest that has shaped daily rhythms throughout Spanish-speaking societies for centuries, particularly in regions with hot climates where the intense midday heat made continuous activity throughout the day impractical and uncomfortable. Traditionally, many businesses, shops, and even government offices throughout Spain would close for several hours during the early afternoon, typically from around two until four or five in the afternoon, allowing workers to return home for a substantial midday meal with family, followed by a period of rest before returning to work for several additional hours into the early evening, creating a daily rhythm quite different from the continuous workday common in many other countries. This extended midday break traditionally allowed families to share their largest meal of the day together, with the main meal, called la comida, often considered more significant than dinner, providing important time for family connection and conversation during the busy workday. While the traditional siesta has become less universally practised in modern, fast-paced Spanish cities, particularly in larger urban centres with international business connections, the underlying cultural value placed on family meals, rest, and maintaining balance between work and personal life remains deeply influential throughout Spanish and Latin American culture. Many smaller towns and rural areas throughout Spain continue to observe more traditional schedules, with the practice particularly persisting during the intense heat of summer months. The siesta tradition reflects broader Spanish and Latin American cultural values that prioritize quality time with family, proper rest, and a more relaxed, balanced approach to daily life compared to some other cultural traditions."
+    },
+    {
+      "key": "spanish_tapas",
+      "title": "Tapas — The Art of Sharing Small Plates",
+      "text": "Tapas, the beloved Spanish tradition of small, shareable plates of food, represents far more than simply a style of dining, embodying deeply held Spanish cultural values around socializing, community connection, and the joy of sharing food and conversation with friends and family in a relaxed, unhurried atmosphere. The tradition is believed to have originated in Andalusia, with several charming legends explaining its origins, including the popular story that bartenders began placing small slices of bread or ham over the top of wine glasses, partly to keep out flies and dust, with the word tapa itself meaning lid or cover, a simple practical solution that gradually evolved into the elaborate, beloved culinary tradition known throughout Spain today. A traditional evening of tapas typically involves visiting multiple bars or restaurants throughout an evening, ordering small plates at each stop, allowing diners to sample a wide variety of flavours while moving through different establishments, socializing with friends, and enjoying the lively, convivial atmosphere of Spanish nightlife, a practice sometimes called ir de tapas, going for tapas. Classic tapas dishes include patatas bravas, crispy fried potatoes served with a spicy tomato sauce, tortilla española, a hearty potato and egg omelette, jamón ibérico, exquisite cured ham considered one of Spain's finest culinary treasures, and gambas al ajillo, garlic shrimp sizzled in olive oil, each representing distinctive regional flavours and culinary techniques developed throughout Spain's diverse regions. The social aspect of tapas culture remains as important as the food itself, with the tradition encouraging lingering conversation, shared plates passed freely among friends, and an unhurried approach to dining that stands in beautiful contrast to more individually focused dining traditions found elsewhere, reflecting the deeply social, communal nature of Spanish culture and hospitality."
+    },
+    {
+      "key": "spanish_guitar",
+      "title": "Spanish Guitar — A National Treasure",
+      "text": "The Spanish guitar holds a position of extraordinary cultural significance throughout the Spanish-speaking world, recognized as one of Spain's most important and beloved artistic contributions to global culture, with the modern classical and flamenco guitar both having developed and been refined within Spain over many centuries before spreading their influence throughout the world. The instrument's construction, traditionally crafted by skilled luthiers using carefully selected woods and time-honoured techniques passed down through generations, produces the warm, resonant sound that has made Spanish guitar music instantly recognizable and deeply beloved across diverse musical traditions, from classical concert performances to passionate flamenco accompaniment and popular folk music throughout Latin America. Spain has produced numerous legendary guitarists and composers who have profoundly shaped global guitar music, including Francisco Tárrega, often called the father of modern classical guitar technique, whose compositions remain fundamental to classical guitar education worldwide, and countless flamenco guitar masters whose innovative techniques continue influencing musicians across multiple genres. Learning guitar remains an exceptionally popular and culturally significant musical pursuit throughout Spain and Latin America, with many children beginning lessons at a young age, often learning traditional folk songs and simple flamenco rhythms as an important connection to their cultural heritage, even before pursuing more formal classical training. The guitar's portability and versatility have made it central to countless musical traditions throughout the Spanish-speaking world, from intimate family gatherings where simple songs are shared around the table, to street musicians performing in town squares, to grand concert hall performances showcasing the instrument's full artistic and technical potential, cementing the Spanish guitar's status as both a beloved folk instrument and a sophisticated classical art form treasured throughout the world."
+    },
+    {
+      "key": "mexican_mariachi",
+      "title": "Mariachi — The Voice of Mexico",
+      "text": "Mariachi music represents one of Mexico's most beloved and internationally recognized cultural treasures, combining distinctive instrumentation, passionate vocal performance, and traditional charro dress to create a musical tradition that has become deeply symbolic of Mexican cultural identity and pride, both within Mexico and throughout Mexican diaspora communities worldwide. A traditional mariachi ensemble typically includes violins, trumpets, a vihuela, a small five-string guitar with a distinctive rounded back, and a guitarrón, a large acoustic bass guitar, working together to create the rich, full sound that characterizes mariachi music, with skilled musicians often beginning their training in childhood, learning both the technical musical skills and extensive traditional repertoire passed down through generations of mariachi families. Mariachi musicians traditionally wear elaborate charro suits, featuring tight-fitting jackets and trousers decorated with silver buttons and intricate embroidery, along with wide-brimmed sombreros, an outfit derived from traditional Mexican horsemen's attire that has become an iconic visual symbol recognized throughout the world as representing Mexican musical tradition. Mariachi songs cover an extraordinarily wide emotional range, from joyful celebratory pieces performed at weddings, quinceañeras, and festive gatherings, to deeply emotional ballads addressing themes of love, loss, and longing, with the genre's flexibility allowing mariachi ensembles to provide musical accompaniment for nearly any significant life event or celebration within Mexican culture. The tradition of serenading, called gallo or serenata, where mariachi musicians perform romantic songs, often early in the morning to celebrate birthdays, anniversaries, or romantic gestures, remains a cherished cultural practice throughout Mexico. Recognized by UNESCO as an Intangible Cultural Heritage, mariachi music continues to evolve while maintaining deep connection to its traditional roots, serving as a powerful symbol of Mexican cultural pride and emotional expression treasured by generations of families throughout the Spanish-speaking world."
+    },
+    {
+      "key": "spanish_christmas_food",
+      "title": "Navidad — Christmas Food Traditions",
+      "text": "Christmas celebrations throughout the Spanish-speaking world feature an extraordinary diversity of beloved culinary traditions, with each country and region maintaining distinctive festive dishes that bring families together around the table during this important holiday season, reflecting the rich diversity of Spanish and Latin American culinary heritage. In Mexico, families traditionally prepare bacalao a la vizcaína, a flavourful salt cod dish, alongside romeritos, a traditional dish featuring a wild green vegetable served with dried shrimp cakes and mole sauce, while tamales, corn dough filled with various savoury or sweet fillings and wrapped in corn husks or banana leaves, remain an essential part of Christmas celebrations throughout much of Latin America, often prepared communally by extended families gathering together for hours of cooking and conversation. In Spain, the main Christmas Eve meal, called Nochebuena, traditionally features seafood dishes including prawns and other shellfish, alongside roasted meats, with turrón, a traditional nougat confection made with almonds and honey, serving as an essential sweet treat enjoyed throughout the holiday season. Throughout much of Latin America, ponche navideño, a warm fruit punch often featuring tropical fruits, cinnamon, and sometimes a touch of rum, serves as a beloved warming beverage shared among family and friends during festive gatherings. The tradition of preparing elaborate, labour-intensive holiday dishes together as an extended family, with grandmothers, mothers, aunts, and children all participating in multi-day cooking preparations, remains deeply significant throughout Spanish-speaking Christmas celebrations, reflecting the broader cultural value placed on family connection, shared labour, and the joy of preparing and sharing meaningful meals together during this important season of celebration and togetherness."
+    },
+    {
+      "key": "spanish_bullfighting_culture",
+      "title": "Plazas de Toros and Spanish Festivals",
+      "text": "Traditional Spanish festivals, called ferias, represent some of the most vibrant and culturally significant celebrations throughout Spain, combining music, traditional dress, regional cuisine, and community celebration into multi-day events that showcase the distinctive cultural identity of different regions throughout the country. The Feria de Abril in Seville, one of Spain's most famous spring festivals, transforms the city for an entire week into a celebration featuring elaborately decorated casetas, traditional tents where families and friends gather to share food, drink, and dancing, with women wearing the iconic flamenco-style trajes de flamenca, colourful ruffled dresses, while traditional sevillanas dancing fills the streets throughout the celebration. The Running of the Bulls in Pamplona, part of the larger San Fermín festival held each July, represents one of Spain's most internationally recognized traditions, where participants run through narrow cobblestone streets ahead of bulls being herded toward the bullring, an exhilarating and dangerous tradition that draws visitors from around the world while remaining deeply significant to local Pamplona identity and culture. Regional festivals throughout Spain often celebrate local patron saints, historical events, or agricultural traditions, each featuring distinctive local customs, traditional costumes, regional foods, and community celebrations that bring entire towns together in shared cultural expression. These festivals typically involve extensive community preparation throughout the year, with local associations organizing elaborate decorations, traditional performances, and culinary preparations that showcase regional pride and cultural heritage. For Spanish families, these traditional festivals represent important opportunities for community gathering, cultural celebration, and the passing down of regional traditions and identity to younger generations, creating cherished shared experiences that strengthen community bonds and cultural continuity."
+    },
+    {
+      "key": "spanish_folklore_duende",
+      "title": "El Duende — Spanish Folk Spirits",
+      "text": "Spanish folklore is rich with fascinating mythical creatures and spirits passed down through generations of oral storytelling tradition, with these enchanting tales continuing to capture children's imaginations throughout Spain and Latin America while often carrying deeper cultural meanings and moral lessons woven into their narrative structure. The duende, perhaps the most distinctively Spanish of these folkloric figures, represents a mischievous household spirit believed to inhabit homes, sometimes causing minor troubles like hiding small objects or making strange noises, though duendes are traditionally understood as generally harmless, even helpful spirits when properly respected, with many Spanish households historically maintaining small customs and traditions intended to keep these household spirits content. Beyond their folkloric role as household spirits, the concept of duende has evolved into a profound artistic and philosophical concept within Spanish culture, particularly associated with flamenco performance, representing an intense, almost mystical emotional and creative power that the greatest artists are said to channel during truly transcendent performances, a concept famously explored by the celebrated Spanish poet Federico García Lorca. Other beloved figures in Spanish folklore include El Coco, a shadowy figure traditionally invoked by parents encouraging children to behave or go to sleep, similar to boogeyman traditions found in many cultures worldwide, and various regional legends specific to different parts of Spain, each reflecting local landscape, history, and cultural identity. These folkloric traditions, passed down through generations primarily through oral storytelling, songs, and traditional sayings, continue to enrich Spanish-speaking children's cultural education, connecting them to centuries of imaginative storytelling tradition while often subtly teaching important lessons about behaviour, respect, and understanding the mysterious, sometimes unexplainable aspects of the world around them."
+    },
+    {
+      "key": "spanish_lullabies",
+      "title": "Canciones de Cuna — Spanish Lullabies",
+      "text": "Spanish lullabies, called canciones de cuna, represent a cherished tradition of musical and verbal expression passed down through countless generations of Spanish-speaking families, with these gentle, melodic songs serving not merely as tools for soothing children to sleep but as important vessels for transmitting language, cultural values, and emotional connection between parents and children from the earliest moments of life. Many beloved Spanish lullabies have been sung for centuries, with their origins often difficult to trace precisely, reflecting their deep integration into oral family tradition rather than formal composed music, passed down through countless generations of mothers, fathers, and grandparents singing the same gentle melodies that soothed their own childhood sleep. Classic Spanish lullabies often feature simple, repetitive melodic structures combined with tender, sometimes whimsical lyrics addressing themes of love, protection, and the natural world, with songs like Duérmete Niño and A la Nanita Nana remaining beloved staples sung to children throughout the Spanish-speaking world regardless of specific regional or national background. The act of singing lullabies represents an important bonding ritual between parent and child, with the gentle repetition, soft melody, and physical closeness of being held or rocked while listening to a parent's voice creating deep emotional security and connection that researchers increasingly recognize as developmentally significant for young children's emotional wellbeing. For Spanish-speaking families raising children in diaspora communities, particularly where children may primarily speak another language in their daily environment, continuing the tradition of Spanish lullabies represents an especially meaningful way of maintaining linguistic and cultural connection, ensuring that even very young children absorb the gentle rhythms and beautiful sounds of Spanish during these most intimate, emotionally significant early childhood moments."
+    },
+    {
+      "key": "el_nino_dios",
+      "title": "El Niño Dios — Candlemas Celebrations",
+      "text": "Día de la Candelaria, celebrated on February second throughout Mexico and much of Latin America, marks an important continuation of the Christmas season, traditionally connected to the earlier celebration of Día de los Reyes through the shared tradition of the Rosca de Reyes bread, with whoever discovered the small hidden figurine representing the baby Jesus within their slice of bread on January sixth becoming responsible for hosting this important February celebration. The central tradition of Día de la Candelaria involves families bringing figurines representing the baby Jesus, called El Niño Dios, to church to be blessed, with these figurines often beautifully dressed in elaborate, sometimes elaborately embroidered clothing that family members have carefully selected or even handmade for the occasion, reflecting deep personal devotion and care. Following the church blessing, families traditionally gather for a celebratory meal centred around tamales, the beloved corn dough dish that has become deeply associated with this particular celebration throughout Mexico, with the person who found the figurine in the Rosca de Reyes bread traditionally expected to provide tamales for the entire gathered family and friends, creating a meaningful continuation of shared responsibility and celebration that connects the two holiday traditions. This celebration also traditionally marks the formal close of the extended Christmas season throughout much of Mexico, with nativity scenes and Christmas decorations typically taken down around this time, symbolically completing the full cycle of celebrations that began with Las Posadas in mid-December. The tradition beautifully illustrates how Mexican Christmas celebrations extend well beyond December twenty-fifth, creating an extended, meaningful season of connected celebrations that continue bringing families together through shared food, religious devotion, and cultural tradition well into the new year."
+    },
+    {
+      "key": "spanish_paella",
+      "title": "Paella — Spain's Iconic Rice Dish",
+      "text": "Paella, originating in the Valencia region of eastern Spain, has become one of the country's most internationally recognized culinary achievements, representing far more than simply a popular dish, embodying important cultural traditions around communal cooking, family gathering, and regional pride that remain deeply significant throughout Spanish culinary culture. Traditional paella valenciana, considered by purists the authentic original version of the dish, features rice cooked in a wide, shallow pan with chicken, rabbit, and a variety of vegetables, seasoned with saffron, which provides the dish's characteristic golden colour and distinctive aromatic flavour, though numerous regional variations have developed throughout Spain, including the popular seafood paella featuring shrimp, mussels, and other shellfish particularly common along Spain's extensive coastline. The preparation of authentic paella traditionally involves significant skill and attention, with experienced cooks carefully managing the cooking process to achieve the prized socarrat, a slightly crispy, caramelized layer of rice that forms at the bottom of the pan, considered by many to be the most delicious and desirable part of a properly prepared paella. Cooking paella has traditionally been an important social and communal activity throughout Spain, often prepared outdoors over an open flame during family gatherings, celebrations, and weekend get-togethers, with the large, shared pan reflecting the dish's inherently communal nature, meant to be enjoyed together rather than prepared as individual portions. The specialized wide, flat paella pan itself, traditionally made from carbon steel, has become an iconic kitchen tool recognized throughout Spanish and broader international culinary culture. For Spanish families, particularly those living abroad, preparing traditional paella together remains an important way of maintaining cultural connection, passing down family recipes and techniques across generations while creating meaningful shared experiences around the preparation and enjoyment of this beloved national dish."
+    },
+    {
+      "key": "spanish_proverbs_dichos",
+      "title": "Dichos — Spanish Proverbs and Sayings",
+      "text": "Spanish-language proverbs and traditional sayings, called dichos or refranes, represent a rich and deeply ingrained aspect of everyday Spanish-speaking communication, with these concise, often rhyming or rhythmic expressions carrying centuries of accumulated wisdom passed down through generations, frequently used by parents and grandparents to teach important life lessons to children in memorable, easily understood ways. Many beloved Spanish dichos address themes of perseverance and patience, with sayings like no hay mal que por bien no venga, meaning there is no bad from which good does not come, encouraging optimism and resilience during difficult circumstances, while others address the importance of careful judgment and avoiding hasty decisions, reflecting practical wisdom developed through generations of lived experience. Proverbs addressing family relationships and social conduct feature prominently throughout Spanish-speaking cultures, with sayings emphasizing the importance of treating others with respect and the natural consequences that follow from one's actions, often expressed through memorable, sometimes humorous comparisons drawn from everyday rural and agricultural life that remain relevant even in modern urban contexts. Many dichos demonstrate remarkable linguistic creativity, employing clever wordplay, rhythm, and rhyme that make them particularly memorable and enjoyable for children to learn, often functioning almost like brief poems or songs that children naturally absorb through repeated hearing within family conversation rather than formal instruction. These traditional sayings continue to be actively used in daily conversation throughout the Spanish-speaking world, with parents often deploying a well-chosen dicho at exactly the right moment to teach a child an important lesson about patience, honesty, hard work, or wisdom, creating a beloved, organic method of cultural and moral education that has been passed down through countless generations of Spanish-speaking families, connecting children to centuries of accumulated practical wisdom expressed through these memorable, often beautifully crafted traditional expressions."
+    },
+    {
+      "key": "spanish_holy_week",
+      "title": "Semana Santa — Holy Week Processions",
+      "text": "Semana Santa, Holy Week, represents one of the most elaborate, solemn, and culturally significant religious observances throughout Spain and much of Latin America, commemorating the final days of Jesus Christ's life through magnificent religious processions, traditional music, and deeply meaningful community participation that has been refined and developed over many centuries of devoted practice. Cities throughout Spain, particularly Seville, Málaga, and Valladolid, host extraordinarily elaborate processions during which religious brotherhoods, called cofradías, carry enormous, intricately decorated wooden floats called pasos, depicting scenes from Christ's passion or images of the Virgin Mary, through the streets, often supported by dozens of men called costaleros walking beneath the heavy structure, sometimes for many hours through narrow historic streets. Participants in these processions, called nazarenos, traditionally wear distinctive pointed hoods and long robes, with the specific colours indicating which religious brotherhood they represent, creating a visually striking and deeply traditional atmosphere as these processions move slowly through cities accompanied by solemn music, often featuring traditional saetas, deeply emotional flamenco-style religious songs spontaneously sung from balconies as processions pass below. Throughout Latin America, Holy Week traditions take on distinctive regional characteristics, with some communities creating elaborate, colourful carpets made from coloured sawdust or flower petals along procession routes, while others maintain traditional Passion plays reenacting the biblical narrative with community members taking on significant roles. These extensive, deeply meaningful observances typically involve months of preparation by religious brotherhoods and community organizations, reflecting profound religious devotion alongside significant artistic and cultural achievement, with families often travelling considerable distances to witness particularly renowned processions, creating treasured shared experiences that connect participants to centuries of continuous religious and cultural tradition throughout the Spanish-speaking world."
+    },
+    {
+      "key": "spanish_christmas_eve",
+      "title": "Nochebuena — Christmas Eve Gathering",
+      "text": "Nochebuena, Christmas Eve, stands as the most important night of the entire Christmas season throughout Spain and Latin America, traditionally considered more significant than Christmas Day itself, with extended families gathering for an elaborate late evening feast that often continues well past midnight, followed by attendance at Misa de Gallo, the traditional midnight mass celebrating the birth of Jesus. Families spend considerable time preparing for this special evening, with multiple generations often contributing to an elaborate, многочасовой cooking process that produces an abundant feast featuring regional specialties, from roasted meats and traditional seafood dishes in Spain to tamales and other beloved festive foods throughout various Latin American countries. The evening traditionally extends very late into the night, with families enjoying extended conversation, music, traditional games, and the joy of being together, often opening presents at midnight or in the early hours of Christmas Day rather than waiting until morning as is common in some other cultural traditions. Children often participate in nativity scene displays, called belenes in Spain or nacimientos throughout Latin America, with families creating elaborate, sometimes room-sized displays depicting the Christmas story using carefully collected figurines passed down through generations or specially purchased for the occasion. The warmth, joy, and deep family connection of Nochebuena represents one of the most cherished annual traditions throughout the Spanish-speaking world, with the late-night gathering, abundant shared meal, and meaningful religious observance creating treasured memories that bind families together across generations."
+    },
+    {
+      "key": "spanish_carnival",
+      "title": "Carnaval — Pre-Lenten Celebration",
+      "text": "Carnaval, celebrated throughout Spain and Latin America in the days before the beginning of Lent, represents one of the most colourful, energetic, and joyfully chaotic celebrations in the Spanish-speaking calendar, with elaborate costumes, vibrant parades, and exuberant street parties bringing entire communities together in spirited celebration before the solemn period of religious reflection that follows. Cities throughout Spain, particularly Cádiz and Tenerife in the Canary Islands, host elaborate Carnaval celebrations featuring extraordinarily creative costumes, satirical musical performances, and large-scale parades that draw participants and spectators from across the region, with months of preparation going into elaborate costume designs and choreographed performances. Throughout Latin America, Carnaval celebrations take on distinctive regional characteristics, with some countries hosting massive, internationally renowned celebrations featuring elaborate floats, traditional music, and dancing that continues for days. Children particularly delight in Carnaval traditions, often dressing in colourful costumes and participating in smaller-scale community celebrations, school parades, and festive activities that introduce them to this joyful pre-Lenten tradition from an early age. The celebration traditionally represents a final period of indulgence and festivity before the more solemn, reflective period of Lent begins, with the playful, sometimes satirical spirit of Carnaval providing an important cultural release and community bonding experience that has been treasured throughout Spanish-speaking cultures for many generations."
+    },
+    {
+      "key": "spanish_three_kings_camels",
+      "title": "Los Camellos de los Reyes Magos",
+      "text": "Throughout Spain and much of Latin America, the tradition surrounding the camels of the Three Kings holds special charm and significance for young children during the Epiphany season, with these gentle, hardworking animals believed to have carried the wise men on their long journey to visit the baby Jesus, and now traditionally believed to carry the kings on their continuing annual journey delivering gifts to children throughout the world. In the days leading up to January sixth, children throughout Spain prepare carefully for the arrival of the Three Kings and their camels, leaving out small bowls of water and bundles of hay or grass near windows, doorways, or balconies, ensuring the tired camels have refreshment after their long journey through the night sky, much as children elsewhere might leave cookies for Santa Claus or carrots for his reindeer. Many Spanish cities host elaborate Cabalgata de Reyes parades on the evening of January fifth, featuring beautifully decorated floats with performers dressed as the three kings, sometimes accompanied by actual camels or elaborate camel costumes, throwing candy to delighted children lining the streets in joyful anticipation of the following morning's gifts. This charming tradition reinforces the biblical narrative of the wise men's long desert journey while creating a magical, memorable experience for children, who eagerly anticipate both the parade and the following morning when they discover gifts left by the kings, having travelled so far with their faithful camel companions to honour the celebration of Jesus's birth."
+    }
+  ],
+  "stories": [
+    {
+      "key": "tortuga_liebre",
+      "title": "La Tortuga y la Liebre",
+      "translit": "La Tortuga y la Liebre",
+      "gloss": "The Tortoise and the Hare",
+      "lines": [
+        {
+          "text": "Había una vez una liebre muy rápida.",
+          "gloss": "Once there was a very fast hare."
+        },
+        {
+          "text": "Siempre se burlaba de la tortuga lenta.",
+          "gloss": "She always made fun of the slow tortoise."
+        },
+        {
+          "text": "'¡Eres tan lenta!' decía la liebre riendo.",
+          "gloss": "'You are so slow!' said the hare, laughing."
+        },
+        {
+          "text": "La tortuga dijo con calma: 'Hagamos una carrera.'",
+          "gloss": "The tortoise calmly said: 'Let's have a race.'"
+        },
+        {
+          "text": "La liebre se rió pero aceptó el desafío.",
+          "gloss": "The hare laughed but accepted the challenge."
+        },
+        {
+          "text": "Por la mañana, comenzó la carrera.",
+          "gloss": "In the morning, the race began."
+        },
+        {
+          "text": "La liebre salió corriendo muy rápido.",
+          "gloss": "The hare took off running very fast."
+        },
+        {
+          "text": "Pronto dejó muy atrás a la tortuga.",
+          "gloss": "She soon left the tortoise far behind."
+        },
+        {
+          "text": "'Tengo tiempo para descansar,' pensó la liebre.",
+          "gloss": "'I have time to rest,' thought the hare."
+        },
+        {
+          "text": "Se acostó bajo un árbol y se durmió.",
+          "gloss": "She lay down under a tree and fell asleep."
+        },
+        {
+          "text": "La tortuga siguió caminando, lenta pero segura.",
+          "gloss": "The tortoise kept walking, slow but steady."
+        },
+        {
+          "text": "Pasó junto a la liebre dormida.",
+          "gloss": "She passed by the sleeping hare."
+        },
+        {
+          "text": "Siguió caminando sin parar.",
+          "gloss": "She kept walking without stopping."
+        },
+        {
+          "text": "La tortuga se acercaba a la meta.",
+          "gloss": "The tortoise was getting close to the finish line."
+        },
+        {
+          "text": "La liebre se despertó de repente.",
+          "gloss": "The hare suddenly woke up."
+        },
+        {
+          "text": "Corrió tan rápido como pudo.",
+          "gloss": "She ran as fast as she could."
+        },
+        {
+          "text": "Pero ya era demasiado tarde.",
+          "gloss": "But it was already too late."
+        },
+        {
+          "text": "¡La tortuga cruzó la meta primero!",
+          "gloss": "The tortoise crossed the finish line first!"
+        },
+        {
+          "text": "Todos los animales aplaudieron con alegría.",
+          "gloss": "All the animals applauded with joy."
+        },
+        {
+          "text": "La paciencia y la constancia siempre ganan.",
+          "gloss": "Patience and perseverance always win."
+        }
+      ]
+    },
+    {
+      "key": "tres_cerditos",
+      "title": "Los Tres Cerditos",
+      "translit": "Los Tres Cerditos",
+      "gloss": "The Three Little Pigs",
+      "lines": [
+        {
+          "text": "Había una vez tres cerditos hermanos.",
+          "gloss": "Once there were three little pig brothers."
+        },
+        {
+          "text": "Cada uno decidió construir su propia casa.",
+          "gloss": "Each one decided to build his own house."
+        },
+        {
+          "text": "El primer cerdito construyó su casa de paja.",
+          "gloss": "The first little pig built his house of straw."
+        },
+        {
+          "text": "Era fácil y rápido de hacer.",
+          "gloss": "It was easy and quick to make."
+        },
+        {
+          "text": "El segundo cerdito construyó su casa de madera.",
+          "gloss": "The second little pig built his house of wood."
+        },
+        {
+          "text": "Era un poco más fuerte que la de paja.",
+          "gloss": "It was a bit stronger than the straw one."
+        },
+        {
+          "text": "El tercer cerdito trabajó muy duro.",
+          "gloss": "The third little pig worked very hard."
+        },
+        {
+          "text": "Construyó su casa con ladrillos fuertes.",
+          "gloss": "He built his house with strong bricks."
+        },
+        {
+          "text": "Un día apareció un lobo feroz.",
+          "gloss": "One day a fierce wolf appeared."
+        },
+        {
+          "text": "Fue a la casa de paja y sopló fuerte.",
+          "gloss": "He went to the straw house and blew hard."
+        },
+        {
+          "text": "¡La casa de paja se derrumbó!",
+          "gloss": "The straw house collapsed!"
+        },
+        {
+          "text": "El cerdito corrió a la casa de madera.",
+          "gloss": "The little pig ran to the wooden house."
+        },
+        {
+          "text": "El lobo sopló otra vez con fuerza.",
+          "gloss": "The wolf blew again with force."
+        },
+        {
+          "text": "¡La casa de madera también se cayó!",
+          "gloss": "The wooden house also fell down!"
+        },
+        {
+          "text": "Los dos cerditos corrieron a la casa de ladrillos.",
+          "gloss": "Both little pigs ran to the brick house."
+        },
+        {
+          "text": "El lobo sopló y sopló con todas sus fuerzas.",
+          "gloss": "The wolf blew and blew with all his strength."
+        },
+        {
+          "text": "Pero la casa de ladrillos no se movió.",
+          "gloss": "But the brick house did not move."
+        },
+        {
+          "text": "El lobo se cansó y se fue triste.",
+          "gloss": "The wolf got tired and left sadly."
+        },
+        {
+          "text": "Los tres cerditos estaban a salvo.",
+          "gloss": "The three little pigs were safe."
+        },
+        {
+          "text": "El trabajo duro siempre da buenos resultados.",
+          "gloss": "Hard work always gives good results."
+        }
+      ]
+    }
+  ]
 }

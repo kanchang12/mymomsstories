@@ -1,8 +1,394 @@
 {
   "name": "Malayalam",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "അ",
+      "translit": "a"
+    },
+    {
+      "char": "ആ",
+      "translit": "aa"
+    },
+    {
+      "char": "ഇ",
+      "translit": "i"
+    },
+    {
+      "char": "ക",
+      "translit": "ka"
+    },
+    {
+      "char": "ഖ",
+      "translit": "kha"
+    },
+    {
+      "char": "ഗ",
+      "translit": "ga"
+    },
+    {
+      "char": "ച",
+      "translit": "cha"
+    },
+    {
+      "char": "ത",
+      "translit": "ta"
+    },
+    {
+      "char": "ന",
+      "translit": "na"
+    },
+    {
+      "char": "മ",
+      "translit": "ma"
+    }
+  ],
+  "words": [
+    {
+      "text": "അമ്മ",
+      "translit": "amma",
+      "gloss": "mother"
+    },
+    {
+      "text": "അച്ഛൻ",
+      "translit": "achan",
+      "gloss": "father"
+    },
+    {
+      "text": "വെള്ളം",
+      "translit": "vellam",
+      "gloss": "water"
+    },
+    {
+      "text": "വീട്",
+      "translit": "veedu",
+      "gloss": "house"
+    },
+    {
+      "text": "സൂര്യൻ",
+      "translit": "sooryan",
+      "gloss": "sun"
+    },
+    {
+      "text": "പുസ്തകം",
+      "translit": "pusthakam",
+      "gloss": "book"
+    },
+    {
+      "text": "പൂവ്",
+      "translit": "poovu",
+      "gloss": "flower"
+    },
+    {
+      "text": "മരം",
+      "translit": "maram",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "എന്റെ പേര് മായ.",
+      "translit": "Ente peru Maya.",
+      "gloss": "My name is Maya."
+    },
+    {
+      "text": "അമ്മ എനിക്ക് കഥ പറയും.",
+      "translit": "Amma enikku katha parayum.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "സൂര്യൻ കിഴക്ക് ഉദിക്കുന്നു.",
+      "translit": "Sooryan kizhakku udikkunnu.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "ഞാൻ മലയാളം പഠിക്കുന്നു.",
+      "translit": "Njan Malayalam padikkunnu.",
+      "gloss": "I am learning Malayalam."
+    },
+    {
+      "text": "വെള്ളം ജീവനാണ്.",
+      "translit": "Vellam jeevanaanu.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "onam_ml",
+      "title": "Onam — Kerala's Greatest Festival",
+      "text": "Onam is the most important and beloved festival of Kerala, celebrated over ten days in the Malayalam month of Chingam, usually in August or September, marking the harvest season and the mythical homecoming of King Mahabali, a wise and beloved ruler who is believed to visit his people once a year. The most beautiful tradition of Onam is the Pookalam, an elaborate flower carpet laid at the entrance of homes, growing larger and more intricate with each passing day of the festival, using fresh flowers in vivid colours. The grand feast called Onam Sadya is legendary, served on a banana leaf and consisting of more than two dozen vegetarian dishes including sambar, avial, thoran, and several varieties of payasam dessert, eaten while seated on the floor. Snake boat races called Vallam Kali take place on Kerala's backwaters, with long traditional boats rowed by over a hundred men in perfect rhythm to the beat of drums and singing, drawing massive crowds. Traditional dances including Thiruvathirakali, performed by women in white and gold sarees moving gracefully around a lamp, and Pulikali, where men paint their bodies as tigers and dance through the streets, are central to Onam celebrations. New clothes called Onakkodi are gifted to family members. Onam is a festival that celebrates equality, prosperity, and the joyful coming together of the entire Malayali community, both in Kerala and across the world."
+    },
+    {
+      "key": "vishu_ml",
+      "title": "Vishu — Malayalam New Year",
+      "text": "Vishu marks the Malayalam new year, celebrated in mid-April, and is one of the most cherished festivals in Kerala, centred around the beautiful tradition of Vishukkani, the first sight of the new year. The night before Vishu, family elders carefully arrange an auspicious display called the Kani, consisting of rice, golden cucumbers, betel leaves, a mirror, gold ornaments, a holy text, and the bright yellow Konna flowers that bloom specifically during this season. Early the next morning, children are gently woken with their eyes closed and led to the Kani, so that the very first thing they see on the new year is this auspicious, prosperous arrangement, believed to determine the fortune of the coming year. After viewing the Kani, family elders give children Vishukkaineetam, small gifts of money, as a blessing for prosperity. Firecrackers are burst throughout the morning, filling the air with celebratory sound. Families prepare an elaborate vegetarian feast called Vishu Sadya, similar to the Onam feast, with various curries, payasam, and the traditional banana leaf serving. Temples across Kerala, especially the Guruvayur temple, see massive crowds of devotees seeking blessings on this auspicious morning. Vishu represents the Malayali belief that the way you begin something shapes how it unfolds, making that first beautiful sight of the morning deeply significant."
+    },
+    {
+      "key": "kathakali",
+      "title": "Kathakali — Kerala's Classical Dance Drama",
+      "text": "Kathakali is one of the most visually extraordinary classical art forms in the world, originating in Kerala around the seventeenth century, combining dance, drama, music, and elaborate makeup and costume to tell stories from Hindu epics like the Ramayana and Mahabharata. Performers undergo hours of preparation before each show, with intricate makeup called Chutti applied to transform their faces into vividly coloured representations of gods, demons, and heroes, using green for noble characters, red for fierce or villainous ones, and black for forest dwellers and hunters. The costumes are enormous and elaborate, with wide skirts that can extend several feet, towering crowns, and heavy jewellery, making the performers appear larger than life on stage. What makes Kathakali truly unique is that the performers do not speak; instead, the entire story is communicated through an incredibly sophisticated system of facial expressions, particularly intricate eye movements, and hand gestures called Mudras, which can convey complex emotions, characters, and even entire sentences. Traditional Kathakali performances begin at dusk and continue through the night, accompanied by vocalists singing the narrative verses and powerful percussion from the Chenda and Maddalam drums. Becoming a skilled Kathakali performer requires years of rigorous physical and artistic training from childhood, including special eye exercises to develop the expressive control needed for this extraordinary art form, which remains one of Kerala's most treasured cultural treasures."
+    },
+    {
+      "key": "theyyam",
+      "title": "Theyyam — Living Gods of North Kerala",
+      "text": "Theyyam is an ancient and powerful ritual art form practised in the temples and sacred groves of northern Kerala, in which performers, through elaborate costume, dramatic makeup, and ritual preparation, are believed to actually become possessed by and embody specific deities, ancestral spirits, or heroic figures, making Theyyam one of the few surviving traditions in the world where performers are worshipped as living gods during the ritual. The performer undergoes hours of preparation, painting intricate facial designs in red, yellow, black, and white using natural pigments, and wearing massive, towering headdresses made from coconut fronds, fresh flowers, and wood, sometimes reaching many feet in height, along with elaborate costumes that can weigh many kilograms. Once the transformation is complete and the Theyyam begins to dance to the powerful, hypnotic rhythm of traditional drums, devotees believe the performer is no longer human but has become the deity itself, and they approach for blessings, advice, and even confession of their troubles, which the Theyyam, speaking as the deity, addresses directly. Some Theyyam performances involve walking through fire or carrying burning torches, adding to the intense, otherworldly atmosphere of the ritual. Theyyam performers typically come from specific lower-caste communities, and remarkably, during the performance, even those of higher caste bow before them, as social hierarchies are temporarily inverted in recognition of the divine presence. Theyyam remains one of Kerala's most spiritually powerful and visually mesmerizing living traditions."
+    },
+    {
+      "key": "snake_boat_race",
+      "title": "Vallam Kali — The Snake Boat Races",
+      "text": "Vallam Kali, the traditional boat races of Kerala's backwaters, are among the most thrilling and uniquely Keralan spectacles, held throughout the year but reaching their grandest scale during the Onam season, particularly the famous Nehru Trophy Boat Race held on the Punnamada Lake near Alappuzha. The star of these races is the Chundan Vallam, or snake boat, an extraordinarily long and narrow vessel, sometimes over a hundred feet in length, with a high, curved prow resembling a cobra's raised hood, traditionally built from a special wood called Anjili and crafted by skilled boat builders using techniques passed down through generations. Each snake boat is rowed by over a hundred oarsmen, who train for months beforehand, building the strength, stamina, and perfect synchronization needed to row in unison. As the race begins, the oarsmen pull in unison to the rhythm of traditional Vanchipattu boat songs, sung by a lead singer at the front while the rowers respond in chorus, creating a powerful, hypnotic rhythm that drives the boat forward at remarkable speed across the water. Hundreds of thousands of spectators line the banks of the backwaters to watch, the excitement building as the massive boats glide across the water in dramatic, closely fought races. The snake boat races represent the deep relationship between Kerala's people and its extensive network of rivers, lakes, and backwaters, and the powerful spirit of teamwork and community that defines village life along the water."
+    },
+    {
+      "key": "guruvayur_temple",
+      "title": "Guruvayur — The Temple of the Divine Child",
+      "text": "The Guruvayur Sree Krishna Temple is one of the most important and beloved pilgrimage sites in Kerala, dedicated to Lord Krishna in his form as Unni Krishnan, the divine child, and it draws millions of devotees from across India and the world every year, earning it the nickname Dwarka of the South. The temple's idol of Krishna, believed to be over five thousand years old according to tradition, holds a conch, a discus, a mace, and a lotus, and is considered exceptionally sacred. The temple follows a unique daily ritual schedule beginning before dawn with the Nirmalya Darshan, the first viewing of the deity, continuing through multiple poojas and offerings throughout the day. One of the temple's most famous traditions is the gifting of elephants to the temple by devotees as an act of devotion, and the temple maintains a sanctuary called Punnathur Kotta that houses dozens of temple elephants, which are paraded grandly during festivals, decorated with gold ornaments and colourful caparisons. The annual Guruvayur Ekadasi festival and the Guruvayur Utsavam, an elaborate ten-day festival, draw enormous crowds with cultural performances, processions, and continuous prayer. Many Kerala families bring their newborn children to Guruvayur for the Choroonu ceremony, the baby's first rice-eating ritual, seeking the blessings of the divine child for their own children, making the temple deeply woven into the personal and family life of countless Malayali households."
+    },
+    {
+      "key": "thrissur_pooram",
+      "title": "Thrissur Pooram — Festival of Elephants",
+      "text": "Thrissur Pooram is widely considered the grandest and most spectacular temple festival in all of Kerala, held annually at the Vadakkunnathan Temple in Thrissur, drawing massive crowds who come to witness one of the most magnificent displays of elephants, music, and fireworks anywhere in India. The festival's central spectacle is the Kudamattom, a dazzling display where elephants from two rival temple groups, Paramekkavu and Thiruvambadi, face each other in the temple grounds, each elephant carrying a richly costumed priest holding colourful silk parasols, which are ceremonially exchanged and raised in a rhythmic, competitive display that builds to an electrifying climax as the crowd roars with excitement. Each procession features as many as fifteen majestic elephants standing in a row, adorned with gleaming gold headgear called Nettipattam, creating one of the most awe-inspiring sights in Kerala's festival calendar. Accompanying the elephant procession is the Panchavadyam, an extraordinary orchestral performance involving hundreds of musicians playing five traditional instruments together, building from a slow, measured rhythm to an overwhelming, thunderous climax that can be felt as much as heard. The festival concludes with an enormous fireworks display, often lasting hours and considered one of the most elaborate in India, lighting up the night sky over Thrissur. Thrissur Pooram represents Kerala's extraordinary capacity for grand public celebration, bringing together art, devotion, rivalry, and community spectacle into one unforgettable annual event."
+    },
+    {
+      "key": "mohiniyattam",
+      "title": "Mohiniyattam — The Dance of the Enchantress",
+      "text": "Mohiniyattam is one of Kerala's classical dance forms, characterized by its graceful, flowing, and gentle movements, performed traditionally by women and named after Mohini, the enchanting female form taken by Lord Vishnu in Hindu mythology. Unlike the vigorous, dramatic energy of Kathakali, Mohiniyattam is defined by its soft, swaying movements, subtle facial expressions, and circular, lyrical patterns that evoke grace and feminine beauty. Dancers wear an elegant white or off-white saree with a golden border called Kasavu, the traditional Kerala textile, along with simple but elegant gold jewellery, creating a look of refined, understated elegance that contrasts with the elaborate costumes of other classical dance forms. The dance follows a structured repertoire that begins with an invocation to the divine and moves through various compositions that explore themes of love, devotion, and longing, often drawing from Sanskrit and Malayalam devotional poetry. Mohiniyattam nearly disappeared in the early twentieth century but was revived and codified thanks to the efforts of several dedicated artists and the support of the Kerala Kalamandalam, the state's premier institution for performing arts. The dance requires years of disciplined training to master its subtle, controlled movements, particularly the distinctive circular footwork and the gentle, swaying torso movements that give Mohiniyattam its name, meaning the dance of the enchantress. Today, Mohiniyattam is performed at cultural festivals and temple celebrations throughout Kerala and has gained international recognition as one of India's most graceful classical art forms."
+    },
+    {
+      "key": "kalaripayattu",
+      "title": "Kalaripayattu — The Mother of Martial Arts",
+      "text": "Kalaripayattu is one of the oldest martial art forms in the world, originating in Kerala over three thousand years ago, and many historians believe it influenced the development of various martial arts traditions across Asia, earning it the title the mother of all martial arts. Training takes place in a specially constructed pit called a Kalari, dug into the earth and considered a sacred space, where students train under a master called a Gurukkal, following a rigorous and comprehensive curriculum that includes body conditioning, flexibility exercises, weapons training, and unarmed combat techniques. Kalaripayattu training traditionally begins with Maippayattu, body exercises and stretches that develop extraordinary flexibility and control, including the famous splits and high kicks that Kalaripayattu practitioners are known for. As students progress, they learn to use traditional weapons including the long flexible sword called Urumi, considered one of the most difficult weapons in the world to master, as well as sticks, daggers, and shields. Kalaripayattu also includes a deep knowledge of Marma points, vital pressure points on the human body, knowledge that practitioners use both for combat and for traditional Ayurvedic healing massage, reflecting the art's holistic connection between fighting skill and medicinal wisdom. Kalaripayattu performances, featuring dramatic displays of weapon skill, acrobatics, and combat choreography, are popular cultural attractions in Kerala today, and the art form has also significantly influenced the fight choreography seen in Indian cinema, particularly in Kerala's own Malayalam film industry."
+    },
+    {
+      "key": "houseboat_backwaters",
+      "title": "Kerala Backwaters and Houseboats",
+      "text": "The backwaters of Kerala form one of the most extraordinary and unique ecosystems in the world, a vast network of interconnected lakes, canals, rivers, and lagoons running parallel to the Arabian Sea coast, stretching for hundreds of kilometres through the heart of Kerala. For centuries, these backwaters have been the lifeline of local communities, used for transportation, fishing, and irrigating the rice paddies that line their banks, with entire villages built along narrow canals, accessible only by boat. The traditional vessel of the backwaters is the Kettuvallam, originally used to transport rice and spices, a long wooden boat constructed without a single nail, using coir rope to bind enormous wooden planks and bamboo poles together, a remarkable feat of traditional engineering. In recent decades, these Kettuvallams have been beautifully converted into houseboats, complete with bedrooms, kitchens, and sitting areas, allowing visitors to slowly cruise through the peaceful backwaters, passing village life, fishermen casting nets, women washing clothes on the banks, and children waving from the shore. The backwaters are also home to a rich diversity of birdlife and support traditional Chinese fishing nets, large cantilevered structures introduced centuries ago through trade connections, which fishermen still operate by hand along the Kochi coastline. For Malayali families, the backwaters represent both an important part of daily life in coastal Kerala and a source of deep aesthetic and emotional connection to the gentle, water-bound landscape that has shaped Kerala's culture, cuisine, and way of life for generations."
+    },
+    {
+      "key": "kerala_sadya",
+      "title": "Sadya — The Great Kerala Feast",
+      "text": "Sadya is the traditional vegetarian feast of Kerala, served on special occasions including Onam, Vishu, weddings, and important family celebrations, representing one of the most elaborate and beloved culinary traditions in all of India. A proper Sadya consists of more than two dozen dishes, all served together on a fresh banana leaf, eaten traditionally while seated cross-legged on the floor, using the right hand instead of cutlery. The meal follows a specific, time-honoured order, beginning with rice and progressing through an array of curries including Sambar, a lentil and vegetable stew; Avial, a thick mixed vegetable curry in coconut and yogurt gravy; Thoran, a dry stir-fried vegetable dish with grated coconut; Olan, a delicate ash gourd curry; and Pachadi, a tangy yogurt-based dish, each occupying its own designated place on the banana leaf according to tradition. The meal concludes with payasam, a sweet milk-based dessert made with rice, vermicelli, or lentils, slow-cooked with jaggery, coconut milk, and cardamom, with several varieties often served at the most elaborate feasts. Serving and eating Sadya is itself a ritual of hospitality and community, with hosts continuously refilling guests' banana leaves to ensure no one leaves hungry, and the proper way to fold the banana leaf after eating, either toward or away from oneself, carries its own traditional meaning about whether the meal was satisfactory. For Malayali families, Sadya represents far more than a meal; it embodies generosity, abundance, and the deep cultural value placed on feeding and caring for others."
+    },
+    {
+      "key": "kerala_spices",
+      "title": "Kerala's Spice Heritage",
+      "text": "Kerala's relationship with spices stretches back over two thousand years, and the region's pepper, cardamom, cinnamon, and cloves were so highly prized that they drew traders from ancient Rome, Arabia, China, and eventually European explorers, fundamentally shaping world history and earning Kerala the historic title of the Spice Coast of India. Black pepper, often called black gold, was so valuable in ancient times that it was sometimes used as currency, and the search for a direct sea route to Kerala's pepper-growing regions was one of the primary motivations for Vasco da Gama's historic voyage to India in 1498, an event that dramatically altered the course of global trade and colonial history. Today, the lush hill regions of Kerala, particularly around Idukki, Wayanad, and the Western Ghats, continue to produce some of the world's finest cardamom, often called the queen of spices, alongside pepper, cinnamon, nutmeg, and cloves, grown on plantations that often combine traditional farming knowledge with stunning natural beauty. Spice markets in cities like Kochi, particularly in the historic Mattancherry area, retain the atmosphere of centuries of trade, with the rich aroma of spices filling narrow lanes lined with warehouses and shops. Kerala cuisine itself is deeply defined by its skilled and generous use of spices, with dishes balancing the heat of black pepper and chilies, the warmth of cinnamon and cardamom, and the freshness of curry leaves and coconut, reflecting a culinary tradition built on centuries of access to the world's finest spices, grown in the very soil of the Malayali homeland."
+    },
+    {
+      "key": "malayalam_cinema",
+      "title": "Malayalam Cinema — Art and Storytelling",
+      "text": "Malayalam cinema, often celebrated as one of the most artistically accomplished film industries in India, has produced consistently sophisticated, socially conscious, and critically acclaimed films for decades, earning Kerala a reputation for cinema that prioritizes meaningful storytelling and realistic performances over commercial spectacle. The Malayalam film industry experienced a golden age in the 1980s, producing celebrated directors like Adoor Gopalakrishnan, G. Aravindan, and John Abraham, whose films explored complex social and psychological themes with remarkable artistic depth, drawing comparisons to the great traditions of world cinema. Malayalam cinema has continued this legacy of quality storytelling into the contemporary era, with directors creating films noted for their naturalistic style, strong character development, and willingness to address difficult social subjects with honesty and nuance. The industry has also produced some of India's most respected actors, known for their commitment to authentic, deeply felt performances rather than conventional star glamour. Kerala's high literacy rate and strong intellectual culture have contributed to an audience that values thoughtful, well-crafted cinema, creating a unique ecosystem where artistically ambitious films can find sustained commercial success. Malayalam films regularly represent India at international film festivals and have gained increasing recognition through streaming platforms, introducing global audiences to the distinctive visual style, unhurried pacing, and emotional depth that characterizes the best of Malayalam cinema, reflecting the broader Malayali cultural appreciation for literature, art, and storytelling as serious and valued pursuits."
+    },
+    {
+      "key": "kerala_education",
+      "title": "Kerala's Tradition of Learning",
+      "text": "Kerala holds the distinction of having the highest literacy rate of any state in India, a remarkable achievement built upon centuries of valuing education, reading, and intellectual life as core elements of Malayali culture and identity. This tradition has deep historical roots, with Kerala having established schools and centres of learning, including traditional gurukulam systems and later mission schools, earlier and more extensively than many other parts of India, and the state government's strong post-independence focus on public education, healthcare, and social reform further strengthened this foundation. The Malayalam language itself has a rich literary tradition, including ancient devotional poetry, the influential works of writers, and a vibrant contemporary literary scene that produces internationally recognized novelists and poets. Kerala's numerous public libraries, often found even in small villages, reflect a cultural value placed on reading and lifelong learning that is unusually strong compared to many other regions. Newspaper readership in Kerala is also notably high, and reading the morning paper remains a deeply ingrained daily habit in countless Malayali households. This emphasis on education has contributed to Kerala's significant global diaspora, as well-educated Malayalis have migrated for work opportunities to the Gulf countries, North America, Europe, and elsewhere, while maintaining strong connections to their educational and cultural roots. For Malayali families raising children abroad, this deep-seated value placed on education, reading, and intellectual curiosity remains a defining and proudly transmitted aspect of cultural identity."
+    },
+    {
+      "key": "ayurveda_kerala",
+      "title": "Ayurveda in Kerala",
+      "text": "Kerala is internationally recognized as the heartland of Ayurveda, the ancient Indian system of holistic medicine that has been practised, preserved, and refined in Kerala for over a thousand years, with the state's unique combination of tropical climate, abundant medicinal herbs, and unbroken traditional knowledge making it the most authentic and respected centre for Ayurvedic treatment in the world. Traditional Ayurvedic families in Kerala have passed down medical knowledge through generations, often within specific hereditary physician communities who maintain detailed knowledge of herbal medicine, diagnostic techniques, and specialized treatments developed and refined over centuries of practice. Kerala's Ayurvedic treatments are renowned for therapies such as Panchakarma, a comprehensive detoxification and rejuvenation program, and specialized treatments like Sirodhara, where warm medicated oil is poured in a continuous stream over the forehead to calm the nervous system, both of which have become internationally recognized as signature Kerala wellness experiences. The state's lush landscape provides an abundance of medicinal plants used in Ayurvedic formulations, and many traditional Ayurvedic hospitals and treatment centres maintain their own herb gardens, growing and processing ingredients using methods passed down for generations. Ayurvedic principles are deeply woven into everyday Malayali life, influencing dietary habits, the use of specific oils and herbs in daily routines, and general approaches to maintaining health and wellbeing, extending well beyond formal medical treatment into the fabric of daily domestic life. Kerala's commitment to preserving authentic Ayurvedic knowledge and practice, combined with government support for traditional medicine, has made the state a global destination for those seeking genuine Ayurvedic treatment and wellness."
+    },
+    {
+      "key": "kerala_christianity",
+      "title": "Saint Thomas Christians of Kerala",
+      "text": "Kerala is home to one of the oldest Christian communities in the world outside the Middle East, with a tradition dating back nearly two thousand years to the arrival of the Apostle Saint Thomas in 52 CE, who according to long-held tradition landed on the Kerala coast and established several churches, converting local families who remain known today as Saint Thomas Christians or Nasranis. This ancient Christian community developed its own distinctive liturgical traditions, blending elements of Syriac Christian worship brought through historical connections with the Middle Eastern church with local Kerala customs, architecture, and even cuisine, creating a uniquely Malayali expression of Christianity found nowhere else in the world. Kerala's historic churches, some centuries old, display a fascinating blend of architectural influences, combining traditional Kerala temple-style sloped roofs and wooden craftsmanship with Christian religious symbolism, reflecting centuries of cultural integration. Christian festivals in Kerala, including Christmas and Easter, are celebrated with distinctly Malayali touches, often incorporating traditional Kerala foods, decorations, and community customs alongside religious observance. The Saint Thomas Christian community has played a significant role in Kerala's history, education, and social development, establishing some of the region's earliest schools and contributing substantially to Kerala's traditionally high literacy rates. Today, Christians form a significant percentage of Kerala's population, living alongside Hindu and Muslim communities in a state long noted for its history of religious diversity, tolerance, and peaceful coexistence among different faith traditions, each contributing distinct threads to Kerala's rich cultural fabric."
+    },
+    {
+      "key": "kerala_textile_kasavu",
+      "title": "Kasavu — Kerala's Golden Thread",
+      "text": "The Kasavu saree, with its pristine white or cream body and distinctive gold-bordered edge, is the traditional textile of Kerala and one of the most instantly recognizable symbols of Malayali cultural identity, worn during festivals, weddings, and significant family occasions throughout the state. The fabric is traditionally handwoven from fine cotton, with the gold border, called the Kasavu, originally created using real gold or silver zari thread, though today most commercially produced Kasavu sarees use gold-coloured synthetic thread that maintains the traditional appearance at a more accessible price. The weaving of authentic Kasavu textiles is concentrated in specific traditional weaving towns in Kerala, including Balaramapuram and Chendamangalam, where skilled artisans, often working within families that have practised handloom weaving for many generations, continue to produce these textiles using traditional pit looms and time-honoured techniques. The simple elegance of the Kasavu saree, with its clean white fabric and understated gold border, reflects a broader Kerala aesthetic sensibility that values restraint and natural beauty over elaborate ornamentation, standing in contrast to the more vividly colourful and heavily embellished textiles found in many other parts of India. During Onam, wearing a Kasavu saree, called Onakkodi when given as a festival gift, is an especially cherished tradition, with families often gifting new Kasavu garments to mark the occasion. Men traditionally wear a matching Kasavu mundu, a wrapped garment with the same distinctive gold border, completing the visual identity that makes Kerala's traditional dress immediately recognizable across India."
+    },
+    {
+      "key": "kerala_fishing",
+      "title": "Kerala's Coastal Fishing Communities",
+      "text": "Kerala's six hundred kilometre coastline along the Arabian Sea has supported thriving fishing communities for thousands of years, and fishing remains one of the most important traditional occupations and cultural touchstones of coastal Kerala, deeply influencing the state's cuisine, daily rhythms, and community identity. Traditional fishing villages along the Kerala coast follow time-honoured practices, with fishermen setting out before dawn in traditional wooden boats, returning by mid-morning with their catch, which is then sold in lively, bustling fish markets where the freshest seafood changes hands amid energetic bargaining and the constant calls of vendors. Kerala's famous Chinese fishing nets, large cantilevered structures introduced through historical trade connections centuries ago and still operated by hand along the Kochi waterfront, have become an iconic visual symbol of the region's fishing heritage and a major attraction for visitors watching the slow, rhythmic process of lowering and raising the massive nets. Seafood holds a central place in Kerala's culinary identity, with fish curry made using kokum or tamarind for tanginess and coconut for richness, considered an essential daily dish in coastal households, alongside prawns, crab, and squid prepared in distinctly Kerala styles using curry leaves, mustard seeds, and a generous use of coconut oil. Fishing communities in Kerala have also developed their own distinct cultural traditions, including specific songs, festivals honouring the sea, and close-knit social structures built around the shared rhythms and risks of life dependent on the ocean, representing an essential thread in the broader tapestry of Malayali coastal culture and identity."
+    },
+    {
+      "key": "malayalam_pulikali",
+      "title": "Pulikali — The Tiger Dance",
+      "text": "Pulikali, meaning play of the tigers, is one of Kerala's most visually spectacular and entertaining folk art traditions, performed especially during Onam celebrations in Thrissur, where performers transform their bodies into vivid tiger representations through elaborate body painting and energetic dance performance. Performers spend hours having their entire bodies painted in bright yellow, black, and red, transforming themselves into convincing tiger figures, with skilled artists using natural and modern paints to create the distinctive striped patterns, fierce facial features, and muscular body definition that bring the tiger character to dramatic life. Once transformation is complete, performers parade through Thrissur's streets accompanied by traditional percussion music, performing energetic, almost comedic movements mimicking a tiger's hunting behaviour, including pouncing, prowling, and dramatic confrontations between tiger performers and hunter characters who accompany the procession. The tradition is believed to have originated as entertainment for the royal family, with the dramatic, colourful spectacle proving so popular that it developed into a major public celebration drawing enormous crowds who line the streets to watch the procession of painted performers. Pulikali troupes practice and prepare for months before Onam, with each troupe trying to create the most impressive, technically accomplished tiger costume and performance, leading to good-natured competition between different neighbourhood groups. The Thrissur Pulikali procession has become one of Kerala's most recognizable and photographed cultural events, drawing visitors specifically to witness this unique combination of body art, athletic performance, and joyful, theatrical entertainment that has become an essential part of Kerala's Onam celebration."
+    },
+    {
+      "key": "malayalam_kerala_boat_building",
+      "title": "Traditional Kerala Boat Building",
+      "text": "Traditional boat building in Kerala represents a sophisticated craft tradition stretching back many centuries, with skilled craftsmen constructing the magnificent snake boats and other traditional vessels using techniques passed down through generations without relying on written blueprints, instead carrying detailed construction knowledge through oral and practical apprenticeship traditions. The construction of a snake boat, used in the famous Vallam Kali races, represents an extraordinary feat of traditional engineering, with master craftsmen using a special wood called Anjili, carefully selected and seasoned, joined together using traditional techniques that historically involved no metal nails, instead relying on precisely fitted joints and coir rope binding that has proven remarkably durable across generations of use. Building a single snake boat can take many months of dedicated work by skilled craftsmen, with the boat's distinctive curved, elevated prow requiring particular skill to construct properly, achieving both the structural integrity needed for racing and the elegant, traditional aesthetic form that gives these vessels their distinctive appearance. Traditional boat-building knowledge has historically been concentrated within specific communities and family lineages in certain coastal and backwater regions of Kerala, with master craftsmen training apprentices through years of hands-on practical instruction, gradually transferring the accumulated wisdom about wood selection, joint construction, and the precise proportions needed for a boat's seaworthiness and racing performance. This traditional craft faces contemporary challenges as fewer young people pursue this demanding traditional occupation, leading to concerted efforts by cultural preservation organizations and the Kerala government to document traditional techniques and support remaining master craftsmen in passing their knowledge to new generations, recognizing traditional boat building as an important and endangered element of Kerala's rich maritime cultural heritage."
+    }
+  ],
+  "stories": [
+    {
+      "key": "mahabali_katha",
+      "title": "മാവേലി രാജാവിന്റെ കഥ",
+      "translit": "Maaveli Raajaavinte Katha",
+      "gloss": "The Story of King Mahabali",
+      "lines": [
+        {
+          "text": "പണ്ട് കേരളത്തിൽ മാവേലി എന്ന രാജാവ് ഉണ്ടായിരുന്നു.",
+          "gloss": "Long ago, there was a king named Mahabali in Kerala."
+        },
+        {
+          "text": "അദ്ദേഹം വളരെ നല്ലവനും ന്യായവാനുമായിരുന്നു.",
+          "gloss": "He was very kind and just."
+        },
+        {
+          "text": "എല്ലാവരും സന്തോഷത്തോടെയും സമത്വത്തോടെയും ജീവിച്ചു.",
+          "gloss": "Everyone lived happily and equally."
+        },
+        {
+          "text": "ആരും കള്ളം പറഞ്ഞില്ല, ആരും ദുഃഖിച്ചില്ല.",
+          "gloss": "No one lied, no one was sad."
+        },
+        {
+          "text": "ദേവന്മാർ ഇത് കണ്ട് അസൂയപ്പെട്ടു.",
+          "gloss": "The gods saw this and became jealous."
+        },
+        {
+          "text": "അവർ വാമനൻ എന്ന കുള്ളനെ അയച്ചു.",
+          "gloss": "They sent a dwarf named Vamana."
+        },
+        {
+          "text": "വാമനൻ മാവേലിയോട് മൂന്ന് ചുവട് സ്ഥലം ചോദിച്ചു.",
+          "gloss": "Vamana asked Mahabali for three steps of land."
+        },
+        {
+          "text": "മാവേലി സന്തോഷത്തോടെ സമ്മതിച്ചു.",
+          "gloss": "Mahabali happily agreed."
+        },
+        {
+          "text": "വാമനൻ പെട്ടെന്ന് വളർന്നു, ഭീമാകാരനായി.",
+          "gloss": "Vamana suddenly grew into a giant."
+        },
+        {
+          "text": "ഒരു ചുവടിൽ ആകാശം, മറ്റൊന്നിൽ ഭൂമി അളന്നു.",
+          "gloss": "One step measured the sky, another the earth."
+        },
+        {
+          "text": "മൂന്നാമത്തെ ചുവടിന് സ്ഥലം ബാക്കിയില്ല.",
+          "gloss": "There was no place left for the third step."
+        },
+        {
+          "text": "മാവേലി തന്റെ തല കുനിച്ചു കൊടുത്തു.",
+          "gloss": "Mahabali offered his own head."
+        },
+        {
+          "text": "വാമനൻ അദ്ദേഹത്തെ പാതാളത്തിലേക്ക് അയച്ചു.",
+          "gloss": "Vamana sent him to the underworld."
+        },
+        {
+          "text": "പക്ഷേ മാവേലിയുടെ ത്യാഗത്തിൽ ദൈവം സന്തുഷ്ടനായി.",
+          "gloss": "But God was pleased with Mahabali's sacrifice."
+        },
+        {
+          "text": "'വർഷത്തിൽ ഒരിക്കൽ നിന്റെ ജനങ്ങളെ കാണാം,' ദൈവം പറഞ്ഞു.",
+          "gloss": "'You may visit your people once a year,' said God."
+        },
+        {
+          "text": "അങ്ങനെ ഓണം ജനിച്ചു.",
+          "gloss": "And so Onam was born."
+        },
+        {
+          "text": "ഓരോ വർഷവും മാവേലി തന്റെ പ്രജകളെ കാണാൻ വരുന്നു.",
+          "gloss": "Every year Mahabali comes to see his subjects."
+        },
+        {
+          "text": "കേരളീയർ പൂക്കളം ഒരുക്കി അദ്ദേഹത്തെ സ്വാഗതം ചെയ്യുന്നു.",
+          "gloss": "Keralites prepare flower carpets to welcome him."
+        },
+        {
+          "text": "എല്ലാവരും പുതുവസ്ത്രം ധരിച്ച് സദ്യ ഒരുക്കുന്നു.",
+          "gloss": "Everyone wears new clothes and prepares the feast."
+        },
+        {
+          "text": "നല്ല ഹൃദയമുള്ള ഒരു രാജാവിന്റെ ഓർമ്മ ഇന്നും ജീവിക്കുന്നു.",
+          "gloss": "The memory of a kind-hearted king lives on today."
+        }
+      ]
+    },
+    {
+      "key": "kurukkante_buddhi",
+      "title": "കുറുക്കന്റെ ബുദ്ധി",
+      "translit": "Kurukkante Buddhi",
+      "gloss": "The Fox's Wisdom",
+      "lines": [
+        {
+          "text": "ഒരു കാട്ടിൽ ഒരു കുറുക്കൻ വസിച്ചിരുന്നു.",
+          "gloss": "A fox lived in a forest."
+        },
+        {
+          "text": "അവൻ വളരെ ബുദ്ധിമാനായിരുന്നു.",
+          "gloss": "He was very clever."
+        },
+        {
+          "text": "ഒരു ദിവസം അവൻ ഒരു കിണറ്റിൽ വീണു.",
+          "gloss": "One day he fell into a well."
+        },
+        {
+          "text": "അവന് കരയാൻ കഴിഞ്ഞില്ല.",
+          "gloss": "He could not climb out."
+        },
+        {
+          "text": "അപ്പോൾ ഒരു ആട് കിണറ്റിന്റെ അരികിലെത്തി.",
+          "gloss": "Then a goat came to the edge of the well."
+        },
+        {
+          "text": "'വെള്ളം എങ്ങനെയുണ്ട്?' ആട് ചോദിച്ചു.",
+          "gloss": "'How is the water?' asked the goat."
+        },
+        {
+          "text": "കുറുക്കൻ ചിന്തിച്ചു, ഒരു പദ്ധതി ഉണ്ടാക്കി.",
+          "gloss": "The fox thought, and made a plan."
+        },
+        {
+          "text": "'വളരെ നല്ലത്! ഇത്രയും തണുത്ത വെള്ളം ഞാൻ കണ്ടിട്ടില്ല!'",
+          "gloss": "'Very good! I've never seen such cool water!'"
+        },
+        {
+          "text": "ആടിന് ആകാംക്ഷയായി, അവനും ചാടി.",
+          "gloss": "The goat became curious and jumped in too."
+        },
+        {
+          "text": "ഉടനെ കുറുക്കൻ ആടിന്റെ കൊമ്പിൽ ചവിട്ടി.",
+          "gloss": "Immediately the fox stepped on the goat's horns."
+        },
+        {
+          "text": "അവൻ കിണറ്റിൽ നിന്ന് പുറത്തേക്ക് ചാടി.",
+          "gloss": "He jumped out of the well."
+        },
+        {
+          "text": "ആട് ഇപ്പോൾ കിണറ്റിൽ കുടുങ്ങി.",
+          "gloss": "Now the goat was stuck in the well."
+        },
+        {
+          "text": "'നീ എന്നെ കബളിപ്പിച്ചു!' ആട് വിളിച്ചുപറഞ്ഞു.",
+          "gloss": "'You tricked me!' shouted the goat."
+        },
+        {
+          "text": "കുറുക്കൻ മുകളിൽ നിന്ന് ചിരിച്ചു.",
+          "gloss": "The fox laughed from above."
+        },
+        {
+          "text": "'അടുത്ത തവണ ചാടുന്നതിന് മുൻപ് ചിന്തിക്കുക,' അവൻ പറഞ്ഞു.",
+          "gloss": "'Think before you leap next time,' he said."
+        },
+        {
+          "text": "കുറുക്കൻ വീട്ടിലേക്ക് സ്വതന്ത്രനായി ഓടി.",
+          "gloss": "The fox ran home freely."
+        },
+        {
+          "text": "ആട് കിണറ്റിൽ തനിച്ചായി.",
+          "gloss": "The goat was left alone in the well."
+        },
+        {
+          "text": "ഒരു കർഷകൻ പിന്നീട് ആടിനെ രക്ഷിച്ചു.",
+          "gloss": "A farmer later rescued the goat."
+        },
+        {
+          "text": "ധൃതിയിൽ തീരുമാനമെടുക്കരുത് എന്ന് ആട് പഠിച്ചു.",
+          "gloss": "The goat learned not to decide in haste."
+        },
+        {
+          "text": "ബുദ്ധിയും ജാഗ്രതയും എപ്പോഴും ഒരുമിച്ച് വേണം.",
+          "gloss": "Wisdom and caution must always go together."
+        }
+      ]
+    }
+  ]
 }

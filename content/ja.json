@@ -1,8 +1,394 @@
 {
   "name": "Japanese",
-  "alphabet": [],
-  "words": [],
-  "lines": [],
-  "customs": [],
-  "stories": []
+  "alphabet": [
+    {
+      "char": "あ",
+      "translit": "a"
+    },
+    {
+      "char": "い",
+      "translit": "i"
+    },
+    {
+      "char": "う",
+      "translit": "u"
+    },
+    {
+      "char": "え",
+      "translit": "e"
+    },
+    {
+      "char": "お",
+      "translit": "o"
+    },
+    {
+      "char": "か",
+      "translit": "ka"
+    },
+    {
+      "char": "き",
+      "translit": "ki"
+    },
+    {
+      "char": "さ",
+      "translit": "sa"
+    },
+    {
+      "char": "た",
+      "translit": "ta"
+    },
+    {
+      "char": "な",
+      "translit": "na"
+    }
+  ],
+  "words": [
+    {
+      "text": "お母さん",
+      "translit": "okaasan",
+      "gloss": "mother"
+    },
+    {
+      "text": "お父さん",
+      "translit": "otousan",
+      "gloss": "father"
+    },
+    {
+      "text": "水",
+      "translit": "mizu",
+      "gloss": "water"
+    },
+    {
+      "text": "家",
+      "translit": "ie",
+      "gloss": "house"
+    },
+    {
+      "text": "太陽",
+      "translit": "taiyou",
+      "gloss": "sun"
+    },
+    {
+      "text": "本",
+      "translit": "hon",
+      "gloss": "book"
+    },
+    {
+      "text": "花",
+      "translit": "hana",
+      "gloss": "flower"
+    },
+    {
+      "text": "木",
+      "translit": "ki",
+      "gloss": "tree"
+    }
+  ],
+  "lines": [
+    {
+      "text": "私の名前はゆきです。",
+      "translit": "Watashi no namae wa Yuki desu.",
+      "gloss": "My name is Yuki."
+    },
+    {
+      "text": "お母さんがお話をしてくれます。",
+      "translit": "Okaasan ga ohanashi o shite kuremasu.",
+      "gloss": "Mother tells me a story."
+    },
+    {
+      "text": "太陽は東から昇ります。",
+      "translit": "Taiyou wa higashi kara noborimasu.",
+      "gloss": "The sun rises in the east."
+    },
+    {
+      "text": "私は日本語を勉強しています。",
+      "translit": "Watashi wa nihongo o benkyou shite imasu.",
+      "gloss": "I am learning Japanese."
+    },
+    {
+      "text": "水は命です。",
+      "translit": "Mizu wa inochi desu.",
+      "gloss": "Water is life."
+    }
+  ],
+  "customs": [
+    {
+      "key": "oshogatsu",
+      "title": "Oshogatsu — Japanese New Year",
+      "text": "Oshogatsu, the Japanese New Year, stands as the most important holiday in Japan, celebrated from January first through third, with families gathering for several days of meaningful traditions, special foods, and important rituals believed to bring good fortune for the year ahead. In the days before the new year, families undertake osoji, a thorough year-end cleaning of the entire home, symbolically clearing away the old year's misfortune and welcoming the new year with a fresh, purified space. Homes are decorated with kadomatsu, traditional bamboo and pine arrangements placed at entrances to welcome ancestral spirits, and shimekazari, sacred straw ropes believed to ward off evil spirits and invite good fortune. On New Year's morning, families traditionally eat osechi ryori, an elaborate assortment of symbolic foods carefully arranged in beautiful lacquered boxes, with each dish carrying specific meaning, such as black beans called kuromame representing health and hard work, and kazunoko herring roe symbolizing fertility and many descendants. Children eagerly anticipate receiving otoshidama, money gifts given in decorated envelopes by parents, grandparents, and relatives. Many families visit shrines or temples for hatsumode, the year's first prayer visit, dressed in their finest clothes, sometimes traditional kimono, to pray for health, happiness, and good fortune throughout the coming year. Watching the first sunrise of the year, called hatsuhinode, is considered especially auspicious, with families sometimes travelling to scenic locations specifically to witness this meaningful beginning."
+    },
+    {
+      "key": "hinamatsuri",
+      "title": "Hinamatsuri — Doll Festival for Girls",
+      "text": "Hinamatsuri, celebrated on March third, is a beautiful traditional festival dedicated to praying for the health, happiness, and proper growth of young girls, with families displaying elaborate sets of ornamental dolls representing the Emperor, Empress, and their court, arranged on a tiered platform covered in red fabric within the home throughout the festival period. These hina dolls, often passed down through generations or specially purchased when a daughter is born, are traditionally displayed beginning in February and must be carefully put away promptly after March third, as superstition holds that delaying their removal might delay a daughter's marriage. The doll arrangement typically includes seven or more tiers, with the Emperor and Empress dolls placed at the top, followed by ladies-in-waiting, musicians, and ministers, each carefully dressed in elaborate traditional Heian-period court costume, representing the height of refined imperial culture from over a thousand years ago. Families celebrate with special foods associated with the festival, including hina arare, colourful sweet rice crackers, chirashi sushi, a colourful scattered sushi dish, and hishimochi, distinctive diamond-shaped rice cakes layered in pink, white, and green, each colour carrying symbolic meaning related to health, purity, and the arrival of spring. Young girls often wear special kimono for the occasion, and many communities host public displays of elaborate hina doll arrangements, sometimes featuring hundreds of steps covered with thousands of dolls. The festival beautifully combines artistic tradition, family celebration, and heartfelt wishes for daughters' wellbeing and bright futures."
+    },
+    {
+      "key": "tanabata",
+      "title": "Tanabata — The Star Festival",
+      "text": "Tanabata, celebrated on July seventh, is a romantic and poetic festival based on a beautiful legend about two star-crossed celestial lovers, Orihime and Hikoboshi, represented by the stars Vega and Altair, who according to the ancient story are separated by the Milky Way and permitted to meet only once each year on this special night. The legend tells of Orihime, a skilled weaver, and Hikoboshi, a cowherd, who fell deeply in love and neglected their celestial duties, leading the Sky King to separate them across the Milky Way as punishment, allowing them to reunite only once yearly if they have worked diligently throughout the rest of the year. To celebrate, people throughout Japan write their wishes on colourful strips of paper called tanzaku, then hang them on bamboo branches decorated with intricate paper ornaments, hoping their hopes and dreams will be granted, much as the celestial lovers hope to successfully reunite. Cities throughout Japan host elaborate Tanabata festivals featuring beautiful, towering bamboo and paper decorations lining shopping streets, traditional music, and festive food stalls, with some celebrations, particularly in Sendai, drawing enormous crowds to witness spectacularly decorated displays. Children particularly enjoy writing their wishes on tanzaku paper, often hoping for things like academic success, family health, or simply happiness, before carefully tying their wishes to the bamboo branches. The festival beautifully combines astronomical observation, romantic legend, and the universal human practice of hoping and wishing for better futures, creating a meaningful summer celebration treasured throughout Japan."
+    },
+    {
+      "key": "obon_festival",
+      "title": "Obon — Honouring Ancestors",
+      "text": "Obon, typically celebrated in mid-August, represents one of Japan's most spiritually significant traditions, a Buddhist festival during which families honour and welcome back the spirits of their deceased ancestors, who are believed to return home during this special period to be reunited briefly with their living family members. Families traditionally clean ancestral graves in the days before Obon begins, and many people travel back to their hometowns to be with extended family during this important period, creating one of the busiest travel periods throughout Japan as the entire country pauses to honour family connections across generations. Homes traditionally display small lanterns called chochin to help guide ancestral spirits home, with families also preparing special altar displays featuring favourite foods of deceased relatives and incense offerings, maintaining important spiritual connection throughout the festival period. One of the most beautiful and recognizable Obon traditions is Bon Odori, traditional folk dancing performed at community gatherings, often in temple courtyards or public squares, with participants of all ages dancing in circles to traditional music, wearing yukata, casual summer kimono, creating a joyful, communal atmosphere despite the festival's deeper spiritual significance honouring deceased family members. The festival traditionally concludes with toro nagashi, a moving ceremony where families release small paper lanterns onto rivers or the sea, symbolically guiding ancestral spirits back to the spirit world after their brief visit home. Obon beautifully balances solemn ancestral reverence with joyful community celebration, reflecting deep Japanese cultural values around family continuity, respect for ancestors, and maintaining meaningful connection across generations even beyond death."
+    },
+    {
+      "key": "cherry_blossom_hanami",
+      "title": "Hanami — Cherry Blossom Viewing",
+      "text": "Hanami, the beloved tradition of flower viewing, particularly celebrating the brief but spectacular blooming of cherry blossoms called sakura, represents one of Japan's most cherished cultural traditions, with the entire country eagerly tracking the cherry blossom forecast each spring and gathering enthusiastically beneath blooming trees to appreciate their fleeting, extraordinary beauty. The tradition dates back well over a thousand years, originally practised among the imperial court before gradually spreading throughout Japanese society, with the practice carrying deep philosophical significance connected to Buddhist concepts of impermanence, as cherry blossoms typically bloom magnificently for only about one to two weeks before falling, beautifully symbolizing the transient, precious nature of life itself. During hanami season, parks, riverbanks, and temple grounds throughout Japan fill with families, friends, and colleagues spreading blue plastic sheets beneath blooming cherry trees, enjoying picnics, traditional foods, and often celebratory drinks while admiring the delicate pink and white blossoms overhead, with many popular viewing locations becoming extremely crowded during peak bloom periods. Companies and organizations often host their own hanami gatherings, with employees sometimes arriving early to reserve good viewing spots beneath the trees for colleagues arriving later in the day, reflecting the social and communal importance placed on this seasonal celebration. Many cities and temples hold special evening illumination events called yozakura, where cherry trees are beautifully lit, creating a magical atmosphere quite different from daytime viewing. Hanami represents far more than simple flower appreciation, embodying important Japanese aesthetic and philosophical values around recognizing and treasuring beauty precisely because of its temporary, fleeting nature."
+    },
+    {
+      "key": "shichigosan",
+      "title": "Shichi-Go-San — Children's Growth Celebration",
+      "text": "Shichi-Go-San, literally meaning seven-five-three, is a traditional Japanese celebration held on November fifteenth, honouring the growth and wellbeing of children at specific significant ages, three and seven for girls, and three and five for boys, with families visiting Shinto shrines to pray for their children's continued health, happiness, and protection as they grow. The specific ages chosen for celebration historically corresponded to important developmental milestones in traditional Japanese society, with three representing the age when children traditionally were first permitted to grow their hair after early childhood head-shaving customs, five marking when boys first wore hakama, traditional formal trousers, and seven representing when girls first wore an obi, the formal sash, with traditional kimono rather than simpler cord-tied garments. On the day of celebration, children dress in elaborate traditional clothing, often kimono for the occasion, sometimes specially purchased or rented for this important milestone, with families taking great care preparing their children's appearance, including traditional hairstyles and sometimes light makeup for girls. Families visit local shrines together, where children receive blessings from Shinto priests, followed by family photographs capturing this important milestone, often taken at professional photography studios specializing in these traditional celebratory portraits. A distinctive treat associated with the celebration is chitose ame, meaning thousand-year candy, long, thin red and white striped candy sticks presented in decorative bags featuring cranes and turtles, both symbols of longevity in Japanese culture, given to children as a wish for their long, healthy life. Shichi-Go-San beautifully combines religious blessing, family celebration, and meaningful cultural tradition marking important childhood developmental milestones."
+    },
+    {
+      "key": "tea_ceremony",
+      "title": "Sado — The Japanese Tea Ceremony",
+      "text": "Sado, the traditional Japanese tea ceremony, also called chanoyu, represents one of Japan's most refined and philosophically significant cultural practices, transforming the simple act of preparing and serving matcha, powdered green tea, into a deeply meaningful ritual emphasizing harmony, respect, purity, and tranquility, principles fundamental to traditional Japanese aesthetic and spiritual values. The practice developed over many centuries, significantly refined during the sixteenth century particularly through the teachings of the influential tea master Sen no Rikyu, who established core principles still followed by tea practitioners today, emphasizing simplicity, mindful attention to every detail, and creating a peaceful, harmonious experience for both host and guests. A proper tea ceremony follows precisely choreographed movements and procedures, with hosts spending years studying and practising the exact sequence of preparing the tea room, arranging flowers and seasonal decorations, selecting appropriate tea utensils, and performing the precise, graceful movements required to properly whisk and serve matcha tea to guests. The tea room itself, often a small, simple structure separate from the main house, embodies important aesthetic principles, typically featuring minimal decoration, natural materials, and a small entrance requiring guests to bow as they enter, symbolically leaving behind worldly status and ego before participating in the shared experience of the ceremony. Guests participate in their own carefully prescribed etiquette, including specific ways of receiving, admiring, and drinking from the tea bowl, with conversation typically focused on appreciating the tea, utensils, and seasonal beauty rather than mundane daily matters. Learning the tea ceremony traditionally requires many years of dedicated study under an experienced teacher, with the practice continuing to be valued throughout Japan as an important means of cultivating mindfulness, aesthetic appreciation, and deep respect for tradition and human connection."
+    },
+    {
+      "key": "kodomo_no_hi",
+      "title": "Kodomo no Hi — Children's Day",
+      "text": "Kodomo no Hi, Children's Day, celebrated on May fifth, is a national holiday throughout Japan dedicated to celebrating children's happiness and wishing for their healthy growth and bright futures, originally focused particularly on boys before evolving to celebrate all children's wellbeing. The most visually striking tradition associated with this celebration is the flying of koinobori, colourful carp-shaped windsocks, with families displaying these vibrant decorations outside homes, with the carp symbolizing strength, courage, and perseverance, drawing from an ancient Chinese legend describing a carp that swam upstream against powerful currents to eventually transform into a powerful dragon, representing the hope that children will similarly overcome life's challenges with determination and strength. Traditional koinobori displays typically feature multiple carp of different sizes and colours representing different family members, with the largest black carp representing the father, followed by progressively smaller red, blue, and additional colourful carp representing mother and children, creating a beautiful, symbolic family display fluttering in the spring breeze. Families traditionally display warrior dolls called gogatsu ningyo, along with miniature samurai helmets called kabuto, symbolizing strength and protection, hoping to instill similar courage and resilience in their children. Special foods associated with the celebration include kashiwa mochi, sweet rice cakes wrapped in oak leaves, with the oak leaf symbolically representing family continuity since oak trees traditionally don't drop old leaves until new ones have grown, and chimaki, rice dumplings wrapped in bamboo leaves. The holiday beautifully combines symbolic tradition, family celebration, and heartfelt wishes for children's strength, health, and successful future achievement."
+    },
+    {
+      "key": "japanese_calligraphy",
+      "title": "Shodo — The Art of Japanese Calligraphy",
+      "text": "Shodo, traditional Japanese calligraphy, represents one of Japan's most revered artistic and disciplinary practices, transforming the writing of Japanese characters using a brush, ink, and careful technique into a deeply meditative art form that has been practised and refined for well over a thousand years, drawing significant influence from Chinese calligraphic traditions while developing distinctively Japanese aesthetic principles and styles. Students of shodo traditionally begin by learning proper posture, brush grip, and the correct preparation of ink by carefully grinding an ink stick against an inkstone with water, a deliberately slow, mindful process believed to help calm and focus the mind before beginning actual writing practice. Mastering shodo requires years of dedicated practice, with students progressing through different calligraphic styles, beginning with kaisho, the clear, carefully formed block style most similar to standard printed characters, before advancing to more fluid, expressive styles including gyosho, semi-cursive script, and eventually sosho, highly cursive, flowing script that requires tremendous skill and artistic sensitivity to execute beautifully. The practice emphasizes not merely technical accuracy but capturing proper spirit and energy within each brushstroke, with master calligraphers believed to express their inner character and emotional state through the quality, rhythm, and flow of their writing, making shodo as much a spiritual and philosophical practice as a technical artistic skill. Many Japanese schoolchildren learn basic shodo techniques as part of their education, often practising during New Year celebrations through kakizome, the traditional first calligraphy writing of the new year, believed to set positive intentions and aspirations. Shodo continues to be highly valued throughout Japan, both as a respected traditional art form and as a meaningful practice for cultivating patience, focus, and aesthetic sensitivity."
+    },
+    {
+      "key": "japanese_bowing",
+      "title": "Ojigi — The Art of Bowing",
+      "text": "Ojigi, the traditional Japanese practice of bowing, represents far more than simple physical gesture, embodying deeply important cultural values around respect, humility, and proper social relationship that remain fundamental to daily interaction throughout Japanese society, with the practice carrying nuanced meaning depending on the depth, duration, and context of each specific bow. Japanese children learn proper bowing etiquette from a very young age, understanding that bowing serves multiple important social functions, including greeting others, expressing gratitude, offering apology, showing respect to elders or those of higher social status, and marking the beginning and conclusion of various activities or relationships. Different types of bows carry distinct meanings and appropriate contexts, with a slight, casual bow called eshaku, typically a fifteen-degree angle, used for casual greetings among peers or acquaintances, while a more formal bow called keirei, approximately thirty degrees, demonstrates greater respect appropriate for business situations or addressing superiors, and the deepest, most formal bow called saikeirei, sometimes reaching forty-five degrees or more, reserved for the most serious situations, including sincere apology or showing profound respect. The proper execution of ojigi traditionally requires maintaining a straight back, keeping hands at one's sides or properly positioned in front of the body depending on gender and context, with the eyes typically lowered respectfully rather than maintaining direct eye contact during the bow itself, distinguishing Japanese bowing etiquette from many Western greeting customs. This deeply ingrained cultural practice reflects broader Japanese values emphasizing group harmony, proper social hierarchy, and the importance of nonverbal communication in maintaining respectful, appropriate relationships throughout both personal and professional interactions."
+    },
+    {
+      "key": "japanese_origami",
+      "title": "Origami — The Art of Paper Folding",
+      "text": "Origami, the traditional Japanese art of paper folding, transforms simple, unmarked squares of paper into intricate, beautiful three-dimensional forms through precise folding techniques alone, without cutting or gluing, representing a beloved cultural tradition that combines mathematical precision, artistic creativity, and patient, mindful practice cherished by people of all ages throughout Japan. The practice's origins trace back many centuries, with paper folding initially associated with formal ceremonial and religious purposes before gradually evolving into the diverse decorative and recreational art form widely practised and appreciated today. Among the most iconic and beloved origami forms is the crane, traditionally associated with good fortune, longevity, and peace, with the popular tradition of folding one thousand paper cranes, called senbazuru, believed to grant a wish or bring healing to someone facing illness, a tradition that gained particular international significance through the moving story of Sadako Sasaki, a young girl who folded cranes while battling illness following the atomic bombing of Hiroshima, inspiring origami cranes to become powerful international symbols of peace. Learning basic origami techniques represents a common, cherished childhood experience throughout Japan, with children typically learning simple forms like cranes, boats, and balloons from parents, grandparents, or teachers, developing fine motor skills, patience, and spatial reasoning through the careful, methodical folding process. Beyond traditional decorative and recreational applications, origami principles have increasingly influenced serious scientific and engineering applications, including innovative approaches to spacecraft solar panel design and medical device development, demonstrating how this traditional artistic practice continues finding meaningful contemporary relevance. For Japanese families, sharing origami techniques across generations represents a cherished way of passing down cultural tradition while developing valuable skills and creating beautiful, meaningful objects through patient, careful practice."
+    },
+    {
+      "key": "japanese_furoshiki",
+      "title": "Furoshiki — The Art of Wrapping Cloth",
+      "text": "Furoshiki, traditional Japanese wrapping cloth, represents a beautifully practical and environmentally conscious cultural tradition, using a single square piece of fabric, carefully folded and tied using various traditional techniques, to wrap and transport virtually any object, from gifts and bento lunch boxes to clothing and furniture, reflecting important Japanese cultural values around resourcefulness, aesthetic beauty, and environmental sustainability long before modern environmental consciousness movements. The practice dates back many centuries, with furoshiki historically used by merchants transporting goods and individuals carrying personal belongings, with the versatile fabric squares serving practical transportation purposes while also functioning as beautiful decorative objects, often featuring traditional patterns, seasonal motifs, or family crests passed down through generations. Learning various furoshiki folding and tying techniques traditionally formed an important part of Japanese domestic education, with different wrapping methods appropriate for different shaped objects, occasions, and practical purposes, ranging from simple, quick wrapping techniques for everyday items to more elaborate, decorative methods reserved for special gift-giving occasions. The practice experienced renewed popularity in recent decades as environmental awareness has grown, with furoshiki increasingly promoted as an elegant, reusable alternative to disposable gift wrapping paper and plastic shopping bags, reflecting traditional Japanese wisdom around resourcefulness and minimizing waste that resonates strongly with contemporary environmental concerns. Beyond practical transportation and gift-wrapping purposes, mastering furoshiki techniques represents a meaningful way of connecting with traditional Japanese aesthetic sensibilities, emphasizing thoughtful presentation, careful attention to detail, and finding beauty in simple, sustainable everyday practices that have been refined and treasured throughout many generations of Japanese cultural tradition."
+    },
+    {
+      "key": "japanese_bento",
+      "title": "Bento — The Art of the Lunch Box",
+      "text": "Bento, the traditional Japanese boxed lunch, represents far more than simple convenient meal preparation, embodying important cultural values around nutritional balance, aesthetic presentation, and the thoughtful care parents, particularly mothers, traditionally invest in preparing meaningful, beautifully arranged meals for family members, especially children attending school. A properly prepared bento traditionally balances rice or noodles, protein, and vegetables, with careful attention paid not merely to nutritional content but to visual presentation, colour balance, and the thoughtful arrangement of different food components within the compact box, reflecting broader Japanese aesthetic principles that value beauty and careful attention even in everyday, practical contexts. Many Japanese mothers traditionally invest considerable time and creativity preparing their children's school bento, sometimes creating elaborate kyaraben, character bento, featuring rice and other foods carefully shaped and decorated to resemble popular characters, animals, or seasonal themes, particularly for younger children, representing a meaningful, creative expression of parental care and love communicated through thoughtfully prepared food. Traditional bento boxes themselves often hold cultural significance, with families sometimes using boxes passed down through generations or selecting boxes decorated with seasonal or meaningful designs, while convenience store and restaurant bento have also become an integral, convenient part of contemporary Japanese daily life, available in countless varieties throughout train stations, convenience stores, and restaurants nationwide. The tradition of carefully preparing and packing bento, whether elaborate homemade creations or convenient store-bought options, reflects deeply ingrained Japanese cultural values around mindful eating, nutritional balance, aesthetic presentation, and the meaningful care invested in daily food preparation that continues to be treasured and practised throughout contemporary Japanese family life."
+    },
+    {
+      "key": "japanese_onsen",
+      "title": "Onsen — Hot Spring Bathing Culture",
+      "text": "Onsen, traditional Japanese hot spring bathing, represents a deeply cherished cultural and recreational tradition, taking advantage of Japan's abundant volcanic geology to create naturally heated mineral baths that families and communities have enjoyed for therapeutic, social, and recreational purposes for many centuries throughout the country. Visiting an onsen traditionally follows specific important etiquette, with bathers required to thoroughly wash and rinse their entire body at provided washing stations before entering the communal bathing area, ensuring the shared hot spring water remains clean for all bathers, reflecting important Japanese cultural values around cleanliness, consideration for others, and proper social conduct in shared spaces. Traditional onsen are typically segregated by gender, with bathers entering completely without clothing, a practice that may initially seem unusual to visitors from other cultures but reflects deeply established Japanese cultural norms treating the communal bathing experience as natural, healthy, and entirely appropriate rather than carrying the same connotations it might in other cultural contexts. Many onsen are beautifully situated to take advantage of stunning natural surroundings, with outdoor baths called rotenburo allowing bathers to soak in naturally heated mineral waters while enjoying views of mountains, forests, or other scenic landscapes, particularly magical during winter months when bathers can enjoy warm water while surrounded by snow. Families traditionally enjoy visiting onsen together, particularly during holiday periods or special trips, with the relaxing, therapeutic bathing experience considered an important way of relieving stress, promoting physical wellness, and spending meaningful quality time together away from daily routines and responsibilities. The onsen tradition beautifully combines Japan's natural geological resources, important health and wellness practices, and significant social and family bonding opportunities into a cherished cultural institution enjoyed by people throughout the country."
+    },
+    {
+      "key": "japanese_seijin_shiki",
+      "title": "Seijin Shiki — Coming of Age Day",
+      "text": "Seijin Shiki, Coming of Age Day, celebrated on the second Monday of January, marks an important national holiday throughout Japan, recognizing young people who have turned or will turn twenty years old during that particular year, the age traditionally marking the legal transition into adulthood in Japanese society, with elaborate ceremonies, family celebration, and significant personal milestone recognition surrounding this important transition. Local governments throughout Japan organize formal ceremonies for young adults reaching this milestone, typically held at city halls or community centres, featuring speeches from local officials welcoming new adults into full participation in society, along with various commemorative activities and opportunities for former classmates to reunite and celebrate together. Young women traditionally wear elaborate, often very expensive furisode, a particularly formal style of kimono featuring long, flowing sleeves reserved specifically for unmarried young women, frequently rented for the occasion given the significant cost of these elaborate garments, with hair and makeup professionally styled to complement the formal traditional attire. Young men typically wear formal suits or, less commonly, traditional male kimono and hakama for the occasion, though Western-style formal attire has become increasingly common for male participants in recent decades. Families often invest considerable time, expense, and emotional significance in preparing for this celebration, with parents sometimes reflecting emotionally on their child's journey from childhood to adulthood, while young adults themselves often experience meaningful reflection on their developing identity, responsibilities, and future aspirations as they formally enter adult society. The celebration beautifully combines important civic recognition, family celebration, and meaningful personal reflection marking this significant life transition."
+    },
+    {
+      "key": "japanese_setsubun",
+      "title": "Setsubun — Bean-Throwing Festival",
+      "text": "Setsubun, celebrated on February third or fourth, traditionally marks the day before the beginning of spring according to the old lunar calendar, observed throughout Japan with the distinctive and beloved tradition of mamemaki, bean throwing, believed to drive away evil spirits and bad fortune while welcoming good luck for the coming year. The central tradition involves throwing roasted soybeans, either outside the home or at a family member wearing an oni, demon, mask, while shouting the traditional phrase oni wa soto, fuku wa uchi, meaning demons out, fortune in, with this energetic, playful ritual believed to purify the home and household members of misfortune while inviting good luck and happiness for the year ahead. Many families incorporate the tradition of eating the same number of beans as one's age, plus often one additional bean for good luck in the coming year, believed to ensure good health throughout the following twelve months. Children particularly enjoy Setsubun celebrations, often excitedly throwing beans at a parent or family member playfully dressed as the oni demon, creating joyful, energetic family fun while teaching children about this meaningful traditional practice. Many temples and shrines throughout Japan host larger public Setsubun celebrations, sometimes featuring celebrities or sumo wrestlers participating in elaborate bean-throwing ceremonies before large crowds. Another popular Setsubun tradition involves eating ehomaki, an uncut sushi roll, while facing a specific lucky direction determined annually, eating the entire roll in complete silence while making a wish, believed to bring good fortune if properly completed. Setsubun beautifully combines playful family tradition, symbolic spiritual purification, and meaningful seasonal transition marking the traditional beginning of spring throughout Japan."
+    },
+    {
+      "key": "japanese_moon_viewing",
+      "title": "Tsukimi — Moon Viewing Festival",
+      "text": "Tsukimi, the traditional Japanese moon-viewing festival, celebrates the beauty of the full autumn moon, typically occurring in September, with families and friends gathering to appreciate the moon's beauty while enjoying traditional seasonal foods and reflecting on the changing seasons, representing a beautifully poetic and contemplative cultural tradition with roots extending back many centuries to aristocratic moon-viewing parties during Japan's Heian period. Traditional Tsukimi celebrations typically involve displaying decorative arrangements featuring japanese pampas grass called susuki, believed to ward off evil spirits while symbolically welcoming the rice harvest's protective deity, alongside small, round white rice dumplings called tsukimi dango, traditionally stacked in pyramid formations, with their round shape and white colour symbolically representing the full moon itself. Families traditionally select a location offering clear views of the moon, whether a garden, balcony, or scenic outdoor location, setting up simple but meaningful viewing arrangements where they can comfortably sit together appreciating the moon's beauty while enjoying seasonal foods and quiet conversation. The tradition carries connections to Japan's agricultural calendar and harvest celebrations, with the autumn full moon historically marking an important seasonal transition connected to rice harvest timing, reflected in some of the traditional foods and customs associated with the celebration. Many families also incorporate seasonal produce into their Tsukimi celebrations, particularly foods associated with autumn harvest, including sweet potatoes, chestnuts, and other seasonal vegetables and fruits available during this time of year. The contemplative, peaceful nature of Tsukimi celebrations, focused on quietly appreciating natural beauty rather than elaborate festivity, reflects important Japanese aesthetic and philosophical values emphasizing mindful appreciation of nature's beauty and the meaningful passage of seasons throughout the year."
+    },
+    {
+      "key": "japanese_school_culture",
+      "title": "Japanese School Traditions",
+      "text": "Japanese schools maintain distinctive cultural traditions that significantly shape childhood experiences throughout Japan, with practices emphasizing collective responsibility, respect, and discipline that differ notably from educational approaches in many other countries, reflecting deeply held cultural values around community, cleanliness, and personal responsibility instilled from an early age. One particularly notable tradition involves students themselves, rather than dedicated janitorial staff, taking responsibility for cleaning their own classrooms and school facilities through a daily practice called souji, with students working together in small groups to sweep floors, clean windows, and tidy shared spaces, instilling important values around taking ownership of one's environment and contributing meaningfully to community wellbeing from a young age. Many Japanese elementary schools require students to wear distinctive uniforms, including the iconic randoseru, a sturdy leather backpack traditionally given to children beginning first grade, often a meaningful gift from grandparents, designed to last throughout the entire six years of elementary education. School lunch, called kyuushoku, represents another distinctive tradition, with students typically eating balanced, nutritious meals together in their classrooms rather than separate cafeterias, often taking turns serving food to classmates, with the shared meal experience considered an important opportunity for developing social skills and appreciation for nutritious eating. Japanese schools also place significant emphasis on bowing and proper greeting etiquette between students and teachers, reflecting broader cultural values around respect for educators and proper social hierarchy. These distinctive educational traditions reflect deeply held Japanese cultural values prioritizing collective responsibility, respect for community spaces, and developing children's character alongside academic knowledge."
+    },
+    {
+      "key": "japanese_gardens",
+      "title": "Japanese Gardens — Living Art",
+      "text": "Traditional Japanese gardens represent one of the country's most sophisticated and philosophically meaningful artistic traditions, carefully designed landscapes that go far beyond simple decorative planting, instead creating deeply contemplative spaces that reflect important Buddhist and Shinto philosophical principles around nature, impermanence, and the cultivation of peaceful, mindful awareness. Japanese garden design traditionally emphasizes careful asymmetrical balance rather than the formal symmetry common in many Western garden traditions, with skilled garden designers carefully considering every element's placement, including rocks, water features, carefully pruned trees, and pathways, to create naturalistic yet deliberately composed scenes that change meaningfully throughout the seasons and even throughout a single day as light and shadow shift across the landscape. Several distinct garden styles developed throughout Japanese history, including karesansui, dry landscape gardens using carefully raked gravel or sand to represent flowing water alongside strategically placed rocks symbolizing mountains or islands, creating contemplative spaces particularly associated with Zen Buddhist temples meant to encourage meditative reflection. Strolling gardens, designed to be experienced through walking along carefully planned paths that reveal different scenic views at each turn, represent another important traditional style, often featuring ponds, bridges, and carefully positioned viewing points designed to create an evolving, narrative experience as visitors move through the carefully composed landscape. Many traditional Japanese gardens incorporate borrowed scenery, called shakkei, deliberately incorporating views of distant mountains or other natural features beyond the garden's actual boundaries into the overall visual composition. Japanese families often maintain smaller-scale traditional garden elements even in modest home settings, reflecting the deeply ingrained cultural value placed on maintaining meaningful connection with carefully cultivated natural beauty in daily life."
+    },
+    {
+      "key": "japanese_kimono",
+      "title": "Kimono — Traditional Japanese Dress",
+      "text": "The kimono, Japan's traditional garment, represents far more than simply historical clothing, embodying sophisticated artistic tradition, seasonal awareness, and important cultural meaning that continues to hold significance throughout contemporary Japanese society, despite Western-style clothing becoming standard for most daily wear since the late nineteenth century. Traditional kimono construction follows precise, time-honoured techniques, with the garment created from a single bolt of fabric carefully cut and sewn into the distinctive straight-seamed, T-shaped silhouette, with the specific way a kimono is worn, including how it's wrapped and the styling of the obi sash, carrying important meaning regarding the wearer's age, marital status, and the formality of the occasion. Different kimono styles serve distinct purposes throughout Japanese cultural life, with furisode, featuring long, flowing sleeves, traditionally worn by unmarried young women for formal occasions including Coming of Age Day celebrations, while more subdued tomesode styles, featuring shorter sleeves and elegant patterns typically only at the hem, are traditionally worn by married women at formal events including weddings. Kimono patterns and colours traditionally reflect seasonal awareness, with specific motifs, such as cherry blossoms for spring or maple leaves for autumn, carefully selected to complement the current season, reflecting deeply held Japanese aesthetic values emphasizing harmony with nature's cyclical changes. Properly wearing a traditional kimono requires considerable skill and often professional assistance, with the elaborate process of correctly wrapping, folding, and securing the garment, along with tying the obi sash in proper decorative knots, representing specialized knowledge that many Japanese families maintain even as everyday kimono wearing has become less common, reserved primarily for special ceremonial occasions, festivals, and important cultural celebrations."
+    }
+  ],
+  "stories": [
+    {
+      "key": "momotaro",
+      "title": "桃太郎",
+      "translit": "Momotarou",
+      "gloss": "Peach Boy",
+      "lines": [
+        {
+          "text": "昔々、おじいさんとおばあさんがいました。",
+          "gloss": "Long ago, there was an old man and an old woman."
+        },
+        {
+          "text": "おばあさんは川で洗濯をしていました。",
+          "gloss": "The old woman was washing clothes by the river."
+        },
+        {
+          "text": "大きな桃が川を流れてきました。",
+          "gloss": "A big peach came floating down the river."
+        },
+        {
+          "text": "おばあさんはその桃を家に持ち帰りました。",
+          "gloss": "The old woman brought the peach home."
+        },
+        {
+          "text": "桃を切ると、中から男の子が出てきました!",
+          "gloss": "When they cut the peach, a boy came out!"
+        },
+        {
+          "text": "二人はとても驚き、喜びました。",
+          "gloss": "The two were very surprised and happy."
+        },
+        {
+          "text": "彼らはその子を桃太郎と名付けました。",
+          "gloss": "They named him Momotaro."
+        },
+        {
+          "text": "桃太郎は強く、優しい子に育ちました。",
+          "gloss": "Momotaro grew up strong and kind."
+        },
+        {
+          "text": "ある日、村に鬼が現れました。",
+          "gloss": "One day, demons appeared in the village."
+        },
+        {
+          "text": "鬼は村人を困らせていました。",
+          "gloss": "The demons were troubling the villagers."
+        },
+        {
+          "text": "桃太郎は鬼を退治することを決めました。",
+          "gloss": "Momotaro decided to defeat the demons."
+        },
+        {
+          "text": "おばあさんはきびだんごを作ってくれました。",
+          "gloss": "The old woman made millet dumplings for him."
+        },
+        {
+          "text": "旅の途中、犬に会いました。",
+          "gloss": "On his journey, he met a dog."
+        },
+        {
+          "text": "犬はきびだんごをもらい、仲間になりました。",
+          "gloss": "The dog received a dumpling and became his friend."
+        },
+        {
+          "text": "次に猿、そしてキジにも会いました。",
+          "gloss": "Next he met a monkey, and then a pheasant."
+        },
+        {
+          "text": "皆できびだんごを分け合い、力を合わせました。",
+          "gloss": "They shared the dumplings and joined forces."
+        },
+        {
+          "text": "鬼ヶ島で激しい戦いがありました。",
+          "gloss": "There was a fierce battle on Demon Island."
+        },
+        {
+          "text": "桃太郎と仲間たちは鬼を倒しました!",
+          "gloss": "Momotaro and his friends defeated the demons!"
+        },
+        {
+          "text": "村人たちは大喜びで彼らを迎えました。",
+          "gloss": "The villagers welcomed them home with great joy."
+        },
+        {
+          "text": "勇気と友情が、何よりも大切な宝物です。",
+          "gloss": "Courage and friendship are the most precious treasures of all."
+        }
+      ]
+    },
+    {
+      "key": "urashima_taro",
+      "title": "浦島太郎",
+      "translit": "Urashima Tarou",
+      "gloss": "Taro Urashima",
+      "lines": [
+        {
+          "text": "浦島太郎という漁師がいました。",
+          "gloss": "There was a fisherman named Urashima Taro."
+        },
+        {
+          "text": "ある日、子供たちが亀をいじめていました。",
+          "gloss": "One day, children were teasing a turtle."
+        },
+        {
+          "text": "太郎は亀を助けて海に返しました。",
+          "gloss": "Taro saved the turtle and returned it to the sea."
+        },
+        {
+          "text": "数日後、その亀が戻ってきました。",
+          "gloss": "A few days later, the turtle came back."
+        },
+        {
+          "text": "亀は太郎に竜宮城へ行こうと誘いました。",
+          "gloss": "The turtle invited Taro to the Dragon Palace."
+        },
+        {
+          "text": "太郎は亀の背中に乗りました。",
+          "gloss": "Taro climbed onto the turtle's back."
+        },
+        {
+          "text": "二人は深い海の底へ向かいました。",
+          "gloss": "The two headed to the bottom of the deep sea."
+        },
+        {
+          "text": "竜宮城は美しく、輝いていました。",
+          "gloss": "The Dragon Palace was beautiful and shining."
+        },
+        {
+          "text": "乙姫様が太郎を温かく迎えました。",
+          "gloss": "Princess Otohime warmly welcomed Taro."
+        },
+        {
+          "text": "太郎は楽しい日々を過ごしました。",
+          "gloss": "Taro spent many happy days there."
+        },
+        {
+          "text": "しかし、彼は家族を恋しく思いました。",
+          "gloss": "However, he began to miss his family."
+        },
+        {
+          "text": "乙姫様は美しい玉手箱を贈りました。",
+          "gloss": "Princess Otohime gave him a beautiful jewelled box."
+        },
+        {
+          "text": "'絶対に開けないでください' と彼女は言いました。",
+          "gloss": "'Please never open it,' she said."
+        },
+        {
+          "text": "太郎は故郷へ戻りました。",
+          "gloss": "Taro returned to his hometown."
+        },
+        {
+          "text": "しかし、何もかもが変わっていました。",
+          "gloss": "But everything had changed."
+        },
+        {
+          "text": "彼の知っている人は誰もいませんでした。",
+          "gloss": "No one he knew was there anymore."
+        },
+        {
+          "text": "悲しくなった太郎は箱を開けてしまいました。",
+          "gloss": "Saddened, Taro opened the box."
+        },
+        {
+          "text": "白い煙が出て、太郎は急に年を取りました。",
+          "gloss": "White smoke came out, and Taro suddenly grew old."
+        },
+        {
+          "text": "実は何百年も経っていたのです。",
+          "gloss": "In fact, hundreds of years had passed."
+        },
+        {
+          "text": "約束を守ることの大切さを教えてくれる話です。",
+          "gloss": "This story teaches the importance of keeping promises."
+        }
+      ]
+    }
+  ]
 }
