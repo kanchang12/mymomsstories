@@ -24,7 +24,7 @@ def _stats():
         paid = cur.fetchone()["c"]
         cur.execute("SELECT COUNT(*) as c FROM subscriptions WHERE plan='trial'")
         trial = cur.fetchone()["c"]
-        cur.execute("SELECT COALESCE(SUM(amount_pence),0) as t FROM payment_events WHERE status IN ('activated','captured') AND gateway='paypal'")
+        cur.execute("SELECT COALESCE(SUM(amount_pence),0) as t FROM payment_events WHERE status IN ('activated','captured') AND gateway='stripe'")
         revenue_pence = cur.fetchone()["t"]
         cur.execute("SELECT COUNT(*) as c FROM activity_log WHERE created_at > NOW() - INTERVAL '7 days'")
         attempts_7d = cur.fetchone()["c"]

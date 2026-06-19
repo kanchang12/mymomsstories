@@ -1,28 +1,24 @@
 """
 routes/webhooks.py — Payment webhooks
-PayPal: /webhooks/paypal
+Stripe: /webhooks/stripe
 """
-import json
 from flask import Blueprint, request, jsonify
-from services.payments import handle_paypal_webhook, verify_paypal_webhook_signature
+from services.payments import handle_stripe_webhook, verify_stripe_webhook_signature
 
 webhooks_bp = Blueprint("webhooks", __name__)
 
 
-@webhooks_bp.route("/paypal", methods=["POST"])
-def paypal_webhook():
-    raw_body = request.get_data()
+@webhooks_bp.route("/stripe", methods=["POST"])
+def stripe_webhook():
+    raw_body   = request.get_data()
+    sig_header = request.headers.get("Stripe-Signature", "")
 
-    if not verify_paypal_webhook_signature(dict(request.headers), raw_body):
+    event = verify_stripe_webhook_signature(raw_body, sig_header)
+    if event is None:
         return jsonify({"error": "Invalid signature"}), 401
 
-    try:
-        event = json.loads(raw_body)
-    except Exception:
-        return jsonify({"error": "Bad JSON"}), 400
+    event_type  = event.get("type", "") if isinstance(event, dict) else event["type"]
+    data_object = event["data"]["object"]
 
-    event_type = event.get("event_type", "")
-    resource   = event.get("resource", {})
-
-    result = handle_paypal_webhook(event_type, resource)
+    result = handle_stripe_webhook(event_type, data_object)
     return jsonify(result), 200

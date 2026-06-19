@@ -17,7 +17,7 @@
     <li><strong>Child account:</strong> a nickname you choose (we ask you not to use a real name), a username and hashed password you set, country, language.</li>
     <li><strong>Activity records:</strong> which words/lines/customs/stories a child attempted, the text transcript of what they said, and a score. <strong>We do not store voice recordings.</strong> Speech is converted to text in the browser (or sent to Google's Gemini API for scoring) and only the resulting text and score are saved.</li>
     <li><strong>Usage minutes:</strong> how many minutes a child account is active each month, to track the 15-hour included usage and any overage.</li>
-    <li><strong>Billing:</strong> handled entirely by PayPal — we never see or store card details. We keep a record of subscription status and payment events (amount, date, success/failure) for accounting.</li>
+    <li><strong>Billing:</strong> handled entirely by Stripe — we never see or store card details. We keep a record of subscription status and payment events (amount, date, success/failure) for accounting.</li>
     <li><strong>Site analytics:</strong> Microsoft Clarity, on parent-facing and public pages only. It is deliberately excluded from any page a child is using.</li>
   </ul>
 
@@ -39,7 +39,7 @@
   <h2 style="font-size:1.1rem;margin:24px 0 8px">Where your data is processed</h2>
   <p style="line-height:1.7">
     Reading attempts are scored using Google's Gemini API, which may process data outside the UK/EEA
-    under Google's standard contractual clauses. Payment is processed by PayPal. Hosting is via our
+    under Google's standard contractual clauses. Payment is processed by Stripe. Hosting is via our
     cloud infrastructure provider.
   </p>
 

@@ -1,5 +1,5 @@
 """
-routes/parent.py — parent dashboard, add/manage children, PayPal billing,
+routes/parent.py — parent dashboard, add/manage children, Stripe billing,
 account-level controls (cancel subscription, delete account — GDPR).
 """
 import secrets
@@ -11,8 +11,8 @@ from routes.auth import login_required
 from services.content import get_language, list_languages
 from services.payments import (
     INCLUDED_MINUTES_PER_MONTH, OVERAGE_RATE_PER_HOUR_GBP,
-    get_subscription, create_paypal_subscription, activate_paypal_subscription,
-    cancel_paypal_subscription,
+    get_subscription, create_checkout_session, activate_checkout_session,
+    cancel_stripe_subscription,
 )
 
 parent_bp = Blueprint("parent", __name__)
@@ -178,36 +178,36 @@ def clear_data(child_id):
     return jsonify({"cleared": True, "rows_deleted": deleted})
 
 
-# ── PayPal subscription ────────────────────────────────────────────────────────
+# ── Stripe subscription ────────────────────────────────────────────────────────
 
-@parent_bp.route("/paypal/subscribe", methods=["POST"])
+@parent_bp.route("/stripe/subscribe", methods=["POST"])
 @login_required(role="parent")
-def paypal_subscribe():
+def stripe_subscribe():
     parent_id = session["user_id"]
     base_url  = request.host_url.rstrip("/")
-    result    = create_paypal_subscription(parent_id, base_url)
-    if result.get("approve_url"):
-        return jsonify({"ok": True, "approve_url": result["approve_url"]})
-    return jsonify({"error": result.get("error", "PayPal error")}), 500
+    result    = create_checkout_session(parent_id, base_url)
+    if result.get("checkout_url"):
+        return jsonify({"ok": True, "approve_url": result["checkout_url"]})
+    return jsonify({"error": result.get("error", "Stripe error")}), 500
 
 
-@parent_bp.route("/paypal/success")
+@parent_bp.route("/stripe/success")
 @login_required(role="parent")
-def paypal_success():
-    subscription_id = request.args.get("subscription_id")
-    parent_id       = session["user_id"]
-    if not subscription_id:
+def stripe_success():
+    session_id = request.args.get("session_id")
+    parent_id  = session["user_id"]
+    if not session_id:
         return redirect(url_for("parent.dashboard") + "?payment=failed")
-    result = activate_paypal_subscription(parent_id, subscription_id)
+    result = activate_checkout_session(parent_id, session_id)
     if result.get("ok"):
         return redirect(url_for("parent.dashboard") + "?payment=success")
     return redirect(url_for("parent.dashboard") + "?payment=failed")
 
 
-@parent_bp.route("/paypal/cancel")
+@parent_bp.route("/stripe/cancel")
 @login_required(role="parent")
-def paypal_cancel():
-    """Landed here if the parent backs out of the PayPal checkout itself —
+def stripe_cancel():
+    """Landed here if the parent backs out of Stripe Checkout itself —
     not the same as cancelling an active subscription, see below."""
     return redirect(url_for("parent.dashboard") + "?payment=cancelled")
 
@@ -215,15 +215,15 @@ def paypal_cancel():
 @parent_bp.route("/subscription/cancel", methods=["POST"])
 @login_required(role="parent")
 def subscription_cancel():
-    """Cancels an active paid subscription. Trial isn't a PayPal
+    """Cancels an active paid subscription. Trial isn't a Stripe
     subscription so there's nothing to cancel there — it just expires."""
     sub = get_subscription(session["user_id"])
-    paypal_sub_id = sub.get("paypal_subscription_id")
+    stripe_sub_id = sub.get("stripe_subscription_id")
 
-    if not paypal_sub_id:
+    if not stripe_sub_id:
         return jsonify({"error": "No active subscription to cancel"}), 400
 
-    result = cancel_paypal_subscription(paypal_sub_id)
+    result = cancel_stripe_subscription(stripe_sub_id)
     if not result.get("ok"):
         return jsonify({"error": result.get("error", "Could not cancel — try again or contact support")}), 500
 
@@ -243,16 +243,16 @@ def delete_account():
     children, activity logs, subscription record, payment events. Cascade
     deletes are set up at the DB level (ON DELETE CASCADE on parent_id /
     user_id foreign keys), so deleting the parent row does the rest.
-    Cancels any live PayPal subscription first so they're not still being
+    Cancels any live Stripe subscription first so they're not still being
     billed after the account is gone."""
     confirm_email = (request.form.get("confirm_email") or "").strip().lower()
     if confirm_email != session.get("username", "").strip().lower():
         return jsonify({"error": "Email didn't match — type your account email exactly to confirm"}), 400
 
     sub = get_subscription(session["user_id"])
-    paypal_sub_id = sub.get("paypal_subscription_id")
-    if paypal_sub_id and sub.get("status") == "active":
-        cancel_paypal_subscription(paypal_sub_id)  # best-effort, don't block deletion on this
+    stripe_sub_id = sub.get("stripe_subscription_id")
+    if stripe_sub_id and sub.get("status") == "active":
+        cancel_stripe_subscription(stripe_sub_id)  # best-effort, don't block deletion on this
 
     with get_cur() as cur:
         cur.execute("DELETE FROM users WHERE id=%s AND role='parent'", (session["user_id"],))

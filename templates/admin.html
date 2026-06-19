@@ -36,7 +36,7 @@
   <div id="tab-parents" class="tab-pane active">
     <div class="card tbl-wrap">
       <table>
-        <tr><th>Email</th><th>Name</th><th>Plan</th><th>Status</th><th>Children</th><th>Joined</th><th>PayPal ID</th></tr>
+        <tr><th>Email</th><th>Name</th><th>Plan</th><th>Status</th><th>Children</th><th>Joined</th><th>Stripe ID</th></tr>
         {% for s in subs %}
         <tr>
           <td>{{ s.username }}</td>
@@ -50,7 +50,7 @@
           </td>
           <td>{{ s.child_count }}</td>
           <td style="white-space:nowrap;font-size:0.8rem">{{ s.created_at.strftime('%d %b %Y') }}</td>
-          <td style="font-size:0.78rem;color:var(--ink-soft)">{{ s.paypal_subscription_id or '—' }}</td>
+          <td style="font-size:0.78rem;color:var(--ink-soft)">{{ s.stripe_subscription_id or '—' }}</td>
         </tr>
         {% else %}
         <tr><td colspan="7" style="color:var(--ink-soft)">No parents yet.</td></tr>

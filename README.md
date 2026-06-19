@@ -59,21 +59,18 @@ the identical line.
   Cyrillic content (Russian/Ukrainian) and Romanian's diacritics. The two
   stories per language are a title plus a short original synopsis, not a
   proper retelling — swap those in before this goes near real families.
-- **Billing: the £15/month base subscription is wired up, real, and tested
-  end to end** — `services/payments.py` (PayPal OAuth, auto-provisions its
-  own product+plan, caches the plan_id in `app_config`), `/parent/paypal/subscribe`
-  → PayPal approval → `/parent/paypal/success` activates it, `/webhooks/paypal`
-  keeps status in sync on renew/cancel/payment-failed. Same plumbing pattern
-  as aitutor/Cosmo's `services/payments.py`, simplified since this is one
-  flat plan with no per-child quantity or trial cycle. Needs real
-  `PAYPAL_CLIENT_ID`/`PAYPAL_SECRET` in `.env` to actually create the plan —
-  it'll throw on first subscribe attempt without them, not fail silently.
+- **Billing: the £15/month base subscription is wired up via Stripe Checkout**
+  — `services/payments.py` auto-provisions its own product+price, caches the
+  price_id in `app_config`. `/parent/stripe/subscribe` → Stripe Checkout
+  → `/parent/stripe/success` activates it (fast-path), `/webhooks/stripe`
+  keeps status in sync on renew/cancel/payment-failed (source of truth).
+  Needs real `STRIPE_SECRET_KEY` in `.env` to actually create the price —
+  it'll throw on first subscribe attempt without it, not fail silently.
   **What's still NOT wired:** the £1.50/hr overage past 15 included
   hours/month. It's tracked (`users.usage_minutes_this_month`) and shown on
-  the parent dashboard, but not auto-charged — PayPal's subscriptions API
-  only bills the fixed plan amount, so a variable top-up needs either PayPal
-  Reference Transactions (a separate approval) or Stripe metered billing
-  instead. Don't read the dashboard number as money already collected.
+  the parent dashboard, but not auto-charged — that needs Stripe metered
+  billing wired in separately. Don't read the dashboard number as money
+  already collected.
 
 ## Structure
 

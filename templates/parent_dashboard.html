@@ -31,7 +31,7 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
     {% if subscription.plan == 'trial' and not subscription.trial_exhausted %}
       <p style="font-weight:600">Free trial — {{ subscription.trial_days_left }} day{% if subscription.trial_days_left != 1 %}s{% endif %} left</p>
       <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:4px">After the trial, £{{ subscription.monthly_price }}/month keeps everything going. Subscribe any time.</p>
-      <button class="btn btn-outline" style="margin-top:12px" id="subscribeBtn" onclick="subscribe(this)">Subscribe with PayPal →</button>
+      <button class="btn btn-outline" style="margin-top:12px" id="subscribeBtn" onclick="subscribe(this)">Subscribe →</button>
     {% elif subscription.is_active %}
       <p style="font-weight:600">£{{ subscription.monthly_price }}/month — active ✓</p>
       <p style="font-size:0.85rem;color:var(--ink-soft);margin-top:4px">
@@ -42,7 +42,7 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
     {% else %}
       <p style="font-weight:600;color:var(--red)">Trial ended — subscribe to keep going</p>
       <p style="font-size:0.85rem;color:var(--ink-soft);margin:4px 0 12px">£{{ subscription.monthly_price }}/month, 15 hours per child included.</p>
-      <button class="btn btn-primary" id="subscribeBtn" onclick="subscribe(this)">Subscribe with PayPal →</button>
+      <button class="btn btn-primary" id="subscribeBtn" onclick="subscribe(this)">Subscribe →</button>
     {% endif %}
   </div>
 
@@ -245,15 +245,15 @@ async function clearData(childId, btn) {
 }
 
 async function subscribe(btn) {
-  btn.disabled = true; btn.textContent = "Redirecting to PayPal…";
+  btn.disabled = true; btn.textContent = "Redirecting to checkout…";
   try {
-    const r = await fetch('/parent/paypal/subscribe', {method:'POST'});
+    const r = await fetch('/parent/stripe/subscribe', {method:'POST'});
     const d = await r.json();
     if (d.approve_url) { window.location = d.approve_url; }
-    else { throw new Error(d.error || 'PayPal error'); }
+    else { throw new Error(d.error || 'Stripe error'); }
   } catch(e) {
     btn.disabled = false;
-    btn.textContent = btn.id === 'subscribeBtn' ? "Subscribe with PayPal →" : "Subscribe with PayPal →";
+    btn.textContent = "Subscribe →";
     alert("Couldn't start checkout: " + e.message);
   }
 }
