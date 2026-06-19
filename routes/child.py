@@ -114,6 +114,14 @@ def heartbeat():
     with get_cur() as cur:
         cur.execute("SELECT usage_minutes_this_month, usage_month FROM users WHERE id=%s", (session["user_id"],))
         row = cur.fetchone()
+
+        if row is None:
+            # Session points at a user that no longer exists — stale cookie
+            # (deleted account, or a dev DB reset). Clear it so the next
+            # request gets sent back to login instead of crashing here.
+            session.clear()
+            return jsonify({"error": "session_expired"}), 401
+
         minutes = row["usage_minutes_this_month"] or 0
         if row["usage_month"] != now_month:
             minutes = 0  # new month, fair-use counter resets

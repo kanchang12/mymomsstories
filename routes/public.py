@@ -34,6 +34,11 @@ def privacy():
     return render_template("privacy.html")
 
 
+@public_bp.route("/terms")
+def terms():
+    return render_template("terms.html")
+
+
 @public_bp.route("/videos")
 def videos():
     """Free public video library — no login required. Each video can carry

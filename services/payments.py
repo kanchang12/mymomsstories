@@ -58,6 +58,16 @@ def get_subscription(user_id: str) -> dict:
         cur.execute("SELECT * FROM subscriptions WHERE user_id=%s", (user_id,))
         row = cur.fetchone()
 
+    if row is None:
+        # Shouldn't happen — _ensure_subscription just ran — but never crash
+        # a dashboard load over it. Treat as no active plan.
+        return {
+            "plan": None, "status": None, "is_active": False,
+            "monthly_price": MONTHLY_PRICE_GBP,
+            "trial_days_left": None, "trial_exhausted": True,
+            "current_period_end": None, "paypal_subscription_id": None,
+        }
+
     plan   = row["plan"]
     status = row["status"]
 
@@ -287,6 +297,29 @@ def handle_paypal_webhook(event_type: str, resource: dict) -> dict:
         return {"ok": True, "action": "activated"}
 
     return {"ok": True, "action": "ignored"}
+
+
+def cancel_paypal_subscription(subscription_id: str, reason: str = "Cancelled by customer") -> dict:
+    """Cancels an active PayPal subscription. Local DB status is updated by
+    the caller — PayPal also sends a BILLING.SUBSCRIPTION.CANCELLED webhook
+    which handle_paypal_webhook() will pick up as a second confirmation."""
+    if not subscription_id:
+        return {"ok": False, "error": "No subscription on file"}
+    token = _paypal_token()
+    r = requests.post(
+        f"{PAYPAL_BASE}/v1/billing/subscriptions/{subscription_id}/cancel",
+        json={"reason": reason},
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        timeout=10,
+    )
+    if r.status_code in (204, 200):
+        return {"ok": True}
+    try:
+        detail = r.json().get("message", r.text)
+    except Exception:
+        detail = r.text
+    print(f"[paypal] cancel failed ({r.status_code}): {detail}")
+    return {"ok": False, "error": detail}
 
 
 def verify_paypal_webhook_signature(headers: dict, raw_body: bytes) -> bool:

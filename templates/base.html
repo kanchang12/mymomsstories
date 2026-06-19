@@ -89,13 +89,23 @@ tr:last-child td{border-bottom:none}
   </div>
 </nav>
 {% block content %}{% endblock %}
+<footer style="text-align:center;padding:24px 16px;font-size:0.78rem;color:var(--ink-soft)">
+  <a href="/terms" style="color:var(--ink-soft);text-decoration:underline">Terms</a>
+  &nbsp;·&nbsp;
+  <a href="/privacy" style="color:var(--ink-soft);text-decoration:underline">Privacy</a>
+  &nbsp;·&nbsp;
+  © 2026 LOVEUAD LTD
+</footer>
 {% if session.get('role') == 'child' %}
 <script>
   setInterval(() => {
     if (document.visibilityState !== 'visible') return;
     fetch('/child/api/heartbeat', {method:'POST'})
-      .then(r => r.json())
-      .then(d => document.dispatchEvent(new CustomEvent('mms-usage-update', {detail:d})))
+      .then(r => {
+        if (r.status === 401) { window.location = '/auth/login'; return null; }
+        return r.json();
+      })
+      .then(d => { if (d) document.dispatchEvent(new CustomEvent('mms-usage-update', {detail:d})); })
       .catch(() => {});
   }, 60000);
 </script>

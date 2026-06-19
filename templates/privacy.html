@@ -1,14 +1,72 @@
 {% extends "base.html" %}
 {% block title %}Privacy — My Mom's Stories{% endblock %}
 {% block content %}
-<div class="page" style="max-width:640px">
-  <h1 style="font-size:1.6rem;margin-bottom:14px">Privacy</h1>
-  <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px">
-    This is a placeholder. Replace with your real privacy policy before launch — at minimum it should cover
-    what's stored (account details, activity records, usage minutes), that children's voice recordings are
-    never stored (only the text transcript and a score), how parents can request full deletion via the
-    "Clear it, any time" control on their dashboard, and your contact details as the data controller
-    (LOVEUAD LTD).
+<div class="page" style="max-width:700px">
+  <h1 style="font-size:1.6rem;margin-bottom:6px">Privacy Policy</h1>
+  <p style="color:var(--ink-soft);font-size:0.85rem;margin-bottom:24px">Last updated: 19 June 2026</p>
+
+  <p style="margin-bottom:16px;line-height:1.7">
+    My Mom's Stories is operated by <strong>LOVEUAD LTD</strong> (Company No. 16838046), registered in
+    England &amp; Wales, based in Leeds, UK — the data controller for the personal data described below.
+    Contact: <a href="mailto:privacy@mymomsstories.com">privacy@mymomsstories.com</a>.
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">What we collect</h2>
+  <ul style="line-height:1.8;padding-left:20px">
+    <li><strong>Parent account:</strong> email address, hashed password (never stored in plain text), country, chosen heritage language.</li>
+    <li><strong>Child account:</strong> a nickname you choose (we ask you not to use a real name), a username and hashed password you set, country, language.</li>
+    <li><strong>Activity records:</strong> which words/lines/customs/stories a child attempted, the text transcript of what they said, and a score. <strong>We do not store voice recordings.</strong> Speech is converted to text in the browser (or sent to Google's Gemini API for scoring) and only the resulting text and score are saved.</li>
+    <li><strong>Usage minutes:</strong> how many minutes a child account is active each month, to track the 15-hour included usage and any overage.</li>
+    <li><strong>Billing:</strong> handled entirely by PayPal — we never see or store card details. We keep a record of subscription status and payment events (amount, date, success/failure) for accounting.</li>
+    <li><strong>Site analytics:</strong> Microsoft Clarity, on parent-facing and public pages only. It is deliberately excluded from any page a child is using.</li>
+  </ul>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Why we process this data</h2>
+  <p style="line-height:1.7">
+    To provide the service you've signed up for (contract), to charge the subscription you've agreed to
+    (contract), and for the legitimate interest of understanding how the product is used so we can improve
+    it (analytics, on parent-facing pages only).
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Children's data</h2>
+  <p style="line-height:1.7">
+    Child accounts are created and controlled by a parent — children do not sign up themselves. We ask
+    that real names not be used as the child's nickname. Activity transcripts and scores exist to show
+    parents their child's progress; they are visible only to that child's parent and to LOVEUAD LTD for
+    support purposes.
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Where your data is processed</h2>
+  <p style="line-height:1.7">
+    Reading attempts are scored using Google's Gemini API, which may process data outside the UK/EEA
+    under Google's standard contractual clauses. Payment is processed by PayPal. Hosting is via our
+    cloud infrastructure provider.
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">How long we keep it</h2>
+  <p style="line-height:1.7">
+    For as long as the account is active. If you delete your account, your data is permanently removed —
+    see below.
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Your rights</h2>
+  <ul style="line-height:1.8;padding-left:20px">
+    <li><strong>Access:</strong> everything a child has done is already visible on the parent dashboard's activity log.</li>
+    <li><strong>Erasure:</strong> use "Clear data" on any child's card to wipe just that child's activity history, or "Delete account" on your dashboard to permanently remove your account and every child account under it. This cannot be undone.</li>
+    <li><strong>Rectification:</strong> you can change a child's login username and password from the parent dashboard at any time.</li>
+    <li><strong>Portability / a copy of your data:</strong> email <a href="mailto:privacy@mymomsstories.com">privacy@mymomsstories.com</a> and we'll send what we hold on your account.</li>
+    <li><strong>Objection / complaint:</strong> contact us first; you can also complain to the UK Information Commissioner's Office (ico.org.uk).</li>
+  </ul>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Cookies</h2>
+  <p style="line-height:1.7">
+    We use a session cookie to keep you logged in (essential, no consent needed) and Microsoft Clarity for
+    analytics on non-child pages. No advertising cookies are used.
+  </p>
+
+  <h2 style="font-size:1.1rem;margin:24px 0 8px">Contact</h2>
+  <p style="line-height:1.7">
+    LOVEUAD LTD, Leeds, United Kingdom. <a href="mailto:privacy@mymomsstories.com">privacy@mymomsstories.com</a>
   </p>
 </div>
 {% endblock %}

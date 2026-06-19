@@ -98,11 +98,12 @@ async function openStop(stop) {
     currentItem._logKey = char; currentItem._logShown = char;
     body.innerHTML = `
       <div class="item-script" style="font-size:3.5rem;text-align:center">${char}
-        <button class="speak-btn" onclick="playAudio(${JSON.stringify(char)}, this)">🔊</button>
+        <button class="speak-btn" id="speakBtn">🔊</button>
       </div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic — say the sound</p>
       <div id="result"></div>`;
+    document.getElementById('speakBtn').onclick = function() { playAudio(char, this); };
 
   } else if (stop === 'words' || stop === 'lines') {
     const txt = currentItem.text;
@@ -110,12 +111,13 @@ async function openStop(stop) {
     currentItem._logKey = txt; currentItem._logShown = txt;
     body.innerHTML = `
       <div class="item-script">${txt}
-        <button class="speak-btn" onclick="playAudio(${JSON.stringify(txt)}, this)">🔊</button>
+        <button class="speak-btn" id="speakBtn">🔊</button>
       </div>
       <div class="item-gloss">${gloss}</div>
       <button class="mic-btn" id="mic-btn" onclick="startListening()">🎙️</button>
       <p style="text-align:center;color:var(--ink-soft);font-size:0.85rem">Tap the mic, then read it aloud</p>
       <div id="result"></div>`;
+    document.getElementById('speakBtn').onclick = function() { playAudio(txt, this); };
 
   } else if (stop === 'customs') {
     const title = currentItem.title || '';
@@ -123,11 +125,12 @@ async function openStop(stop) {
     currentItem._logKey = currentItem.key || title; currentItem._logShown = title;
     body.innerHTML = `
       <div class="item-script" style="font-size:1.4rem">${title}
-        <button class="speak-btn" onclick="playAudio(${JSON.stringify(title)}, this)">🔊</button>
+        <button class="speak-btn" id="speakBtn">🔊</button>
       </div>
       <div style="font-size:0.95rem;line-height:1.7;margin:12px 0 20px;color:var(--ink)">${text}</div>
       <button class="btn btn-primary" onclick="markRead()">I read this →</button>
       <div id="result"></div>`;
+    document.getElementById('speakBtn').onclick = function() { playAudio(title, this); };
 
   } else {
     // story — line by line with arrows
@@ -154,7 +157,7 @@ function renderStoryLine() {
     </div>
     <div class="story-line-box">
       <div class="story-line-text">${line.text}
-        <button class="speak-btn" onclick="playAudio(${JSON.stringify(line.text)}, this)">🔊</button>
+        <button class="speak-btn" id="speakBtn">🔊</button>
       </div>
       <div class="story-line-gloss">${line.gloss || ''}</div>
     </div>
@@ -168,6 +171,7 @@ function renderStoryLine() {
         <button class="btn btn-primary" onclick="markRead()">Done ✓</button>
       </div>` : ''}
     <div id="result"></div>`;
+  document.getElementById('speakBtn').onclick = function() { playAudio(line.text, this); };
 }
 
 function storyPrev() {

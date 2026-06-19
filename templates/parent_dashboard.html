@@ -38,6 +38,7 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
         {% if subscription.current_period_end %}Renews {{ subscription.current_period_end.strftime('%d %b %Y') }}.{% endif %}
         15 hours included per child; £1.50/hr past that (shown below, not auto-charged yet).
       </p>
+      <button class="btn btn-outline" style="margin-top:12px;color:var(--red);border-color:var(--red)" id="cancelSubBtn" onclick="cancelSubscription(this)">Cancel subscription</button>
     {% else %}
       <p style="font-weight:600;color:var(--red)">Trial ended — subscribe to keep going</p>
       <p style="font-size:0.85rem;color:var(--ink-soft);margin:4px 0 12px">£{{ subscription.monthly_price }}/month, 15 hours per child included.</p>
@@ -69,9 +70,26 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
       <div class="usage-fill {% if c.overage_minutes > 0 %}over{% endif %}"
            style="width:{{ [100, (c.minutes_used / c.included_minutes * 100)]|min }}%"></div>
     </div>
-    <button class="btn btn-danger" style="margin-top:10px" onclick="clearData('{{ c.id }}', this)">Clear data 🗑️</button>
+    <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+      <button class="btn btn-outline edit-child-btn"
+              data-child-id="{{ c.id }}" data-child-username="{{ c.username }}" data-nickname="{{ c.display_name }}">
+        Change login
+      </button>
+      <button class="btn btn-danger" onclick="clearData('{{ c.id }}', this)">Clear data 🗑️</button>
+    </div>
   </div>
   {% endfor %}
+
+  {# ── account ── #}
+  <div class="sec">Account</div>
+  <div class="card" style="padding:18px 20px;margin-bottom:20px;border-color:var(--red)">
+    <p style="font-weight:600;color:var(--red)">Delete account</p>
+    <p style="font-size:0.85rem;color:var(--ink-soft);margin:4px 0 12px">
+      Permanently deletes your account and every child account under it — login details, all activity
+      history, everything. This cannot be undone.
+    </p>
+    <button class="btn btn-danger" onclick="openDeleteAccount()">Delete my account</button>
+  </div>
 
   {# ── activity log ── #}
   <div class="sec">Full activity log</div>
@@ -154,6 +172,65 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
   </div>
 </div>
 
+{# ── Edit-child (change login) modal ── #}
+<div class="modal-bg" id="editChildModal">
+  <div class="modal">
+    <h2 style="font-size:1.2rem;margin-bottom:4px">Change login for <span id="ec_nickname"></span></h2>
+    <p style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:18px">Set a new username and password — the old ones stop working immediately.</p>
+
+    <label style="font-size:0.84rem;font-weight:600">Username
+      <input class="field" id="ec_user" type="text" maxlength="30" style="text-transform:lowercase">
+      <span style="font-size:0.75rem;color:var(--ink-soft)">Letters, numbers, - and _ only. Min 3 chars.</span>
+    </label>
+
+    <label style="font-size:0.84rem;font-weight:600;margin-top:14px;display:block">Password
+      <div style="display:flex;gap:8px;align-items:center;margin-top:5px">
+        <input class="field" id="ec_pw" type="text" maxlength="30" style="margin-top:0;flex:1">
+        <button type="button" onclick="suggestPwEdit()" style="border:1.5px solid var(--rule-strong);border-radius:8px;padding:8px 10px;background:var(--paper);cursor:pointer;font-size:0.82rem;white-space:nowrap">New one</button>
+      </div>
+      <span style="font-size:0.75rem;color:var(--ink-soft)">Min 4 chars.</span>
+    </label>
+
+    <div id="ec_err" style="color:var(--red);font-size:0.85rem;margin-top:10px;display:none"></div>
+
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="btn btn-primary" id="ec_submit" onclick="submitEditChild(this)">Save changes</button>
+      <button class="btn btn-outline" onclick="closeEditChild()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+{# ── Edit-child credentials reveal modal (reuses creds modal styling) ── #}
+<div class="modal-bg" id="editCredsModal">
+  <div class="modal" style="text-align:center">
+    <h2 style="font-size:1.2rem;margin-bottom:6px">Login updated</h2>
+    <p style="font-size:0.85rem;color:var(--red);font-weight:600;margin-bottom:18px">Write these down now — this is the only time the password is shown.</p>
+    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Username</div>
+    <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin:4px 0 14px" id="edit_creds_user"></div>
+    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Password</div>
+    <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin:4px 0 22px" id="edit_creds_pw"></div>
+    <button class="btn btn-primary" onclick="closeEditCreds()">Got it — I've written it down</button>
+  </div>
+</div>
+
+{# ── Delete-account modal ── #}
+<div class="modal-bg" id="deleteAccountModal">
+  <div class="modal">
+    <h2 style="font-size:1.2rem;margin-bottom:6px;color:var(--red)">Delete your account</h2>
+    <p style="font-size:0.85rem;color:var(--ink-soft);margin-bottom:18px">
+      This permanently deletes your account, every child account under it, and all activity history.
+      There is no undo. Type your account email to confirm:
+      <strong>{{ session.username }}</strong>
+    </p>
+    <input class="field" id="da_email" type="email" placeholder="Type your email exactly">
+    <div id="da_err" style="color:var(--red);font-size:0.85rem;margin-top:10px;display:none"></div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="btn btn-danger" id="da_submit" onclick="submitDeleteAccount(this)">Permanently delete</button>
+      <button class="btn btn-outline" onclick="closeDeleteAccount()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const _passwords = {{ suggested_password|tojson }};
 
@@ -225,6 +302,134 @@ async function submitAddChild(btn) {
     errEl.textContent = 'Network error — try again.';
     errEl.style.display = 'block';
     btn.disabled = false; btn.textContent = 'Add child';
+  }
+}
+
+// ── Change child login ──────────────────────────────────────────────────────
+
+let _editChildId = null;
+
+document.querySelectorAll('.edit-child-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    openEditChild(btn.dataset.childId, btn.dataset.childUsername, btn.dataset.nickname);
+  });
+});
+
+function openEditChild(childId, currentUsername, nickname) {
+  _editChildId = childId;
+  document.getElementById('ec_nickname').textContent = nickname;
+  document.getElementById('ec_user').value = currentUsername;
+  document.getElementById('ec_pw').value = '';
+  document.getElementById('ec_err').style.display = 'none';
+  document.getElementById('editChildModal').classList.add('open');
+}
+
+function closeEditChild() {
+  document.getElementById('editChildModal').classList.remove('open');
+  _editChildId = null;
+}
+
+function suggestPwEdit() {
+  const w = _words[Math.floor(Math.random() * _words.length)];
+  const n = Math.floor(Math.random() * 90) + 10;
+  document.getElementById('ec_pw').value = w + n;
+}
+
+async function submitEditChild(btn) {
+  const user = document.getElementById('ec_user').value.trim().toLowerCase();
+  const pw   = document.getElementById('ec_pw').value.trim();
+  const errEl = document.getElementById('ec_err');
+  errEl.style.display = 'none';
+
+  if (!user || !pw) { errEl.textContent = 'Fill in both fields.'; errEl.style.display = 'block'; return; }
+
+  btn.disabled = true; btn.textContent = 'Saving…';
+  const fd = new FormData();
+  fd.append('child_username', user);
+  fd.append('password', pw);
+
+  try {
+    const r = await fetch(`/parent/edit-child/${_editChildId}`, {method:'POST', body:fd});
+    const d = await r.json();
+    if (d.ok) {
+      closeEditChild();
+      document.getElementById('edit_creds_user').textContent = d.child_username;
+      document.getElementById('edit_creds_pw').textContent   = d.child_password;
+      document.getElementById('editCredsModal').classList.add('open');
+    } else {
+      errEl.textContent = d.error || 'Something went wrong.';
+      errEl.style.display = 'block';
+      btn.disabled = false; btn.textContent = 'Save changes';
+    }
+  } catch(e) {
+    errEl.textContent = 'Network error — try again.';
+    errEl.style.display = 'block';
+    btn.disabled = false; btn.textContent = 'Save changes';
+  }
+}
+
+function closeEditCreds() {
+  document.getElementById('editCredsModal').classList.remove('open');
+  location.reload();
+}
+
+// ── Cancel subscription ───────────────────────────────────────────────────────
+
+async function cancelSubscription(btn) {
+  if (!confirm("Cancel your subscription? You'll keep access until the current period ends, then it won't renew.")) return;
+  btn.disabled = true; btn.textContent = 'Cancelling…';
+  try {
+    const r = await fetch('/parent/subscription/cancel', {method:'POST'});
+    const d = await r.json();
+    if (d.ok) {
+      location.reload();
+    } else {
+      alert(d.error || 'Could not cancel — try again or contact support.');
+      btn.disabled = false; btn.textContent = 'Cancel subscription';
+    }
+  } catch(e) {
+    alert('Network error — try again.');
+    btn.disabled = false; btn.textContent = 'Cancel subscription';
+  }
+}
+
+// ── Delete account ─────────────────────────────────────────────────────────────
+
+function openDeleteAccount() {
+  document.getElementById('da_email').value = '';
+  document.getElementById('da_err').style.display = 'none';
+  document.getElementById('deleteAccountModal').classList.add('open');
+}
+
+function closeDeleteAccount() {
+  document.getElementById('deleteAccountModal').classList.remove('open');
+}
+
+async function submitDeleteAccount(btn) {
+  const email = document.getElementById('da_email').value.trim();
+  const errEl = document.getElementById('da_err');
+  errEl.style.display = 'none';
+
+  if (!email) { errEl.textContent = 'Type your email to confirm.'; errEl.style.display = 'block'; return; }
+
+  btn.disabled = true; btn.textContent = 'Deleting…';
+  const fd = new FormData();
+  fd.append('confirm_email', email);
+
+  try {
+    const r = await fetch('/parent/delete-account', {method:'POST', body:fd});
+    const d = await r.json();
+    if (d.ok) {
+      window.location = '/';
+    } else {
+      errEl.textContent = d.error || 'Something went wrong.';
+      errEl.style.display = 'block';
+      btn.disabled = false; btn.textContent = 'Permanently delete';
+    }
+  } catch(e) {
+    errEl.textContent = 'Network error — try again.';
+    errEl.style.display = 'block';
+    btn.disabled = false; btn.textContent = 'Permanently delete';
   }
 }
 </script>
