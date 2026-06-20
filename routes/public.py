@@ -3,7 +3,7 @@ routes/public.py — landing page, sign-up (parent + child account in one
 flow), and the feedback form from the landing page.
 """
 import bcrypt
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, render_template, request, redirect, url_for, session
 from models.db import get_cur
 from services.content import list_languages
 from services.credentials import generate_child_credentials
@@ -99,11 +99,12 @@ def register():
             VALUES (%s, %s, 'child', %s, %s, %s, %s)
         """, (child_username, child_pw_hash, child_nick, country, language, parent_id))
 
-    # Shown once, right here — not stored anywhere in plain text after this.
-    return render_template(
-        "register_done.html",
-        child_nick=child_nick, child_username=child_username, child_password=child_password,
-    )
+    # Shown once, on the parent's dashboard after they log in — not stored
+    # anywhere in plain text after that.
+    session["new_child_creds"] = {
+        "nickname": child_nick, "username": child_username, "password": child_password,
+    }
+    return redirect(url_for("auth.login", registered=1))
 
 
 @public_bp.route("/feedback", methods=["POST"])

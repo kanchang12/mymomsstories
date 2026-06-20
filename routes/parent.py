@@ -62,10 +62,13 @@ def dashboard():
     subscription = get_subscription(session["user_id"])
     languages    = list_languages()
 
+    new_child_creds = session.pop("new_child_creds", None)
+
     return render_template("parent_dashboard.html",
                            children=children, records=records,
                            subscription=subscription, languages=languages,
-                           suggested_password=_gen_password())
+                           suggested_password=_gen_password(),
+                           new_child_creds=new_child_creds)
 
 
 # ── Add child ──────────────────────────────────────────────────────────────────

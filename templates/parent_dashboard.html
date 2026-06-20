@@ -11,6 +11,15 @@
 .modal{background:var(--paper-card);border-radius:16px;padding:26px;width:100%;max-width:420px;box-shadow:0 8px 40px rgba(0,0,0,.2)}
 input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);border-radius:8px;
             background:var(--paper);font-family:inherit;font-size:0.95rem;margin-top:5px;box-sizing:border-box}
+.ob-slide{display:none}
+.ob-slide.active{display:block}
+.ob-dots{display:flex;gap:7px;justify-content:center;margin-top:22px}
+.ob-dot{width:7px;height:7px;border-radius:50%;background:var(--rule-strong);cursor:pointer}
+.ob-dot.active{background:var(--ink);width:18px;border-radius:4px}
+.ob-arrow{border:1.5px solid var(--rule-strong);background:var(--paper);border-radius:50%;
+          width:36px;height:36px;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+.ob-arrow:disabled{opacity:.3;cursor:default}
+.ob-creds{font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin:4px 0 14px}
 {% endblock %}
 {% block content %}
 <div class="page">
@@ -116,6 +125,46 @@ input.field{width:100%;padding:10px 12px;border:1.5px solid var(--rule-strong);b
     </table>
   </div>
 </div>
+
+{# ── Onboarding carousel (shown once, right after registration) ── #}
+{% if new_child_creds %}
+<div class="modal-bg open" id="onboardModal">
+  <div class="modal" style="text-align:center;max-width:440px">
+
+    <div class="ob-slide active" data-slide="0">
+      <h2 style="font-size:1.3rem;margin-bottom:8px">Thank you for registering 🎉</h2>
+      <p style="font-size:0.9rem;color:var(--ink-soft)">Here are the next steps to get {{ new_child_creds.nickname }} started.</p>
+    </div>
+
+    <div class="ob-slide" data-slide="1">
+      <h2 style="font-size:1.15rem;margin-bottom:6px">{{ new_child_creds.nickname }}'s login</h2>
+      <p style="font-size:0.85rem;color:var(--red);font-weight:600;margin-bottom:16px">Write these down now — this is the only time the password is shown.</p>
+      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Username</div>
+      <div class="ob-creds">{{ new_child_creds.username }}</div>
+      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Password</div>
+      <div class="ob-creds">{{ new_child_creds.password }}</div>
+      <p style="font-size:0.85rem;color:var(--ink-soft)">You can change this any time below, under "Your children" → Change login.</p>
+    </div>
+
+    <div class="ob-slide" data-slide="2">
+      <h2 style="font-size:1.15rem;margin-bottom:8px">Now hand it over</h2>
+      <p style="font-size:0.9rem;color:var(--ink-soft)">Once you're done here, log out and log back in using {{ new_child_creds.nickname }}'s username and password — and let them start using it.</p>
+    </div>
+
+    <div class="ob-slide" data-slide="3">
+      <h2 style="font-size:1.15rem;margin-bottom:8px">Track their progress</h2>
+      <p style="font-size:0.9rem;color:var(--ink-soft)">You can come back any time and look into their progress right here, on this dashboard.</p>
+      <button class="btn btn-primary" style="margin-top:18px" onclick="closeOnboard()">Got it</button>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:22px">
+      <button class="ob-arrow" id="obPrev" onclick="obMove(-1)" aria-label="Previous">←</button>
+      <div class="ob-dots" id="obDots"></div>
+      <button class="ob-arrow" id="obNext" onclick="obMove(1)" aria-label="Next">→</button>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {# ── Add-child modal ── #}
 <div class="modal-bg" id="addChildModal">
@@ -261,6 +310,47 @@ async function subscribe(btn) {
 function openAddChild() { document.getElementById('addChildModal').classList.add('open'); }
 function closeAddChild() { document.getElementById('addChildModal').classList.remove('open'); }
 function closeCreds() { document.getElementById('credsModal').classList.remove('open'); location.reload(); }
+
+// ── Onboarding carousel (shown once after registration) ──────────────────
+{% if new_child_creds %}
+(function() {
+  const slides = document.querySelectorAll('.ob-slide');
+  const dotsEl = document.getElementById('obDots');
+  const prevBtn = document.getElementById('obPrev');
+  const nextBtn = document.getElementById('obNext');
+  let i = 0;
+
+  slides.forEach((_, idx) => {
+    const d = document.createElement('div');
+    d.className = 'ob-dot' + (idx === 0 ? ' active' : '');
+    d.onclick = () => goTo(idx);
+    dotsEl.appendChild(d);
+  });
+  const dots = dotsEl.querySelectorAll('.ob-dot');
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= slides.length) return;
+    slides[i].classList.remove('active');
+    dots[i].classList.remove('active');
+    i = idx;
+    slides[i].classList.add('active');
+    dots[i].classList.add('active');
+    prevBtn.disabled = (i === 0);
+    nextBtn.style.visibility = (i === slides.length - 1) ? 'hidden' : 'visible';
+  }
+  window.obMove = (delta) => goTo(i + delta);
+  window.closeOnboard = () => {
+    document.getElementById('onboardModal').classList.remove('open');
+  };
+  goTo(0);
+
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('onboardModal').classList.contains('open')) return;
+    if (e.key === 'ArrowRight') goTo(i + 1);
+    if (e.key === 'ArrowLeft') goTo(i - 1);
+  });
+})();
+{% endif %}
 
 const _words = ["Mango","Tiger","Comet","Rocket","Panda","Falcon","Maple","Sunny","River","Echo","Cobra","Nimbus","Pixel","Robin","Atlas","Cloud"];
 function suggestPw() {
